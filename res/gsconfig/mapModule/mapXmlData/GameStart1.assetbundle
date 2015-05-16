@@ -1,0 +1,5 @@
+<gameObjects layers="">
+  <gameObject asset="Prefabs/GameLogic" name="GameLogic" type="2" id="0" instanceId="3">
+    <transform />
+  </gameObject>
+</gameObjects>

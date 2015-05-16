@@ -1,0 +1,34 @@
+<gameObjects layers="">
+  <gameObject asset="Animation/organ/o002/o002m" name="SectionPoint_11" type="1024" id="0" instanceId="11" delay="0">
+    <transform>
+      <position x="7.877982" y="3.035022" />
+    </transform>
+  </gameObject>
+  <gameObject name="BornPoint_14" type="16" id="0" instanceId="14" delay="0">
+    <transform>
+      <position x="0.7656827" y="1.371237" z="-0.004638672" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/organ/o002/o002m" name="SectionPoint_21" type="1024" id="0" instanceId="21" delay="0">
+    <transform>
+      <position x="40.12256" y="3.128973" />
+    </transform>
+  </gameObject>
+  <gameObject name="BornPoint_33" type="16" id="0" instanceId="33" delay="0">
+    <transform>
+      <position x="47.21914" y="1.780158" z="-0.004638672" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="Monster_41" type="8" id="100021" instanceId="41" delay="0" wave="2" group="1" appear="2" wakeUp="2" alwaysVisible="True">
+    <transform>
+      <position x="37.17681" y="0.8669717" />
+      <scale x="1.3" y="1.3" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="Monster_68" type="8" id="100021" instanceId="68" delay="0" wave="2" group="1" appear="2" wakeUp="2" alwaysVisible="True">
+    <transform>
+      <position x="11.68603" y="0.9591581" />
+      <scale x="1.3" y="1.3" />
+    </transform>
+  </gameObject>
+</gameObjects>

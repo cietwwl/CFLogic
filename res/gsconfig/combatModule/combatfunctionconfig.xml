@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <functionParsers>
+        <parser type="1" clazz="com.kola.kmp.logic.combat.function.KAddStateFunctionParser" />
+        <parser type="2" clazz="com.kola.kmp.logic.combat.function.KAddEnergyFunctionParser" />
+        <parser type="3" clazz="com.kola.kmp.logic.combat.function.KAbsorbHpFunctionParser" />
+    </functionParsers>
+    <functionCondition>
+        <condition type="1" clazz="com.kola.kmp.logic.combat.function.event.KConditionAlive" />
+        <condition type="2" clazz="com.kola.kmp.logic.combat.function.event.KConditionDead" />
+    </functionCondition>
+</root>

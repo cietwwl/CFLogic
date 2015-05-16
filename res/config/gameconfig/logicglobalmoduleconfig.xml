@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <globalConfig>
+        <config name="_openCheatCmd" dataType="boolean">true</config>
+    </globalConfig>
+    <globalConfigPath>./res/gsconfig/globalconfig.xml</globalConfigPath>
+    
+    <logicTipsXml>./res/gamedata/logictips.xml</logicTipsXml>
+    <logicTipsXls>./res/gamedata/logictips.xls</logicTipsXls>
+    
+    <enumStrXml>./res/gamedata/enumStr.xml</enumStrXml>
+    <enumStrXls>./res/gamedata/enumStr.xls</enumStrXls>
+    
+    <supportConfigPath>./res/gsconfig/supportconfig.xml</supportConfigPath>
+    <combatConfigPath>./res/gsconfig/combatModule/combatmoduleconfig.xml</combatConfigPath>
+    <notificationPath>./res/gamedata/notification.xls</notificationPath>
+</root>

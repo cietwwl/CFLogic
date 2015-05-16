@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <support clazz="com.kola.kmp.logic.util.dirtyword.KDirtyWordSupportImpl" />
+    <support clazz="com.kola.kmp.logic.item.KItemSupportImpl" />
+    <support clazz="com.kola.kmp.logic.mail.KMailSupportImpl" />
+    <support clazz="com.kola.kmp.logic.npc.KNPCSupportImpl" />
+    <support clazz="com.kola.kmp.logic.rank.KRankSupportImpl" />
+    <support clazz="com.kola.kmp.logic.skill.KSkillSupportImpl" />
+    <support clazz="com.kola.kmp.logic.currency.KCurrencySupportImpl" />
+    <support clazz="com.kola.kmp.logic.reward.KRewardSupportImpl" />
+    <support clazz="com.kola.kmp.logic.role.KRoleModuleSupportImpl" />
+    <support clazz="com.kola.kmp.logic.map.KMapModuleSupportImpl" />
+    <support clazz="com.kola.kmp.logic.chat.KChatSupportImpl" />
+    <support clazz="com.kola.kmp.logic.gm.KGMSupportImpl" />
+    <support clazz="com.kola.kmp.logic.level.KLevelModuleSupportImpl" />
+    <support clazz="com.kola.kmp.logic.pet.KPetModuleSupportImpl" />
+    <support clazz="com.kola.kmp.logic.relationship.KRelationShipSupportImpl" />
+    <support clazz="com.kola.kmp.logic.vip.KVIPSupportImpl" />
+    <support clazz="com.kola.kmp.logic.fashion.KFashionSupportImpl" />
+    <support clazz="com.kola.kmp.logic.mission.KMissionModuleSupportImpl" />
+    <support clazz="com.kola.kmp.logic.mount.KMountSupportImpl" />
+    <support clazz="com.kola.kmp.logic.gang.KGangSupportImpl" />
+    <support clazz="com.kola.kmp.logic.talent.KTalentModuleSupportImpl" />
+    <support clazz="com.kola.kmp.logic.competition.KCompetitionModuleSupportImpl" />
+	<support clazz="com.kola.kmp.logic.combat.impl.KCombatModuleSupportImpl" />
+	<support clazz="com.kola.kmp.logic.shop.KShopSupportImpl" />
+	<support clazz="com.kola.kmp.logic.map.duplicatemap.KDuplicateSupportImpl" />
+	<support clazz="com.kola.kmp.logic.activity.KActivityModuleSupportImpl" />
+	<support clazz="com.kola.kmp.logic.mission.KNoviceGuideSupportImpl" />
+	<support clazz="com.kola.kmp.logic.reward.exciting.KExcitingSupportImpl" />
+	<support clazz="com.kola.kmp.logic.rank.teampvp.KTeamPVPSupportImpl" />
+	<support clazz="com.kola.kmp.logic.competition.teampvp.KTeamPVPSupportImpl" />
+</root>

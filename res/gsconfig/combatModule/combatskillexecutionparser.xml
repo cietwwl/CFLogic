@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <execution type="1" clazz="com.kola.kmp.logic.combat.skill.KDmSkillParser"/>
+    <execution type="2" clazz="com.kola.kmp.logic.combat.skill.KDmAndAddStateSkillParser"/>
+    <execution type="3" clazz="com.kola.kmp.logic.combat.skill.KCureSkillParser"/>
+    <execution type="4" clazz="com.kola.kmp.logic.combat.skill.KCureAndAddStateSkillParser"/>
+    <execution type="5" clazz="com.kola.kmp.logic.combat.skill.KAddMultipleStateSkillParser"/>
+    <execution type="6" clazz="com.kola.kmp.logic.combat.skill.KSummonSkillParser"/>
+</root>

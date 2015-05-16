@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<logicConfig>
+		<!-- 文字相关内容各语言版本不同 -->	
+		<ck-include>./res/gamedata/itemModule/itemLogicConfig.xml</ck-include>
+	</logicConfig>
+	
+	<excelConfig>
+		<itemTemplate>
+			<path>./res/gamedata/itemModule/ItemTemplate.xls</path>
+			<HeaderIndex>5</HeaderIndex>
+		</itemTemplate>
+		<bagExt>
+			<path>./res/gamedata/itemModule/BagExt.xls</path>
+			<HeaderIndex>5</HeaderIndex>
+		</bagExt>
+		<equiSystem>
+			<path>./res/gamedata/itemModule/EquiSystem.xls</path>
+			<HeaderIndex>5</HeaderIndex>
+		</equiSystem>
+		<equiSetSystem>
+			<path>./res/gamedata/itemModule/equiSet.xls</path>
+			<HeaderIndex>5</HeaderIndex>
+		</equiSetSystem>
+	</excelConfig>
+</root>

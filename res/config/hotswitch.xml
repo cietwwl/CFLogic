@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 热开关 -->
+
+<HotSwitch modifyCheckSeconds = "120">
+
+	<!-- 1分钟允许最大的PING次数(这里一定要确认客户端的ping间隔时间)，超出将踢下线 -->
+	<AllowPingPerMin>17</AllowPingPerMin>
+	<PingJudgeMin>3</PingJudgeMin>
+	<!-- 作弊封号分钟数 -->
+	<CheatBanMin>60</CheatBanMin>
+
+</HotSwitch>

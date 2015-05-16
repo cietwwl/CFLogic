@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chatmoduleconfig>
+
+	<!-- 是否在充值成功时通知客户端-->
+	<IS_PUSH_CHARGERESULT_TO_CLIENT>true</IS_PUSH_CHARGERESULT_TO_CLIENT>
+
+	<!-- 金币兑换的相关参数 -->
+	<GOLD_EXCHANGE>
+		<MaxGoldForExchange>500000000</MaxGoldForExchange><!-- 金币购买时检查极限数量 -->
+		<DiamondToGoldBase>10</DiamondToGoldBase><!-- 兑换金币的基准钻石数量为10 -->
+		<DiamondToGoldBuyRate>10000</DiamondToGoldBuyRate><!-- 单次兑换金币最多只能10000倍基准钻石数量 -->
+	</GOLD_EXCHANGE>
+
+
+	<!-- 新角色初始默认货币(1, "钻石")(2, "金币")(3, "潜能")(4, "荣誉") -->
+	<NEW_ROLE_MONEY>
+		<Money type="4">7000</Money>
+	</NEW_ROLE_MONEY>
+
+</chatmoduleconfig>

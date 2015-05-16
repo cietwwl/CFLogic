@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<!-- 强化等级比角色等级最高高多少级 -->
+	<StrongLvAddMax>0</StrongLvAddMax>
+	
+	<!-- 新角色初始默认物品 -->
+	<NEW_ROLE_ITEM>
+		<!-- Item itemCode="340100">1</Item> -->
+	</NEW_ROLE_ITEM>
+</root>

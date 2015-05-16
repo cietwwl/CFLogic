@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<logicConfig>
+	
+		<RandomShopConfig>
+			<!-- 随机商品的数量 -->
+			<RandomGoodsCount>6</RandomGoodsCount>
+			<!-- 随机商品付费刷新价格 -->
+			<RandomGoodsRefreshPrice type="1">5</RandomGoodsRefreshPrice>
+			<!-- 随机商品的免费刷新次数 -->
+			<RandomFreeTime>2</RandomFreeTime>
+			<!-- 随机商品免费刷新周期(小时) -->
+			<RandomPeriod>2</RandomPeriod>
+			<!-- 随机商品的覆盖的最小角色等级 -->
+			<RandomMinRoleLv>10</RandomMinRoleLv>
+			<!-- 随机商品购买日志的最大数量 -->
+			<RandomLogMaxCount>10</RandomLogMaxCount>
+		</RandomShopConfig>
+		
+		<TimeHotShopConfig>
+			<!-- 商品显示的数量 -->
+			<ShowGoodsCount>3</ShowGoodsCount>
+		</TimeHotShopConfig>
+		
+	</logicConfig>
+	
+	<excelConfig>
+		<RandomShopExcelConfig>
+			<randomGoods>
+				<path>./res/gamedata/shopModule/randomShop.xls</path>
+				<HeaderIndex>5</HeaderIndex>
+			</randomGoods>
+		</RandomShopExcelConfig>
+		<TimeHotShopExcelConfig>
+			<goods>
+				<path>./res/gamedata/shopModule/timeHotShop.xls</path>
+				<HeaderIndex>5</HeaderIndex>
+			</goods>
+		</TimeHotShopExcelConfig>
+	</excelConfig>
+</root>

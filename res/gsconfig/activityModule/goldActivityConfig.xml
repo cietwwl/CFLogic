@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <!-- 物资运输excel表头文件路径 -->
+	<excelFilePath>./res/gamedata/activityModule/goldActivityConfig.xls</excelFilePath>
+	
+	
+	<!-- 战场资源文件路径-->
+	<battle_res_path>youtong</battle_res_path>
+	
+	<!-- 战斗时间，单位：秒-->
+	<battle_time>120</battle_time>
+	<!-- 战斗场景音乐-->
+	<battle_music_res_id>1701000</battle_music_res_id>
+	<!-- 关卡评级标准，受击次数，格式：3,8,15,25 -->
+	<fight_lv>3,8,15,25</fight_lv>
+	
+</root>

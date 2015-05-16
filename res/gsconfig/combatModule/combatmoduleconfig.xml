@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <combatResultHandlerCfgPath>./res/gsconfig/combatModule/combatresulthandler.xml</combatResultHandlerCfgPath>
+	<combatParaCfgPath>./res/gsconfig/combatModule/combatParaConfig.xls</combatParaCfgPath>
+	<operationMsgHandler clazz="com.kola.kmp.logic.combat.operation.KOperationMsgHandlerImpl"/>
+	<commandCreator clazz="com.kola.kmp.logic.combat.cmd.KCombatCommandCreatorImpl"/>
+	<mirrorDataHandler clazz="com.kola.kmp.logic.combat.mirror.KCombatMirrorDataHandler" />
+	<combatStateConfigPath>./res/gsconfig/combatModule/combatstateconfig.xml</combatStateConfigPath>
+	<combatSkillExecutionParser>./res/gsconfig/combatModule/combatskillexecutionparser.xml</combatSkillExecutionParser>
+	<combatFunctionCfgPath>./res/gsconfig/combatModule/combatfunctionconfig.xml</combatFunctionCfgPath>
+	<randomObstructionPath>./res/gamedata/combatModule/randomObstruction.xls</randomObstructionPath>
+	<assistantPetPath>./res/gamedata/combatModule/assistantPets.xls</assistantPetPath>
+</root>

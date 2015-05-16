@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<logicConfig>
+		<!-- 定义每种类型的关系最大数量 -->
+		<TypeEnum>
+			<好友>20</好友><!-- 本定义无效，由VIP控制 -->
+			<好友申请>20</好友申请>
+			<最近联系人>20</最近联系人>
+			<黑名单>20</黑名单>
+			<附近的人>100</附近的人>
+		</TypeEnum>
+		
+		<!-- 亲密度最大值 -->
+		<ClosenessMaxValue>10000</ClosenessMaxValue>
+		<!-- 好友副本亲密度增值 -->
+		<ClosenessForWarWin>10</ClosenessForWarWin>
+		<ClosenessForWarLose>5</ClosenessForWarLose>
+		<ClosenessForPMChat>5</ClosenessForPMChat>
+		
+		<切磋PVP地图文件名>jjchangfuben</切磋PVP地图文件名><!-- juntuanzhan_01 -->
+		<切磋PVP地图背景音乐>1701000</切磋PVP地图背景音乐>
+		<切磋名单最大数量>30</切磋名单最大数量>
+		
+	</logicConfig>
+
+	<excelConfig>
+		<friendPush>
+			<path>./res/gamedata/relationShipModule/relationShip.xls</path>
+			<HeaderIndex>5</HeaderIndex>
+		</friendPush>
+	</excelConfig>
+</root>

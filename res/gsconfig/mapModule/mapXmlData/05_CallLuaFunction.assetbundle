@@ -1,0 +1,7 @@
+<gameObjects>
+  <gameObject name="GameObject" type="2" id="0" instanceId="1">
+    <transform>
+      <position x="3.256054" y="-0.2572463" z="-3.075982" />
+    </transform>
+  </gameObject>
+</gameObjects>

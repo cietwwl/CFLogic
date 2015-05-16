@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <!-- 物资运输excel表头文件路径 -->
+	<excelFilePath>./res/gamedata/activityModule/transportConfig.xls</excelFilePath>
+	
+	
+	<!-- 每天角色可拦截次数 -->
+	<max_can_challenge_count>10</max_can_challenge_count>
+	<!-- 每天角色可运输次数 -->
+	<max_can_transport_count>5</max_can_transport_count>
+	<!-- 刷新载具消钻石数量 -->
+	<reflash_carrier_use_point>20</reflash_carrier_use_point>
+	<!-- 清除冷却时间消钻石数量 -->
+	<clear_cooltime_use_point>20</clear_cooltime_use_point>
+	<!-- 拦截冷却时间，单位：秒 -->
+	<intercept_cool_time_seconds>600</intercept_cool_time_seconds>
+	
+</root>

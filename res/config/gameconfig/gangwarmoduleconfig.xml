@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <extension classPath="com.kola.kmp.logic.gang.war.KGangWarModuleExtension" >
+        <configPath>./res/gsconfig/gangWarModule/gangWarLogicConfig.xml</configPath>
+    </extension>
+</root>

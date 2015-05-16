@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<logicConfig>
+		<!-- 邮箱警戒容量（达到警戒容量，则按从旧到新的原则，扫描清理警戒容量以内的、指定数量、无附件的邮件（登陆时检查）） -->
+		<MailBoxWarnSize>100</MailBoxWarnSize>
+		<!-- 达到警戒容量时的清理数量 -->
+		<ClearOfWarnSize>20</ClearOfWarnSize>
+
+		<!-- 邮件超时时长(DHMS格式，一旦超时，无条件清理) -->
+		<OutDateTimeInMills>30D</OutDateTimeInMills>
+		
+		<!-- 发送军团邮件最大CD时长(DHMS格式) -->
+		<SendGangMailMaxCDInMills>5M</SendGangMailMaxCDInMills>
+		
+		<!-- 每发送一个邮件的CD时长(DHMS格式) -->
+		<SendMailCDInMillsPerOne>1M</SendMailCDInMillsPerOne>
+		
+		<!-- 发送好友邮件名单最大长度 -->
+		<SendMailNameListMaxForFriend>5</SendMailNameListMaxForFriend>
+	</logicConfig>
+
+	<excelConfig>
+
+	</excelConfig>
+</root>

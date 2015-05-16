@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chatmoduleconfig>
+
+	<logicConfig>
+		<!-- 时装超时失效扫描周期 DHMS -->
+		<TimeOutScanTaskPeriod>5M</TimeOutScanTaskPeriod>
+		
+		<!-- 角色等级大于等级指定等级时，时装自动穿戴 -->
+		<FashionAutoSelectedMinRoleLv>12</FashionAutoSelectedMinRoleLv>
+		
+	</logicConfig>
+	
+	<excelConfig>
+		<fashionTemplate>
+			<path>./res/gamedata/fashionModule/fashionTemplate.xls</path>
+			<HeaderIndex>5</HeaderIndex>
+		</fashionTemplate>
+	</excelConfig>
+
+</chatmoduleconfig>

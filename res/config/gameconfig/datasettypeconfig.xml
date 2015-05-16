@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <setType type="1" clazz="com.kola.kmp.logic.item.KItemSet" />
+    <setType type="2" clazz="com.kola.kmp.logic.currency.KCurrencyAccountSet" />
+    <setType type="3" clazz="com.kola.kmp.logic.mail.KMailSet" />
+    <setType type="4" clazz="com.kola.kmp.logic.mount.KMountSet" />
+    <setType type="5" clazz="com.kola.kmp.logic.relationship.KRelationShipSet" />
+    <setType type="6" clazz="com.kola.kmp.logic.skill.KSkillSet" />
+    <setType type="7" clazz="com.kola.kmp.logic.mission.KMissionSet" />
+    <setType type="8" clazz="com.kola.kmp.logic.mission.KMissionCompleteRecordSet" />
+    <setType type="9" clazz="com.kola.kmp.logic.level.KGameLevelSet" />
+    <setType type="10" clazz="com.kola.kmp.logic.pet.KPetSet" />
+    <setType type="11" clazz="com.kola.kmp.logic.role.KRoleExtCASet" />
+</root>

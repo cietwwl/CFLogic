@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <!-- 任务excel表头文件路径  -->
+	<missionDataExcelFilePath>./res/gamedata/missionModule/missionConfig.xls</missionDataExcelFilePath>
+	<!-- 日常任务活动excel表头文件路径  -->
+	<dailyMissionDataExcelPath>./res/gamedata/missionModule/dailyMissionConfig.xls</dailyMissionDataExcelPath>
+	<!-- 小助手配置excel表头文件路径  -->
+	<assistantDataExcelFilePath>./res/gamedata/missionModule/assitantConfig.xls</assistantDataExcelFilePath>
+	<!-- 是否为测试模式，初始开放所有功能  -->
+	<isTestOpenAllFunction>false</isTestOpenAllFunction>
+	<!-- 是否关闭新手引导流程  -->
+	<isCloseNoviceGuide>false</isCloseNoviceGuide>
+	<!-- 副武器战场引导81===520201-->
+	<secondWeaponGuide missionTemplateId="7" levelId="510104" />
+	<!-- 机甲战场引导missionTemplateId="9" levelId="510105" -->
+	<mountGuide missionTemplateId="16" levelId="510110" />
+</root>

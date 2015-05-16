@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chatmoduleconfig>
+
+	<logicConfig>
+		<!-- 时间参数DHMS格式定义==英文冒号":"：表示分隔符；D：表示天；H：表示小时；M：表示分钟；S：表示秒；MS表示毫秒 -->
+
+		<!-- 一个角色最多只能向N个军团申请加入 -->
+		<MAX_APP_GANG_NUM>5</MAX_APP_GANG_NUM>
+
+		<!-- ============关于创建军团============ -->
+		<createGang>
+			<!-- 创建军团的价格 -->
+			<PayForCreateGang_CURRENCYTYPE>2</PayForCreateGang_CURRENCYTYPE>
+			<PayForCreateGang_MONEYCOUNT>1000000</PayForCreateGang_MONEYCOUNT>
+			<!-- 创建军团的最小等级 -->
+			<CreateGangMinRoleLevel>20</CreateGangMinRoleLevel>
+			<!-- 军团名称的最小字符数量 -->
+			<GangNameMinLen>3</GangNameMinLen>
+			<!-- 军团名称的最大字符数量 -->
+			<GangNameMaxLen>12</GangNameMaxLen>
+			<!-- 军团创建初始资金 -->
+			<initResource>0</initResource>
+		</createGang>
+
+		<!-- ============军团时效任务============ -->
+		<!-- 军团数据（日志，APP）清理任务周期时间（DHMS格式） -->
+		<DATA_CLEARTASK_PERIOD>5M:5S</DATA_CLEARTASK_PERIOD>
+		<!-- 军团成员及APP数据同步周期时间（DHMS格式） -->
+		<GangSyncTaskPeroid>0M:30S</GangSyncTaskPeroid>
+
+		<!-- ============军团日志============ -->
+		<!-- 日志最大数量 -->
+		<DAILY_MAXLEN>10</DAILY_MAXLEN>
+
+
+		<!-- ============军团申请============ -->
+		<!-- APP最大数量 -->
+		<APP_MAXLEN>20</APP_MAXLEN>
+		<!-- 角色发出APP的最大数量 -->
+		<APP_MAXCOUNT>5</APP_MAXCOUNT>
+		
+		<!-- 离开军团24小时内无法重新加入 -->
+		<JoinGangCDHour>24</JoinGangCDHour>
+		
+		<!-- 邀请角色CD时间 DHMS -->
+		<InviteCDTimeForRole>1M</InviteCDTimeForRole>
+		
+		<!-- 世界邀请CD时间 DHMS -->
+		<InviteCDTimeForWorld>1M</InviteCDTimeForWorld>
+
+		<!-- ============模糊搜索军团============= -->
+		<!-- 模糊搜索军团时，返回给客户端的列表最大长度 -->
+		<GangSearchMaxLen>15</GangSearchMaxLen>
+		<!-- 模糊搜索军团的CD时间（DHMS格式） -->
+		<GangSearchCD>5S</GangSearchCD>
+
+		<!-- ============自动禅让============= -->
+		<!-- 自动禅让给多少天内登陆的成员 （DHMS格式） -->
+		<AutoMoveOver_TargetDay>3D</AutoMoveOver_TargetDay>
+		<!-- 团长多少天数不上线时，自动禅让（DHMS格式） -->
+		<AutoMoveOver_OutDay>5D</AutoMoveOver_OutDay>
+
+	</logicConfig>
+
+	<excelConfig>
+		<gang>
+			<path>./res/gamedata/gangModule/gang.xls</path>
+			<HeaderIndex>5</HeaderIndex>
+		</gang>
+	</excelConfig>
+
+</chatmoduleconfig>

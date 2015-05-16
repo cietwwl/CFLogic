@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<config name="_wishUsePoint" dataType="int">50</config>
+	<config name="_wish10UsePoint" dataType="int">500</config>
+	<config name="_wishTakeRate" dataType="int">20</config>
+	<config name="_initPoolDiamondCount" dataType="int">20</config>
+	<poolConfig initValue="2000" >
+	   <!-- girdIndex:格子地址， targetCount：投中目标次数， rate：彩池抽取百分比 -->
+	   <takeRate girdIndex= "9" targetCount="100" rate="20"/>
+	   <takeRate girdIndex= "13" targetCount="220" rate="40"/>
+	   <takeRate girdIndex="22" targetCount="510" rate="80"/>
+	</poolConfig>
+	
+	<!-- 许愿系统excel表头文件路径  -->
+	<wishExcelFilePath>./res/gamedata/gamble/wishConfig.xls</wishExcelFilePath>
+</root>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <extension classPath="com.kola.kmp.logic.shop.KShopModuleExtension" >
+        <configPath>./res/gsconfig/shopModule/shopLogicConfig.xml</configPath>
+    </extension>
+</root>

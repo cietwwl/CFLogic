@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<!-- 许愿系统excel表头文件路径  -->
+	<wish2ExcelFilePath>./res/gamedata/gamble/wish2config.xls</wish2ExcelFilePath>
+</root>

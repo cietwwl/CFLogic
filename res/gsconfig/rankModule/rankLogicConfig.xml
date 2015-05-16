@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chatmoduleconfig>
+
+	<logicConfig>
+		<!-- 排行榜排名变化通知时间任务，延时多久执行，DHMS格式 -->
+		<RankChangeTaskDelayTime>5S</RankChangeTaskDelayTime>
+		<!-- 排行榜重排周期，DHMS格式 -->
+		<RankResortPeriod>30S</RankResortPeriod>
+
+		<role>
+			<RankType>
+				<战力榜>
+					<minJoinLv>15</minJoinLv><!-- 最小入围角色等级 -->
+					<maxLen>2000</maxLen><!-- 排行榜最大长度 -->
+				</战力榜>
+				<等级榜>
+					<minJoinLv>15</minJoinLv><!-- 最小入围角色等级 -->
+					<maxLen>2000</maxLen><!-- 排行榜最大长度 -->
+				</等级榜>
+				<竞技榜>
+					<minJoinLv>15</minJoinLv><!-- 最小入围角色等级 -->
+					<maxLen>2000</maxLen><!-- 排行榜最大长度 -->
+				</竞技榜>
+				<随从榜>
+					<minJoinLv>15</minJoinLv><!-- 最小入围角色等级 -->
+					<maxLen>2000</maxLen><!-- 排行榜最大长度 -->
+				</随从榜>
+			</RankType>
+		</role>
+		<gang>
+			<RankType>
+				<!-- 军团列表排行榜 -->
+				<全部军团>
+					<maxLen>100000000</maxLen><!-- 排行榜最大长度 -->
+					<showLen>20</showLen><!-- 排行榜UI显示长度 -->
+				</全部军团>
+				<!-- 军团战积分排行榜 -->
+				<军团战积分>
+					<maxLen>100000000</maxLen><!-- 排行榜最大长度 -->
+					<showLen>20</showLen><!-- 排行榜UI显示长度 -->
+				</军团战积分>
+				<!-- 军团战报名排行榜 -->
+				<军团战报名>
+					<maxLen>100000000</maxLen><!-- 排行榜最大长度 -->
+					<showLen>20</showLen><!-- 排行榜UI显示长度 -->
+				</军团战报名>
+				<!-- 军团战力排行榜 -->
+				<军团战力>
+					<maxLen>100000000</maxLen><!-- 排行榜最大长度 -->
+					<showLen>30</showLen><!-- 排行榜UI显示长度 -->
+				</军团战力>
+			</RankType>
+		</gang>
+		<tempPVP>
+			<RankType>
+				<!-- 天梯系统排行榜 -->
+				<青铜>
+					<maxLen>2000</maxLen><!-- 排行榜最大长度 -->
+					<showLen>20</showLen><!-- 排行榜UI显示长度 -->
+				</青铜>
+				<白银>
+					<maxLen>2000</maxLen><!-- 排行榜最大长度 -->
+					<showLen>20</showLen><!-- 排行榜UI显示长度 -->
+				</白银>
+				<黄金>
+					<maxLen>2000</maxLen><!-- 排行榜最大长度 -->
+					<showLen>20</showLen><!-- 排行榜UI显示长度 -->
+				</黄金>
+				<白金>
+					<maxLen>2000</maxLen><!-- 排行榜最大长度 -->
+					<showLen>20</showLen><!-- 排行榜UI显示长度 -->
+				</白金>
+				<钻石>
+					<maxLen>2000</maxLen><!-- 排行榜最大长度 -->
+					<showLen>20</showLen><!-- 排行榜UI显示长度 -->
+				</钻石>
+				<最强王者>
+					<maxLen>2000</maxLen><!-- 排行榜最大长度 -->
+					<showLen>10</showLen><!-- 排行榜UI显示长度 -->
+				</最强王者>
+			</RankType>
+		</tempPVP>
+	</logicConfig>
+
+	<excelConfig>
+		<good>
+			<path>./res/gamedata/rankModule/rankGood.xls</path>
+			<HeaderIndex>5</HeaderIndex>
+		</good>
+	</excelConfig>
+
+</chatmoduleconfig>

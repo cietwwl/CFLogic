@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<logicConfig>
+		<!-- 首次竞价的金额 -->
+		<FirstBidPrice>20000</FirstBidPrice>
+		<!-- 后续追加竞价的价格 -->
+		<OtherBidPrice>1000</OtherBidPrice>
+		<!-- 城市争夺失败，返回金额的比率60表示60% -->
+		<SeizeFailBackRate>60</SeizeFailBackRate>
+
+		<!-- 竞价榜显示的最大数量 -->
+		<BID_RANK_SHOWCOUNT>10</BID_RANK_SHOWCOUNT>
+		
+		<资源战PVP地图文件名>jjchangfuben</资源战PVP地图文件名><!-- juntuanzhan_01 -->
+		<资源战PVP地图背景音乐>3006</资源战PVP地图背景音乐>
+
+		<!-- ============关于军团资源战的时间设置（支持D:H:M:S）============ -->
+		<warTime>
+			<!-- 竞价宣传播报周期 （支持D:H:M:S） -->
+			<BidBroadcastPeroid>20M</BidBroadcastPeroid>
+			
+			<!-- 对战裁决扫描周期（支持D:H:M:S）1M -->
+			<WarScanStartDelay>3M</WarScanStartDelay>
+			<WarScanPeroid>5S</WarScanPeroid>
+			
+			<!-- 本周结果播报周期 （支持D:H:M:S） -->
+			<WarFinalResultBroadcastPeroid>15M</WarFinalResultBroadcastPeroid>
+			
+			<!-- 积分产出周期（支持D:H:M:S） -->
+			<AddScorePeroid>5S</AddScorePeroid>
+			<!-- 已方积分先超过10000：己方胜 -->
+			<WinScoreValue>10000</WinScoreValue>
+		
+			<!-- 活动报名时间为：周一0：00至周日00:00(距周一0点0分的毫秒数) -->
+			<bidStartTime>0D:0H:0M:0S</bidStartTime><!-- 结束休息，开始报名 -->
+			<bidEndTime>6D:0H:0M:0S</bidEndTime><!-- 结束报名，开始准备 -->
+			<!-- 开始和结束时间(距周一0点0分的毫秒数) -->
+			<warStartTime>6D:20H:0M:0S</warStartTime><!-- 开始对战 -->
+			<warEndTime>6D:20H:30M:0S</warEndTime><!-- 结束对战，开始休息 -->
+		</warTime>
+	</logicConfig>
+
+	<excelConfig>
+		<resWar>
+			<path>./res/gamedata/gangResWarModule/resWar.xls</path>
+			<HeaderIndex>5</HeaderIndex>
+		</resWar>
+	</excelConfig>
+</root>

@@ -1,0 +1,963 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration debug="false" scan="true" scanPeriod="20 seconds">
+	<!-- 等级及继承：ALL、TRACE、DEBUG、INFO、WARN、ERROR、OFF -->
+	
+	<!-- 在控制台打印出所有级别的日志 -->
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>INFO</level>
+		</filter>
+		<!-- encoders are assigned by default the type ch.qos.logback.classic.encoder.PatternLayoutEncoder -->
+		<encoder>
+			<pattern>%d{MMdd HH:mm:ss.SSS} [%thread] %-5level %logger{36}[%file:%line] - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<!-- 在控制台打印出所有ERROR级别以上日志（小于ERROE级别的日志不打印） -->
+	<appender name="STDOUT_ERROR" class="ch.qos.logback.core.ConsoleAppender">
+		<!-- encoders are assigned by default the type ch.qos.logback.classic.encoder.PatternLayoutEncoder -->
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>ERROR</level>
+		</filter>
+		<encoder>
+			<pattern>%d{MMdd HH:mm:ss.SSS} [%thread] %-5level %logger{36}[%file:%line] - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<!-- 在控制台打印出所有WARN级别以上日志（小于WARN级别的日志不打印） -->
+	<appender name="STDOUT_WARN" class="ch.qos.logback.core.ConsoleAppender">
+		<!-- encoders are assigned by default the type ch.qos.logback.classic.encoder.PatternLayoutEncoder -->
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>WARN</level>
+		</filter>
+		<encoder>
+			<pattern>%d{MMdd HH:mm:ss.SSS} [%thread] %-5level %logger{36}[%file:%line] - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<!-- 在控制台打印出所有DEBUG级别以上日志（小于DEBUG级别的日志不打印） -->
+	<appender name="STDOUT_DEBUG" class="ch.qos.logback.core.ConsoleAppender">
+		<!-- encoders are assigned by default the type ch.qos.logback.classic.encoder.PatternLayoutEncoder -->
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>DEBUG</level>
+		</filter>
+		<encoder>
+			<pattern>%d{MMdd HH:mm:ss.SSS} [%thread] %-5level %logger{36}[%file:%line] - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<!-- 保存日志的基本路径 -->
+	<property name="LOG_HOME" value="./-logdataLocal-" />
+	
+	<!-- 日志输出字符编码 -->
+	<property name="charset" value="UTF-8" />
+
+	<!-- 保存日志的周期及文件命名规则 yy:MM:dd HH:mm:ss.SSS -->
+	<property name="LOG_PERIOD_yyMMdd" value="yyMMdd" />
+	<!-- 保存日志的周期及文件命名规则 yy:MM:dd HH:mm:ss.SSS -->
+	<property name="LOG_PERIOD_yyMM" value="yyMM" />
+	<!-- 保存日志的周期数，即保留多少个周期的日志 -->
+	<property name="LOG_KEEP" value="48" />
+	<!-- 保存日志的单个周期内，按大小分文件，单位支持bytes,KB,MB,GB -->
+	<property name="LOG_KEEP_MAXSIZE" value="10MB" />
+	<!-- 保存日志的后缀名，.zip可以控制是否压缩 -->
+	<!-- 客户端的滚动日志，统一后缀名与服务器端不同，以免直接拷贝粘贴产生文件名称冲突 -->
+	<property name="LOG_ROLL_POSTFIX" value="log.zip" />
+	<!-- 客户端的当前日志，统一后缀名与服务器端不同，以免直接拷贝粘贴产生文件名称冲突 -->
+	<property name="LOG_POSTFIX" value="log" />
+
+	<!-- 只记录ERROR级别以上的日志，和"appender-file-other"搭配使用 -->
+	<appender name="appender-file-error"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${LOG_HOME}/gameError.${LOG_POSTFIX}</file>
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>ERROR</level>
+		</filter>
+		<!-- 滚动策略:基于时间的滚动策略（此策略既定义滚动方式，又同时定义滚动条件） -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOG_HOME}/gameError/gameError_%d{${LOG_PERIOD_yyMMdd}}_%i.${LOG_ROLL_POSTFIX}
+			</fileNamePattern>
+			<!-- 滚动条件:按文件大小 -->
+			<timeBasedFileNamingAndTriggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<!-- 文件的大小设置，单位支持bytes,KB,MB,GB -->
+				<maxFileSize>${LOG_KEEP_MAXSIZE}</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+			<maxHistory>${LOG_KEEP}</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<!-- 日志输出编码 -->  
+			<charset>${charset}</charset>
+			<ImmediateFlush>true</ImmediateFlush>
+			<pattern>%d{MMdd HH:mm:ss.SSS} [%thread] %-5level %logger{36}[%file:%line] - %msg%n</pattern>
+		</encoder>
+	</appender>
+	
+	<!-- 只记录非ERROR级别以上的日志，和"appender-file-error"搭配使用-->
+	<appender name="appender-file-other" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${LOG_HOME}/other.${LOG_POSTFIX}</file>
+		<filter class="ch.qos.logback.classic.filter.LevelFilter"> 
+  			<level>ERROR</level> 
+  			<onMatch>ACCEPT</onMatch> 
+  			<onMismatch>DENY</onMismatch> 
+		</filter> 
+		<!-- 滚动策略:基于时间的滚动策略（此策略既定义滚动方式，又同时定义滚动条件） -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOG_HOME}/other/other_%d{${LOG_PERIOD_yyMMdd}}_%i.${LOG_ROLL_POSTFIX}
+			</fileNamePattern>
+			<!-- 滚动条件:按文件大小 -->
+			<timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<!-- 文件的大小设置，单位支持bytes,KB,MB,GB -->
+				<maxFileSize>${LOG_KEEP_MAXSIZE}</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+			<maxHistory>${LOG_KEEP}</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<!-- 日志输出编码 -->  
+			<charset>${charset}</charset>
+			<ImmediateFlush>false</ImmediateFlush>
+			<pattern>%d{MMdd HH:mm:ss.SSS} [%thread] %-5level %logger{36}[%file:%line] - %msg%n</pattern>
+		</encoder>
+	</appender>	
+
+	<!-- 记录所有级别的日志-->
+	<appender name="appender-file-platform"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${LOG_HOME}/platform.${LOG_POSTFIX}</file>
+		<!-- 滚动策略:基于时间的滚动策略（此策略既定义滚动方式，又同时定义滚动条件） -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOG_HOME}/platform/platform_%d{${LOG_PERIOD_yyMMdd}}_%i.${LOG_ROLL_POSTFIX}
+			</fileNamePattern>
+			<!-- 滚动条件:按文件大小 -->
+			<timeBasedFileNamingAndTriggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<!-- 文件的大小设置，单位支持bytes,KB,MB,GB -->
+				<maxFileSize>${LOG_KEEP_MAXSIZE}</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+			<maxHistory>${LOG_KEEP}</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<!-- 日志输出编码 -->  
+			<charset>${charset}</charset>
+			<ImmediateFlush>false</ImmediateFlush>
+			<pattern>%d{MMdd HH:mm:ss.SSS} [%thread] %-5level %logger{36}[%file:%line] - %msg%n</pattern>
+		</encoder>
+	</appender>
+	
+	<!-- 记录所有级别的日志-->
+	<appender name="appender-file-kmpEngine"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${LOG_HOME}/kmpEngine.${LOG_POSTFIX}</file>
+		<!-- 滚动策略:基于时间的滚动策略（此策略既定义滚动方式，又同时定义滚动条件） -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOG_HOME}/kmpEngine/kmpEngine_%d{${LOG_PERIOD_yyMMdd}}_%i.${LOG_ROLL_POSTFIX}
+			</fileNamePattern>
+			<!-- 滚动条件:按文件大小 -->
+			<timeBasedFileNamingAndTriggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<!-- 文件的大小设置，单位支持bytes,KB,MB,GB -->
+				<maxFileSize>${LOG_KEEP_MAXSIZE}</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+			<maxHistory>${LOG_KEEP}</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<!-- 日志输出编码 -->  
+			<charset>${charset}</charset>
+			<ImmediateFlush>false</ImmediateFlush>
+			<pattern>%d{MMdd HH:mm:ss.SSS} [%thread] %-5level %logger{36}[%file:%line] - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<!-- 记录所有级别的日志-->
+	<appender name="appender-file-kmpLogic"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${LOG_HOME}/kmpLogic.${LOG_POSTFIX}</file>
+		<!-- 滚动策略:基于时间的滚动策略（此策略既定义滚动方式，又同时定义滚动条件） -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOG_HOME}/kmpLogic/kmpLogic_%d{${LOG_PERIOD_yyMMdd}}_%i.${LOG_ROLL_POSTFIX}
+			</fileNamePattern>
+			<!-- 滚动条件:按文件大小 -->
+			<timeBasedFileNamingAndTriggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<!-- 文件的大小设置，单位支持bytes,KB,MB,GB -->
+				<maxFileSize>${LOG_KEEP_MAXSIZE}</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+			<maxHistory>${LOG_KEEP}</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<!-- 日志输出编码 -->  
+			<charset>${charset}</charset>
+			<ImmediateFlush>false</ImmediateFlush>
+			<pattern>%d{MMdd HH:mm:ss.SSS} [%thread] %-5level %logger{36}[%file:%line] - %msg%n</pattern>
+		</encoder>
+	</appender>
+	
+	<!-- 记录所有级别的日志-->
+	<appender name="appender-file-db"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${LOG_HOME}/db.${LOG_POSTFIX}</file>
+		<!-- 滚动策略:基于时间的滚动策略（此策略既定义滚动方式，又同时定义滚动条件） -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOG_HOME}/db/db_%d{${LOG_PERIOD_yyMMdd}}_%i.${LOG_ROLL_POSTFIX}
+			</fileNamePattern>
+			<!-- 滚动条件:按文件大小 -->
+			<timeBasedFileNamingAndTriggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<!-- 文件的大小设置，单位支持bytes,KB,MB,GB -->
+				<maxFileSize>${LOG_KEEP_MAXSIZE}</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+			<maxHistory>${LOG_KEEP}</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<!-- 日志输出编码 -->  
+			<charset>${charset}</charset>
+			<ImmediateFlush>true</ImmediateFlush>
+			<pattern>%d{MMdd HH:mm:ss.SSS} [%thread] %-5level %logger{36}[%file:%line] - %msg%n</pattern>
+		</encoder>
+	</appender>
+	
+	<!-- 记录所有级别的日志-->
+	<appender name="appender-file-cache" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${LOG_HOME}/cache.${LOG_POSTFIX}</file>
+		<!-- 滚动策略:基于时间的滚动策略（此策略既定义滚动方式，又同时定义滚动条件） -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOG_HOME}/cache_%d{${LOG_PERIOD_yyMMdd}}_%i.${LOG_ROLL_POSTFIX}
+			</fileNamePattern>
+			<!-- 滚动条件:按文件大小 -->
+			<timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<!-- 文件的大小设置，单位支持bytes,KB,MB,GB -->
+				<maxFileSize>${LOG_KEEP_MAXSIZE}</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+			<maxHistory>${LOG_KEEP}</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<!-- 日志输出编码 -->  
+			<charset>${charset}</charset>
+			<ImmediateFlush>true</ImmediateFlush>
+			<pattern>%d{MMdd HH:mm:ss.SSS} [%thread] %-5level %logger{36}[%file:%line] - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<!-- 记录所有级别的日志-->
+	<appender name="appender-file-memRecord"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${LOG_HOME}/memRecord.${LOG_POSTFIX}</file>
+		<!-- 滚动策略:基于时间的滚动策略（此策略既定义滚动方式，又同时定义滚动条件） -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOG_HOME}/memRecord/memRecord_%d{${LOG_PERIOD_yyMMdd}}_%i.${LOG_ROLL_POSTFIX}
+			</fileNamePattern>
+			<!-- 滚动条件:按文件大小 -->
+			<timeBasedFileNamingAndTriggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<!-- 文件的大小设置，单位支持bytes,KB,MB,GB -->
+				<maxFileSize>${LOG_KEEP_MAXSIZE}</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+			<maxHistory>${LOG_KEEP}</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<!-- 日志输出编码 -->  
+			<charset>${charset}</charset>
+			<ImmediateFlush>true</ImmediateFlush>
+			<pattern>%d{MMdd HH:mm:ss.SSS} [%thread] %-5level %logger{36}[%file:%line] - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<!-- 记录所有级别的日志-->
+	<appender name="appender-file-bugRecord"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${LOG_HOME}/bugRecord.${LOG_POSTFIX}</file>
+		<!-- 滚动策略:基于时间的滚动策略（此策略既定义滚动方式，又同时定义滚动条件） -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOG_HOME}/bugRecord/bugRecord_%d{${LOG_PERIOD_yyMMdd}}_%i.${LOG_ROLL_POSTFIX}
+			</fileNamePattern>
+			<!-- 滚动条件:按文件大小 -->
+			<timeBasedFileNamingAndTriggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<!-- 文件的大小设置，单位支持bytes,KB,MB,GB -->
+				<maxFileSize>${LOG_KEEP_MAXSIZE}</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+			<maxHistory>${LOG_KEEP}</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<!-- 日志输出编码 -->  
+			<charset>${charset}</charset>
+			<ImmediateFlush>true</ImmediateFlush>
+			<pattern>%d{MMdd HH:mm:ss.SSS} %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<!-- 记录所有级别的日志-->
+	<appender name="appender-file-dynamicReward"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${LOG_HOME}/dynamicReward.${LOG_POSTFIX}</file>
+		<!-- 滚动策略:基于时间的滚动策略（此策略既定义滚动方式，又同时定义滚动条件） -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOG_HOME}/dynamicReward/dynamicReward_%d{${LOG_PERIOD_yyMMdd}}_%i.${LOG_ROLL_POSTFIX}
+			</fileNamePattern>
+			<!-- 滚动条件:按文件大小 -->
+			<timeBasedFileNamingAndTriggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<!-- 文件的大小设置，单位支持bytes,KB,MB,GB -->
+				<maxFileSize>${LOG_KEEP_MAXSIZE}</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+			<maxHistory>${LOG_KEEP}</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<!-- 日志输出编码 -->  
+			<charset>${charset}</charset>
+			<ImmediateFlush>true</ImmediateFlush>
+			<pattern>%d{MMdd HH:mm:ss.SSS} [%thread] %-5level %logger{36}[%file:%line] - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<!-- 记录所有级别的日志-->
+	<appender name="appender-file-roleAction"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${LOG_HOME}/roleAction.${LOG_POSTFIX}</file>
+		<!-- 滚动策略:基于时间的滚动策略（此策略既定义滚动方式，又同时定义滚动条件） -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOG_HOME}/roleAction/roleAction_%d{${LOG_PERIOD_yyMMdd}}_%i.${LOG_ROLL_POSTFIX}
+			</fileNamePattern>
+			<!-- 滚动条件:按文件大小 -->
+			<timeBasedFileNamingAndTriggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<!-- 文件的大小设置，单位支持bytes,KB,MB,GB -->
+				<maxFileSize>${LOG_KEEP_MAXSIZE}</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+			<maxHistory>${LOG_KEEP}</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<!-- 日志输出编码 -->  
+			<charset>${charset}</charset>
+			<ImmediateFlush>true</ImmediateFlush>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS},%msg%n</pattern>
+		</encoder>
+	</appender>
+	
+	<!-- 记录所有级别的日志-->
+	<appender name="appender-file-roleMail"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${LOG_HOME}/roleMail.${LOG_POSTFIX}</file>
+		<!-- 滚动策略:基于时间的滚动策略（此策略既定义滚动方式，又同时定义滚动条件） -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOG_HOME}/roleMail/roleMail_%d{${LOG_PERIOD_yyMMdd}}_%i.${LOG_ROLL_POSTFIX}
+			</fileNamePattern>
+			<!-- 滚动条件:按文件大小 -->
+			<timeBasedFileNamingAndTriggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<!-- 文件的大小设置，单位支持bytes,KB,MB,GB -->
+				<maxFileSize>${LOG_KEEP_MAXSIZE}</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+			<maxHistory>${LOG_KEEP}</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<!-- 日志输出编码 -->  
+			<charset>${charset}</charset>
+			<ImmediateFlush>true</ImmediateFlush>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS},%msg%n</pattern>
+		</encoder>
+	</appender>
+	
+	<!-- 记录所有级别的日志-->
+	<appender name="appender-file-chargeRecord"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${LOG_HOME}/chargeRecord.${LOG_POSTFIX}</file>
+		<!-- 滚动策略:基于时间的滚动策略（此策略既定义滚动方式，又同时定义滚动条件） -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOG_HOME}/chargeRecord/chargeRecord_%d{${LOG_PERIOD_yyMMdd}}_%i.${LOG_ROLL_POSTFIX}
+			</fileNamePattern>
+			<!-- 滚动条件:按文件大小 -->
+			<timeBasedFileNamingAndTriggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<!-- 文件的大小设置，单位支持bytes,KB,MB,GB -->
+				<maxFileSize>${LOG_KEEP_MAXSIZE}</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+			<maxHistory>${LOG_KEEP}</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<!-- 日志输出编码 -->  
+			<charset>${charset}</charset>
+			<ImmediateFlush>true</ImmediateFlush>
+			<pattern>%d{MMdd HH:mm:ss.SSS} [%thread] %-5level %logger{36}[%file:%line] - %msg%n</pattern>
+		</encoder>
+	</appender>
+	
+	<!-- 记录所有级别的日志-->
+	<appender name="appender-file-combat"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${LOG_HOME}/combatLogger.${LOG_POSTFIX}</file>
+		<!-- 滚动策略:基于时间的滚动策略（此策略既定义滚动方式，又同时定义滚动条件） -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOG_HOME}/combatLog/combatLogger_%d{${LOG_PERIOD_yyMMdd}}_%i.${LOG_ROLL_POSTFIX}
+			</fileNamePattern>
+			<!-- 滚动条件:按文件大小 -->
+			<timeBasedFileNamingAndTriggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<!-- 文件的大小设置，单位支持bytes,KB,MB,GB -->
+				<maxFileSize>100MB</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+			<maxHistory>${LOG_KEEP}</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<!-- 日志输出编码 -->  
+			<charset>${charset}</charset>
+			<ImmediateFlush>true</ImmediateFlush>
+			<pattern>%d{MMdd HH:mm:ss.SSS} %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<!-- 记录所有级别的日志-->
+	<appender name="appender-file-currency"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${LOG_HOME}/currency.${LOG_POSTFIX}</file>
+		<!-- 滚动策略:基于时间的滚动策略（此策略既定义滚动方式，又同时定义滚动条件） -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOG_HOME}/currency/currency_%d{${LOG_PERIOD_yyMMdd}}_%i.${LOG_ROLL_POSTFIX}
+			</fileNamePattern>
+			<!-- 滚动条件:按文件大小 -->
+			<timeBasedFileNamingAndTriggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<!-- 文件的大小设置，单位支持bytes,KB,MB,GB -->
+				<maxFileSize>${LOG_KEEP_MAXSIZE}</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+			<maxHistory>${LOG_KEEP}</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<!-- 日志输出编码 -->  
+			<charset>${charset}</charset>
+			<ImmediateFlush>true</ImmediateFlush>
+			<pattern>%d{MMdd HH:mm:ss.SSS} %msg%n</pattern>
+		</encoder>
+	</appender>
+	
+	<!-- 记录所有级别的日志-->
+	<appender name="appender-file-activity"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${LOG_HOME}/activity.${LOG_POSTFIX}</file>
+		<!-- 滚动策略:基于时间的滚动策略（此策略既定义滚动方式，又同时定义滚动条件） -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOG_HOME}/activityLogger/activity_%d{${LOG_PERIOD_yyMMdd}}_%i.${LOG_ROLL_POSTFIX}
+			</fileNamePattern>
+			<!-- 滚动条件:按文件大小 -->
+			<timeBasedFileNamingAndTriggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<!-- 文件的大小设置，单位支持bytes,KB,MB,GB -->
+				<maxFileSize>${LOG_KEEP_MAXSIZE}</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+			<maxHistory>${LOG_KEEP}</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<!-- 日志输出编码 -->  
+			<charset>${charset}</charset>
+			<ImmediateFlush>true</ImmediateFlush>
+			<pattern>%d{MMdd HH:mm:ss.SSS} %msg%n</pattern>
+		</encoder>
+	</appender>
+	
+	<!-- 记录所有级别的日志-->
+	<appender name="appender-file-gangWar"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${LOG_HOME}/gangWar.${LOG_POSTFIX}</file>
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>WARN</level>
+		</filter>
+		<!-- 滚动策略:基于时间的滚动策略（此策略既定义滚动方式，又同时定义滚动条件） -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!-- fileNamePattern>${LOG_HOME}/gangWar/gangWar_%d{${LOG_PERIOD_yyMMdd}}_%i.${LOG_ROLL_POSTFIX}
+			</fileNamePattern> -->
+			<fileNamePattern>${LOG_HOME}/gangWar/gangWar_%d{${LOG_PERIOD_yyMM}}_%i.${LOG_ROLL_POSTFIX}
+			</fileNamePattern>
+			<!-- 滚动条件:按文件大小 -->
+			<timeBasedFileNamingAndTriggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<!-- 文件的大小设置，单位支持bytes,KB,MB,GB -->
+				<maxFileSize>${LOG_KEEP_MAXSIZE}</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+			<maxHistory>${LOG_KEEP}</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<!-- 日志输出编码 -->  
+			<charset>${charset}</charset>
+			<ImmediateFlush>true</ImmediateFlush>
+			<pattern>%d{MMdd HH:mm:ss.SSS} [%thread] %-5level %logger{36}[%file:%line] - %msg%n</pattern>
+		</encoder>
+	</appender>
+	
+	<!-- 记录所有级别的日志-->
+	<appender name="appender-file-gangResWar"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${LOG_HOME}/gangResWar.${LOG_POSTFIX}</file>
+		<!-- 滚动策略:基于时间的滚动策略（此策略既定义滚动方式，又同时定义滚动条件） -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOG_HOME}/gangResWar/gangResWar_%d{${LOG_PERIOD_yyMM}}_%i.${LOG_ROLL_POSTFIX}
+			</fileNamePattern>
+			<!-- 滚动条件:按文件大小 -->
+			<timeBasedFileNamingAndTriggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<!-- 文件的大小设置，单位支持bytes,KB,MB,GB -->
+				<maxFileSize>${LOG_KEEP_MAXSIZE}</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+			<maxHistory>${LOG_KEEP}</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<!-- 日志输出编码 -->  
+			<charset>${charset}</charset>
+			<ImmediateFlush>true</ImmediateFlush>
+			<pattern>%d{MMdd HH:mm:ss.SSS} [%thread] %-5level %logger{36}[%file:%line] - %msg%n</pattern>
+		</encoder>
+	</appender>
+	
+	<!-- 记录所有级别的日志-->
+	<appender name="appender-file-oldServerRecord"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${LOG_HOME}/oldServerRecord.${LOG_POSTFIX}</file>
+		<!-- 滚动策略:基于时间的滚动策略（此策略既定义滚动方式，又同时定义滚动条件） -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOG_HOME}/oldServerRecord/oldServerRecord_%d{${LOG_PERIOD_yyMMdd}}_%i.${LOG_ROLL_POSTFIX}
+			</fileNamePattern>
+			<!-- 滚动条件:按文件大小 -->
+			<timeBasedFileNamingAndTriggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<!-- 文件的大小设置，单位支持bytes,KB,MB,GB -->
+				<maxFileSize>${LOG_KEEP_MAXSIZE}</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+			<maxHistory>${LOG_KEEP}</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<!-- 日志输出编码 -->  
+			<charset>${charset}</charset>
+			<ImmediateFlush>true</ImmediateFlush>
+			<pattern>%d{MMdd HH:mm:ss.SSS} - %msg%n</pattern>
+		</encoder>
+	</appender>
+	
+	<!-- 记录所有级别的日志-->
+	<appender name="appender-file-redress"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${LOG_HOME}/redress.${LOG_POSTFIX}</file>
+		<!-- 滚动策略:基于时间的滚动策略（此策略既定义滚动方式，又同时定义滚动条件） -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOG_HOME}/redressLogger/redress_%d{${LOG_PERIOD_yyMMdd}}_%i.${LOG_ROLL_POSTFIX}
+			</fileNamePattern>
+			<!-- 滚动条件:按文件大小 -->
+			<timeBasedFileNamingAndTriggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<!-- 文件的大小设置，单位支持bytes,KB,MB,GB -->
+				<maxFileSize>${LOG_KEEP_MAXSIZE}</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+			<maxHistory>${LOG_KEEP}</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<!-- 日志输出编码 -->  
+			<charset>${charset}</charset>
+			<ImmediateFlush>true</ImmediateFlush>
+			<pattern>%d{MMdd HH:mm:ss.SSS} - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<!-- 记录所有级别的日志-->
+	<appender name="appender-file-peopleGuess"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${LOG_HOME}/peopleGuess.${LOG_POSTFIX}</file>
+		<!-- 滚动策略:基于时间的滚动策略（此策略既定义滚动方式，又同时定义滚动条件） -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOG_HOME}/peopleGuessLogger/peopleGuess_%d{${LOG_PERIOD_yyMMdd}}_%i.${LOG_ROLL_POSTFIX}
+			</fileNamePattern>
+			<!-- 滚动条件:按文件大小 -->
+			<timeBasedFileNamingAndTriggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<!-- 文件的大小设置，单位支持bytes,KB,MB,GB -->
+				<maxFileSize>${LOG_KEEP_MAXSIZE}</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+			<maxHistory>${LOG_KEEP}</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<!-- 日志输出编码 -->  
+			<charset>${charset}</charset>
+			<ImmediateFlush>true</ImmediateFlush>
+			<pattern>%d{MMdd HH:mm:ss.SSS} - %msg%n</pattern>
+		</encoder>
+	</appender>
+	
+	<!-- 许愿记录所有级别的日志-->
+	<appender name="appender-file-wishLogger"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${LOG_HOME}/wishLogger.${LOG_POSTFIX}</file>
+		<!-- 滚动策略:基于时间的滚动策略（此策略既定义滚动方式，又同时定义滚动条件） -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOG_HOME}/wishLogger/wishLogger_%d{${LOG_PERIOD_yyMMdd}}_%i.${LOG_ROLL_POSTFIX}
+			</fileNamePattern>
+			<!-- 滚动条件:按文件大小 -->
+			<timeBasedFileNamingAndTriggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<!-- 文件的大小设置，单位支持bytes,KB,MB,GB -->
+				<maxFileSize>${LOG_KEEP_MAXSIZE}</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+			<maxHistory>${LOG_KEEP}</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<!-- 日志输出编码 -->  
+			<charset>${charset}</charset>
+			<ImmediateFlush>true</ImmediateFlush>
+			<pattern>%d{MMdd HH:mm:ss.SSS} - %msg%n</pattern>
+		</encoder>
+	</appender>
+	
+	<!-- 记录所有级别的日志-->
+	<appender name="appender-file-pressLog"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${LOG_HOME}/pressLog.${LOG_POSTFIX}</file>
+		<!-- 滚动策略:基于时间的滚动策略（此策略既定义滚动方式，又同时定义滚动条件） -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOG_HOME}/pressLogger/pressLog_%d{${LOG_PERIOD_yyMMdd}}_%i.${LOG_ROLL_POSTFIX}
+			</fileNamePattern>
+			<!-- 滚动条件:按文件大小 -->
+			<timeBasedFileNamingAndTriggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<!-- 文件的大小设置，单位支持bytes,KB,MB,GB -->
+				<maxFileSize>${LOG_KEEP_MAXSIZE}</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+			<maxHistory>${LOG_KEEP}</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<!-- 日志输出编码 -->  
+			<charset>${charset}</charset>
+			<ImmediateFlush>true</ImmediateFlush>
+			<pattern>%d{MMdd HH:mm:ss.SSS} - %msg%n</pattern>
+		</encoder>
+	</appender>
+	
+	<!-- 记录所有级别的日志-->
+	<appender name="appender-file-propertyFlow"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${LOG_HOME}/propertyFlow.${LOG_POSTFIX}</file>
+		<!-- 滚动策略:基于时间的滚动策略（此策略既定义滚动方式，又同时定义滚动条件） -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOG_HOME}/propertyFlow/propertyFlow_${region_id}_%d{${LOG_PERIOD_yyMMdd}}_%i.${LOG_ROLL_POSTFIX}
+			</fileNamePattern>
+			<!-- 滚动条件:按文件大小 -->
+			<timeBasedFileNamingAndTriggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<!-- 文件的大小设置，单位支持bytes,KB,MB,GB -->
+				<maxFileSize>${LOG_KEEP_MAXSIZE}</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+			<maxHistory>${LOG_KEEP}</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<!-- 日志输出编码 -->  
+			<charset>${charset}</charset>
+			<ImmediateFlush>true</ImmediateFlush>
+			<pattern>%d{yyMMdd HH:mm:ss.SSS} %msg%n</pattern>
+		</encoder>
+	</appender>
+	
+	<!-- 记录所有级别的日志-->
+	<appender name="appender-file-pingLogger"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${LOG_HOME}/pingRecord.${LOG_POSTFIX}</file>
+		<!-- 滚动策略:基于时间的滚动策略（此策略既定义滚动方式，又同时定义滚动条件） -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOG_HOME}/pingRecord/pingRecord_%d{${LOG_PERIOD_yyMMdd}}_%i.${LOG_ROLL_POSTFIX}
+			</fileNamePattern>
+			<!-- 滚动条件:按文件大小 -->
+			<timeBasedFileNamingAndTriggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<!-- 文件的大小设置，单位支持bytes,KB,MB,GB -->
+				<maxFileSize>${LOG_KEEP_MAXSIZE}</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+			<maxHistory>${LOG_KEEP}</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<!-- 日志输出编码 -->  
+			<charset>${charset}</charset>
+			<ImmediateFlush>true</ImmediateFlush>
+			<pattern>%d{yyMMdd HH:mm:ss.SSS} %msg%n</pattern>
+		</encoder>
+	</appender>
+	
+	<!-- 记录所有级别的日志-->
+	<appender name="appender-file-combatPool"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${LOG_HOME}/combatPoolRecord.${LOG_POSTFIX}</file>
+		<!-- 滚动策略:基于时间的滚动策略（此策略既定义滚动方式，又同时定义滚动条件） -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOG_HOME}/combatPoolRecord/combatPoolRecord_%d{${LOG_PERIOD_yyMMdd}}_%i.${LOG_ROLL_POSTFIX}
+			</fileNamePattern>
+			<!-- 滚动条件:按文件大小 -->
+			<timeBasedFileNamingAndTriggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<!-- 文件的大小设置，单位支持bytes,KB,MB,GB -->
+				<maxFileSize>${LOG_KEEP_MAXSIZE}</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+			<maxHistory>${LOG_KEEP}</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<!-- 日志输出编码 -->  
+			<charset>${charset}</charset>
+			<ImmediateFlush>true</ImmediateFlush>
+			<pattern>%d{yyMMdd HH:mm:ss.SSS} %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<!-- 记录开启固定宝箱日志日志-->
+	<appender name="appender-file-openFixedBox"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${LOG_HOME}/openFixedBox.${LOG_POSTFIX}</file>
+		<!-- 滚动策略:基于时间的滚动策略（此策略既定义滚动方式，又同时定义滚动条件） -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOG_HOME}/openFixedBox/openFixedBox_%d{${LOG_PERIOD_yyMMdd}}_%i.${LOG_ROLL_POSTFIX}
+			</fileNamePattern>
+			<!-- 滚动条件:按文件大小 -->
+			<timeBasedFileNamingAndTriggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<!-- 文件的大小设置，单位支持bytes,KB,MB,GB -->
+				<maxFileSize>${LOG_KEEP_MAXSIZE}</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+			<maxHistory>${LOG_KEEP}</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<!-- 日志输出编码 -->  
+			<charset>${charset}</charset>
+			<ImmediateFlush>true</ImmediateFlush>
+			<pattern>%d{yyMMdd HH:mm:ss.SSS} %msg%n</pattern>
+		</encoder>
+	</appender>
+	
+	<!-- 记录激活码使用日志-->
+	<appender name="appender-file-activateCode"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${LOG_HOME}/activateCode.${LOG_POSTFIX}</file>
+		<!-- 滚动策略:基于时间的滚动策略（此策略既定义滚动方式，又同时定义滚动条件） -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOG_HOME}/activateCode/activateCode_%d{${LOG_PERIOD_yyMMdd}}_%i.${LOG_ROLL_POSTFIX}
+			</fileNamePattern>
+			<!-- 滚动条件:按文件大小 -->
+			<timeBasedFileNamingAndTriggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<!-- 文件的大小设置，单位支持bytes,KB,MB,GB -->
+				<maxFileSize>${LOG_KEEP_MAXSIZE}</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+			<maxHistory>${LOG_KEEP}</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<!-- 日志输出编码 -->  
+			<charset>${charset}</charset>
+			<ImmediateFlush>true</ImmediateFlush>
+			<pattern>%d{yyMMdd HH:mm:ss.SSS} %msg%n</pattern>
+		</encoder>
+	</appender>
+	
+	
+	<!-- 未被拦截的日志将从root输出 -->
+	<root level="ALL">
+		<!-- DEBUG以上输出到控制台 -->
+		<!-- 同时，ERROR日志输出到"appender-file-error"-->
+		<!-- 同时，非ERROR输出到"appender-file-other" -->		
+		<appender-ref ref="STDOUT_WARN" />
+		<appender-ref ref="appender-file-error" />
+		<appender-ref ref="appender-file-other" />
+	</root>
+	
+	<!-- 拦截平台层所有级别的日志 -->
+	<logger name="com.koala.game" level="ALL" additivity="false">
+		<!-- DEBUG以上输出到控制台" -->
+		<!-- 同时，ERROR日志输出到"appender-file-error" -->
+		<!-- 同时，全部级别输出到"appender-file-platform -->
+		<appender-ref ref="STDOUT_DEBUG" />
+		<!-- <appender-ref ref="STDOUT" />-->
+		<appender-ref ref="appender-file-error" />
+		<appender-ref ref="appender-file-platform" />
+	</logger>
+	
+	<!-- 拦截KMP引擎层所有级别的日志 -->
+	<logger name="com.kola.kgame" level="ALL" additivity="false">
+		<!-- DEBUG以上输出到控制台" -->
+		<!-- 同时，ERROR日志输出到"appender-file-error" -->
+		<!-- 同时，全部级别输出到"appender-file-kmpEngime" -->
+		<!-- <appender-ref ref="STDOUT_DEBUG" /> -->
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="appender-file-error" />
+		<appender-ref ref="appender-file-kmpEngine" />
+	</logger>
+	
+	<!-- 拦截KMP逻辑层所有级别的日志 -->
+	<logger name="com.kola.kmp.logic" level="ALL" additivity="false">
+		<!-- DEBUG以上输出到控制台" -->
+		<!-- 同时，ERROR日志输出到"appender-file-error" -->
+		<!-- 同时，全部级别输出到"appender-file-kmpLogic" -->
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="appender-file-error" />
+		<appender-ref ref="appender-file-kmpLogic" />
+	</logger>
+	
+	<!-- 专用于记录DB保存统计 -->
+	<logger name="com.kola.kgame.db" level="ALL" additivity="false">
+	    <appender-ref ref="STDOUT_WARN" />
+		<appender-ref ref="appender-file-db" />
+	</logger>
+	
+	<!-- 专用于记录缓存日志 -->
+	<!--<logger name="cacheLogger" level="ALL" additivity="false">
+		<appender-ref ref="appender-file-cache" />
+	</logger>-->
+	
+	<!-- 专用于记录内存、在线人数 -->
+	<logger name="memRecord" level="ALL" additivity="false">
+		<!-- 所有级别输出到控制台" -->
+		<!-- 同时，全部级别输出到"appender-file-memRecord" -->
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="appender-file-memRecord" />
+	</logger>
+	
+	<!-- 专用于记录玩家提交的BUG -->
+	<logger name="bugRecord" level="ALL" additivity="false">
+		<!-- 所有级别输出到控制台" -->
+		<!-- 同时，全部级别输出到"appender-file-bugRecord" -->
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="appender-file-bugRecord" />
+	</logger>
+	
+	<!-- 专用于记录动态奖励 -->
+	<logger name="dynamicReward" level="ALL" additivity="false">
+		<!-- 所有级别输出到控制台" -->
+		<!-- 同时，全部级别输出到"appender-file-dynamicReward" -->
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="appender-file-dynamicReward" />
+	</logger>
+	
+	<!-- 专用于记录玩家行为 -->
+	<logger name="roleAction" level="ALL" additivity="false">
+		<!-- 全部级别输出到"appender-file-roleAction" -->
+		<appender-ref ref="appender-file-roleAction" />
+	</logger>
+	
+	<!-- 专用于记录玩家邮件往来 -->
+	<logger name="roleMail" level="ALL" additivity="false">
+		<!-- 全部级别输出到"appender-file-roleMail" -->
+		<appender-ref ref="appender-file-roleMail" />
+	</logger>
+	
+	<!-- 专用于记录充值 -->
+	<logger name="chargeRecord" level="ALL" additivity="false">
+		<!-- 全部级别输出到"appender-file-chargeRecord" -->
+		<appender-ref ref="appender-file-chargeRecord" />
+		<appender-ref ref="STDOUT" />
+	</logger>
+	
+	<!-- 专用于记录战斗数据 -->
+	<logger name="combatLogger" level="INFO" additivity="false">
+		<appender-ref ref="appender-file-combat" />
+	</logger>
+	
+	<!-- 专用于记录宠物日志 -->
+	<!--  <logger name="petLogger" level="ALL" additivity="false">
+		<appender-ref ref="appender-file-pet" />
+	</logger> -->
+	
+	<!-- 专用于记录货币日志 -->
+	<logger name="currency" level="ALL" additivity="false">
+		<!-- 全部级别输出到"appender-file-currency" -->
+		<appender-ref ref="appender-file-currency" />
+	</logger>
+	
+	<!-- 专用于记录活动的一些数据 -->
+	<logger name="activityLogger" level="ALL" additivity="false">
+		<appender-ref ref="appender-file-activity" />
+	</logger>
+	
+	<!-- 专用于记录军团战日志 -->
+	<logger name="gangWar" level="ALL" additivity="false">
+		<!-- 全部级别输出到控制台" -->
+		<!-- 同时，ERROR日志输出到"appender-file-error" -->
+		<!-- 同时，全部级别输出到"appender-file-gangWar" -->
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="appender-file-error" />
+		<appender-ref ref="appender-file-gangWar" />
+	</logger>
+	
+	<!-- 专用于记录军团资源战日志 -->
+	<logger name="gangResWar" level="ALL" additivity="false">
+		<!-- 全部级别输出到控制台" -->
+		<!-- 同时，ERROR日志输出到"appender-file-error" -->
+		<!-- 同时，全部级别输出到"appender-file-gangResWar" -->
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="appender-file-error" />
+		<appender-ref ref="appender-file-gangResWar" />
+	</logger>
+	
+	<!-- 老服务器数据记录日志 -->
+	<!--<logger name="oldServerRecord" level="ALL" additivity="false">
+		<appender-ref ref="STDOUT_WARN" />
+		<appender-ref ref="appender-file-error" />
+		<appender-ref ref="appender-file-oldServerRecord" />
+	</logger>-->
+	
+	<!-- 改版数据记录日志 -->
+	<logger name="redress" level="ALL" additivity="false">
+		<appender-ref ref="STDOUT_WARN" />
+		<appender-ref ref="appender-file-error" />
+		<appender-ref ref="appender-file-redress" />
+	</logger>
+	
+	<!-- 天赋流水记录 -->
+	<!--  <logger name="talentLogger" level="ALL" additivity="false">
+		<appender-ref ref="appender-file-error" />
+		<appender-ref ref="appender-file-talentLogger" />
+	</logger> -->
+	
+	<!-- 全民竞猜数据记录日志 -->
+	<logger name="peopleGuessLogger" level="ALL" additivity="false">
+		<appender-ref ref="appender-file-error" />
+		<appender-ref ref="appender-file-peopleGuess" />
+	</logger>
+	
+	<!-- 全民竞猜数据记录日志 -->
+	<logger name="wishLogger" level="ALL" additivity="false">
+		<appender-ref ref="STDOUT_WARN" />
+		<appender-ref ref="appender-file-error" />
+		<appender-ref ref="appender-file-wishLogger" />
+	</logger>
+	
+	<!-- 压力测试 -->
+	<!--  <logger name="pressLogger" level="ALL" additivity="false">
+		<appender-ref ref="STDOUT_WARN" />
+		<appender-ref ref="appender-file-error" />
+		<appender-ref ref="appender-file-pressLog" />
+	</logger> -->
+	
+	<!-- 财产流水 -->
+	<logger name="propertyFlow" level="ALL" additivity="false">
+		<appender-ref ref="appender-file-propertyFlow" />
+	</logger>
+	
+	<!-- ping记录 -->
+	<logger name="pingLogger" level="ALL" additivity="false">
+		<appender-ref ref="appender-file-pingLogger" />
+	</logger>
+	
+	<!-- 战场对象池记录 -->
+	<logger name="combatPoolLogger" level="ALL" additivity="false">
+		<appender-ref ref="appender-file-combatPool" />
+	</logger>
+	
+	<!-- 开启固定宝箱日志 -->
+	<logger name="openFixedBoxLogger" level="ALL" additivity="false">
+		<appender-ref ref="appender-file-openFixedBox" />
+		<appender-ref ref="STDOUT_WARN" />
+		<appender-ref ref="appender-file-error" />
+	</logger>
+	
+	<!-- 激活码使用 -->
+	<logger name="activateCodeLogger" level="ALL" additivity="false">
+		<appender-ref ref="appender-file-activateCode" />
+		<appender-ref ref="STDOUT_WARN" />
+		<appender-ref ref="appender-file-error" />
+	</logger>	
+	
+	<!-- 包含昆仑的日志规范文件 -->
+	<!--<include file="./res/config/logger/logback_kunlun.xml" />-->
+
+</configuration>
+
+<!-- 加VM启动参数 -->
+<!-- -Dlogback.configurationFile=res/config/logger/logback.xml -->

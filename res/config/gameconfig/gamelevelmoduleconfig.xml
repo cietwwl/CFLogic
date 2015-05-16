@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <extension classPath="com.kola.kmp.logic.level.KGameLevelModuleExtension" >
+        <configPath>./res/gsconfig/levelModule/levelmodulelogicconfig.xml</configPath>
+    </extension>
+</root>

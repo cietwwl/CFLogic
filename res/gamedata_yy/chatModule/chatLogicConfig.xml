@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chatmoduleconfig>
+
+	<!-- 聊天频道模板配置 cd时间使用DHMS格式 -->
+	<chatchannels>
+		<系统 colorSign="c9" switch="ON" cd="2S" />
+
+		<世界 colorSign="c0" switch="ON" cd="3S" />
+
+		<附近 colorSign="c11" switch="ON" cd="3S" />
+
+		<军团 colorSign="c3" switch="ON" cd="3S" />
+
+		<组队 colorSign="c10" switch="ON" cd="3S" />
+
+		<私聊 colorSign="c4" switch="ON" cd="3S" />
+	</chatchannels>
+
+
+	<!-- 点击发送者时弹出的菜单项 -->
+	<popup-menus>
+		<menuitem id="1">发起私聊</menuitem>
+		<menuitem id="2">查看信息</menuitem>
+		<menuitem id="3">加为好友</menuitem>
+		<menuitem id="4">加黑名单</menuitem>
+		<menuitem id="5">删除好友</menuitem>
+		<menuitem id="6">取消拉黑</menuitem>
+		<menuitem id="7">切磋</menuitem>
+	</popup-menus>
+
+</chatmoduleconfig>

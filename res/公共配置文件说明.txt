@@ -1,0 +1,14 @@
+﻿角色事件监听配置(IRoleEventListener)：
+./res/gsconfig/roleModule/roleeventlisteners.xml
+
+消息处理器配置：
+./res/gsconfig/msgprocessers.xml
+
+support实例配置：
+./res/gsconfig/supportconfig.xml
+
+dataSet类型配置：
+./res/config/gameconfig/datasettypeconfig.xml
+
+tips配置：
+./res/gamedata/logictips.xml

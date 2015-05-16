@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <vitoryConditions>
+        <condition type="1" clazzPath="com.kola.kmp.logic.combat.vitorycondition.KVCKillAllMonsters" />
+        <condition type="2" clazzPath="com.kola.kmp.logic.combat.vitorycondition.KVCKillAllMonstersAndProtect" />
+    	<condition type="3" clazzPath="com.kola.kmp.logic.combat.vitorycondition.KVCAliveAndNotTimeOut" />
+    	<condition type="4" clazzPath="com.kola.kmp.logic.combat.vitorycondition.KVCKillAllMonstersAndNotTimeOut" />
+    	<condition type="5" clazzPath="com.kola.kmp.logic.combat.vitorycondition.KVCKillAllEnemyAndNotTimeOut" />
+    </vitoryConditions>
+    <resultHandlers>
+        <!-- 战斗结果处理器定义 -->
+        <handler type="1" clazzPath="com.kola.kmp.logic.combat.resulthandler.KGameLevelCombatResultHandler" />
+    	<handler type="2" clazzPath="com.kola.kmp.logic.combat.resulthandler.KCompetitionCombatResultHandler" />
+    	<handler type="3" clazzPath="com.kola.kmp.logic.combat.resulthandler.KTowerCombatResultHandler" />
+    	<handler type="4" clazzPath="com.kola.kmp.logic.combat.resulthandler.KWorldBossCombatResultHandler" />
+    	<handler type="5" clazzPath="com.kola.kmp.logic.combat.resulthandler.KNoviceGuideCombatResultHandler" />
+    	<handler type="6" clazzPath="com.kola.kmp.logic.combat.resulthandler.KTeamPVPCombatResultHandler" />
+    	<handler type="7" clazzPath="com.kola.kmp.logic.combat.resulthandler.KPetCopyCombatResultHandler" />
+    	<handler type="8" clazzPath="com.kola.kmp.logic.combat.resulthandler.KGangWarPVECombatResultHandler" />
+    </resultHandlers>
+    <plugins>
+        <!-- 战斗插件，开始战斗之前，会调用插件的处理（这里可以处理一些加血，加攻击的操作） -->
+        <plugin type="1" clazzPath="com.kola.kmp.logic.combat.impl.KCompetitionCombatPlugin"/>
+        <plugin type="2" clazzPath="com.kola.kmp.logic.combat.impl.KTeamPVPCombatPlugin"/>
+    </plugins>
+    <combatConfigs>
+        <!-- combatType表示战场的类型，不能重复。
+        	 name表示类型的名称，可以重复
+        	 resultHandlers表示战斗后处理器的类型，可以有多个，间隔符为“，”，参考processers节点
+        	 vitoryCondition表示战斗胜利条件，只能有一个，参考vitoryConditions节点 -->
+        <!-- <handler combatType="1" name="关卡战场" canUsePVPSkill="false" canAutoFight="true" useServerMonsterResId="false" processers="1" vitoryCondition="1"/> -->
+        <combat>
+            <combatType>1</combatType>
+            <name>关卡战场</name>
+            <canUsePVPSkill>false</canUsePVPSkill>
+            <canAutoFight>true</canAutoFight>
+            <useServerMonsterResId>false</useServerMonsterResId>
+            <resultHandlers>1</resultHandlers>
+            <vitoryCondition>1</vitoryCondition>
+        </combat>
+        <!-- <handler combatType="2" name="竞技场"  canUsePVPSkill="true" canAutoFight="true" useServerMonsterResId="false" processers="2" vitoryCondition="4" plugin="1" /> -->
+    	<combat>
+            <combatType>2</combatType>
+            <name>竞技场</name>
+            <canUsePVPSkill>true</canUsePVPSkill>
+            <canAutoFight>true</canAutoFight>
+            <useServerMonsterResId>false</useServerMonsterResId>
+            <resultHandlers>2</resultHandlers>
+            <vitoryCondition>4</vitoryCondition>
+            <plugin>1</plugin>
+        </combat>
+        
+    	<!--  <combat combatType="3" name="塔防战斗"  canUsePVPSkill="false" canAutoFight="true" useServerMonsterResId="false" resultHandlers="3" vitoryCondition="2" /> -->
+    	<combat>
+            <combatType>3</combatType>
+            <name>塔防战斗</name>
+            <canUsePVPSkill>false</canUsePVPSkill>
+            <canAutoFight>true</canAutoFight>
+            <useServerMonsterResId>false</useServerMonsterResId>
+            <resultHandlers>3</resultHandlers>
+            <vitoryCondition>2</vitoryCondition>
+        </combat>
+    	<!-- <combat combatType="4" name="世界boss战斗"  canUsePVPSkill="false" canAutoFight="true" useServerMonsterResId="false" resultHandlers="4" vitoryCondition="1" /> -->
+    	<combat>
+            <combatType>4</combatType>
+            <name>世界boss战斗</name>
+            <canUsePVPSkill>false</canUsePVPSkill>
+            <canAutoFight>true</canAutoFight>
+            <useServerMonsterResId>false</useServerMonsterResId>
+            <resultHandlers>4</resultHandlers>
+            <vitoryCondition>1</vitoryCondition>
+        </combat>
+    	<!-- <combat combatType="5" name="物资运送对战"  canUsePVPSkill="false" canAutoFight="true" useServerMonsterResId="false" resultHandlers="2" vitoryCondition="4" plugin="1" /> -->
+    	<combat>
+            <combatType>5</combatType>
+            <name>物资运送对战</name>
+            <canUsePVPSkill>false</canUsePVPSkill>
+            <canAutoFight>true</canAutoFight>
+            <useServerMonsterResId>false</useServerMonsterResId>
+            <resultHandlers>2</resultHandlers>
+            <vitoryCondition>4</vitoryCondition>
+            <plugin>1</plugin>
+        </combat>
+    	<!--  <combat combatType="6" name="军团资源战"  canUsePVPSkill="false" canAutoFight="true" useServerMonsterResId="false" resultHandlers="2" vitoryCondition="1" /> -->
+    	<combat>
+            <combatType>6</combatType>
+            <name>军团资源战</name>
+            <canUsePVPSkill>false</canUsePVPSkill>
+            <canAutoFight>true</canAutoFight>
+            <useServerMonsterResId>false</useServerMonsterResId>
+            <resultHandlers>2</resultHandlers>
+            <vitoryCondition>1</vitoryCondition>
+        </combat>
+    	<!-- <combat combatType="7" name="军团战"  canUsePVPSkill="false" canAutoFight="true" useServerMonsterResId="false" resultHandlers="2" vitoryCondition="4" plugin="1" /> -->
+    	<combat>
+            <combatType>7</combatType>
+            <name>军团战</name>
+            <canUsePVPSkill>false</canUsePVPSkill>
+            <canAutoFight>true</canAutoFight>
+            <useServerMonsterResId>false</useServerMonsterResId>
+            <resultHandlers>2</resultHandlers>
+            <vitoryCondition>4</vitoryCondition>
+            <plugin>1</plugin>
+        </combat>
+    	<!-- <combat combatType="8" name="军团战PVE"  canUsePVPSkill="false" canAutoFight="true" useServerMonsterResId="false" resultHandlers="8" vitoryCondition="4" /> -->
+    	<combat>
+            <combatType>8</combatType>
+            <name>军团战PVE</name>
+            <canUsePVPSkill>false</canUsePVPSkill>
+            <canAutoFight>true</canAutoFight>
+            <useServerMonsterResId>true</useServerMonsterResId>
+            <resultHandlers>8</resultHandlers>
+            <vitoryCondition>4</vitoryCondition>
+        </combat>
+    	<!-- <combat combatType="9" name="产金活动战斗"  canUsePVPSkill="false" canAutoFight="true" useServerMonsterResId="false" resultHandlers="1" vitoryCondition="3" /> -->
+    	<combat>
+            <combatType>9</combatType>
+            <name>产金活动战斗</name>
+            <canUsePVPSkill>false</canUsePVPSkill>
+            <canAutoFight>true</canAutoFight>
+            <useServerMonsterResId>false</useServerMonsterResId>
+            <resultHandlers>1</resultHandlers>
+            <vitoryCondition>3</vitoryCondition>
+        </combat>
+    	<!-- <combat combatType="10" name="离线关卡战斗"  canUsePVPSkill="false" canAutoFight="true" useServerMonsterResId="false" processers="1" vitoryCondition="1" /> -->
+    	<combat>
+            <combatType>10</combatType>
+            <name>离线关卡战斗</name>
+            <canUsePVPSkill>false</canUsePVPSkill>
+            <canAutoFight>true</canAutoFight>
+            <useServerMonsterResId>false</useServerMonsterResId>
+            <resultHandlers>1</resultHandlers>
+            <vitoryCondition>1</vitoryCondition>
+        </combat>
+    	<!-- <combat combatType="11" name="组队竞技战斗"  canUsePVPSkill="true" canAutoFight="true" useServerMonsterResId="false" resultHandlers="6" vitoryCondition="1" plugin="2" /> -->
+    	<combat>
+            <combatType>11</combatType>
+            <name>组队竞技战斗</name>
+            <canUsePVPSkill>true</canUsePVPSkill>
+            <canAutoFight>true</canAutoFight>
+            <useServerMonsterResId>false</useServerMonsterResId>
+            <resultHandlers>6</resultHandlers>
+            <vitoryCondition>1</vitoryCondition>
+            <plugin>2</plugin>
+        </combat>
+    	<!-- <combat combatType="12" name="随从挑战副本战斗"  canUsePVPSkill="false" canAutoFight="true" useServerMonsterResId="false" resultHandlers="1" vitoryCondition="5" /> -->
+    	<combat>
+            <combatType>12</combatType>
+            <name>随从挑战副本战斗</name>
+            <canUsePVPSkill>false</canUsePVPSkill>
+            <canAutoFight>true</canAutoFight>
+            <useServerMonsterResId>false</useServerMonsterResId>
+            <resultHandlers>1</resultHandlers>
+            <vitoryCondition>1</vitoryCondition>
+        </combat>
+    	<!-- <combat combatType="13" name="切磋PVP"  canUsePVPSkill="false" canAutoFight="true" useServerMonsterResId="false" resultHandlers="2" vitoryCondition="4" /> -->
+    	<combat>
+            <combatType>13</combatType>
+            <name>切磋PVP</name>
+            <canUsePVPSkill>false</canUsePVPSkill>
+            <canAutoFight>true</canAutoFight>
+            <useServerMonsterResId>false</useServerMonsterResId>
+            <resultHandlers>2</resultHandlers>
+            <vitoryCondition>4</vitoryCondition>
+            <plugin>1</plugin>
+        </combat>
+    	<!-- <combat combatType="14" name="挖矿PVP"  canUsePVPSkill="true" canAutoFight="true" useServerMonsterResId="false" resultHandlers="2" vitoryCondition="4" plugin="1" /> -->
+    	<combat>
+            <combatType>14</combatType>
+            <name>挖矿PVP</name>
+            <canUsePVPSkill>true</canUsePVPSkill>
+            <canAutoFight>true</canAutoFight>
+            <useServerMonsterResId>false</useServerMonsterResId>
+            <resultHandlers>2</resultHandlers>
+            <vitoryCondition>4</vitoryCondition>
+            <plugin>1</plugin>
+        </combat>
+    	<!-- <combat combatType="15" name="爬塔"  canUsePVPSkill="false" canAutoFight="true" useServerMonsterResId="false" resultHandlers="1" vitoryCondition="1" /> -->
+   		<combat>
+            <combatType>15</combatType>
+            <name>爬塔</name>
+            <canUsePVPSkill>false</canUsePVPSkill>
+            <canAutoFight>true</canAutoFight>
+            <useServerMonsterResId>true</useServerMonsterResId>
+            <resultHandlers>1</resultHandlers>
+            <vitoryCondition>1</vitoryCondition>
+        </combat>
+        <combat>
+            <combatType>16</combatType>
+            <name>随从副本</name>
+            <canUsePVPSkill>false</canUsePVPSkill>
+            <canAutoFight>true</canAutoFight>
+            <useServerMonsterResId>false</useServerMonsterResId>
+            <resultHandlers>1</resultHandlers>
+            <vitoryCondition>5</vitoryCondition>
+        </combat>
+        <combat>
+            <combatType>17</combatType>
+            <name>高级随从试炼</name>
+            <canUsePVPSkill>false</canUsePVPSkill>
+            <canAutoFight>true</canAutoFight>
+            <useServerMonsterResId>true</useServerMonsterResId>
+            <resultHandlers>1</resultHandlers>
+            <vitoryCondition>1</vitoryCondition>
+        </combat>
+    </combatConfigs>
+</root>

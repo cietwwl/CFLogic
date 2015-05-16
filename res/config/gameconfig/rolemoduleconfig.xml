@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <config>
+        <attribute name="_systemRolePlayerId" dataType="long">99999999</attribute>
+        <attribute name="_systemRoleName" dataType="String">系统角色</attribute>
+    </config>
+    <extension classPath="com.kola.kmp.logic.role.KRoleModuleExtensionImpl" >
+        <configPath>./res/gsconfig/roleModule/rolemodulelogicconfig.xml</configPath>
+    </extension>
+</root>

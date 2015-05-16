@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <tableConfig>
+        <table type="1" name="段位数据" headerIndex="2"/>
+        <table type="2" name="段位奖励属性" headerIndex="2"/>
+        <table type="3" name="升级数据" headerIndex="2"/>
+        <table type="4" name="战斗胜点影响" headerIndex="2"/>
+        <table type="5" name="匹配规则" headerIndex="2"/>
+        <table type="6" name="机器人属性" headerIndex="2"/>
+        <table type="7" name="机器人技能配置" headerIndex="2"/>
+        <table type="8" name="机器人技能等级" headerIndex="2"/>
+        <table type="9" name="荣誉奖励" headerIndex="2"/>
+        <table type="10" name="段位经验奖励" headerIndex="2"/>
+        <table type="11" name="队伍竞技参数配置" headerIndex="2" />
+    </tableConfig>
+    <excelDataPath>./res/gamedata/competition/teamPVPData.xls</excelDataPath>
+    <excelConfigPath>./res/gamedata/competition/teamPVPParaConfig.xls</excelConfigPath>
+    <randomName>
+        <malePath>./res/randomName/allTeamMaleNames.txt</malePath>
+        <femalePath>./res/randomName/allTeamFemaleNames.txt</femalePath>
+        <teamNamePath>./res/randomName/allTeamNames.txt</teamNamePath>
+    </randomName>
+</root>

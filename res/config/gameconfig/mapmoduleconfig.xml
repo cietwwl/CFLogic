@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <!-- 地图excel表头文件路径  -->
+	<mapDataExcelFilePath>./res/gamedata/mapModule/mapConfig.xls</mapDataExcelFilePath>
+	
+	<tipsCfgPath>./res/gamedata/mapModule/mapTips.xml</tipsCfgPath>
+	
+	<default_map_id>20000</default_map_id>
+	
+	<!-- 角色周围列表的最大玩家数量限制 -->
+	<mapUnitLimit>50</mapUnitLimit>
+	<!--角色周围列表队列并发性开关-->
+	<unitLimitIsConcurrent>false</unitLimitIsConcurrent>
+	<!--角色周围列表队列是否根据优先级判断-->
+	<unitLimitIsPriority>false</unitLimitIsPriority>
+	
+	<!--角色周围其他角色状态改变消息打包的最大长度-->
+	<packetEntityStateChangeMsgMaxSize>50</packetEntityStateChangeMsgMaxSize>
+	<!--广播角色周围其他角色状态改变消息时间间隔（单位：秒）-->
+	<broadcastEntityStateChangeMsgPackTimeSeconds>3</broadcastEntityStateChangeMsgPackTimeSeconds>
+	<!-- 地图显示玩家人数的配置 -->
+	<showPlayerInfo>
+	   <level lv="0" showCount="0"/>
+	   <level lv="1" showCount="10"/>
+	   <level lv="2" showCount="25"/>
+	   <level lv="3" showCount="50"/>
+	</showPlayerInfo>
+	
+	<!-- 角色系统设置的默认配置 -->
+	<gameSetting>
+	   <!-- 是否关闭pvp -->
+	   <isBlockOnlinePVP>false</isBlockOnlinePVP>
+	   <!-- 是否关闭世界聊天 -->
+	   <isBlockWorldChat>false</isBlockWorldChat>
+	   <!-- 是否关闭地图区域聊天 -->
+	   <isBlockMapChat>false</isBlockMapChat>
+	   <!-- 是否关闭家族聊天 -->
+	   <isBlockFamilyChat>false</isBlockFamilyChat>
+	   <!-- 地图显示人数默认等级 -->
+	   <mapShowPlayerLevel>2</mapShowPlayerLevel>	   
+	</gameSetting>
+	
+	<!-- NPC地图配置xml文件路径 -->
+	<mapNpcXmlFilePath>./res/gsconfig/mapModule/mapXmlData/</mapNpcXmlFilePath>
+</root>

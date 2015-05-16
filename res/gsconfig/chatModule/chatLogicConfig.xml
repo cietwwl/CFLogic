@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chatmoduleconfig>
+
+	<logicConfig>
+		<!-- local DELIM = "@"; local DELIM1 = "{"; local DELIM2 = "}"; local MSG_MAX_NUM 
+			= 10; 聊天消息最大储存条数 local MAX_SEND_CHAR = 50; 发送字符的最大个数 local MAX_EMO_NUM = 
+			5; 发送表情的最大个数 local COLD_TIME = {}; 冷却时间数组 COLD_TIME[CHAT_CHANNEL.AREA] = 
+			3; 区域冷却时间 COLD_TIME[CHAT_CHANNEL.WORLD] = 10; 世界冷却时间 COLD_TIME[CHAT_CHANNEL.PM] 
+			= 5; 私聊冷却时间 COLD_TIME[CHAT_CHANNEL.GANG] = 5; 军团冷却时间 -->
+		<!-- 聊天消息服务器&客户端缓存数量 -->
+		<cachedChatDataCapacity server="99" client="30" />
+		<maxcharpermsg>70</maxcharpermsg>
+		<maxemopermsg>5</maxemopermsg>
+		
+		<!-- 聊天发言内容最大长度(字符数量，英文1，汉字2) -->
+		<MaxChatStrLen>500</MaxChatStrLen>
+		
+		<!-- 系统私聊缓存数量 -->
+		<MaxPrivateCacheSize>9999</MaxPrivateCacheSize>
+		
+		<!-- 发送图片的相关参数  -->
+		<picLimit>
+			<!--  发送图片的CD时间（支持DHMS）,发送图片等级限制 >=,发送图片的VIP等级限制 >=,每天发送图片的次数限制 <=
+				角色等级和VIP等级是‘或’关系
+			 -->
+			<coldTime>30S</coldTime>
+			<openLevel>10</openLevel>
+			<vipLimite>0</vipLimite>
+			<timesLimite>60</timesLimite>
+			<isOpen>true</isOpen>
+		</picLimit>
+		<!-- 发送语音的相关参数  -->
+		<voiceLimit>
+			<coldTime>5S</coldTime>
+			<openLevel>5</openLevel>
+			<vipLimite>0</vipLimite>
+			<timesLimite>60</timesLimite>
+			<isOpen>true</isOpen>
+		</voiceLimit>
+		
+		<!-- 频道等级限制的相关参数  -->
+		<channelLimit>
+			<worldChatOpenLevel>10</worldChatOpenLevel>
+		</channelLimit>
+	
+		<!-- 文字相关内容各语言版本不同 -->	
+		<ck-include>./res/gamedata/chatModule/chatLogicConfig.xml</ck-include>
+	</logicConfig>
+	
+	<excelConfig>
+		
+	</excelConfig>
+
+</chatmoduleconfig>

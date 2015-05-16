@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>  
+	<!-- 活动系统Excel配置文件路径  -->
+	<excelConfigPath>./res/gamedata/activityModule/activityConfig.xls</excelConfigPath>
+	
+	<activitConfig>
+	    <activity>
+	       <id>1</id>
+	       <name>运输物资</name>
+	       <classPath>com.kola.kmp.logic.activity.transport.KTransportActivity</classPath>
+	       <configPath>./res/gsconfig/activityModule/transportConfig.xml</configPath>
+	    </activity>
+
+	    <activity>
+	       <id>2</id>
+	       <name>军团资源战</name>
+	       <classPath>com.kola.kmp.logic.gang.reswar.KResWarActivity</classPath>
+	       <configPath></configPath>
+	    </activity>
+	    
+	    <activity>
+	       <id>3</id>
+	       <name>丧尸攻城</name>
+	       <classPath>com.kola.kmp.logic.activity.worldboss.KWorldBossActivityImpl</classPath>
+	       <configPath>./res/gsconfig/activityModule/worldbossconfig.xml</configPath>
+	    </activity>
+	    
+	    <activity>
+	       <id>4</id>
+	       <name>好友地下城</name>
+	       <classPath>com.kola.kmp.logic.level.copys.KFriendCopyActivity</classPath>
+	       <configPath></configPath>
+	    </activity>
+	    
+	    <activity>
+	       <id>5</id>
+	       <name>军团战</name>
+	       <classPath>com.kola.kmp.logic.gang.war.KGangWarActivity</classPath>
+	       <configPath></configPath>
+	    </activity>
+	    
+	    <activity>
+	       <id>6</id>
+	       <name>神秘商人</name>
+	       <classPath>com.kola.kmp.logic.shop.random.RandomShopActivity</classPath>
+	       <configPath></configPath>
+	    </activity>	    
+	    
+	    <activity>
+	       <id>7</id>
+	       <name>赚金币</name>
+	       <classPath>com.kola.kmp.logic.activity.newglodact.KNewGoldActivity</classPath>
+	       <configPath>./res/gsconfig/activityModule/newGoldActivityConfig.xml</configPath>
+	    </activity>	  
+	    
+	    <activity>
+	       <id>8</id>
+	       <name>随从营救</name>
+	       <classPath>com.kola.kmp.logic.level.petcopy.KPetCopyActivity</classPath>
+	       <configPath></configPath>
+	    </activity>
+	    
+	    <activity>
+	       <id>9</id>
+	       <name>挖矿</name>
+	       <classPath>com.kola.kmp.logic.activity.mineral.KDigMineralActivityImpl</classPath>
+	       <configPath>./res/gsconfig/activityModule/mineralActivityConfig.xml</configPath>
+	    </activity>
+	    
+	</activitConfig>
+</root>

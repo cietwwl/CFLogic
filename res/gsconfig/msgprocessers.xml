@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <pkgPath>com.kola.kmp.logic.role.message</pkgPath>
+    <pkgPath>com.kola.kmp.logic.mail.message</pkgPath>
+    <pkgPath>com.kola.kmp.logic.rank.message</pkgPath>
+    <pkgPath>com.kola.kmp.logic.item.message</pkgPath>
+    <pkgPath>com.kola.kmp.logic.currency.message</pkgPath>
+    <pkgPath>com.kola.kmp.logic.npc.message</pkgPath>
+    <pkgPath>com.kola.kmp.logic.skill.message</pkgPath>
+    <pkgPath>com.kola.kmp.logic.map.message</pkgPath>
+    <pkgPath>com.kola.kmp.logic.level.message</pkgPath>
+    <pkgPath>com.kola.kmp.logic.chat.message</pkgPath>
+    <pkgPath>com.kola.kmp.logic.shop.message</pkgPath>
+    <pkgPath>com.kola.kmp.logic.shop.random.message</pkgPath>
+    <pkgPath>com.kola.kmp.logic.shop.timehot.message</pkgPath>
+    <pkgPath>com.kola.kmp.logic.mission.message</pkgPath>
+    <pkgPath>com.kola.kmp.logic.fashion.message</pkgPath>
+    <pkgPath>com.kola.kmp.logic.mount.message</pkgPath>
+    <pkgPath>com.kola.kmp.logic.pet.message</pkgPath>
+    <pkgPath>com.kola.kmp.logic.gang.message</pkgPath>
+    <pkgPath>com.kola.kmp.logic.vip.message</pkgPath>
+    <pkgPath>com.kola.kmp.logic.competition.message</pkgPath>
+    <pkgPath>com.kola.kmp.logic.talent.message</pkgPath>
+    <pkgPath>com.kola.kmp.logic.chat.bug.message</pkgPath>
+    <pkgPath>com.kola.kmp.logic.relationship.message</pkgPath>
+    <pkgPath>com.kola.kmp.logic.gamble.message</pkgPath>
+    <pkgPath>com.kola.kmp.logic.reward.message</pkgPath>
+    <pkgPath>com.kola.kmp.logic.reward.activatecode.message</pkgPath>
+    <pkgPath>com.kola.kmp.logic.reward.daylucky.message</pkgPath>
+    <pkgPath>com.kola.kmp.logic.reward.login.message</pkgPath>
+    <pkgPath>com.kola.kmp.logic.reward.online.message</pkgPath>
+    <pkgPath>com.kola.kmp.logic.reward.vitality.message</pkgPath>
+    <pkgPath>com.kola.kmp.logic.reward.garden.message</pkgPath>
+    <pkgPath>com.kola.kmp.logic.gm.message</pkgPath>
+    <pkgPath>com.kola.kmp.logic.activity.message</pkgPath>
+    <pkgPath>com.kola.kmp.logic.gang.reswar.message</pkgPath>
+    <pkgPath>com.kola.kmp.logic.gang.war.message</pkgPath>
+    <pkgPath>com.kola.kmp.logic.reward.exciting.message</pkgPath>
+    <pkgPath>com.kola.kmp.logic.activity.mineral.message</pkgPath>
+    
+</root>

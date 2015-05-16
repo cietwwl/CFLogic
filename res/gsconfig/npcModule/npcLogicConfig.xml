@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<logicConfig>
+
+	</logicConfig>
+
+	<excelConfig>
+		<npcTemplate>
+			<path>./res/gamedata/npcModule/NPCTemplate.xls</path>
+			<HeaderIndex>5</HeaderIndex>
+		</npcTemplate>
+		<monstTemplate>
+			<path>./res/gamedata/npcModule/MonstTemplate.xls</path>
+			<HeaderIndex>5</HeaderIndex>
+		</monstTemplate>
+		<monstUITemplate>
+			<path>./res/gamedata/npcModule/MonstUI.xls</path>
+			<HeaderIndex>5</HeaderIndex>
+		</monstUITemplate>
+		<ObstructionTemp>
+			<path>./res/gamedata/npcModule/ObstructionTemp.xls</path>
+			<HeaderIndex>5</HeaderIndex>
+		</ObstructionTemp>
+		<dropInfoTemplate>
+			<path>./res/gamedata/npcModule/dropData.xls</path>
+			<HeaderIndex>3</HeaderIndex>
+		</dropInfoTemplate>
+	</excelConfig>
+</root>

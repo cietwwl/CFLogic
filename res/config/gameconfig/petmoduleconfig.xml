@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <config>
+        <attribute name="_petSetDefaultCapacity" dataType="int">50</attribute>
+    </config>
+    <extension clazz="com.kola.kmp.logic.pet.KPetModuleExtensionImpl" >
+        <configPath>./res/gsconfig/petModule/petmodulelogicconfig.xml</configPath>
+    </extension>
+</root>

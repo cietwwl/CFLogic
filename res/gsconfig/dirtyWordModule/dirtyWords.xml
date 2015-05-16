@@ -1,0 +1,3707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root version="">
+	<!-- 不可见字符：回车，制表符，DELETE符（'\n', '\t', '\r', '\f', '\b'） 敏感词：例如“GM”，“客服代表” 
+		脏词：例如“性交易”，“AV片” PS:"GM"不分大小写，不需要同时填“GM”和“gm”. -->
+	<!-- 以下是不可见字符的ASCII值 防止玩家在脏词或敏感词中间插入不可见字符以逃避过滤 例如在注册角色时使用"G\tM"（中间插入'\t'），由于'\t'不可见，其它玩家仍然看到"GM"，因此容易受骗。 -->
+	<unseeChars>
+		<char>0</char>
+		<char>1</char>
+		<char>2</char>
+		<char>3</char>
+		<char>4</char>
+		<char>5</char>
+		<char>6</char>
+		<char>7</char>
+		<char>8</char><!-- \b -->
+		<char>9</char><!-- \t -->
+		<char>10</char><!-- \n -->
+		<char>11</char>
+		<char>12</char><!-- \f -->
+		<char>13</char><!-- \r -->
+		<char>14</char>
+		<char>15</char>
+		<char>16</char>
+		<char>17</char>
+		<char>18</char>
+		<char>19</char>
+		<char>20</char>
+		<char>21</char>
+		<char>22</char>
+		<char>23</char>
+		<char>24</char>
+		<char>25</char>
+		<char>26</char>
+		<char>27</char>
+		<char>28</char><!-- -->
+		<char>29</char><!-- -->
+		<char>30</char><!-- -->
+		<char>31</char><!-- -->
+		<!--<char>32</char> “空格” -->
+		<char>127</char>
+		<char>129</char>
+		<char>160</char>
+	</unseeChars>
+
+	<!-- 以下是敏感词 禁止玩家注册角色、家族等名称包含此类词语；但允许在聊天、邮件、公告中出现。 -->
+	<sensitiveWord>
+		<word>KOLA</word>
+		<word>考拉</word>
+		<word>大归位</word>
+		<word>活动</word>
+		<word>大使</word>
+		<word tips="换行">
+		</word>
+		<word tips="空格"> </word>
+		<word tips="制表符">　</word>
+		<word>GM</word>
+		<word>管理员</word>
+		<word>系统管理员</word>
+		<word>客服</word>
+		<word>客服代表</word>
+		<word>/</word>
+		<word>官方</word>
+		<word>管理員</word>
+		<word>游戏管理员</word>
+		<word>遊戲管理員</word>
+		<word>系統管理員</word>
+		<word>系统</word>
+		<word>系統</word>
+		<word>技术</word>
+		<word>程序员</word>
+		<word>[</word>
+		<word>]</word>
+		<word>{</word>
+		<word>}</word>
+		<word>·</word>
+		<word>,</word>
+		<word>'</word>
+		<word>"</word>
+		<word>;</word>
+		<word>:</word>
+		<word>#</word>
+		<word>&amp;</word>
+		<word>=</word>
+		
+		<!-- 以下是昆仑新增词 -->
+		<word>管理人員</word>
+		<word>系統通知</word>
+		<word>通知</word>
+		<word>官方人員</word>
+	</sensitiveWord>
+
+	<!-- 以下是脏词 脏词是指不符合相关法律法规要求的脏话、敏感词语等； 禁止玩家注册角色、家族等名称包含此类词语；同时禁止在聊天、邮件、公告中出现(使用*号替换)。 -->
+	<dirtyWords>
+		<word>党</word>
+		<word>性爱</word>
+		<word>装B</word>
+		<word>装逼</word>
+		<word>援交</word>
+		<word>藏旗</word>
+		<word>赤裸</word>
+		<word>性交易</word>
+		<word>性服务</word>
+		<word>特殊服务</word>
+		<word>处女膜</word>
+		<word>彩民</word>
+		<word>特码</word>
+		<word>透码</word>
+		<word>AV片</word>
+		<word>AV女</word>
+		<word>迷奸药</word>
+		<word>Lesbian</word>
+		<word>clit</word>
+		<word>bigbowl</word>
+		<word>nipple</word>
+		<word>pussy</word>
+		<word>Slut</word>
+		<word>vagina</word>
+		<word>爱液</word>
+		<word>波霸</word>
+		<word>肥穴</word>
+		<word>后庭</word>
+		<word>交媾</word>
+		<word>菊花蕾</word>
+		<word>浪穴</word>
+		<word>美穴</word>
+		<word>蜜穴</word>
+		<word>嫩穴</word>
+		<word>女优</word>
+		<word>蓬门</word>
+		<word>屁眼</word>
+		<word>兽交</word>
+		<word>肉洞</word>
+		<word>色情网站</word>
+		<word>骚穴</word>
+		<word>情色</word>
+		<word>酥乳</word>
+		<word>素人</word>
+		<word>小穴</word>
+		<word>穴穴</word>
+		<word>阴精</word>
+		<word>淫姐姐</word>
+		<word>淫女</word>
+		<word>淫水</word>
+		<word>淫穴</word>
+		<word>淫汁</word>
+		<word>应召女郎</word>
+		<word>gay</word>
+		<word>penis</word>
+		<word>semen</word>
+		<word>龟头</word>
+		<word>鸡巴</word>
+		<word>精液</word>
+		<word>喷精</word>
+		<word>裸聊</word>
+		<word>阴茎</word>
+		<word>阴毛</word>
+		<word>性虐待</word>
+		<word>黄色网站</word>
+		<word>成人网站</word>
+		<word>成人小说</word>
+		<word>成人文学</word>
+		<word>成人影视</word>
+		<word>成人漫画</word>
+		<word>成人图片</word>
+		<word>藏青会</word>
+		<word>雪山狮子旗</word>
+		<word>堵截</word>
+		<word>肉棒</word>
+		<word>阳具</word>
+		<word>blowjob</word>
+		<word>oralsex</word>
+		<word>XXX</word>
+		<word>爆浆</word>
+		<word>插穴</word>
+		<word>肛交</word>
+		<word>开苞</word>
+		<word>口交</word>
+		<word>乱伦</word>
+		<word>轮奸</word>
+		<word>淫</word>
+		<word>群奸</word>
+		<word>群交</word>
+		<word>乳交</word>
+		<word>舔</word>
+		<word>舔奶</word>
+		<word>舔穴</word>
+		<word>吸鸟</word>
+		<word>性派对</word>
+		<word>颜射</word>
+		<word>诱奸</word>
+		<word>dildo</word>
+		<word>长舌象</word>
+		<word>成人用品</word>
+		<word>吹气娃娃</word>
+		<word>催情</word>
+		<word>滚珠棒</word>
+		<word>蜜蜂棒</word>
+		<word>气球男孩</word>
+		<word>跳蛋</word>
+		<word>兔女郎</word>
+		<word>are under</word>
+		<word>erotic</word>
+		<word>Hardcore</word>
+		<word>nude</word>
+		<word>orgysex</word>
+		<word>PORN</word>
+		<word>softcore</word>
+		<word>striptease</word>
+		<word>voyeur</word>
+		<word>超级性虐</word>
+		<word>成人电影</word>
+		<word>成人书库</word>
+		<word>成人图</word>
+		<word>成人网</word>
+		<word>炮图</word>
+		<word>三级片</word>
+		<word>偷窥</word>
+		<word>无码</word>
+		<word>性爱图</word>
+		<word>淫图</word>
+		<word>菜市口交</word>
+		<word>激情</word>
+		<word>诱惑</word>
+		<word>大圆满</word>
+		<word>真、善、忍</word>
+		<word>护法</word>
+		<word>集会</word>
+		<word>游行</word>
+		<word>性交</word>
+		<word>一党专制</word>
+		<word>雪山狮子</word>
+		<word>西藏人权</word>
+		<word>藏 独</word>
+		<word>黄色影视</word>
+		<word>黄色电影</word>
+		<word>黄色小说</word>
+		<word>黄色文学</word>
+		<word>黄色图片</word>
+		<word>黄色漫画</word>
+		<word>坐台小姐</word>
+		<word>应招妓女</word>
+		<word>成人论坛</word>
+		<word>性免费电影</word>
+		<word>小电影</word>
+		<word>阳萎</word>
+		<word>迷药</word>
+		<word>日你</word>
+		<word>摸奶</word>
+		<word>破鞋</word>
+		<word>三点</word>
+		<word>避孕套</word>
+		<word>卫生巾</word>
+		<word>艳照门</word>
+		<word>男女公关</word>
+		<word>感情陪护</word>
+		<word>三陪先生</word>
+		<word>三陪小姐</word>
+		<word>买春</word>
+		<word>隐私图片</word>
+		<word>美腿写真</word>
+		<word>丝袜写真</word>
+		<word>陈冠希</word>
+		<word>阿娇</word>
+		<word>艳照</word>
+		<word>熟女</word>
+		<word>美少妇</word>
+		<word>换妻</word>
+		<word>月薪</word>
+		<word>月薪万元</word>
+		<word>公关</word>
+		<word>招聘</word>
+		<word>诚聘</word>
+		<word>玉蒲团</word>
+		<word>3P</word>
+		<word>台湾18DY电影</word>
+		<word>H动漫</word>
+		<word>金瓶梅</word>
+		<word>网络色情网址大全</word>
+		<word>H漫画</word>
+		<word>勾引</word>
+		<word>他妈的</word>
+		<word>江湖淫娘</word>
+		<word>粗口歌</word>
+		<word>A片</word>
+		<word>毛片</word>
+		<word>黄片</word>
+		<word>禁区</word>
+		<word>风骚</word>
+		<word>高潮</word>
+		<word>云雨</word>
+		<word>销魂</word>
+		<word>乳房</word>
+		<word>调情</word>
+		<word>双腿间的禁地</word>
+		<word>少儿不宜</word>
+		<word>X夜激情</word>
+		<word>叫床</word>
+		<word>一夜情</word>
+		<word>两性狂情</word>
+		<word>夜激情</word>
+		<word>干柴烈火</word>
+		<word>咪咪</word>
+		<word>小弟弟</word>
+		<word>命根</word>
+		<word>法轮功</word>
+		<word>大法</word>
+		<word>新疆独立</word>
+		<word>西藏独立</word>
+		<word>反党</word>
+		<word>反政府</word>
+		<word>反国家</word>
+		<word>圆满</word>
+		<word>法轮</word>
+		<word>李洪志</word>
+		<word>转法轮</word>
+		<word>大法轮</word>
+		<word>轮功</word>
+		<word>共铲党</word>
+		<word>九评共产党</word>
+		<word>明慧网</word>
+		<word>退党</word>
+		<word>无网界浏览</word>
+		<word>无网界</word>
+		<word>美国之音</word>
+		<word>自由亚洲</word>
+		<word>文化大革命</word>
+		<word>六四</word>
+		<word>大纪元</word>
+		<word>真善忍</word>
+		<word>新唐人</word>
+		<word>六四事件</word>
+		<word>反华</word>
+		<word>共产党</word>
+		<word>共匪</word>
+		<word>政府软弱</word>
+		<word>政府无能</word>
+		<word>达赖</word>
+		<word>台湾独立</word>
+		<word>警察殴打</word>
+		<word>中央军委</word>
+		<word>针对台湾</word>
+		<word>中共走狗</word>
+		<word>中共小丑</word>
+		<word>共奴</word>
+		<word>中共恶霸</word>
+		<word>共产无赖</word>
+		<word>右派</word>
+		<word>流氓政府</word>
+		<word>内斗退党</word>
+		<word>江理论</word>
+		<word>党内分裂</word>
+		<word>新生网</word>
+		<word>圆明网</word>
+		<word>修炼之歌</word>
+		<word>发正念</word>
+		<word>和平修炼</word>
+		<word>放下生死</word>
+		<word>大法大福</word>
+		<word>大法弟子</word>
+		<word>法O功</word>
+		<word>支联会</word>
+		<word>共产专制</word>
+		<word>共产极权</word>
+		<word>专政机器</word>
+		<word>共产王朝</word>
+		<word>大法洪传</word>
+		<word>毛派</word>
+		<word>法网恢恢</word>
+		<word>邓派</word>
+		<word>五套功法</word>
+		<word>宇宙最高法理</word>
+		<word>法轮佛法</word>
+		<word>谁是新中国</word>
+		<word>法正人间</word>
+		<word>法正乾坤</word>
+		<word>正法时期</word>
+		<word>海外护法</word>
+		<word>洪发交流</word>
+		<word>报禁</word>
+		<word>党禁</word>
+		<word>鸽派</word>
+		<word>鹰派</word>
+		<word>赣江学院暴动</word>
+		<word>全国退党</word>
+		<word>绝食抗暴</word>
+		<word>维权抗暴</word>
+		<word>活体器官</word>
+		<word>中共暴政</word>
+		<word>中共当局</word>
+		<word>胡温政府</word>
+		<word>江罗集团</word>
+		<word>师傅法身</word>
+		<word>正派民运</word>
+		<word>中华联邦政府</word>
+		<word>亲共行动</word>
+		<word>联邦政府</word>
+		<word>流氓民运</word>
+		<word>特务民运</word>
+		<word>江贼民</word>
+		<word>中共警察</word>
+		<word>中共监狱</word>
+		<word>中共政权</word>
+		<word>中共迫害</word>
+		<word>自由联邦</word>
+		<word>中共独枭</word>
+		<word>流氓无产者</word>
+		<word>中共专制</word>
+		<word>明慧周刊</word>
+		<word>共狗</word>
+		<word>销售枪支</word>
+		<word>售枪支</word>
+		<word>售弹药</word>
+		<word>办证</word>
+		<word>放账</word>
+		<word>高利贷</word>
+		<word>高利息贷款</word>
+		<word>高息贷款</word>
+		<word>放贷款</word>
+		<word>敲诈</word>
+		<word>勒索</word>
+		<word>假证</word>
+		<word>偷渡</word>
+		<word>黑社会</word>
+		<word>复仇</word>
+		<word>抽奖</word>
+		<word>卖二手车</word>
+		<word>售卖武器</word>
+		<word>假发</word>
+		<word>假发票</word>
+		<word>窃听</word>
+		<word>窃取</word>
+		<word>商会</word>
+		<word>走私</word>
+		<word>监听</word>
+		<word>刻章</word>
+		<word>地下钱庄</word>
+		<word>窃听器</word>
+		<word>变性</word>
+		<word>代开普通发票</word>
+		<word>代开商品发票</word>
+		<word>代开国税发票</word>
+		<word>代开地税发票</word>
+		<word>代开广告发票</word>
+		<word>代开运输发票</word>
+		<word>代开租赁发票</word>
+		<word>代开维修发票</word>
+		<word>代开建筑发票</word>
+		<word>代开安装发票</word>
+		<word>代开餐饮发票</word>
+		<word>代开服务发票</word>
+		<word>代开发票</word>
+		<word>仿真假钞</word>
+		<word>全新假钞</word>
+		<word>出售假钞</word>
+		<word>隐形喷剂</word>
+		<word>反雷达测速</word>
+		<word>假币</word>
+		<word>出售枪支</word>
+		<word>出售手枪</word>
+		<word>代办证件</word>
+		<word>英语枪手</word>
+		<word>假钞</word>
+		<word>探测狗</word>
+		<word>手机卡复制器</word>
+		<word>监听王</word>
+		<word>手机跟踪定位器</word>
+		<word>监听器</word>
+		<word>针孔摄像</word>
+		<word>监听宝</word>
+		<word>器官移植</word>
+		<word>速汇</word>
+		<word>八九</word>
+		<word>八老</word>
+		<word>巴赫</word>
+		<word>白立朴</word>
+		<word>白梦</word>
+		<word>白皮书</word>
+		<word>保钓</word>
+		<word>鲍戈</word>
+		<word>鲍彤</word>
+		<word>暴乱</word>
+		<word>暴政</word>
+		<word>北大三角地论坛</word>
+		<word>北韩</word>
+		<word>北京当局</word>
+		<word>北京之春</word>
+		<word>北美自由论坛</word>
+		<word>博讯</word>
+		<word>蔡崇国</word>
+		<word>藏独</word>
+		<word>曹长青</word>
+		<word>曹刚川</word>
+		<word>柴玲</word>
+		<word>常劲</word>
+		<word>陈炳基</word>
+		<word>陈军</word>
+		<word>陈蒙</word>
+		<word>陈破空</word>
+		<word>陈希同</word>
+		<word>陈小同</word>
+		<word>陈宣良</word>
+		<word>陈一谘</word>
+		<word>陈总统</word>
+		<word>程凯</word>
+		<word>程铁军</word>
+		<word>程真</word>
+		<word>迟浩田</word>
+		<word>持不同政见</word>
+		<word>赤匪</word>
+		<word>赤化</word>
+		<word>春夏自由论坛</word>
+		<word>大参考</word>
+		<word>大纪元新闻网</word>
+		<word>大纪园</word>
+		<word>大家论坛</word>
+		<word>大史</word>
+		<word>大史记</word>
+		<word>大史纪</word>
+		<word>大中国论坛</word>
+		<word>大中华论坛</word>
+		<word>大众真人真事</word>
+		<word>戴相龙</word>
+		<word>弹劾</word>
+		<word>登辉</word>
+		<word>邓笑贫</word>
+		<word>迪里夏提</word>
+		<word>地下教会</word>
+		<word>地下刊物</word>
+		<word>弟子</word>
+		<word>第四代</word>
+		<word>电视流氓</word>
+		<word>钓鱼岛</word>
+		<word>钓鱼台</word>
+		<word>尖阁列岛</word>
+		<word>丁关根</word>
+		<word>丁元</word>
+		<word>丁子霖</word>
+		<word>东北独立</word>
+		<word>东方红时空</word>
+		<word>东方时空</word>
+		<word>东南西北论谈</word>
+		<word>东社</word>
+		<word>东土耳其斯坦</word>
+		<word>东西南北论坛</word>
+		<word>动乱</word>
+		<word>独裁</word>
+		<word>独裁政治</word>
+		<word>独夫</word>
+		<word>独立台湾会</word>
+		<word>杜智富</word>
+		<word>多维</word>
+		<word>屙民</word>
+		<word>俄国</word>
+		<word>发愣</word>
+		<word>发轮</word>
+		<word>法愣</word>
+		<word>法抡</word>
+		<word>法仑</word>
+		<word>法伦</word>
+		<word>法论</word>
+		<word>法十轮十功</word>
+		<word>法谪</word>
+		<word>法谪功</word>
+		<word>反封锁技术</word>
+		<word>反腐败论坛</word>
+		<word>反攻</word>
+		<word>反共</word>
+		<word>江泽民</word>
+		<word>毛泽东</word>
+		<word>邓小平</word>
+		<word>胡锦涛</word>
+		<word>十六大</word>
+		<word>16大</word>
+		<word>推翻</word>
+		<word>打倒</word>
+		<word>台独</word>
+		<word>hongzhi</word>
+		<word>lihongzhi</word>
+		<word>minghui</word>
+		<word>minghuinews</word>
+		<word>freechina</word>
+		<word>37776</word>
+		<word>发论功</word>
+		<word>发论公</word>
+		<word>发伦功</word>
+		<word>发论</word>
+		<word>发伦</word>
+		<word>法抡功</word>
+		<word>发抡功</word>
+		<word>发抡</word>
+		<word>法*功</word>
+		<word>功法</word>
+		<word>讲法</word>
+		<word>李大师</word>
+		<word>李红痔</word>
+		<word>李宏志</word>
+		<word>炼功</word>
+		<word>李总统</word>
+		<word>李登辉</word>
+		<word>李鹏</word>
+		<word>李瑞环</word>
+		<word>酱猪媳</word>
+		<word>江猪媳</word>
+		<word>反人类</word>
+		<word>反社会</word>
+		<word>方励之</word>
+		<word>方舟子</word>
+		<word>飞扬论坛</word>
+		<word>斐得勒</word>
+		<word>费良勇</word>
+		<word>分家在</word>
+		<word>分裂</word>
+		<word>粉饰太平</word>
+		<word>风雨神州</word>
+		<word>风雨神州论坛</word>
+		<word>封从德</word>
+		<word>封杀</word>
+		<word>冯东海</word>
+		<word>冯素英</word>
+		<word>佛展千手法</word>
+		<word>付申奇</word>
+		<word>傅申奇</word>
+		<word>傅志寰</word>
+		<word>高官</word>
+		<word>高文谦</word>
+		<word>高薪养廉</word>
+		<word>高瞻</word>
+		<word>高自联</word>
+		<word>戈扬</word>
+		<word>歌功颂德</word>
+		<word>蛤蟆</word>
+		<word>个人崇拜</word>
+		<word>工自联</word>
+		<word>共产</word>
+		<word>共党</word>
+		<word>共军</word>
+		<word>关卓中</word>
+		<word>贯通两极法</word>
+		<word>广闻</word>
+		<word>郭伯雄</word>
+		<word>郭罗基</word>
+		<word>郭平</word>
+		<word>郭岩华</word>
+		<word>国家安全</word>
+		<word>国家机密</word>
+		<word>国军</word>
+		<word>国贼</word>
+		<word>韩东方</word>
+		<word>韩联潮</word>
+		<word>汉奸</word>
+		<word>何德普</word>
+		<word>何勇</word>
+		<word>河殇</word>
+		<word>红灯区</word>
+		<word>红色恐怖</word>
+		<word>宏法</word>
+		<word>洪传</word>
+		<word>洪吟</word>
+		<word>洪哲胜</word>
+		<word>洪志</word>
+		<word>胡紧掏</word>
+		<word>胡锦滔</word>
+		<word>胡锦淘</word>
+		<word>胡景涛</word>
+		<word>胡平</word>
+		<word>胡总书记</word>
+		<word>花花公子</word>
+		<word>华建敏</word>
+		<word>华通时事论坛</word>
+		<word>华夏文摘</word>
+		<word>华语世界论坛</word>
+		<word>华岳时事论坛</word>
+		<word>黄慈萍</word>
+		<word>黄祸</word>
+		<word>黄菊</word>
+		<word>黄菊　</word>
+		<word>黄翔</word>
+		<word>回民暴动</word>
+		<word>悔过书</word>
+		<word>鸡毛信文汇</word>
+		<word>姬胜德</word>
+		<word>积克馆</word>
+		<word>基督</word>
+		<word>贾庆林</word>
+		<word>贾廷安</word>
+		<word>贾育台</word>
+		<word>建国党</word>
+		<word>江core</word>
+		<word>江八点</word>
+		<word>江流氓</word>
+		<word>江罗</word>
+		<word>江绵恒</word>
+		<word>江青</word>
+		<word>江戏子</word>
+		<word>江则民</word>
+		<word>江泽慧</word>
+		<word>江主席</word>
+		<word>江折民</word>
+		<word>江澤民</word>
+		<word>僵贼民</word>
+		<word>江猪</word>
+		<word>毛贼东</word>
+		<word>民进党</word>
+		<word>天安门屠杀</word>
+		<word>太子党</word>
+		<word>水扁</word>
+		<word>猪聋畸</word>
+		<word>朱容基</word>
+		<word>朱镕基</word>
+		<word>曾庆红</word>
+		<word>猪毛</word>
+		<word>中国猪</word>
+		<word>傻B</word>
+		<word>傻逼</word>
+		<word>日死你</word>
+		<word>我操你</word>
+		<word>干死你</word>
+		<word>鸡八</word>
+		<word>操逼</word>
+		<word>操比</word>
+		<word>哈批</word>
+		<word>大逼</word>
+		<word>大比</word>
+		<word>大b</word>
+		<word>大B</word>
+		<word>贱逼</word>
+		<word>贱比</word>
+		<word>干你娘</word>
+		<word>卖逼</word>
+		<word>卖比</word>
+		<word>狗b</word>
+		<word>狗B</word>
+		<word>烂逼</word>
+		<word>烂比</word>
+		<word>大花逼</word>
+		<word>靠你妈</word>
+		<word>操你妈</word>
+		<word>妈批</word>
+		<word>逼样</word>
+		<word>肉棍</word>
+		<word>江贼</word>
+		<word>姜春云</word>
+		<word>将则民</word>
+		<word>僵贼</word>
+		<word>疆独</word>
+		<word>交班</word>
+		<word>教养院</word>
+		<word>接班</word>
+		<word>揭批书</word>
+		<word>金尧如</word>
+		<word>锦涛</word>
+		<word>禁看</word>
+		<word>经文</word>
+		<word>开放杂志</word>
+		<word>看中国</word>
+		<word>抗议</word>
+		<word>邝锦文</word>
+		<word>劳动教养所</word>
+		<word>劳改</word>
+		<word>劳教</word>
+		<word>老江</word>
+		<word>老毛</word>
+		<word>老人政治</word>
+		<word>黎安友</word>
+		<word>李长春</word>
+		<word>李洪宽</word>
+		<word>李继耐</word>
+		<word>李兰菊</word>
+		<word>李岚清</word>
+		<word>李老师</word>
+		<word>李录</word>
+		<word>李禄</word>
+		<word>李少民</word>
+		<word>李淑娴</word>
+		<word>李旺阳</word>
+		<word>李文斌</word>
+		<word>李小朋</word>
+		<word>李小鹏</word>
+		<word>李月月鸟</word>
+		<word>李志绥</word>
+		<word>李总理</word>
+		<word>连胜德</word>
+		<word>联总</word>
+		<word>廉政大论坛</word>
+		<word>梁光烈</word>
+		<word>梁擎墩</word>
+		<word>两岸关系</word>
+		<word>两岸三地论坛</word>
+		<word>两个中国</word>
+		<word>两会</word>
+		<word>两会报道</word>
+		<word>两会新闻</word>
+		<word>廖锡龙</word>
+		<word>林保华</word>
+		<word>林长盛</word>
+		<word>林樵清</word>
+		<word>林慎立</word>
+		<word>凌锋</word>
+		<word>刘宾深</word>
+		<word>刘宾雁</word>
+		<word>刘刚</word>
+		<word>刘国凯</word>
+		<word>刘华清</word>
+		<word>刘俊国</word>
+		<word>刘凯中</word>
+		<word>刘千石</word>
+		<word>刘青</word>
+		<word>刘山青</word>
+		<word>刘士贤</word>
+		<word>刘文胜</word>
+		<word>刘晓波</word>
+		<word>刘晓竹</word>
+		<word>刘永川</word>
+		<word>流亡</word>
+		<word>龙虎豹</word>
+		<word>陆委会</word>
+		<word>吕京花</word>
+		<word>吕秀莲</word>
+		<word>抡功</word>
+		<word>伦功</word>
+		<word>轮大</word>
+		<word>二逼</word>
+		<word>二B</word>
+		<word>小灵通</word>
+		<word>绿色环保手机</word>
+		<word>罗干</word>
+		<word>罗礼诗</word>
+		<word>马大维</word>
+		<word>马良骏</word>
+		<word>马三家</word>
+		<word>马时敏</word>
+		<word>卖国</word>
+		<word>毛厕洞</word>
+		<word>美国参考</word>
+		<word>蒙独</word>
+		<word>蒙古独立</word>
+		<word>密穴</word>
+		<word>绵恒</word>
+		<word>民国</word>
+		<word>民联</word>
+		<word>民意</word>
+		<word>民意论坛</word>
+		<word>民运</word>
+		<word>民阵</word>
+		<word>民猪</word>
+		<word>民主</word>
+		<word>民主墙</word>
+		<word>民族矛盾</word>
+		<word>明慧</word>
+		<word>莫伟强</word>
+		<word>木犀地</word>
+		<word>木子论坛</word>
+		<word>南大自由论坛</word>
+		<word>闹事</word>
+		<word>倪育贤</word>
+		<word>你说我说论坛</word>
+		<word>潘国平</word>
+		<word>泡沫经济</word>
+		<word>迫害</word>
+		<word>祁建</word>
+		<word>齐墨</word>
+		<word>钱达</word>
+		<word>钱国梁</word>
+		<word>钱其琛</word>
+		<word>抢粮记</word>
+		<word>乔石</word>
+		<word>亲美</word>
+		<word>亲日</word>
+		<word>钦本立</word>
+		<word>秦晋</word>
+		<word>青天白日旗</word>
+		<word>轻舟快讯</word>
+		<word>情妇</word>
+		<word>庆红</word>
+		<word>全国两会</word>
+		<word>热比娅</word>
+		<word>热站政论网</word>
+		<word>人民报</word>
+		<word>人民内情真相</word>
+		<word>人民真实</word>
+		<word>人民之声论坛</word>
+		<word>人权</word>
+		<word>日内瓦金融</word>
+		<word>瑞士金融大学</word>
+		<word>色情</word>
+		<word>善恶有报</word>
+		<word>上海帮</word>
+		<word>上海孤儿院</word>
+		<word>邵家健</word>
+		<word>射精</word>
+		<word>神通加持法</word>
+		<word>沈彤</word>
+		<word>盛华仁</word>
+		<word>盛雪</word>
+		<word>石戈</word>
+		<word>时代论坛</word>
+		<word>时事论坛</word>
+		<word>世界经济导报</word>
+		<word>事实独立</word>
+		<word>双十节</word>
+		<word>税力</word>
+		<word>司马晋</word>
+		<word>司马璐</word>
+		<word>司徒华</word>
+		<word>斯诺</word>
+		<word>四川独立</word>
+		<word>宋xx</word>
+		<word>宋平</word>
+		<word>宋书元</word>
+		<word>宋祖英</word>
+		<word>苏绍智</word>
+		<word>苏晓康</word>
+		<word>台盟</word>
+		<word>台湾狗</word>
+		<word>天安门录影带</word>
+		<word>天安门事件</word>
+		<word>天安门一代</word>
+		<word>新华内情</word>
+		<word>一中一台</word>
+		<word>氵去车仑工力</word>
+		<word>联通</word>
+		<word>移动</word>
+		<word>他妈</word>
+		<word>他母亲</word>
+		<word>你妈</word>
+		<word>你娘</word>
+		<word>你爸</word>
+		<word>fuck</word>
+		<word>shit</word>
+		<word>操你</word>
+		<word>婊子</word>
+		<word>bitch</word>
+		<word>我日</word>
+		<word>我操</word>
+		<word>操他</word>
+		<word>操蛋</word>
+		<word>屄</word>
+		<word>台湾建国运动组织</word>
+		<word>台湾青年独立联盟</word>
+		<word>台湾政论区</word>
+		<word>台湾自由联盟</word>
+		<word>汤光中</word>
+		<word>唐柏桥</word>
+		<word>唐捷</word>
+		<word>滕文生</word>
+		<word>天怒</word>
+		<word>天葬</word>
+		<word>童屹</word>
+		<word>统独</word>
+		<word>统独论坛</word>
+		<word>统战</word>
+		<word>屠杀</word>
+		<word>外交论坛</word>
+		<word>外交与方略</word>
+		<word>万润南</word>
+		<word>万维读者论坛</word>
+		<word>万晓东</word>
+		<word>汪岷</word>
+		<word>王宝森</word>
+		<word>王炳章</word>
+		<word>王策</word>
+		<word>王超华</word>
+		<word>王丹</word>
+		<word>王辅臣</word>
+		<word>王刚</word>
+		<word>王涵万</word>
+		<word>王沪宁</word>
+		<word>王军涛</word>
+		<word>王力雄</word>
+		<word>王瑞林</word>
+		<word>王润生</word>
+		<word>王若望</word>
+		<word>王希哲</word>
+		<word>王秀丽</word>
+		<word>王冶坪</word>
+		<word>网特</word>
+		<word>尉健行</word>
+		<word>魏京生</word>
+		<word>魏新生</word>
+		<word>温家宝</word>
+		<word>温元凯</word>
+		<word>文革</word>
+		<word>无界浏览器</word>
+		<word>吴百益</word>
+		<word>吴邦国</word>
+		<word>吴方城</word>
+		<word>吴官正</word>
+		<word>吴弘达</word>
+		<word>吴宏达</word>
+		<word>吴仁华</word>
+		<word>吴学灿</word>
+		<word>吴学璨</word>
+		<word>吾尔开希</word>
+		<word>五不</word>
+		<word>伍凡</word>
+		<word>西藏</word>
+		<word>洗脑</word>
+		<word>下体</word>
+		<word>项怀诚</word>
+		<word>项小吉</word>
+		<word>小参考</word>
+		<word>肖强</word>
+		<word>邪恶</word>
+		<word>谢长廷</word>
+		<word>谢选骏</word>
+		<word>谢中之</word>
+		<word>辛灏年</word>
+		<word>新观察论坛</word>
+		<word>新华举报</word>
+		<word>新华通论坛</word>
+		<word>新闻封锁</word>
+		<word>新语丝</word>
+		<word>信用危机</word>
+		<word>邢铮</word>
+		<word>熊炎</word>
+		<word>熊焱</word>
+		<word>修炼</word>
+		<word>徐邦秦</word>
+		<word>徐才厚</word>
+		<word>徐匡迪</word>
+		<word>徐水良</word>
+		<word>许家屯</word>
+		<word>薛伟</word>
+		<word>学潮</word>
+		<word>学联</word>
+		<word>学习班</word>
+		<word>学运</word>
+		<word>学自联</word>
+		<word>小鸡鸡</word>
+		<word>强奸</word>
+		<word>贱人</word>
+		<word>狗娘</word>
+		<word>睾丸</word>
+		<word>包皮</word>
+		<word>奶子</word>
+		<word>作爱</word>
+		<word>做爱</word>
+		<word>打炮</word>
+		<word>十八摸</word>
+		<word>喷你</word>
+		<word>精子</word>
+		<word>龟公</word>
+		<word>你妈的</word>
+		<word>去你妈的</word>
+		<word>奸淫</word>
+		<word>淫荡</word>
+		<word>烂货</word>
+		<word>贱货</word>
+		<word>肛门</word>
+		<word>严家其</word>
+		<word>严家祺</word>
+		<word>阎明复</word>
+		<word>央视内部晚会</word>
+		<word>杨怀安</word>
+		<word>杨建利</word>
+		<word>杨巍</word>
+		<word>杨月清</word>
+		<word>杨周</word>
+		<word>姚月谦</word>
+		<word>夜话紫禁城</word>
+		<word>义解</word>
+		<word>亦凡</word>
+		<word>异见人士</word>
+		<word>异议人士</word>
+		<word>易丹轩</word>
+		<word>易志熹</word>
+		<word>尹庆民</word>
+		<word>由喜贵</word>
+		<word>幼齿</word>
+		<word>幼女</word>
+		<word>于大海</word>
+		<word>于浩成</word>
+		<word>余英时</word>
+		<word>舆论</word>
+		<word>舆论反制</word>
+		<word>宇明网</word>
+		<word>远志明</word>
+		<word>岳武</word>
+		<word>在十月</word>
+		<word>则民</word>
+		<word>择民</word>
+		<word>泽民</word>
+		<word>贼民</word>
+		<word>曾培炎</word>
+		<word>张伯笠</word>
+		<word>张钢</word>
+		<word>张宏堡</word>
+		<word>张健</word>
+		<word>张林</word>
+		<word>张万年</word>
+		<word>张伟国</word>
+		<word>张昭富</word>
+		<word>张志清</word>
+		<word>赵海青</word>
+		<word>赵南</word>
+		<word>赵品潞</word>
+		<word>赵晓微</word>
+		<word>赵紫阳</word>
+		<word>哲民</word>
+		<word>真相</word>
+		<word>真象</word>
+		<word>镇压</word>
+		<word>争鸣论坛</word>
+		<word>正见网</word>
+		<word>正义党论坛</word>
+		<word>郑义</word>
+		<word>郑源</word>
+		<word>政权</word>
+		<word>政治反对派</word>
+		<word>政治犯</word>
+		<word>支那</word>
+		<word>指点江山论坛</word>
+		<word>中俄边界</word>
+		<word>中功</word>
+		<word>中共</word>
+		<word>中国复兴论坛</word>
+		<word>中国孤儿院</word>
+		<word>中国和平</word>
+		<word>中国论坛</word>
+		<word>中国社会进步党</word>
+		<word>中国社会论坛</word>
+		<word>中国威胁论</word>
+		<word>中国问题论坛</word>
+		<word>中国真实内容</word>
+		<word>中国之春</word>
+		<word>中华大地</word>
+		<word>中华大众</word>
+		<word>中华讲清</word>
+		<word>中华民国</word>
+		<word>中华人民实话实说</word>
+		<word>中华人民正邪</word>
+		<word>中华时事</word>
+		<word>中华养生益智功</word>
+		<word>中华真实报道</word>
+		<word>钟山风雨论坛</word>
+		<word>晚年周恩来</word>
+		<word>周锋锁</word>
+		<word>周天法</word>
+		<word>周旋</word>
+		<word>朱嘉明</word>
+		<word>狗卵子</word>
+		<word>狗操</word>
+		<word>猪操</word>
+		<word>发骚</word>
+		<word>骚货</word>
+		<word>狗屎</word>
+		<word>妓女</word>
+		<word>招妓</word>
+		<word>牛逼</word>
+		<word>牛比</word>
+		<word>阴道</word>
+		<word>阴水</word>
+		<word>阴唇</word>
+		<word>阴蒂</word>
+		<word>狂操</word>
+		<word>杂种</word>
+		<word>插你</word>
+		<word>性欲</word>
+		<word>B样</word>
+		<word>阝月</word>
+		<word>朱琳</word>
+		<word>朱毛</word>
+		<word>朱溶剂</word>
+		<word>猪毛1</word>
+		<word>主义</word>
+		<word>专制</word>
+		<word>转化</word>
+		<word>自焚</word>
+		<word>自民党</word>
+		<word>自已的故事</word>
+		<word>自由民主论坛</word>
+		<word>作秀</word>
+		<word>64事件</word>
+		<word>89事件</word>
+		<word>21世纪中国基金会</word>
+		<word>6-4tianwang</word>
+		<word>89-64cdjp</word>
+		<word>av</word>
+		<word>bignews</word>
+		<word>boxun</word>
+		<word>chinaliberal</word>
+		<word>chinamz</word>
+		<word>chinesenewsnet</word>
+		<word>cnd</word>
+		<word>creaders</word>
+		<word>dafa</word>
+		<word>dajiyuan</word>
+		<word>dfdz</word>
+		<word>dpp</word>
+		<word>falu</word>
+		<word>falun</word>
+		<word>falundafa</word>
+		<word>fa轮</word>
+		<word>flg</word>
+		<word>freedom</word>
+		<word>freenet</word>
+		<word>GCD</word>
+		<word>gcd</word>
+		<word>hrichina</word>
+		<word>huanet</word>
+		<word>hypermart.net</word>
+		<word>incest</word>
+		<word>jiangdongriji</word>
+		<word>making</word>
+		<word>nacb</word>
+		<word>naive</word>
+		<word>nmis</word>
+		<word>paper64</word>
+		<word>peacehall</word>
+		<word>playboy</word>
+		<word>renminbao</word>
+		<word>renmingbao</word>
+		<word>rfa</word>
+		<word>safeweb</word>
+		<word>sex</word>
+		<word>simple</word>
+		<word>svdc</word>
+		<word>taip</word>
+		<word>tibetalk</word>
+		<word>triangle</word>
+		<word>triangleboy</word>
+		<word>UltraSurf</word>
+		<word>unixbox</word>
+		<word>ustibet</word>
+		<word>voa</word>
+		<word>voachinese</word>
+		<word>wangce</word>
+		<word>wstaiji</word>
+		<word>xinsheng</word>
+		<word>yuming</word>
+		<word>zhengjian</word>
+		<word>zhengjianwang</word>
+		<word>zhenshanren</word>
+		<word>zhuanfalun</word>
+		<word>法lun功</word>
+		<word>江ze民</word>
+		<word>收容所</word>
+		<word>数据中国</word>
+		<word>陈水扁</word>
+		<word>奥运会</word>
+		<word>阿扁</word>
+		<word>法功</word>
+		<word>反封锁</word>
+		<word>回民暴</word>
+		<word>蒙古独</word>
+		<word>四川独</word>
+		<word>台湾独</word>
+		<word>天安门</word>
+		<word>西藏独</word>
+		<word>新疆独</word>
+		<word>氵去</word>
+		<word>车仑</word>
+		<word>工力</word>
+		<word>试卷、</word>
+		<word>上访</word>
+		<word>泄密</word>
+		<word>瞒报</word>
+		<word>失密</word>
+		<word>被盗</word>
+		<word>客服</word>
+		<word>客服01</word>
+		<word>客服02</word>
+		<word>星战</word>
+		<word>武林擂</word>
+		<word>帝国ol</word>
+		<word>帝国OL</word>
+		<word>帝国online</word>
+		<word>帝国ONLINE</word>
+		<word>diguoONLINE</word>
+		<word>DIGUOonline</word>
+		<word>侠义</word>
+		<word>诛神</word>
+		<word>契约</word>
+		<word>封神</word>
+		<word>天劫</word>
+		<word>飞天</word>
+		<word>幻境</word>
+		<word>九州</word>
+		<word>乱世</word>
+		<word>天问</word>
+		<word>明珠三国</word>
+		<word>灵兽世界</word>
+		<word>天域</word>
+		<word>三国</word>
+		<word>神兆</word>
+		<word>棒棒堂</word>
+		<word>火焰VS</word>
+		<word>无限江湖</word>
+		<word>垃圾文明</word>
+		<word>大宋豪侠</word>
+		<word>契约OL</word>
+		<word>契约online</word>
+		<word>online</word>
+		<word>性愛</word>
+		<word>裝B</word>
+		<word>裝逼</word>
+		<word>性服務</word>
+		<word>特殊服務</word>
+		<word>處女膜</word>
+		<word>特碼</word>
+		<word>透碼</word>
+		<word>迷奸藥</word>
+		<word>愛液</word>
+		<word>後庭</word>
+		<word>女優</word>
+		<word>蓬門</word>
+		<word>獸交</word>
+		<word>色情網站</word>
+		<word>騷穴</word>
+		<word>陰精</word>
+		<word>應召女郎</word>
+		<word>龜頭</word>
+		<word>雞巴</word>
+		<word>噴精</word>
+		<word>陰莖</word>
+		<word>陰毛</word>
+		<word>黃色網站</word>
+		<word>成人網站</word>
+		<word>成人小說</word>
+		<word>成人文學</word>
+		<word>成人影視</word>
+		<word>成人漫畫</word>
+		<word>成人圖片</word>
+		<word>藏青會</word>
+		<word>雪山獅子旗</word>
+		<word>陽具</word>
+		<word>爆漿</word>
+		<word>開苞</word>
+		<word>亂倫</word>
+		<word>輪奸</word>
+		<word>吸鳥</word>
+		<word>性派對</word>
+		<word>顏射</word>
+		<word>誘姦</word>
+		<word>長舌象</word>
+		<word>吹氣娃娃</word>
+		<word>滾珠棒</word>
+		<word>氣球男孩</word>
+		<word>超級性虐</word>
+		<word>成人電影</word>
+		<word>成人書庫</word>
+		<word>成人圖</word>
+		<word>成人網</word>
+		<word>炮圖</word>
+		<word>三級片</word>
+		<word>偷窺</word>
+		<word>無碼</word>
+		<word>性愛圖</word>
+		<word>淫圖</word>
+		<word>誘惑</word>
+		<word>大圓滿</word>
+		<word>護法</word>
+		<word>集會</word>
+		<word>遊行</word>
+		<word>一黨專制</word>
+		<word>雪山獅子</word>
+		<word>西藏人權</word>
+		<word>藏 獨</word>
+		<word>黃色影視</word>
+		<word>黃色電影</word>
+		<word>黃色小說</word>
+		<word>黃色文學</word>
+		<word>黃色圖片</word>
+		<word>黃色漫畫</word>
+		<word>應招妓女</word>
+		<word>成人論壇</word>
+		<word>性免費電影</word>
+		<word>小電影</word>
+		<word>陽萎</word>
+		<word>迷藥</word>
+		<word>三點</word>
+		<word>衛生巾</word>
+		<word>豔照門</word>
+		<word>男女公關</word>
+		<word>感情陪護</word>
+		<word>買春</word>
+		<word>隱私圖片</word>
+		<word>美腿寫真</word>
+		<word>絲襪寫真</word>
+		<word>陳冠希</word>
+		<word>阿嬌</word>
+		<word>豔照</word>
+		<word>美少婦</word>
+		<word>換妻</word>
+		<word>月薪萬元</word>
+		<word>公關</word>
+		<word>誠聘</word>
+		<word>玉蒲團</word>
+		<word>臺灣18DY電影</word>
+		<word>H動漫</word>
+		<word>網路色情網址大全</word>
+		<word>H漫畫</word>
+		<word>他媽的</word>
+		<word>黃片</word>
+		<word>禁區</word>
+		<word>風騷</word>
+		<word>雲雨</word>
+		<word>銷魂</word>
+		<word>調情</word>
+		<word>雙腿間的禁地</word>
+		<word>少兒不宜</word>
+		<word>兩性狂情</word>
+		<word>乾柴烈火</word>
+		<word>法輪功</word>
+		<word>新疆獨立</word>
+		<word>西藏獨立</word>
+		<word>反黨</word>
+		<word>反國家</word>
+		<word>圓滿</word>
+		<word>法輪</word>
+		<word>轉法輪</word>
+		<word>大法輪</word>
+		<word>輪功</word>
+		<word>共鏟黨</word>
+		<word>九評共產黨</word>
+		<word>明慧網</word>
+		<word>退黨</word>
+		<word>無網界流覽</word>
+		<word>無網界</word>
+		<word>美國之音</word>
+		<word>自由亞洲</word>
+		<word>大紀元</word>
+		<word>反華</word>
+		<word>共產黨</word>
+		<word>政府軟弱</word>
+		<word>政府無能</word>
+		<word>達賴</word>
+		<word>臺灣獨立</word>
+		<word>員警毆打</word>
+		<word>中央軍委</word>
+		<word>針對臺灣</word>
+		<word>中共惡霸</word>
+		<word>共產無賴</word>
+		<word>內鬥退黨</word>
+		<word>江理論</word>
+		<word>黨內分裂</word>
+		<word>新生網</word>
+		<word>圓明網</word>
+		<word>修煉之歌</word>
+		<word>發正念</word>
+		<word>和平修煉</word>
+		<word>支聯會</word>
+		<word>共產專制</word>
+		<word>共產極權</word>
+		<word>專政機器</word>
+		<word>共產王朝</word>
+		<word>大法洪傳</word>
+		<word>法網恢恢</word>
+		<word>鄧派</word>
+		<word>法輪佛法</word>
+		<word>誰是新中國</word>
+		<word>法正人間</word>
+		<word>正法時期</word>
+		<word>海外護法</word>
+		<word>洪發交流</word>
+		<word>報禁</word>
+		<word>黨禁</word>
+		<word>鴿派</word>
+		<word>鷹派</word>
+		<word>贛江學院暴動</word>
+		<word>全國退黨</word>
+		<word>絕食抗暴</word>
+		<word>維權抗暴</word>
+		<word>活體器官</word>
+		<word>中共當局</word>
+		<word>胡溫政府</word>
+		<word>江羅集團</word>
+		<word>師傅法身</word>
+		<word>正派民運</word>
+		<word>中華聯邦政府</word>
+		<word>親共行動</word>
+		<word>聯邦政府</word>
+		<word>流氓民運</word>
+		<word>特務民運</word>
+		<word>江賊民</word>
+		<word>中共員警</word>
+		<word>中共監獄</word>
+		<word>中共政權</word>
+		<word>自由聯邦</word>
+		<word>中共獨梟</word>
+		<word>流氓無產者</word>
+		<word>中共專制</word>
+		<word>明慧週刊</word>
+		<word>銷售槍支</word>
+		<word>售槍支</word>
+		<word>售彈藥</word>
+		<word>辦證</word>
+		<word>放賬</word>
+		<word>高利貸</word>
+		<word>高利息貸款</word>
+		<word>高息貸款</word>
+		<word>放貸款</word>
+		<word>敲詐</word>
+		<word>假證</word>
+		<word>黑社會</word>
+		<word>復仇</word>
+		<word>抽獎</word>
+		<word>賣二手車</word>
+		<word>售賣武器</word>
+		<word>假髮</word>
+		<word>假髮票</word>
+		<word>竊聽</word>
+		<word>竊取</word>
+		<word>商會</word>
+		<word>監聽</word>
+		<word>地下錢莊</word>
+		<word>竊聽器</word>
+		<word>變性</word>
+		<word>代開普通發票</word>
+		<word>代開商品發票</word>
+		<word>代開國稅發票</word>
+		<word>代開地稅發票</word>
+		<word>代開廣告發票</word>
+		<word>代開運輸發票</word>
+		<word>代開租賃發票</word>
+		<word>代開維修發票</word>
+		<word>代開建築發票</word>
+		<word>代開安裝發票</word>
+		<word>代開餐飲發票</word>
+		<word>代開服務發票</word>
+		<word>代開發票</word>
+		<word>仿真假鈔</word>
+		<word>全新假鈔</word>
+		<word>出售假鈔</word>
+		<word>隱形噴劑</word>
+		<word>反雷達測速</word>
+		<word>假幣</word>
+		<word>出售槍支</word>
+		<word>出售手槍</word>
+		<word>代辦證件</word>
+		<word>英語槍手</word>
+		<word>假鈔</word>
+		<word>探測狗</word>
+		<word>手機卡複製器</word>
+		<word>監聽王</word>
+		<word>手機跟蹤定位器</word>
+		<word>監聽器</word>
+		<word>針孔攝像</word>
+		<word>監聽寶</word>
+		<word>速匯</word>
+		<word>白立樸</word>
+		<word>白夢</word>
+		<word>白皮書</word>
+		<word>保釣</word>
+		<word>鮑戈</word>
+		<word>鮑彤</word>
+		<word>暴亂</word>
+		<word>北大三角地論壇</word>
+		<word>北韓</word>
+		<word>北京當局</word>
+		<word>北美自由論壇</word>
+		<word>博訊</word>
+		<word>蔡崇國</word>
+		<word>藏獨</word>
+		<word>曹長青</word>
+		<word>曹剛川</word>
+		<word>常勁</word>
+		<word>陳炳基</word>
+		<word>陳軍</word>
+		<word>陳蒙</word>
+		<word>陳破空</word>
+		<word>陳希同</word>
+		<word>陳小同</word>
+		<word>陳宣良</word>
+		<word>陳一諮</word>
+		<word>陳總統</word>
+		<word>程凱</word>
+		<word>程鐵軍</word>
+		<word>遲浩田</word>
+		<word>持不同政見</word>
+		<word>春夏自由論壇</word>
+		<word>大參考</word>
+		<word>大紀元新聞網</word>
+		<word>大紀園</word>
+		<word>大家論壇</word>
+		<word>大史記</word>
+		<word>大史紀</word>
+		<word>大中國論壇</word>
+		<word>大中華論壇</word>
+		<word>大眾真人真事</word>
+		<word>戴相龍</word>
+		<word>彈劾</word>
+		<word>登輝</word>
+		<word>鄧笑貧</word>
+		<word>迪裏夏提</word>
+		<word>地下教會</word>
+		<word>電視流氓</word>
+		<word>釣魚島</word>
+		<word>丁關根</word>
+		<word>東北獨立</word>
+		<word>東方紅時空</word>
+		<word>東方時空</word>
+		<word>東南西北論談</word>
+		<word>東社</word>
+		<word>東土耳其斯坦</word>
+		<word>東西南北論壇</word>
+		<word>動亂</word>
+		<word>獨裁</word>
+		<word>獨裁政治</word>
+		<word>獨夫</word>
+		<word>獨立臺灣會</word>
+		<word>多維</word>
+		<word>俄國</word>
+		<word>發愣</word>
+		<word>發輪</word>
+		<word>法掄</word>
+		<word>法侖</word>
+		<word>法倫</word>
+		<word>法論</word>
+		<word>法十輪十功</word>
+		<word>法謫</word>
+		<word>法謫功</word>
+		<word>反封鎖技術</word>
+		<word>反腐敗論壇</word>
+		<word>毛澤東</word>
+		<word>鄧小平</word>
+		<word>胡錦濤</word>
+		<word>台獨</word>
+		<word>發論功</word>
+		<word>發論公</word>
+		<word>發倫功</word>
+		<word>發論</word>
+		<word>發倫</word>
+		<word>法掄功</word>
+		<word>發掄功</word>
+		<word>發掄</word>
+		<word>講法</word>
+		<word>李大師</word>
+		<word>李紅痔</word>
+		<word>煉功</word>
+		<word>李總統</word>
+		<word>李登輝</word>
+		<word>李鵬</word>
+		<word>李瑞環</word>
+		<word>醬豬媳</word>
+		<word>江豬媳</word>
+		<word>反人類</word>
+		<word>反社會</word>
+		<word>方勵之</word>
+		<word>飛揚論壇</word>
+		<word>費良勇</word>
+		<word>粉飾太平</word>
+		<word>風雨神州</word>
+		<word>風雨神州論壇</word>
+		<word>封從德</word>
+		<word>封殺</word>
+		<word>馮東海</word>
+		<word>馮素英</word>
+		<word>高文謙</word>
+		<word>高薪養廉</word>
+		<word>高自聯</word>
+		<word>戈揚</word>
+		<word>歌功頌德</word>
+		<word>個人崇拜</word>
+		<word>工自聯</word>
+		<word>共產</word>
+		<word>共黨</word>
+		<word>共軍</word>
+		<word>關卓中</word>
+		<word>貫通兩極法</word>
+		<word>廣聞</word>
+		<word>郭羅基</word>
+		<word>郭岩華</word>
+		<word>國家安全</word>
+		<word>國家機密</word>
+		<word>國軍</word>
+		<word>國賊</word>
+		<word>韓東方</word>
+		<word>韓聯潮</word>
+		<word>漢奸</word>
+		<word>河殤</word>
+		<word>紅燈區</word>
+		<word>紅色恐怖</word>
+		<word>洪傳</word>
+		<word>洪哲勝</word>
+		<word>胡緊掏</word>
+		<word>胡錦滔</word>
+		<word>胡錦淘</word>
+		<word>胡景濤</word>
+		<word>胡總書記</word>
+		<word>華建敏</word>
+		<word>華通時事論壇</word>
+		<word>華夏文摘</word>
+		<word>華語世界論壇</word>
+		<word>華嶽時事論壇</word>
+		<word>黃慈萍</word>
+		<word>黃禍</word>
+		<word>黃菊</word>
+		<word>黃菊　</word>
+		<word>黃翔</word>
+		<word>回民暴動</word>
+		<word>悔過書</word>
+		<word>雞毛信文匯</word>
+		<word>姬勝德</word>
+		<word>積克館</word>
+		<word>賈慶林</word>
+		<word>賈廷安</word>
+		<word>賈育台</word>
+		<word>建國黨</word>
+		<word>江八點</word>
+		<word>江羅</word>
+		<word>江綿恒</word>
+		<word>江戲子</word>
+		<word>江則民</word>
+		<word>江澤慧</word>
+		<word>僵賊民</word>
+		<word>江豬</word>
+		<word>毛賊東</word>
+		<word>民進黨</word>
+		<word>天安門屠殺</word>
+		<word>豬聾畸</word>
+		<word>朱鎔基</word>
+		<word>曾慶紅</word>
+		<word>豬毛</word>
+		<word>中國豬</word>
+		<word>幹死你</word>
+		<word>雞八</word>
+		<word>賤逼</word>
+		<word>賤比</word>
+		<word>幹你娘</word>
+		<word>賣逼</word>
+		<word>賣比</word>
+		<word>爛逼</word>
+		<word>爛比</word>
+		<word>靠你媽</word>
+		<word>操你媽</word>
+		<word>媽批</word>
+		<word>逼樣</word>
+		<word>江賊</word>
+		<word>薑春雲</word>
+		<word>將則民</word>
+		<word>僵賊</word>
+		<word>疆獨</word>
+		<word>教養院</word>
+		<word>揭批書</word>
+		<word>金堯如</word>
+		<word>錦濤</word>
+		<word>經文</word>
+		<word>開放雜誌</word>
+		<word>看中國</word>
+		<word>抗議</word>
+		<word>鄺錦文</word>
+		<word>勞動教養所</word>
+		<word>勞改</word>
+		<word>勞教</word>
+		<word>李長春</word>
+		<word>李洪寬</word>
+		<word>李繼耐</word>
+		<word>李蘭菊</word>
+		<word>李嵐清</word>
+		<word>李老師</word>
+		<word>李錄</word>
+		<word>李祿</word>
+		<word>李淑嫻</word>
+		<word>李旺陽</word>
+		<word>李小鵬</word>
+		<word>李月月鳥</word>
+		<word>李志綏</word>
+		<word>李總理</word>
+		<word>連勝德</word>
+		<word>聯總</word>
+		<word>廉政大論壇</word>
+		<word>兩岸關係</word>
+		<word>兩岸三地論壇</word>
+		<word>兩個中國</word>
+		<word>兩會</word>
+		<word>兩會報導</word>
+		<word>兩會新聞</word>
+		<word>廖錫龍</word>
+		<word>林保華</word>
+		<word>林長盛</word>
+		<word>淩鋒</word>
+		<word>劉賓深</word>
+		<word>劉賓雁</word>
+		<word>劉剛</word>
+		<word>劉國凱</word>
+		<word>劉華清</word>
+		<word>劉俊國</word>
+		<word>劉凱中</word>
+		<word>劉千石</word>
+		<word>劉青</word>
+		<word>劉山青</word>
+		<word>劉士賢</word>
+		<word>劉文勝</word>
+		<word>劉曉波</word>
+		<word>劉曉竹</word>
+		<word>劉永川</word>
+		<word>龍虎豹</word>
+		<word>陸委會</word>
+		<word>呂京花</word>
+		<word>呂秀蓮</word>
+		<word>掄功</word>
+		<word>倫功</word>
+		<word>輪大</word>
+		<word>小靈通</word>
+		<word>綠色環保手機</word>
+		<word>中國移動通信</word>
+		<word>羅幹</word>
+		<word>羅禮詩</word>
+		<word>馬大維</word>
+		<word>馬良駿</word>
+		<word>馬三家</word>
+		<word>馬時敏</word>
+		<word>賣國</word>
+		<word>毛廁洞</word>
+		<word>美國參考</word>
+		<word>蒙獨</word>
+		<word>蒙古獨立</word>
+		<word>綿恒</word>
+		<word>民國</word>
+		<word>民聯</word>
+		<word>民意論壇</word>
+		<word>民運</word>
+		<word>民陣</word>
+		<word>民豬</word>
+		<word>民主牆</word>
+		<word>莫偉強</word>
+		<word>木子論壇</word>
+		<word>南大自由論壇</word>
+		<word>鬧事</word>
+		<word>倪育賢</word>
+		<word>你說我說論壇</word>
+		<word>潘國平</word>
+		<word>泡沫經濟</word>
+		<word>齊墨</word>
+		<word>錢達</word>
+		<word>錢國梁</word>
+		<word>錢其琛</word>
+		<word>搶糧記</word>
+		<word>喬石</word>
+		<word>親美</word>
+		<word>親日</word>
+		<word>欽本立</word>
+		<word>秦晉</word>
+		<word>輕舟快訊</word>
+		<word>情婦</word>
+		<word>慶紅</word>
+		<word>全國兩會</word>
+		<word>熱比婭</word>
+		<word>熱站政論網</word>
+		<word>人民報</word>
+		<word>人民內情真相</word>
+		<word>人民真實</word>
+		<word>人民之聲論壇</word>
+		<word>人權</word>
+		<word>日內瓦金融</word>
+		<word>瑞士金融大學</word>
+		<word>善惡有報</word>
+		<word>上海幫</word>
+		<word>上海孤兒院</word>
+		<word>盛華仁</word>
+		<word>師父</word>
+		<word>時代論壇</word>
+		<word>時事論壇</word>
+		<word>世界經濟導報</word>
+		<word>事實獨立</word>
+		<word>雙十節</word>
+		<word>稅力</word>
+		<word>司馬晉</word>
+		<word>司馬璐</word>
+		<word>司徒華</word>
+		<word>斯諾</word>
+		<word>四川獨立</word>
+		<word>宋書元</word>
+		<word>蘇紹智</word>
+		<word>蘇曉康</word>
+		<word>臺盟</word>
+		<word>臺灣狗</word>
+		<word>天安門錄影帶</word>
+		<word>天安門事件</word>
+		<word>天安門一代</word>
+		<word>新華內情</word>
+		<word>氵去車侖工力</word>
+		<word>聯通</word>
+		<word>移動</word>
+		<word>他媽</word>
+		<word>他母親</word>
+		<word>你媽</word>
+		<word>臺灣建國運動組織</word>
+		<word>臺灣青年獨立聯盟</word>
+		<word>臺灣政論區</word>
+		<word>臺灣自由聯盟</word>
+		<word>湯光中</word>
+		<word>唐柏橋</word>
+		<word>統獨</word>
+		<word>統獨論壇</word>
+		<word>統戰</word>
+		<word>屠殺</word>
+		<word>外交論壇</word>
+		<word>外交與方略</word>
+		<word>萬潤南</word>
+		<word>萬維讀者論壇</word>
+		<word>萬曉東</word>
+		<word>王寶森</word>
+		<word>王超華</word>
+		<word>王輔臣</word>
+		<word>王剛</word>
+		<word>王涵萬</word>
+		<word>王滬寧</word>
+		<word>王軍濤</word>
+		<word>王潤生</word>
+		<word>王秀麗</word>
+		<word>網特</word>
+		<word>溫家寶</word>
+		<word>溫元凱</word>
+		<word>無界流覽器</word>
+		<word>吳百益</word>
+		<word>吳邦國</word>
+		<word>吳方城</word>
+		<word>吳官正</word>
+		<word>吳弘達</word>
+		<word>吳宏達</word>
+		<word>吳仁華</word>
+		<word>吳學燦</word>
+		<word>吳學璨</word>
+		<word>吾爾開希</word>
+		<word>洗腦</word>
+		<word>下體</word>
+		<word>項懷誠</word>
+		<word>項小吉</word>
+		<word>小參考</word>
+		<word>肖強</word>
+		<word>邪惡</word>
+		<word>謝長廷</word>
+		<word>謝選駿</word>
+		<word>謝中之</word>
+		<word>辛灝年</word>
+		<word>新觀察論壇</word>
+		<word>新華舉報</word>
+		<word>新華通論壇</word>
+		<word>新聞封鎖</word>
+		<word>新語絲</word>
+		<word>信用危機</word>
+		<word>邢錚</word>
+		<word>修煉</word>
+		<word>許家屯</word>
+		<word>薛偉</word>
+		<word>學潮</word>
+		<word>學聯</word>
+		<word>學習班</word>
+		<word>學運</word>
+		<word>學自聯</word>
+		<word>小雞雞</word>
+		<word>強姦</word>
+		<word>賤人</word>
+		<word>作愛</word>
+		<word>做愛</word>
+		<word>噴你</word>
+		<word>龜公</word>
+		<word>你媽的</word>
+		<word>去你媽的</word>
+		<word>姦淫</word>
+		<word>淫蕩</word>
+		<word>爛貨</word>
+		<word>賤貨</word>
+		<word>肛門</word>
+		<word>嚴家其</word>
+		<word>嚴家祺</word>
+		<word>閻明複</word>
+		<word>央視內部晚會</word>
+		<word>楊懷安</word>
+		<word>楊建利</word>
+		<word>楊巍</word>
+		<word>楊月清</word>
+		<word>楊周</word>
+		<word>姚月謙</word>
+		<word>夜話紫禁城</word>
+		<word>義解</word>
+		<word>異見人士</word>
+		<word>異議人士</word>
+		<word>易丹軒</word>
+		<word>尹慶民</word>
+		<word>由喜貴</word>
+		<word>幼齒</word>
+		<word>余英時</word>
+		<word>輿論</word>
+		<word>輿論反制</word>
+		<word>宇明網</word>
+		<word>遠志明</word>
+		<word>則民</word>
+		<word>擇民</word>
+		<word>澤民</word>
+		<word>賊民</word>
+		<word>張伯笠</word>
+		<word>張鋼</word>
+		<word>張宏堡</word>
+		<word>張健</word>
+		<word>張林</word>
+		<word>張萬年</word>
+		<word>張偉國</word>
+		<word>張昭富</word>
+		<word>張志清</word>
+		<word>趙海青</word>
+		<word>趙南</word>
+		<word>趙品潞</word>
+		<word>趙曉微</word>
+		<word>趙紫陽</word>
+		<word>鎮壓</word>
+		<word>爭鳴論壇</word>
+		<word>正見網</word>
+		<word>正義黨論壇</word>
+		<word>鄭義</word>
+		<word>鄭源</word>
+		<word>政權</word>
+		<word>政治反對派</word>
+		<word>指點江山論壇</word>
+		<word>中俄邊界</word>
+		<word>中國復興論壇</word>
+		<word>中國孤兒院</word>
+		<word>中國和平</word>
+		<word>中國論壇</word>
+		<word>中國社會進步黨</word>
+		<word>中國社會論壇</word>
+		<word>中國威脅論</word>
+		<word>中國問題論壇</word>
+		<word>中國真實內容</word>
+		<word>中國之春</word>
+		<word>中華大地</word>
+		<word>中華大眾</word>
+		<word>中華講清</word>
+		<word>中華民國</word>
+		<word>中華人民實話實說</word>
+		<word>中華人民正邪</word>
+		<word>中華時事</word>
+		<word>中華養生益智功</word>
+		<word>中華真實報導</word>
+		<word>鐘山風雨論壇</word>
+		<word>晚年周恩來</word>
+		<word>周鋒鎖</word>
+		<word>豬操</word>
+		<word>發騷</word>
+		<word>騷貨</word>
+		<word>陰道</word>
+		<word>陰水</word>
+		<word>陰唇</word>
+		<word>陰蒂</word>
+		<word>雜種</word>
+		<word>B樣</word>
+		<word>朱溶劑</word>
+		<word>豬毛1</word>
+		<word>主義</word>
+		<word>專制</word>
+		<word>轉化</word>
+		<word>自民黨</word>
+		<word>自由民主論壇</word>
+		<word>資料中國</word>
+		<word>陳水扁</word>
+		<word>奧運會</word>
+		<word>反封鎖</word>
+		<word>蒙古獨</word>
+		<word>四川獨</word>
+		<word>臺灣獨</word>
+		<word>天安門</word>
+		<word>西藏獨</word>
+		<word>新疆獨</word>
+		<word>車侖</word>
+		<word>試卷、</word>
+		<word>上訪</word>
+		<word>洩密</word>
+		<word>瞞報</word>
+		<word>出賣</word>
+		<word>被盜</word>
+		<word>星戰</word>
+		<word>魔龍</word>
+		<word>帝國</word>
+		<word>帝國ol</word>
+		<word>帝國OL</word>
+		<word>帝國online</word>
+		<word>帝國ONLINE</word>
+		<word>俠義</word>
+		<word>誅神</word>
+		<word>契約</word>
+		<word>飛天</word>
+		<word>亂世</word>
+		<word>天問</word>
+		<word>明珠三國</word>
+		<word>靈獸世界</word>
+		<word>三國</word>
+		<word>無限江湖</word>
+		<word>大宋豪俠</word>
+		<word>契約OL</word>
+		<word>契約online</word>
+		<word>灵兽</word>
+		<word>天域online</word>
+		<word>女儿国</word>
+		<word>赤壁</word>
+		<word>/C</word>
+		<word>阴帝</word>
+		<word>做~爱</word>
+		<word>寂寞女人</word>
+		<word>煞b</word>
+		<word>煞比</word>
+		<word>吗比</word>
+		<word>装比</word>
+		<word>下面痒</word>
+		<word>阴部</word>
+		<word>洞洞</word>
+		<word>座爱</word>
+		<word>极巴</word>
+		<word>秀b</word>
+		<word>开放女</word>
+		<word>给女看</word>
+		<word>粗大</word>
+		<word>又长又粗</word>
+		<word>又粗又长</word>
+		<word>b毛</word>
+		<word>做暧</word>
+		<word>扣b</word>
+		<word>亲我下面</word>
+		<word>想看你的洞</word>
+		<word>妈痹</word>
+		<word>要射</word>
+		<word>mb</word>
+		<word>几巴</word>
+		<word>射晶</word>
+		<word>悠米资讯</word>
+		<word>做.爱</word>
+		<word>优米店小二</word>
+		<word>优米管理员</word>
+		<word>优米小管家</word>
+		<word>干女人</word>
+		<word>机机</word>
+		<word>几几</word>
+		<word>眯眯</word>
+		<word>+86</word>
+		<word>+86s</word>
+		<word>中心号码</word>
+		<word>系统漏洞</word>
+		<word>短信中心号码</word>
+		<word>mrp</word>
+		<word>jra</word>
+		<word>b痒</word>
+		<word>几八</word>
+		<word>透b</word>
+		<word>嘴吸吹添射</word>
+		<word>tmd</word>
+		<word>做嗳</word>
+		<word>几吧</word>
+		<word>舔阴</word>
+		<word>上你</word>
+		<word>茎待佳阴</word>
+		<word>机八</word>
+		<word>机吧</word>
+		<word>g巴</word>
+		<word>流氓</word>
+		<word>刷屏</word>
+		<word>射了</word>
+		<word>添b</word>
+		<word>看b</word>
+		<word>胸围</word>
+		<word>霪女</word>
+		<word>自蔚</word>
+		<word>两腿间</word>
+		<word>光身</word>
+		<word>敝毛</word>
+		<word>系统广播</word>
+		<word>卖b</word>
+		<word>傻比</word>
+		<word>击巴</word>
+		<word>机芭</word>
+		<word>击吧</word>
+		<word>机巴</word>
+		<word>悠米广播</word>
+		<word>吸香肠</word>
+		<word>吸毒</word>
+		<word>舔b</word>
+		<word>大波妹</word>
+		<word>摇头丸</word>
+		<word>包射</word>
+		<word>看逼</word>
+		<word>找b</word>
+		<word>以茎制洞</word>
+		<word>霸占女人</word>
+		<word>滥情</word>
+		<word>童童</word>
+		<word>水争气</word>
+		<word>悠米小管家</word>
+		<word>悠米管理员</word>
+		<word>茎久不衰</word>
+		<word>溅种</word>
+		<word>杂交</word>
+		<word>白痴</word>
+		<word>垃圾</word>
+		<word>中央军</word>
+		<word>月经</word>
+		<word>边做边爱</word>
+		<word>jj</word>
+		<word>妈逼</word>
+		<word>勃起</word>
+		<word>艾米</word>
+		<word>波波</word>
+		<word>装b</word>
+		<word>上过床</word>
+		<word>怡红院</word>
+		<word>黑道</word>
+		<word>开房</word>
+		<word>三八</word>
+		<word>流出水</word>
+		<word>搞女人</word>
+		<word>猛男</word>
+		<word>j巴</word>
+		<word>泡你</word>
+		<word>三陪</word>
+		<word>出台</word>
+		<word>聘妻</word>
+		<word>狂摸</word>
+		<word>壹夜</word>
+		<word>一夜</word>
+		<word>毒品</word>
+		<word>陪聊</word>
+		<word>妈的</word>
+		<word>床上</word>
+		<word>女干</word>
+		<word>甜你瘙痒b</word>
+		<word>甜你b</word>
+		<word>女人身体</word>
+		<word>夜夜</word>
+		<word>洞房不败</word>
+		<word>gg</word>
+		<word>弓虽女干</word>
+		<word>我想玩女人</word>
+		<word>混蛋</word>
+		<word>j芭</word>
+		<word>麻b</word>
+		<word>zuoai</word>
+		<word>性福</word>
+		<word>脱光</word>
+		<word>夜情</word>
+		<word>梅毒</word>
+		<word>畜生</word>
+		<word>操b</word>
+		<word>妈比</word>
+		<word>妈b</word>
+		<word>骚b</word>
+		<word>处女</word>
+		<word>找逼</word>
+		<word>打飞机</word>
+		<word>双飞</word>
+		<word>色女</word>
+		<word>处男</word>
+		<word>射雕淫雄传</word>
+		<word>还珠格格成人版</word>
+		<word>搞台独</word>
+		<word>镜花风月系列</word>
+		<word>借种</word>
+		<word>色欲档案</word>
+		<word>幻想玉女</word>
+		<word>猎枪麻醉枪</word>
+		<word>皇帝也风流</word>
+		<word>酒级别</word>
+		<word>少女潘金莲</word>
+		<word>万里大造林</word>
+		<word>炸弹制作</word>
+		<word>激情图片</word>
+		<word>裸体</word>
+		<word>民运分子</word>
+		<word>胡锦</word>
+		<word>绕过封锁</word>
+		<word>六合</word>
+		<word>做鸡</word>
+		<word>手淫</word>
+		<word>淫靡</word>
+		<word>法轮法轮</word>
+		<word>国家信息</word>
+		<word>信息产业部</word>
+		<word>信产局</word>
+		<word>土匪政府</word>
+		<word>强盗警察</word>
+		<word>流氓警察</word>
+		<word>执法犯法</word>
+		<word>司法部门</word>
+		<word>检察院</word>
+		<word>公检法</word>
+		<word>司法部</word>
+		<word>公安部</word>
+		<word>公安局</word>
+		<word>於幼军</word>
+		<word>空难</word>
+		<word>张丕林</word>
+		<word>张五常</word>
+		<word>吸储</word>
+		<word>猫肉</word>
+		<word>骗局</word>
+		<word>文字狱</word>
+		<word>于幼军</word>
+		<word>黄丽满</word>
+		<word>人大</word>
+		<word>高干</word>
+		<word>司法警官</word>
+		<word>李远哲</word>
+		<word>暴动</word>
+		<word>城管</word>
+		<word>坐台</word>
+		<word>书记</word>
+		<word>首长</word>
+		<word>公款</word>
+		<word>妈个</word>
+		<word>夜总会</word>
+		<word>刑警</word>
+		<word>消防队</word>
+		<word>交警</word>
+		<word>武警</word>
+		<word>革命</word>
+		<word>大盖帽</word>
+		<word>公安</word>
+		<word>民警</word>
+		<word>警察</word>
+		<word>伦公</word>
+		<word>伦攻</word>
+		<word>论公</word>
+		<word>论功</word>
+		<word>论攻</word>
+		<word>沦攻</word>
+		<word>沦公</word>
+		<word>沦功</word>
+		<word>轮攻</word>
+		<word>轮公</word>
+		<word>发沦</word>
+		<word>法沦</word>
+		<word>红智</word>
+		<word>洪智</word>
+		<word>红志</word>
+		<word>政治</word>
+		<word>大鸡巴</word>
+		<word>阴门</word>
+		<word>阴户</word>
+		<word>干他</word>
+		<word>干她</word>
+		<word>干你</word>
+		<word>插他</word>
+		<word>插她</word>
+		<word>插我</word>
+		<word>捅我</word>
+		<word>捅你</word>
+		<word>阴囊</word>
+		<word>荡妇</word>
+		<word>造爱</word>
+		<word>同房</word>
+		<word>哥痛</word>
+		<word>哥疼</word>
+		<word>姐痛</word>
+		<word>姐疼</word>
+		<word>弟痛</word>
+		<word>弟疼</word>
+		<word>妹痛</word>
+		<word>妹疼</word>
+		<word>变态</word>
+		<word>爽死</word>
+		<word>私处</word>
+		<word>色狼</word>
+		<word>吹萧</word>
+		<word>自慰</word>
+		<word>行房</word>
+		<word>专政</word>
+		<word>多党</word>
+		<word>一党</word>
+		<word>三个代表</word>
+		<word>吐血</word>
+		<word>麻衣</word>
+		<word>虐待</word>
+		<word>菱恝</word>
+		<word>夜勤病栋</word>
+		<word>风花</word>
+		<word>樱井</word>
+		<word>1pondo</word>
+		<word>一本道</word>
+		<word>无修正</word>
+		<word>更衣</word>
+		<word>偷拍</word>
+		<word>母子</word>
+		<word>限制</word>
+		<word>连发</word>
+		<word>近亲</word>
+		<word>调教</word>
+		<word>薄格</word>
+		<word>臭作</word>
+		<word>少妇</word>
+		<word>内射</word>
+		<word>群射</word>
+		<word>潮吹</word>
+		<word>丝袜</word>
+		<word>捆绑</word>
+		<word>18禁</word>
+		<word>自摸</word>
+		<word>美腿</word>
+		<word>肉欲</word>
+		<word>走光</word>
+		<word>亚热</word>
+		<word>制服</word>
+		<word>上床</word>
+		<word>偷情</word>
+		<word>露毛</word>
+		<word>露点</word>
+		<word>大陆</word>
+		<word>翁虹</word>
+		<word>舒淇</word>
+		<word>叶子楣</word>
+		<word>狂干</word>
+		<word>幼交</word>
+		<word>破处</word>
+		<word>口技</word>
+		<word>强暴</word>
+		<word>被虐</word>
+		<word>a级</word>
+		<word>自拍</word>
+		<word>猛插</word>
+		<word>无毛</word>
+		<word>武藤兰</word>
+		<word>慰安妇</word>
+		<word>伊东</word>
+		<word>三浦爱佳</word>
+		<word>金泽文子</word>
+		<word>大泽惠</word>
+		<word>夕树舞子</word>
+		<word>朝河兰</word>
+		<word>及川奈央</word>
+		<word>星崎未来</word>
+		<word>饭岛爱</word>
+		<word>小泽园</word>
+		<word>草莓牛奶</word>
+		<word>川岛和津实</word>
+		<word>长濑爱</word>
+		<word>坐交</word>
+		<word>插插</word>
+		<word>小泽圆</word>
+		<word>暴干</word>
+		<word>凌辱</word>
+		<word>武腾兰</word>
+		<word>三级</word>
+		<word>喷尿</word>
+		<word>女女</word>
+		<word>蒲团</word>
+		<word>色友</word>
+		<word>强歼</word>
+		<word>小泽玛莉亚</word>
+		<word>porn</word>
+		<word>(sm)</word>
+		<word>[sm]</word>
+		<word>(av)</word>
+		<word>[av]</word>
+		<word>(hz)</word>
+		<word>[hz]</word>
+		<word>hentai</word>
+		<word>censor</word>
+		<word>anime</word>
+		<word>xxx</word>
+		<word>paper</word>
+		<word>hypermart</word>
+		<word>cdjp</word>
+		<word>颠覆国家政权</word>
+		<word>地下的先烈们</word>
+		<word>成人区</word>
+		<word>活人器官</word>
+		<word>地下先烈们</word>
+		<word>毛泽东复活</word>
+		<word>双轨</word>
+		<word>激流中国</word>
+		<word>《新京报》</word>
+		<word>px</word>
+		<word>www.tibetalk.com</word>
+		<word>根敦?确吉、确吉尼玛</word>
+		<word>根敦?确吉尼玛</word>
+		<word>达赖喇嘛</word>
+		<word>西藏流亡政府</word>
+		<word>马英九</word>
+		<word>蒋方良</word>
+		<word>蒋经国</word>
+		<word>宋美龄</word>
+		<word>泛蓝</word>
+		<word>国民党</word>
+		<word>泛绿</word>
+		<word>台湾团结联盟</word>
+		<word>蒋介石</word>
+		<word>杨尚昆</word>
+		<word>向忠发</word>
+		<word>瞿秋白</word>
+		<word>陈独秀</word>
+		<word>李先念</word>
+		<word>万里</word>
+		<word>董必武</word>
+		<word>朱德</word>
+		<word>彭德怀</word>
+		<word>孙中山</word>
+		<word>宋庆龄</word>
+		<word>刘少奇</word>
+		<word>周恩来</word>
+		<word>华国锋</word>
+		<word>胡耀邦</word>
+		<word>推油</word>
+		<word>迷魂药</word>
+		<word>邓力群</word>
+		<word>汕尾东洲</word>
+		<word>封锁</word>
+		<word>oppression</word>
+		<word>群体灭绝</word>
+		<word>腐败</word>
+		<word>留园网</word>
+		<word>应招</word>
+		<word>和弦</word>
+		<word>手机铃声</word>
+		<word>铃声下载</word>
+		<word>手机铃声下载</word>
+		<word>三唑</word>
+		<word>迷幻药</word>
+		<word>虐杀</word>
+		<word>激情电影</word>
+		<word>六合采</word>
+		<word>六合彩</word>
+		<word>乱交</word>
+		<word>张戎</word>
+		<word>island</word>
+		<word>yinlong</word>
+		<word>银龙岛</word>
+		<word>黑瞎子岛</word>
+		<word>何山</word>
+		<word>明思网</word>
+		<word>明心网</word>
+		<word>活体器官移植</word>
+		<word>六四天网</word>
+		<word>epochtimes</word>
+		<word>chinese.faluninfo.net</word>
+		<word>falundafa.org</word>
+		<word>hrw.org</word>
+		<word>hrichina.org</word>
+		<word>libertytimes.com.tw</word>
+		<word>bbc.co.uk</word>
+		<word>peacehall.com</word>
+		<word>renminbao.com</word>
+		<word>voa.gov</word>
+		<word>secretchina.com</word>
+		<word>kanzhongguo.com</word>
+		<word>dajiyuan.com</word>
+		<word>epochtimes.com</word>
+		<word>minghui.cc</word>
+		<word>minghui.ca</word>
+		<word>rfa.org</word>
+		<word>faluninfo</word>
+		<word>高智晟</word>
+		<word>东洲</word>
+		<word>太石村</word>
+		<word>自由亚洲电台</word>
+		<word>傅怡彬</word>
+		<word>唐子</word>
+		<word>交大高考招生黑幕</word>
+		<word>无界</word>
+		<word>极景</word>
+		<word>无界浏览</word>
+		<word>自由亚州</word>
+		<word>纪元</word>
+		<word>九评</word>
+		<word>新唐人电视台</word>
+		<word>唐人电视台</word>
+		<word>苏家屯</word>
+		<word>membership</word>
+		<word>party</word>
+		<word>communist</word>
+		<word>chinese</word>
+		<word>rennounce</word>
+		<word>self-immolation</word>
+		<word>commentaries</word>
+		<word>nine</word>
+		<word>zhuanfalu</word>
+		<word>马嘉爵</word>
+		<word>炮友</word>
+		<word>4-jun</word>
+		<word>ultrasurf</word>
+		<word>tianwang</word>
+		<word>成人激情</word>
+		<word>x夜激情</word>
+		<word>a片</word>
+		<word>h漫画</word>
+		<word>h动漫</word>
+		<word>台湾18dy电影</word>
+		<word>黄色</word>
+		<word>性虐</word>
+		<word>成人</word>
+		<word>迷奸</word>
+		<word>av女</word>
+		<word>av片</word>
+		<word>b样</word>
+		<word>傻b</word>
+		<word>死你</word>
+		<word>二b</word>
+		<word>法?轮</word>
+		<word>法？轮</word>
+		<word>法轮大法</word>
+		<word>反攻大陆</word>
+		<word>共产档</word>
+		<word>狗官</word>
+		<word>纪念六四</word>
+		<word>江蛤蟆</word>
+		<word>江公子</word>
+		<word>江害民</word>
+		<word>江锦恒</word>
+		<word>江小丑</word>
+		<word>江宰民</word>
+		<word>姜折民</word>
+		<word>将着民</word>
+		<word>僵主席</word>
+		<word>劳教所</word>
+		<word>李宏治</word>
+		<word>励之</word>
+		<word>林彪</word>
+		<word>自棼</word>
+		<word>ze民</word>
+		<word>菊花</word>
+		<word>HUJINTAO</word>
+		<word>hujintao</word>
+		<word>HuJinTao</word>
+		<word>XIJINPING</word>
+		<word>xijinping</word>
+		<word>XiJinPing</word>
+		<word>CAOGANGCHUAN</word>
+		<word>caogangchuan</word>
+		<word>CaoGangChuan</word>
+		<word>CHENXITONG</word>
+		<word>chenxitong</word>
+		<word>ChenXiTong</word>
+		<word>CHIHAOTIAN</word>
+		<word>ChiHaoTian</word>
+		<word>chihaotian</word>
+		<word>DENGXIAOPING</word>
+		<word>DengXiaoPing</word>
+		<word>dengxiaoping</word>
+		<word>GUOBOXIONG</word>
+		<word>GuoBoXiong</word>
+		<word>HEGUOQIANG</word>
+		<word>HeGuoQiang</word>
+		<word>heguoqiang</word>
+		<word>HUYAOBANG</word>
+		<word>HuYaoBang</word>
+		<word>huyaobang</word>
+		<word>JIANGZEMIN</word>
+		<word>JiangZeMin</word>
+		<word>jiangzemin</word>
+		<word>LICHANGCHUN</word>
+		<word>LiChangChun</word>
+		<word>lichangchun</word>
+		<word>MAOZEDONG</word>
+		<word>MaoZeDong</word>
+		<word>maozedong</word>
+		<word>JIAQINGLIN</word>
+		<word>JiaQingLin</word>
+		<word>jiaqinglin</word>
+		<word>LIKEQIANG</word>
+		<word>LiKeQiang</word>
+		<word>likeqiang</word>
+		<word>LIUHUAQING</word>
+		<word>LiuHuaQing</word>
+		<word>LILUANQING</word>
+		<word>LiLuanQing</word>
+		<word>liluanqing</word>
+		<word>ZHURONGJI</word>
+		<word>ZhuRongJi</word>
+		<word>zhurongji</word>
+		<word>ZHOUYONGKANG</word>
+		<word>ZhouYongKang</word>
+		<word>zhouyongkang</word>
+		<word>ZHAOZIYANG</word>
+		<word>ZhaoZiYang</word>
+		<word>zhaoziyang</word>
+		<word>ZENGQINGHONG</word>
+		<word>ZengQingHong</word>
+		<word>zengqinghong</word>
+		<word>ZHANGWANNIAN</word>
+		<word>ZhangWanNian</word>
+		<word>zhangwannian</word>
+		<word>QIANQICHEN</word>
+		<word>QianQiChen</word>
+		<word>qianqichen</word>
+		<word>QIAOSHI</word>
+		<word>QiaoShi</word>
+		<word>qiaoshi</word>
+		<word>WENJIABAO</word>
+		<word>WenJiaBao</word>
+		<word>wenjiabao</word>
+		<word>WUGUANZHENG</word>
+		<word>WuGuanZheng</word>
+		<word>wuguanzheng</word>
+		<word>WUBANGGUO</word>
+		<word>WuBangGuo</word>
+		<word>wubangguo</word>
+		<word>LIRUIHUAN</word>
+		<word>LiRuiHuan</word>
+		<word>liruihuan</word>
+		<word>LIXIAOPENG</word>
+		<word>LiXiaoPeng</word>
+		<word>lixiaopeng</word>
+		<word>LIANGGUANGLIE</word>
+		<word>LiangGuangLie</word>
+		<word>liangguanglie</word>
+		<word>LIAOXILONG</word>
+		<word>LiaoXiLong</word>
+		<word>liaoxilong</word>
+		<word>JIANGQING</word>
+		<word>JiangQing</word>
+		<word>jiangqing</word>
+		<word>HEYONG</word>
+		<word>HeYong</word>
+		<word>heyong</word>
+		<word>XUCAIHOU</word>
+		<word>XuCaiHou</word>
+		<word>xucaihou</word>
+		<word>XIANGHUAICHENG</word>
+		<word>XiangHuaiCheng</word>
+		<word>xianghuaicheng</word>
+		<word>ZENGPEIYAN</word>
+		<word>ZengPeiYan</word>
+		<word>zengpeiyan</word>
+		<word>乱舞</word>
+		<word>辅助</word>
+		<word>外挂</word>
+		<word>破解</word>
+		<word>xunqin.yy.ai</word>
+		<word>xunqinyy.ai</word>
+
+<!-- 屏蔽字库20130615贺海峰 -->
+		<word>贺国强</word>
+		<word>胡錦涛</word>
+		<word>胡锦濤</word>
+		<word>李克强</word>
+		<word>毛泽東</word>
+		<word>毛澤东</word>
+		<word>习近平</word>
+		<word>習近平</word>
+		<word>周永康</word>
+		<word>主席</word>
+		<word>总书记</word>
+		<word>總書記</word>
+		<word>Gcd</word>
+		<word>台灣獨立</word>
+		<word>东突</word>
+		<word>朱蒙</word>
+		<word>高句丽</word>
+		<word>大东亚</word>
+		<word>共荣圈</word>
+		<word>日本帝国</word>
+		<word>基地组织</word>
+		<word>希特勒</word>
+		<word>东亚病夫</word>
+		<word>TMD</word>
+		<word>TNND</word>
+		<word>爱滋</word>
+		<word>操GM</word>
+		<word>草GM</word>
+		<word>车仑女干</word>
+		<word>狗逼</word>
+		<word>狗娘养</word>
+		<word>狗日</word>
+		<word>狗杂种</word>
+		<word>花柳</word>
+		<word>鸡鸡</word>
+		<word>雞雞</word>
+		<word>妓院</word>
+		<word>妈B</word>
+		<word>卖B</word>
+		<word>卖淫</word>
+		<word>你妈逼</word>
+		<word>屁股</word>
+		<word>嫖娼</word>
+		<word>嫖客</word>
+		<word>骚逼</word>
+		<word>王八蛋</word>
+		<word>waigua</word>
+		<word>WAIGUA</word>
+		<word>代练</word>
+		<word>代練</word>
+		<word>替练</word>
+		<word>私服</word>
+		<word>中华人民共和国</word>
+		<word>中国人民共和国</word>
+		<word>中华人民</word>
+		<word>中国人民</word>
+		<word>骚B</word>
+		<word>肏</word>
+		<word>热血传奇</word>
+		<word>剑网</word>
+		<word>三国无双</word>
+		<word>AION</word>
+		<word>DNF</word>
+		<word>千秋OL</word>
+		<word>暇月</word>
+		<word>天道OL</word>
+		<word>三国群英传</word>
+		<word>兽血沸腾</word>
+		<word>蜀门</word>
+		<word>寻仙</word>
+		<word>名将</word>
+		<word>英雄无敌</word>
+		<word>超级舞者</word>
+		<word>生肖外传</word>
+		<word>热舞派对</word>
+		<word>仙境</word>
+		<word>华夏OL</word>
+		<word>圣斗士</word>
+		<word>神泣</word>
+		<word>问天OL</word>
+		<word>抗战英雄</word>
+		<word>众神之战</word>
+		<word>战地之王</word>
+		<word>指环王</word>
+		<word>英雄岛</word>
+		<word>投名状</word>
+		<word>万王</word>
+		<word>问鼎</word>
+		<word>诸侯</word>
+		<word>飘渺之旅</word>
+		<word>梦幻龙族</word>
+		<word>鬼吹灯</word>
+		<word>冒险岛</word>
+		<word>冲锋岛</word>
+		<word>纵横时空</word>
+		<word>开心OL</word>
+		<word>六道</word>
+		<word>月影传说</word>
+		<word>降龙之剑</word>
+		<word>梦想时空</word>
+		<word>苍茫世界</word>
+		<word>六脉神剑</word>
+		<word>风色幻想</word>
+		<word>九阴真经</word>
+		<word>洛奇英雄传</word>
+		<word>轩辕传奇</word>
+		<word>战地</word>
+		<word>天之痕</word>
+		<word>天下贰</word>
+		<word>WOW</word>
+		<word>魔兽世界</word>
+		<word>诛仙</word>
+		<word>征途</word>
+		<word>仙途</word>
+		<word>劲舞团</word>
+		<word>剑侠</word>
+		<word>大明龙权</word>
+		<word>大明</word>
+		<word>OnLine</word>
+		<word>魔法之门</word>
+		<word>问情OL</word>
+		<word>传奇</word>
+		<word>剑侠情缘</word>
+		<word>真三</word>
+		<word>魔域</word>
+		<word>地下城与勇士</word>
+		<word>天龙八部</word>
+		<word>口袋西游</word>
+		<word>梦幻西游</word>
+		<word>神鬼传奇</word>
+		<word>完美世界</word>
+		<word>穿越火线</word>
+		<word>反恐精英</word>
+		<word>永恒之塔</word>
+		<word>亮剑</word>
+		<word>仙剑</word>
+		<word>成吉思汗</word>
+		<word>天骄</word>
+		<word>流星蝴蝶剑</word>
+		<word>勇者传说</word>
+		<word>春秋外传</word>
+		<word>古域</word>
+		<word>十二之天贰</word>
+		<word>伊苏战记</word>
+		<word>仙侠传</word>
+		<word>星尘传说</word>
+		<word>蜀山仙传</word>
+		<word>梦幻诛仙</word>
+		<word>妖怪A梦</word>
+		<word>极限飙车</word>
+		<word>魔力</word>
+		<word>征服</word>
+		<word>盛世</word>
+		<word>刀剑英雄</word>
+		<word>体育帝国</word>
+		<word>露娜</word>
+		<word>LUNA</word>
+		<word>幻想世界</word>
+		<word>武林外传</word>
+		<word>王者世界</word>
+		<word>梦幻古龙</word>
+		<word>预言</word>
+		<word>机战</word>
+		<word>逍遥传说</word>
+		<word>梦想世界</word>
+		<word>名将三国</word>
+		<word>神兵传奇</word>
+		<word>天元</word>
+		<word>秦伤</word>
+		<word>大唐无双</word>
+		<word>奇迹MU</word>
+		<word>刀剑</word>
+		<word>流星OL</word>
+		<word>剑灵</word>
+		<word>七龙珠OL</word>
+		<word>七龙珠online</word>
+		<word>天涯OL</word>
+		<word>仙魔OL</word>
+		<word>传奇世界</word>
+		<word>沧海OL</word>
+		<word>龙腾世界</word>
+		<word>龙腾OL</word>
+		<word>奇幻西游</word>
+		<word>晶铁之门</word>
+		<word>王者三国</word>
+		<word>西西三国</word>
+		<word>政府</word>
+		<word>沧海</word>
+		<word>龙OL</word>
+		<word>龙游戏</word>
+		<word>【国家】</word>
+		<word>[国家]</word>
+		<word>【国</word>
+		<word>家】</word>
+		<word>[国</word>
+		<word>家]</word>
+		<word>战谷</word>
+		<word>zhangu</word>
+
+<!-- 以下是昆仑新增词@2013 12 09  -->
+		<word>asshole</word>
+		<!--word>e04</word-->
+		<word>ㄍㄢˋ</word>
+		<word>人妖</word>
+		<word>三小</word>
+		<word>大便</word>
+		<word>仆街</word>
+		<word>月經</word>
+		<word>叫春</word>
+		<word>外掛</word>
+		<word>左慈</word>
+		<word>打手槍</word>
+		<word>打奶炮</word>
+		<word>白目</word>
+		<word>死雜種</word>
+		<word>你娘卡好</word>
+		<word>你娘可好</word>
+		<word>你給狗幹</word>
+		<word>吹簫</word>
+		<word>沒卵叫</word>
+		<word>沒屁眼</word>
+		<word>沒懶叫</word>
+		<word>性無能</word>
+		<word>表子</word>
+		<word>屌</word>
+		<word>射在你臉上</word>
+		<word>娼妓</word>
+		<word>婊子養的</word>
+		<word>敗類</word>
+		<word>淫穢</word>
+		<word>被狗幹</word>
+		<word>陰戶</word>
+		<word>陰脣</word>
+		<word>陰部</word>
+		<word>陰囊</word>
+		<word>插你奶奶</word>
+		<word>插你全家</word>
+		<word>插你老母</word>
+		<word>插你老師</word>
+		<word>插你屁眼</word>
+		<word>插你娘</word>
+		<word>插你祖宗</word>
+		<word>插你媽</word>
+		<word>插你爺爺</word>
+		<word>插暴你</word>
+		<word>媽的</word>
+		<word>幹</word>
+		<word>幹 你 娘</word>
+		<word>幹一家</word>
+		<word>幹三小</word>
+		<word>幹他</word>
+		<word>幹全家</word>
+		<word>幹死</word>
+		<word>幹你</word>
+		<word>幹你老師</word>
+		<word>幹屁股</word>
+		<word>幹到死</word>
+		<word>幹妳</word>
+		<word>幹妳老師</word>
+		<word>幹妳娘</word>
+		<word>幹妳媽</word>
+		<word>幹家</word>
+		<word>愛滋</word>
+		<word>管理員</word>
+		<word>需知</word>
+		<word>廣播</word>
+		<word>撒尿</word>
+		<word>賣淫</word>
+		<word>賤</word>
+		<word>賤B</word>
+		<word>賤種</word>
+		<word>輪姦</word>
+		<word>靠</word>
+		<word>操B</word>
+		<word>操王</word>
+		<word>操她</word>
+		<word>操死</word>
+		<word>操你奶奶</word>
+		<word>操你全家</word>
+		<word>操你老母</word>
+		<word>操你爸</word>
+		<word>操你娘</word>
+		<word>操你祖宗</word>
+		<word>操你爺爺</word>
+		<word>操那嗎B</word>
+		<word>操那嗎比</word>
+		<word>操那嗎逼</word>
+		<word>操狗</word>
+		<word>操機八毛</word>
+		<word>操雞</word>
+		<word>機八</word>
+		<word>機巴</word>
+		<word>蕩婦</word>
+		<word>雜碎</word>
+		<word>雞8</word>
+		<word>雞奸</word>
+		<word>雞吧</word>
+		<word>雞芭</word>
+		<word>雞姦</word>
+		<word>懶叫</word>
+		<word>懶教</word>
+		<word>懶較</word>
+		<word>爛</word>
+		<word>變態</word>
+		<word>攬趴</word>
+		
+		<!-- 以下是去重的词 -->
+		<!-- <word>大法</word> -->
+		<!-- <word>大纪元</word> -->
+		<!-- <word>发正念</word> -->
+		<!-- <word>法轮</word> -->
+		<!-- <word>法十轮十功</word> -->
+		<!-- <word>李洪志</word> -->
+		<!-- <word>法轮功</word> -->
+		<!-- <word>发轮</word> -->
+		<!-- <word>法愣</word> -->
+		<!-- <word>法仑</word> -->
+		<!-- <word>法抡</word> -->
+		<!-- <word>轮功</word> -->
+		<!-- <word>真善忍</word> -->
+		<!-- <word>小穴</word> -->
+		<!-- <word>鸽派</word> -->
+		<!-- <word>功法</word> -->
+		<!-- <word>共匪</word> -->
+		<!-- <word>共狗</word> -->
+		<!-- <word>胡锦涛</word> -->
+		<!-- <word>护法</word> -->
+		<!-- <word>江泽民</word> -->
+		<!-- <word>江贼民</word> -->
+		<!-- <word>江戏子</word> -->
+		<!-- <word>鸡巴</word> -->
+		<!-- <word>江澤民</word> -->
+		<!-- <word>江折民</word> -->
+		<!-- <word>江猪</word> -->
+		<!-- <word>江猪媳</word> -->
+		<!-- <word>江主席</word> -->
+		<!-- <word>僵贼民</word> -->
+		<!-- <word>讲法</word> -->
+		<!-- <word>酱猪媳</word> -->
+		<!-- <word>李大师</word> -->
+		<!-- <word>李登辉</word> -->
+		<!-- <word>李红痔</word> -->
+		<!-- <word>李宏志</word> -->
+		<!-- <word>李鹏</word> -->
+		<!-- <word>李瑞环</word> -->
+		<!-- <word>李总统</word> -->
+		<!-- <word>炼功</word> -->
+		<!-- <word>六四</word> -->
+		<!-- <word>藏独</word> -->
+		<!-- <word>赤匪</word> -->
+		<!-- <word>东北独立</word> -->
+		<!-- <word>独立台湾会</word> -->
+		<!-- <word>发论功</word> -->
+		<!-- <word>发论公</word> -->
+		<!-- <word>发伦功</word> -->
+		<!-- <word>发论</word> -->
+		<!-- <word>发伦</word> -->
+		<!-- <word>法抡功</word> -->
+		<!-- <word>发抡功</word> -->
+		<!-- <word>发抡</word> -->
+		<!-- <word>法*功</word> -->
+		<!-- <word>反封锁技术</word> -->
+		<!-- <word>佛展千手法</word> -->
+		<!-- <word>洪志</word> -->
+		<!-- <word>回民暴动</word> -->
+		<!-- <word>江八点</word> -->
+		<!-- <word>肉棒</word> -->
+		<!-- <word>轮奸</word> -->
+		<!-- <word>毛片</word> -->
+		<!-- <word>毛贼东</word> -->
+		<!-- <word>美国之音</word> -->
+		<!-- <word>民进党</word> -->
+		<!-- <word>水扁</word> -->
+		<!-- <word>台独</word> -->
+		<!-- <word>台湾独立</word> -->
+		<!-- <word>疆独</word> -->
+		<!-- <word>毛厕洞</word> -->
+		<!-- <word>蒙独</word> -->
+		<!-- <word>蒙古独立</word> -->
+		<!-- <word>神通加持法</word> -->
+		<!-- <word>四川独立</word> -->
+		<!-- <word>台湾狗</word> -->
+		<!-- <word>太子党</word> -->
+		<!-- <word>天安门屠杀</word> -->
+		<!-- <word>西藏独立</word> -->
+		<!-- <word>新疆独立</word> -->
+		<!-- <word>傻B</word> -->
+		<!-- <word>傻逼</word> -->
+		<!-- <word>日你</word> -->
+		<!-- <word>操你</word> -->
+		<!-- <word>共产党</word> -->
+		<!-- <word>舔奶</word> -->
+		<!-- <word>天安门录影带</word> -->
+		<!-- <word>天安门事件</word> -->
+		<!-- <word>天安门一代</word> -->
+		<!-- <word>新华内情</word> -->
+		<!-- <word>新生网</word> -->
+		<!-- <word>日死你</word> -->
+		<!-- <word>我操你</word> -->
+		<!-- <word>群奸</word> -->
+		<!-- <word>婊子</word> -->
+		<!-- <word>射精</word> -->
+		<!-- <word>干死你</word> -->
+		<!-- <word>龟头</word> -->
+		<!-- <word>鸡八</word> -->
+		<!-- <word>我操</word> -->
+		<!-- <word>操蛋</word> -->
+		<!-- <word>操逼</word> -->
+		<!-- <word>操比</word> -->
+		<!-- <word>哈批</word> -->
+		<!-- <word>大逼</word> -->
+		<!-- <word>大比</word> -->
+		<!-- <word>大b</word> -->
+		<!-- <word>大B</word> -->
+		<!-- <word>精液</word> -->
+		<!-- <word>屁眼</word> -->
+		<!-- <word>他妈的</word> -->
+		<!-- <word>贱逼</word> -->
+		<!-- <word>贱比</word> -->
+		<!-- <word>干你娘</word> -->
+		<!-- <word>破鞋</word> -->
+		<!-- <word>阴茎</word> -->
+		<!-- <word>成人书库</word> -->
+		<!-- <word>雪山狮子</word> -->
+		<!-- <word>颜射</word> -->
+		<!-- <word>一中一台</word> -->
+		<!-- <word>淫穴</word> -->
+		<!-- <word>游行</word> -->
+		<!-- <word>圆满</word> -->
+		<!-- <word>曾庆红</word> -->
+		<!-- <word>中国猪</word> -->
+		<!-- <word>卖逼</word> -->
+		<!-- <word>卖比</word> -->
+		<!-- <word>狗b</word> -->
+		<!-- <word>狗B</word> -->
+		<!-- <word>烂逼</word> -->
+		<!-- <word>烂比</word> -->
+		<!-- <word>淫水</word> -->
+		<!-- <word>靠你妈</word> -->
+		<!-- <word>操你妈</word> -->
+		<!-- <word>妈批</word> -->
+		<!-- <word>逼样</word> -->
+		<!-- <word>性交</word> -->
+		<!-- <word>肛交</word> -->
+		<!-- <word>乳房</word> -->
+		<!-- <word>二逼</word> -->
+		<!-- <word>二B</word> -->
+		<!-- <word>淫图</word> -->
+		<!-- <word>朱容基</word> -->
+		<!-- <word>朱镕基</word> -->
+		<!-- <word>猪聋畸</word> -->
+		<!-- <word>猪毛</word> -->
+		<!-- <word>走私</word> -->
+		<!-- <word>freechina</word> -->
+		<!-- <word>fuck</word> -->
+		<!-- <word>hongzhi</word> -->
+		<!-- <word>lihongzhi</word> -->
+		<!-- <word>minghui</word> -->
+		<!-- <word>minghuinews</word> -->
+		<!-- <word>肉洞</word> -->
+		<!-- <word>交媾</word> -->
+		<!-- <word>星战</word> -->
+		<!-- <word>藏旗</word> -->
+		<!-- <word>赤裸</word> -->
+		<!-- <word>性交易</word> -->
+		<!-- <word>彩民</word> -->
+		<!-- <word>AV片</word> -->
+		<!-- <word>AV女</word> -->
+		<!-- <word>波霸</word> -->
+		<!-- <word>肥穴</word> -->
+		<!-- <word>菊花蕾</word> -->
+		<!-- <word>浪穴</word> -->
+		<!-- <word>美穴</word> -->
+		<!-- <word>蜜穴</word> -->
+		<!-- <word>嫩穴</word> -->
+		<!-- <word>情色</word> -->
+		<!-- <word>酥乳</word> -->
+		<!-- <word>素人</word> -->
+		<!-- <word>穴穴</word> -->
+		<!-- <word>淫姐姐</word> -->
+		<!-- <word>淫女</word> -->
+		<!-- <word>淫汁</word> -->
+		<!-- <word>裸聊</word> -->
+		<!-- <word>性虐待</word> -->
+		<!-- <word>堵截</word> -->
+		<!-- <word>插穴</word> -->
+		<!-- <word>口交</word> -->
+		<!-- <word>淫</word> -->
+		<!-- <word>群交</word> -->
+		<!-- <word>乳交</word> -->
+		<!-- <word>舔</word> -->
+		<!-- <word>舔穴</word> -->
+		<!-- <word>dildo</word> -->
+		<!-- <word>成人用品</word> -->
+		<!-- <word>催情</word> -->
+		<!-- <word>蜜蜂棒</word> -->
+		<!-- <word>跳蛋</word> -->
+		<!-- <word>兔女郎</word> -->
+		<!-- <word>菜市口交</word> -->
+		<!-- <word>激情</word> -->
+		<!-- <word>真、善、忍</word> -->
+		<!-- <word>坐台小姐</word> -->
+		<!-- <word>摸奶</word> -->
+		<!-- <word>避孕套</word> -->
+		<!-- <word>三陪先生</word> -->
+		<!-- <word>三陪小姐</word> -->
+		<!-- <word>熟女</word> -->
+		<!-- <word>月薪</word> -->
+		<!-- <word>招聘</word> -->
+		<!-- <word>3P</word> -->
+		<!-- <word>金瓶梅</word> -->
+		<!-- <word>勾引</word> -->
+		<!-- <word>江湖淫娘</word> -->
+		<!-- <word>粗口歌</word> -->
+		<!-- <word>A片</word> -->
+		<!-- <word>高潮</word> -->
+		<!-- <word>X夜激情</word> -->
+		<!-- <word>叫床</word> -->
+		<!-- <word>一夜情</word> -->
+		<!-- <word>夜激情</word> -->
+		<!-- <word>咪咪</word> -->
+		<!-- <word>小弟弟</word> -->
+		<!-- <word>命根</word> -->
+		<!-- <word>反政府</word> -->
+		<!-- <word>文化大革命</word> -->
+		<!-- <word>新唐人</word> -->
+		<!-- <word>六四事件</word> -->
+		<!-- <word>中共走狗</word> -->
+		<!-- <word>中共小丑</word> -->
+		<!-- <word>共奴</word> -->
+		<!-- <word>右派</word> -->
+		<!-- <word>流氓政府</word> -->
+		<!-- <word>放下生死</word> -->
+		<!-- <word>大法大福</word> -->
+		<!-- <word>大法弟子</word> -->
+		<!-- <word>法O功</word> -->
+		<!-- <word>毛派</word> -->
+		<!-- <word>五套功法</word> -->
+		<!-- <word>宇宙最高法理</word> -->
+		<!-- <word>法正乾坤</word> -->
+		<!-- <word>中共暴政</word> -->
+		<!-- <word>中共迫害</word> -->
+		<!-- <word>勒索</word> -->
+		<!-- <word>偷渡</word> -->
+		<!-- <word>刻章</word> -->
+		<!-- <word>器官移植</word> -->
+		<!-- <word>八九</word> -->
+		<!-- <word>八老</word> -->
+		<!-- <word>巴赫</word> -->
+		<!-- <word>暴政</word> -->
+		<!-- <word>北京之春</word> -->
+		<!-- <word>柴玲</word> -->
+		<!-- <word>程真</word> -->
+		<!-- <word>赤化</word> -->
+		<!-- <word>達賴</word> -->
+		<!-- <word>大紀元</word> -->
+		<!-- <word>大史</word> -->
+		<!-- <word>地下刊物</word> -->
+		<!-- <word>弟子</word> -->
+		<!-- <word>第四代</word> -->
+		<!-- <word>丁元</word> -->
+		<!-- <word>丁子霖</word> -->
+		<!-- <word>杜智富</word> -->
+		<!-- <word>屙民</word> -->
+		<!-- <word>發正念</word> -->
+		<!-- <word>法輪</word> -->
+		<!-- <word>法十輪十功</word> -->
+		<!-- <word>反攻</word> -->
+		<!-- <word>反共</word> -->
+		<!-- <word>法輪功</word> -->
+		<!-- <word>十六大</word> -->
+		<!-- <word>16大</word> -->
+		<!-- <word>推翻</word> -->
+		<!-- <word>打倒</word> -->
+		<!-- <word>發輪</word> -->
+		<!-- <word>法侖</word> -->
+		<!-- <word>法掄</word> -->
+		<!-- <word>輪功</word> -->
+		<!-- <word>斐得勒</word> -->
+		<!-- <word>分家在</word> -->
+		<!-- <word>分裂</word> -->
+		<!-- <word>付申奇</word> -->
+		<!-- <word>傅申奇</word> -->
+		<!-- <word>傅志寰</word> -->
+		<!-- <word>高官</word> -->
+		<!-- <word>高瞻</word> -->
+		<!-- <word>鴿派</word> -->
+		<!-- <word>蛤蟆</word> -->
+		<!-- <word>郭伯雄</word> -->
+		<!-- <word>郭平</word> -->
+		<!-- <word>何德普</word> -->
+		<!-- <word>何勇</word> -->
+		<!-- <word>宏法</word> -->
+		<!-- <word>洪吟</word> -->
+		<!-- <word>胡錦濤</word> -->
+		<!-- <word>胡平</word> -->
+		<!-- <word>護法</word> -->
+		<!-- <word>花花公子</word> -->
+		<!-- <word>基督</word> -->
+		<!-- <word>江core</word> -->
+		<!-- <word>江流氓</word> -->
+		<!-- <word>江青</word> -->
+		<!-- <word>江賊民</word> -->
+		<!-- <word>江戲子</word> -->
+		<!-- <word>雞巴</word> -->
+		<!-- <word>大花逼</word> -->
+		<!-- <word>肉棍</word> -->
+		<!-- <word>江豬</word> -->
+		<!-- <word>江豬媳</word> -->
+		<!-- <word>僵賊民</word> -->
+		<!-- <word>講法</word> -->
+		<!-- <word>醬豬媳</word> -->
+		<!-- <word>交班</word> -->
+		<!-- <word>接班</word> -->
+		<!-- <word>禁看</word> -->
+		<!-- <word>老江</word> -->
+		<!-- <word>老毛</word> -->
+		<!-- <word>老人政治</word> -->
+		<!-- <word>黎安友</word> -->
+		<!-- <word>李大師</word> -->
+		<!-- <word>李登輝</word> -->
+		<!-- <word>李紅痔</word> -->
+		<!-- <word>李鵬</word> -->
+		<!-- <word>李瑞環</word> -->
+		<!-- <word>李少民</word> -->
+		<!-- <word>李文斌</word> -->
+		<!-- <word>李小朋</word> -->
+		<!-- <word>李總統</word> -->
+		<!-- <word>煉功</word> -->
+		<!-- <word>梁光烈</word> -->
+		<!-- <word>梁擎墩</word> -->
+		<!-- <word>林樵清</word> -->
+		<!-- <word>林慎立</word> -->
+		<!-- <word>流亡</word> -->
+		<!-- <word>藏獨</word> -->
+		<!-- <word>東北獨立</word> -->
+		<!-- <word>獨立臺灣會</word> -->
+		<!-- <word>發論功</word> -->
+		<!-- <word>發論公</word> -->
+		<!-- <word>發倫功</word> -->
+		<!-- <word>發論</word> -->
+		<!-- <word>發倫</word> -->
+		<!-- <word>法掄功</word> -->
+		<!-- <word>發掄功</word> -->
+		<!-- <word>發掄</word> -->
+		<!-- <word>反封鎖技術</word> -->
+		<!-- <word>回民暴動</word> -->
+		<!-- <word>江八點</word> -->
+		<!-- <word>輪奸</word> -->
+		<!-- <word>毛賊東</word> -->
+		<!-- <word>美國之音</word> -->
+		<!-- <word>密穴</word> -->
+		<!-- <word>民進黨</word> -->
+		<!-- <word>民意</word> -->
+		<!-- <word>民主</word> -->
+		<!-- <word>民族矛盾</word> -->
+		<!-- <word>明慧</word> -->
+		<!-- <word>木犀地</word> -->
+		<!-- <word>迫害</word> -->
+		<!-- <word>祁建</word> -->
+		<!-- <word>青天白日旗</word> -->
+		<!-- <word>色情</word> -->
+		<!-- <word>邵家健</word> -->
+		<!-- <word>沈彤</word> -->
+		<!-- <word>盛雪</word> -->
+		<!-- <word>石戈</word> -->
+		<!-- <word>宋xx</word> -->
+		<!-- <word>宋平</word> -->
+		<!-- <word>宋祖英</word> -->
+		<!-- <word>台獨</word> -->
+		<!-- <word>臺灣獨立</word> -->
+		<!-- <word>疆獨</word> -->
+		<!-- <word>毛廁洞</word> -->
+		<!-- <word>蒙獨</word> -->
+		<!-- <word>蒙古獨立</word> -->
+		<!-- <word>四川獨立</word> -->
+		<!-- <word>臺灣狗</word> -->
+		<!-- <word>天安門屠殺</word> -->
+		<!-- <word>西藏獨立</word> -->
+		<!-- <word>新疆獨立</word> -->
+		<!-- <word>你娘</word> -->
+		<!-- <word>你爸</word> -->
+		<!-- <word>shit</word> -->
+		<!-- <word>bitch</word> -->
+		<!-- <word>我日</word> -->
+		<!-- <word>操他</word> -->
+		<!-- <word>共產黨</word> -->
+		<!-- <word>屄</word> -->
+		<!-- <word>唐捷</word> -->
+		<!-- <word>滕文生</word> -->
+		<!-- <word>天安門錄影帶</word> -->
+		<!-- <word>天安門事件</word> -->
+		<!-- <word>天安門一代</word> -->
+		<!-- <word>天怒</word> -->
+		<!-- <word>天葬</word> -->
+		<!-- <word>童屹</word> -->
+		<!-- <word>汪岷</word> -->
+		<!-- <word>王炳章</word> -->
+		<!-- <word>王策</word> -->
+		<!-- <word>王丹</word> -->
+		<!-- <word>王力雄</word> -->
+		<!-- <word>王瑞林</word> -->
+		<!-- <word>王若望</word> -->
+		<!-- <word>王希哲</word> -->
+		<!-- <word>王冶坪</word> -->
+		<!-- <word>尉健行</word> -->
+		<!-- <word>魏京生</word> -->
+		<!-- <word>魏新生</word> -->
+		<!-- <word>文革</word> -->
+		<!-- <word>五不</word> -->
+		<!-- <word>伍凡</word> -->
+		<!-- <word>西藏</word> -->
+		<!-- <word>新華內情</word> -->
+		<!-- <word>新生網</word> -->
+		<!-- <word>熊炎</word> -->
+		<!-- <word>熊焱</word> -->
+		<!-- <word>徐邦秦</word> -->
+		<!-- <word>徐才厚</word> -->
+		<!-- <word>徐匡迪</word> -->
+		<!-- <word>徐水良</word> -->
+		<!-- <word>幹死你</word> -->
+		<!-- <word>狗娘</word> -->
+		<!-- <word>睾丸</word> -->
+		<!-- <word>包皮</word> -->
+		<!-- <word>龜頭</word> -->
+		<!-- <word>奶子</word> -->
+		<!-- <word>雞八</word> -->
+		<!-- <word>打炮</word> -->
+		<!-- <word>十八摸</word> -->
+		<!-- <word>精子</word> -->
+		<!-- <word>他媽的</word> -->
+		<!-- <word>賤逼</word> -->
+		<!-- <word>賤比</word> -->
+		<!-- <word>幹你娘</word> -->
+		<!-- <word>陰莖</word> -->
+		<!-- <word>成人書庫</word> -->
+		<!-- <word>雪山獅子</word> -->
+		<!-- <word>顏射</word> -->
+		<!-- <word>亦凡</word> -->
+		<!-- <word>易志熹</word> -->
+		<!-- <word>遊行</word> -->
+		<!-- <word>幼女</word> -->
+		<!-- <word>于大海</word> -->
+		<!-- <word>于浩成</word> -->
+		<!-- <word>圓滿</word> -->
+		<!-- <word>岳武</word> -->
+		<!-- <word>在十月</word> -->
+		<!-- <word>曾培炎</word> -->
+		<!-- <word>曾慶紅</word> -->
+		<!-- <word>哲民</word> -->
+		<!-- <word>政治犯</word> -->
+		<!-- <word>支那</word> -->
+		<!-- <word>中功</word> -->
+		<!-- <word>中共</word> -->
+		<!-- <word>中國豬</word> -->
+		<!-- <word>周天法</word> -->
+		<!-- <word>周旋</word> -->
+		<!-- <word>朱嘉明</word> -->
+		<!-- <word>賣逼</word> -->
+		<!-- <word>賣比</word> -->
+		<!-- <word>狗卵子</word> -->
+		<!-- <word>狗操</word> -->
+		<!-- <word>爛逼</word> -->
+		<!-- <word>爛比</word> -->
+		<!-- <word>狗屎</word> -->
+		<!-- <word>妓女</word> -->
+		<!-- <word>招妓</word> -->
+		<!-- <word>牛逼</word> -->
+		<!-- <word>狂操</word> -->
+		<!-- <word>靠你媽</word> -->
+		<!-- <word>操你媽</word> -->
+		<!-- <word>媽批</word> -->
+		<!-- <word>插你</word> -->
+		<!-- <word>逼樣</word> -->
+		<!-- <word>性欲</word> -->
+		<!-- <word>阝月</word> -->
+		<!-- <word>淫圖</word> -->
+		<!-- <word>朱琳</word> -->
+		<!-- <word>朱毛</word> -->
+		<!-- <word>朱鎔基</word> -->
+		<!-- <word>豬聾畸</word> -->
+		<!-- <word>豬毛</word> -->
+		<!-- <word>自焚</word> -->
+		<!-- <word>自已的故事</word> -->
+		<!-- <word>作秀</word> -->
+		<!-- <word>法lun功</word> -->
+		<!-- <word>江ze民</word> -->
+		<!-- <word>收容所</word> -->
+		<!-- <word>阿扁</word> -->
+		<!-- <word>法功</word> -->
+		<!-- <word>回民暴</word> -->
+		<!-- <word>氵去</word> -->
+		<!-- <word>工力</word> -->
+		<!-- <word>失密</word> -->
+		<!-- <word>客服</word> -->
+		<!-- <word>客服01</word> -->
+		<!-- <word>客服02</word> -->
+		<!-- <word>武林擂</word> -->
+		<!-- <word>封神</word> -->
+		<!-- <word>天劫</word> -->
+		<!-- <word>幻境</word> -->
+		<!-- <word>九州</word> -->
+		<!-- <word>星戰</word> -->
+		<!-- <word>天域</word> -->
+		<!-- <word>神兆</word> -->
+		<!-- <word>棒棒堂</word> -->
+		<!-- <word>火焰VS</word> -->
+		<!-- <word>垃圾文明</word> -->
+		<!-- <word>契约</word> -->
+		<!-- <word>飞天</word> -->
+		<!-- <word>明珠三国</word> -->
+		<!-- <word>傅怡彬</word> -->
+		<!-- <word>唐子</word> -->
+		<!-- <word>交大高考招生黑幕</word> -->
+		<!-- <word>无界</word> -->
+		<!-- <word>极景</word> -->
+		<!-- <word>无界浏览</word> -->
+		<!-- <word>自由亚州</word> -->
+		<!-- <word>纪元</word> -->
+		<!-- <word>九评</word> -->
+		<!-- <word>新唐人电视台</word> -->
+		<!-- <word>唐人电视台</word> -->
+		<!-- <word>苏家屯</word> -->
+		<!-- <word>membership</word> -->
+		<!-- <word>party</word> -->
+		<!-- <word>communist</word> -->
+		<!-- <word>chinese</word> -->
+		<!-- <word>rennounce</word> -->
+		<!-- <word>self-immolation</word> -->
+		<!-- <word>commentaries</word> -->
+		<!-- <word>nine</word> -->
+		<!-- <word>zhuanfalu</word> -->
+		<!-- <word>马嘉爵</word> -->
+		<!-- <word>炮友</word> -->
+		<!-- <word>4-jun</word> -->
+		<!-- <word>ultrasurf</word> -->
+		<!-- <word>tianwang</word> -->
+		<!-- <word>成人激情</word> -->
+		<!-- <word>x夜激情</word> -->
+		<!-- <word>a片</word> -->
+		<!-- <word>h漫画</word> -->
+		<!-- <word>h动漫</word> -->
+		<!-- <word>台湾18dy电影</word> -->
+		<!-- <word>黄色</word> -->
+		<!-- <word>性虐</word> -->
+		<!-- <word>成人</word> -->
+		<!-- <word>迷奸</word> -->
+		<!-- <word>av女</word> -->
+		<!-- <word>av片</word> -->
+		<!-- <word>b样</word> -->
+		<!-- <word>傻b</word> -->
+		<!-- <word>死你</word> -->
+		<!-- <word>二b</word> -->
+		<!-- <word>法?轮</word> -->
+		<!-- <word>法？轮</word> -->
+		<!-- <word>法轮大法</word> -->
+		<!-- <word>反攻大陆</word> -->
+		<!-- <word>共产档</word> -->
+		<!-- <word>狗官</word> -->
+		<!-- <word>纪念六四</word> -->
+		<!-- <word>江蛤蟆</word> -->
+		<!-- <word>江公子</word> -->
+		<!-- <word>江害民</word> -->
+		<!-- <word>江锦恒</word> -->
+		<!-- <word>江小丑</word> -->
+		<!-- <word>江宰民</word> -->
+		<!-- <word>姜折民</word> -->
+		<!-- <word>将着民</word> -->
+		<!-- <word>僵主席</word> -->
+		<!-- <word>劳教所</word> -->
+		<!-- <word>李宏治</word> -->
+		<!-- <word>励之</word> -->
+		<!-- <word>林彪</word> -->
+		<!-- <word>自棼</word> -->
+		<!-- <word>ze民</word> -->
+		<!-- <word>菊花</word> -->
+		<!-- <word>JIANGZEMIN</word> -->
+		<!-- <word>JiangZeMin</word> -->
+		<!-- <word>jiangzemin</word> -->
+		<!-- <word>曹刚川</word> -->
+		<!-- <word>陈希同</word> -->
+		<!-- <word>陈小同</word> -->
+		<!-- <word>程凯</word> -->
+		<!-- <word>迟浩田</word> -->
+		<!-- <word>戴相龙</word> -->
+		<!-- <word>邓小平</word> -->
+		<!-- <word>鄧小平</word> -->
+		<!-- <word>丁关根</word> -->
+		<!-- <word>胡耀邦</word> -->
+		<!-- <word>华建敏</word> -->
+		<!-- <word>黄菊</word> -->
+		<!-- <word>黄丽满</word> -->
+		<!-- <word>姬胜德</word> -->
+		<!-- <word>贾庆林</word> -->
+		<!-- <word>贾廷安</word> -->
+		<!-- <word>姜春云</word> -->
+		<!-- <word>李长春</word> -->
+		<!-- <word>李继耐</word> -->
+		<!-- <word>李岚清</word> -->
+		<!-- <word>李小鹏</word> -->
+		<!-- <word>廖锡龙</word> -->
+		<!-- <word>刘华清</word> -->
+		<!-- <word>罗干</word> -->
+		<!-- <word>毛泽东</word> -->
+		<!-- <word>毛澤東</word> -->
+		<!-- <word>钱国梁</word> -->
+		<!-- <word>钱其琛</word> -->
+		<!-- <word>乔石</word> -->
+		<!-- <word>盛华仁</word> -->
+		<!-- <word>王宝森</word> -->
+		<!-- <word>王刚</word> -->
+		<!-- <word>王沪宁</word> -->
+		<!-- <word>温家宝</word> -->
+		<!-- <word>吴邦国</word> -->
+		<!-- <word>吴官正</word> -->
+		<!-- <word>项怀诚</word> -->
+		<!-- <word>由喜贵</word> -->
+		<!-- <word>于幼军</word> -->
+		<!-- <word>张万年</word> -->
+		<!-- <word>赵紫阳</word> -->
+		<!-- <word>郑义</word> -->
+		<!-- <word>共产</word> -->
+		<!-- <word>共党</word> -->
+		<!-- <word>共黨</word> -->
+		<!-- <word>共军</word> -->
+		<!-- <word>GCD</word> -->
+		<!-- <word>gcd</word> -->
+		<!-- <word>专政</word> -->
+		<!-- <word>独裁</word> -->
+		<!-- <word>学潮</word> -->
+		<!-- <word>学运</word> -->
+		<!-- <word>學運</word> -->
+		<!-- <word>民运</word> -->
+		<!-- <word>民運</word> -->
+		<!-- <word>转法轮</word> -->
+		<!-- <word>台湾自由联盟</word> -->
+		<!-- <word>陈水扁</word> -->
+		<!-- <word>陳水扁</word> -->
+		<!-- <word>雪山狮子旗</word> -->
+		<!-- <word>热比娅</word> -->
+		<!-- <word>迪里夏提</word> -->
+		<!-- <word>东土耳其斯坦</word> -->
+		<!-- <word>sex</word> -->
+		<!-- <word>荡妇</word> -->
+		<!-- <word>干你</word> -->
+		<!-- <word>乱伦</word> -->
+		<!-- <word>妈b</word> -->
+		<!-- <word>妈逼</word> -->
+		<!-- <word>妈比</word> -->
+		<!-- <word>卖b</word> -->
+		<!-- <word>梅毒</word> -->
+		<!-- <word>强奸</word> -->
+		<!-- <word>慰安妇</word> -->
+		<!-- <word>阴唇</word> -->
+		<!-- <word>阴道</word> -->
+		<!-- <word>阴毛</word> -->
+		<!-- <word>杂种</word> -->
+		<!-- <word>做爱</word> -->
+		<!-- <word>贱货</word> -->
+		<!-- <word>生肖外传</word> -->
+		<!-- <word>赤壁</word> -->
+		<!-- <word>纵横时空</word> -->
+		<!-- <word>寻仙</word> -->
+		<!-- <word>完美世界</word> -->
+		<!-- <word>穿越火线</word> -->
+		<!-- <word>白痴</word> -->
+		<!-- <word>你媽的</word> -->
+		<!-- <word>妓院</word> -->
+		<!-- <word>屁股</word> -->
+		<!-- <word>肛門</word> -->
+		<!-- <word>垃圾</word> -->
+		<!-- <word>做愛</word> -->
+		<!-- <word>強姦</word> -->
+		<!-- <word>混蛋</word> -->
+		<!-- <word>陰毛</word> -->
+		<!-- <word>陰唇</word> -->
+		<!-- <word>陰蒂</word> -->
+		<!-- <word>陰道</word> -->
+		<!-- <word>陰精</word> -->
+		<!-- <word>插他</word> -->
+		<!-- <word>插我</word> -->
+		<!-- <word>援交</word> -->
+		<!-- <word>嫖客</word> -->
+		<!-- <word>賤人</word> -->
+		<!-- <word>賤貨</word> -->
+		<!-- <word>操你奶奶</word> -->
+		<!-- <word>雜種</word> -->
+		<!-- <word>雞雞</word> -->
+	</dirtyWords>
+</root>

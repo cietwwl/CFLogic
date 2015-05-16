@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<included>
+
+
+	<!-- 保存日志的基本路径 >-->
+	<property name="KUNLUN_LOG_HOME" value="/data/syslog/platformlog/" /> <!-- 昆仑服务器请一定要使用此路径（昆仑要求）--> 
+	<!-- property name="KUNLUN_LOG_HOME" value="./-logdataLocal-/data/syslog/platformlog/" /> 非昆仑版本可使用此路径 -->
+	
+	<!-- 保存日志的月份 -->
+	<property name="KUNLUN_LOG_PERIOD_MONTH" value="yyyyMM" />
+	
+	<!-- 保存日志的周期及文件命名规则 yy:MM:dd HH:mm:ss.SSS -->
+	<property name="KUNLUN_LOG_PERIOD_DAY" value="yyyyMMdd" />
+	
+	<!-- 保存日志的周期数，即保留多少个周期的日志 -->
+	<property name="KUNLUN_LOG_KEEP" value="90" />
+	
+	<!-- 客户端的当前日志，统一后缀名与服务器端不同，以免直接拷贝粘贴产生文件名称冲突 -->
+	<property name="KUNLUN_LOG_POSTFIX" value="log" />
+	
+	
+<!-- ================================================================================================ -->    
+    <appender name="KUNLUN_active" class="ch.qos.logback.core.rolling.RollingFileAppender"> 
+               
+        <!-- 滚动策略:基于时间的滚动策略（此策略既定义滚动方式，又同时定义滚动条件） -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${KUNLUN_LOG_HOME}/%d{${KUNLUN_LOG_PERIOD_MONTH}}/active_${product_id}_${region_id}_%d{${KUNLUN_LOG_PERIOD_DAY}}.log</fileNamePattern>
+            <maxHistory>${KUNLUN_LOG_KEEP}</maxHistory>
+        </rollingPolicy>        
+        
+        <encoder> 
+            <pattern>%msg%n</pattern>
+        </encoder> 
+    </appender>
+    
+    <appender name="KUNLUN_login" class="ch.qos.logback.core.rolling.RollingFileAppender"> 
+               
+        <!-- 滚动策略:基于时间的滚动策略（此策略既定义滚动方式，又同时定义滚动条件） -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${KUNLUN_LOG_HOME}/%d{${KUNLUN_LOG_PERIOD_MONTH}}/login_${product_id}_${region_id}_%d{${KUNLUN_LOG_PERIOD_DAY}}.log</fileNamePattern>
+            <maxHistory>${KUNLUN_LOG_KEEP}</maxHistory>
+        </rollingPolicy>        
+        
+        <encoder> 
+            <pattern>%msg%n</pattern>
+        </encoder> 
+    </appender>
+    
+    <appender name="KUNLUN_online" class="ch.qos.logback.core.rolling.RollingFileAppender"> 
+               
+        <!-- 滚动策略:基于时间的滚动策略（此策略既定义滚动方式，又同时定义滚动条件） -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${KUNLUN_LOG_HOME}/%d{${KUNLUN_LOG_PERIOD_MONTH}}/online_${product_id}_${region_id}_%d{${KUNLUN_LOG_PERIOD_DAY}}.log</fileNamePattern>
+            <maxHistory>${KUNLUN_LOG_KEEP}</maxHistory>
+        </rollingPolicy>        
+        
+        <encoder> 
+            <pattern>%msg%n</pattern>
+        </encoder> 
+    </appender>
+    
+	<appender name="KUNLUN_activesuccess" class="ch.qos.logback.core.rolling.RollingFileAppender"> 
+               
+        <!-- 滚动策略:基于时间的滚动策略（此策略既定义滚动方式，又同时定义滚动条件） -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${KUNLUN_LOG_HOME}/%d{${KUNLUN_LOG_PERIOD_MONTH}}/activesuccess_${product_id}_${region_id}_%d{${KUNLUN_LOG_PERIOD_DAY}}.log</fileNamePattern>
+            <maxHistory>${KUNLUN_LOG_KEEP}</maxHistory>
+        </rollingPolicy>        
+        
+        <encoder> 
+            <pattern>%msg%n</pattern>
+        </encoder> 
+    </appender>    
+    
+<!-- ================================================================================================ -->
+
+    <logger name="KUNLUN_active" level="ALL" additivity="true">
+        <appender-ref ref="KUNLUN_active" />
+    </logger>
+    
+    <logger name="KUNLUN_login" level="ALL" additivity="true">
+        <appender-ref ref="KUNLUN_login" />
+    </logger>
+    
+    <logger name="KUNLUN_online" level="ALL" additivity="true">
+        <appender-ref ref="KUNLUN_online" />
+    </logger> 
+    
+    <logger name="KUNLUN_activesuccess" level="ALL" additivity="true">
+        <appender-ref ref="KUNLUN_activesuccess" />
+    </logger> 
+    
+</included>    

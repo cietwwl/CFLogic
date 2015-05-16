@@ -1,0 +1,948 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <enumClass name="com.kola.kmp.logic.actionrecord.KActionType">
+    <ACTION_TYPE_WORLDBOSS>
+      <name org="世界boss">翻译文字</name>
+    </ACTION_TYPE_WORLDBOSS>
+    <ACTION_TYPE_SENIOR_FB>
+      <name org="精英副本">翻译文字</name>
+    </ACTION_TYPE_SENIOR_FB>
+    <ACTION_TYPE_BOSS_FB>
+      <name org="BOSS副本">翻译文字</name>
+    </ACTION_TYPE_BOSS_FB>
+    <ACTION_TYPE_NORMAL_FB>
+      <name org="普通副本">翻译文字</name>
+    </ACTION_TYPE_NORMAL_FB>
+    <ACTION_TYPE_TRANSPORT>
+      <name org="物资运输">翻译文字</name>
+    </ACTION_TYPE_TRANSPORT>
+    <ACTION_TYPE_INTERCEPT>
+      <name org="物资拦截">翻译文字</name>
+    </ACTION_TYPE_INTERCEPT>
+    <ACTION_TYPE_COMPETITION>
+      <name org="竞技场">翻译文字</name>
+    </ACTION_TYPE_COMPETITION>
+    <ACTION_TYPE_DAILY_MISSION>
+      <name org="日常任务">翻译文字</name>
+    </ACTION_TYPE_DAILY_MISSION>
+    <ACTION_TYPE_WISH>
+      <name org="许愿">翻译文字</name>
+    </ACTION_TYPE_WISH>
+    <ACTION_TYPE_TOWER_COPY>
+      <name org="爬塔副本">翻译文字</name>
+    </ACTION_TYPE_TOWER_COPY>
+  </enumClass>
+  <enumClass name="com.kola.kmp.logic.chat.bug.KBugTypeEnum">
+    <BUG>
+      <name org="BUG">翻译文字</name>
+    </BUG>
+    <投诉>
+      <name org="投诉">翻译文字</name>
+    </投诉>
+    <意见>
+      <name org="意见">翻译文字</name>
+    </意见>
+    <其他>
+      <name org="其他">翻译文字</name>
+    </其他>
+  </enumClass>
+  <enumClass name="com.kola.kmp.logic.gamble.peopleguess.KPeopleGuessStatusEnum">
+    <STATUS_YABAO>
+      <statusName org="投注状态">翻译文字</statusName>
+    </STATUS_YABAO>
+    <STATUS_WAITING_RACE>
+      <statusName org="等待开跑状态">翻译文字</statusName>
+    </STATUS_WAITING_RACE>
+    <STATUS_RACING>
+      <statusName org="开跑状态">翻译文字</statusName>
+    </STATUS_RACING>
+    <STATUS_SETTLE_PRICE>
+      <statusName org="结算状态">翻译文字</statusName>
+    </STATUS_SETTLE_PRICE>
+  </enumClass>
+  <enumClass name="com.kola.kmp.logic.gang.KGangPositionEnum">
+    <军团长>
+      <name org="军团长">翻译文字</name>
+    </军团长>
+    <副团长>
+      <name org="副团长">翻译文字</name>
+    </副团长>
+    <监察长>
+      <name org="监察长">翻译文字</name>
+    </监察长>
+    <成员>
+      <name org="成员">翻译文字</name>
+    </成员>
+  </enumClass>
+  <enumClass name="com.kola.kmp.logic.gang.reswar.ResWarStatusEnum">
+    <BID_START>
+      <name org="竞价开始">翻译文字</name>
+    </BID_START>
+    <READY_START>
+      <name org="准备开始">翻译文字</name>
+    </READY_START>
+    <WAR_START>
+      <name org="对战开始">翻译文字</name>
+    </WAR_START>
+    <REST_START>
+      <name org="休战开始">翻译文字</name>
+    </REST_START>
+  </enumClass>
+  <enumClass name="com.kola.kmp.logic.gang.war.GangWarRound$GangRace$RaceGangData$RaceMemberData$MemStatusEnum">
+    <IN>
+      <name org="主场景中">翻译文字</name>
+    </IN>
+    <OUT>
+      <name org="曾经进入主场景，但已离场">翻译文字</name>
+    </OUT>
+    <WAR>
+      <name org="PVP或PVE中">翻译文字</name>
+    </WAR>
+    <REVIVE>
+      <name org="复活处理中">翻译文字</name>
+    </REVIVE>
+  </enumClass>
+  <enumClass name="com.kola.kmp.logic.gang.war.GangWarStatusEnum">
+    <SIGNUP_START_NOW>
+      <name org="报名开始">翻译文字</name>
+    </SIGNUP_START_NOW>
+    <SIGNUP_END>
+      <name org="报名截止">翻译文字</name>
+    </SIGNUP_END>
+    <WAR_WAIT_NOW>
+      <name org="对战等待">翻译文字</name>
+    </WAR_WAIT_NOW>
+    <WAR_ROUND_READY_NOW>
+      <name org="对战准备">翻译文字</name>
+    </WAR_ROUND_READY_NOW>
+    <WAR_ROUND_START_NOW>
+      <name org="对战开始">翻译文字</name>
+    </WAR_ROUND_START_NOW>
+    <WAR_ROUND_END_NOW>
+      <name org="对战结束">翻译文字</name>
+    </WAR_ROUND_END_NOW>
+    <REST_START_NOW>
+      <name org="休战期开始">翻译文字</name>
+    </REST_START_NOW>
+    <REST_END>
+      <name org="休战期结束">翻译文字</name>
+    </REST_END>
+  </enumClass>
+  <enumClass name="com.kola.kmp.logic.other.DailyMissionOperateTypeEnum">
+    <OPERATE_TYPE_SUBMIT>
+      <typeName org="领取奖励">翻译文字</typeName>
+    </OPERATE_TYPE_SUBMIT>
+    <OPERATE_TYPE_AUTO_SUBMIT>
+      <typeName org="自动完成">翻译文字</typeName>
+    </OPERATE_TYPE_AUTO_SUBMIT>
+    <OPERATE_TYPE_AUTO_SEARCH_ROAD>
+      <typeName org="自动寻路">翻译文字</typeName>
+    </OPERATE_TYPE_AUTO_SEARCH_ROAD>
+  </enumClass>
+  <enumClass name="com.kola.kmp.logic.other.KColorFunEnum">
+    <黄色>
+      <sign org="c0">翻译文字</sign>
+    </黄色>
+    <绿色>
+      <sign org="c1">翻译文字</sign>
+    </绿色>
+    <蓝色>
+      <sign org="c2">翻译文字</sign>
+    </蓝色>
+    <橙色>
+      <sign org="c3">翻译文字</sign>
+    </橙色>
+    <红色>
+      <sign org="c4">翻译文字</sign>
+    </红色>
+    <浅黄色_文本>
+      <sign org="c5">翻译文字</sign>
+    </浅黄色_文本>
+    <品质_绿>
+      <sign org="c6">翻译文字</sign>
+    </品质_绿>
+    <品质_蓝>
+      <sign org="c7">翻译文字</sign>
+    </品质_蓝>
+    <品质_紫>
+      <sign org="c8">翻译文字</sign>
+    </品质_紫>
+    <品质_橙>
+      <sign org="c10">翻译文字</sign>
+    </品质_橙>
+    <品质_红>
+      <sign org="c9">翻译文字</sign>
+    </品质_红>
+    <白色>
+      <sign org="c11">翻译文字</sign>
+    </白色>
+    <指令_停服公告>
+      <sign org="c0">翻译文字</sign>
+    </指令_停服公告>
+    <角色名>
+      <sign org="c2">翻译文字</sign>
+    </角色名>
+    <属性>
+      <sign org="c2">翻译文字</sign>
+    </属性>
+    <私聊发送时间>
+      <sign org="c3">翻译文字</sign>
+    </私聊发送时间>
+    <军团名称>
+      <sign org="c2">翻译文字</sign>
+    </军团名称>
+    <科技名称>
+      <sign org="c3">翻译文字</sign>
+    </科技名称>
+  </enumClass>
+  <enumClass name="com.kola.kmp.logic.other.KCurrencyTypeEnum">
+    <DIAMOND>
+      <name org="钻石">翻译文字</name>
+      <extName org="钻石">翻译文字</extName>
+    </DIAMOND>
+    <GOLD>
+      <name org="金币">翻译文字</name>
+      <extName org="金币">翻译文字</extName>
+    </GOLD>
+    <POTENTIAL>
+      <name org="潜能">翻译文字</name>
+      <extName org="潜能">翻译文字</extName>
+    </POTENTIAL>
+    <SCORE>
+      <name org="荣誉">翻译文字</name>
+      <extName org="荣誉">翻译文字</extName>
+    </SCORE>
+    <GANG_CONTRIBUTION>
+      <name org="军团贡献">翻译文字</name>
+      <extName org="军团贡献">翻译文字</extName>
+    </GANG_CONTRIBUTION>
+    <EMBLEM>
+      <name org="徽记">翻译文字</name>
+      <extName org="徽记">翻译文字</extName>
+    </EMBLEM>
+    <WISH_POINT>
+      <name org="扭蛋券">翻译文字</name>
+      <extName org="扭蛋券">翻译文字</extName>
+    </WISH_POINT>
+  </enumClass>
+  <enumClass name="com.kola.kmp.logic.other.KEquipmentTypeEnum">
+    <主武器>
+      <name org="主武器">翻译文字</name>
+    </主武器>
+    <副武器>
+      <name org="副武器">翻译文字</name>
+    </副武器>
+    <头盔>
+      <name org="头盔">翻译文字</name>
+    </头盔>
+    <胸甲>
+      <name org="胸甲">翻译文字</name>
+    </胸甲>
+    <护手>
+      <name org="护手">翻译文字</name>
+    </护手>
+    <腿甲>
+      <name org="腿甲">翻译文字</name>
+    </腿甲>
+    <腰带>
+      <name org="腰带">翻译文字</name>
+    </腰带>
+    <战靴>
+      <name org="战靴">翻译文字</name>
+    </战靴>
+    <项链>
+      <name org="项链">翻译文字</name>
+    </项链>
+    <指环>
+      <name org="指环">翻译文字</name>
+    </指环>
+  </enumClass>
+  <enumClass name="com.kola.kmp.logic.other.KGameAttrType">
+    <MAX_HP>
+      <_name org="生命">翻译文字</_name>
+      <_extName org="生命">翻译文字</_extName>
+      <_realName org="生命上限">翻译文字</_realName>
+    </MAX_HP>
+    <MAX_ENERGY>
+      <_name org="怒气上限">翻译文字</_name>
+      <_extName org="怒气上限">翻译文字</_extName>
+      <_realName org="怒气上限">翻译文字</_realName>
+    </MAX_ENERGY>
+    <HP>
+      <_name org="生命">翻译文字</_name>
+      <_extName org="生命">翻译文字</_extName>
+      <_realName org="当前生命">翻译文字</_realName>
+    </HP>
+    <ENERGY>
+      <_name org="怒气">翻译文字</_name>
+      <_extName org="怒气">翻译文字</_extName>
+      <_realName org="当前气力">翻译文字</_realName>
+    </ENERGY>
+    <HP_RECOVERY>
+      <_name org="生命恢复速度">翻译文字</_name>
+      <_extName org="生命恢复速度">翻译文字</_extName>
+      <_realName org="生命恢复速度">翻译文字</_realName>
+    </HP_RECOVERY>
+    <ATK>
+      <_name org="攻击">翻译文字</_name>
+      <_extName org="攻击">翻译文字</_extName>
+      <_realName org="攻击力">翻译文字</_realName>
+    </ATK>
+    <DEF>
+      <_name org="防御">翻译文字</_name>
+      <_extName org="防御">翻译文字</_extName>
+      <_realName org="物防">翻译文字</_realName>
+    </DEF>
+    <HIT_RATING>
+      <_name org="命中">翻译文字</_name>
+      <_extName org="命中">翻译文字</_extName>
+      <_realName org="命中等级">翻译文字</_realName>
+    </HIT_RATING>
+    <CRIT_RATING>
+      <_name org="暴击">翻译文字</_name>
+      <_extName org="暴击">翻译文字</_extName>
+      <_realName org="暴击等级">翻译文字</_realName>
+    </CRIT_RATING>
+    <DODGE_RATING>
+      <_name org="闪避">翻译文字</_name>
+      <_extName org="闪避">翻译文字</_extName>
+      <_realName org="闪避等级">翻译文字</_realName>
+    </DODGE_RATING>
+    <RESILIENCE_RATING>
+      <_name org="暴击抵抗">翻译文字</_name>
+      <_extName org="暴击抵抗">翻译文字</_extName>
+      <_realName org="抗爆等级">翻译文字</_realName>
+    </RESILIENCE_RATING>
+    <CRIT_MULTIPLE>
+      <_name org="暴击加成">翻译文字</_name>
+      <_extName org="暴击加成">翻译文字</_extName>
+      <_realName org="暴击加成">翻译文字</_realName>
+    </CRIT_MULTIPLE>
+    <CD_REDUCE>
+      <_name org="冷却缩减">翻译文字</_name>
+      <_extName org="冷却缩减">翻译文字</_extName>
+      <_realName org="冷却缩减">翻译文字</_realName>
+    </CD_REDUCE>
+    <HP_ABSORB>
+      <_name org="生命吸取">翻译文字</_name>
+      <_extName org="生命吸取">翻译文字</_extName>
+      <_realName org="生命吸取">翻译文字</_realName>
+    </HP_ABSORB>
+    <FAINT_RESIST_RATING>
+      <_name org="眩晕抵抗">翻译文字</_name>
+      <_extName org="眩晕抵抗">翻译文字</_extName>
+      <_realName org="眩晕抵抗">翻译文字</_realName>
+    </FAINT_RESIST_RATING>
+    <DEF_IGNORE>
+      <_name org="无视防御">翻译文字</_name>
+      <_extName org="无视防御">翻译文字</_extName>
+      <_realName org="无视防御">翻译文字</_realName>
+    </DEF_IGNORE>
+    <SHORT_RA_ATK_ITR>
+      <_name org="近程攻击速度">翻译文字</_name>
+      <_extName org="近程攻击速度">翻译文字</_extName>
+      <_realName org="近程攻击速度">翻译文字</_realName>
+    </SHORT_RA_ATK_ITR>
+    <LONG_RA_ATK_ITR>
+      <_name org="远程攻击速度">翻译文字</_name>
+      <_extName org="远程攻击速度">翻译文字</_extName>
+      <_realName org="远程攻击速度">翻译文字</_realName>
+    </LONG_RA_ATK_ITR>
+    <MOVE_SPEED_X>
+      <_name org="移动速度x">翻译文字</_name>
+      <_extName org="移动速度x">翻译文字</_extName>
+      <_realName org="移动速度">翻译文字</_realName>
+    </MOVE_SPEED_X>
+    <MOVE_SPEED_Y>
+      <_name org="移动速度y">翻译文字</_name>
+      <_extName org="移动速度y">翻译文字</_extName>
+      <_realName org="移动速度">翻译文字</_realName>
+    </MOVE_SPEED_Y>
+    <BATTLE_MOVE_SPEED_X>
+      <_name org="战斗移动速度x">翻译文字</_name>
+      <_extName org="战斗移动速度x">翻译文字</_extName>
+      <_realName org="战斗移动速度">翻译文字</_realName>
+    </BATTLE_MOVE_SPEED_X>
+    <BATTLE_MOVE_SPEED_Y>
+      <_name org="战斗移动速度y">翻译文字</_name>
+      <_extName org="战斗移动速度y">翻译文字</_extName>
+      <_realName org="战斗移动速度">翻译文字</_realName>
+    </BATTLE_MOVE_SPEED_Y>
+    <SHORT_RA_ATK_DIST>
+      <_name org="近程攻击距离">翻译文字</_name>
+      <_extName org="近程攻击距离">翻译文字</_extName>
+      <_realName org="近程攻击距离">翻译文字</_realName>
+    </SHORT_RA_ATK_DIST>
+    <LONG_RA_ATK_DIST>
+      <_name org="远程攻击距离">翻译文字</_name>
+      <_extName org="远程攻击距离">翻译文字</_extName>
+      <_realName org="远程攻击距离">翻译文字</_realName>
+    </LONG_RA_ATK_DIST>
+    <BLOCK>
+      <_name org="格挡值">翻译文字</_name>
+      <_extName org="格挡值">翻译文字</_extName>
+      <_realName org="格挡值">翻译文字</_realName>
+    </BLOCK>
+    <COHESION_DM>
+      <_name org="聚力伤害">翻译文字</_name>
+      <_extName org="聚力伤害">翻译文字</_extName>
+      <_realName org="聚力伤害">翻译文字</_realName>
+    </COHESION_DM>
+    <SHOT_DM_PCT>
+      <_name org="子弹伤害">翻译文字</_name>
+      <_extName org="子弹伤害">翻译文字</_extName>
+      <_realName org="子弹伤害">翻译文字</_realName>
+    </SHOT_DM_PCT>
+    <COHESION_FIXED>
+      <_name org="聚力追加伤害">翻译文字</_name>
+      <_extName org="聚力追加伤害">翻译文字</_extName>
+      <_realName org="聚力追加伤害">翻译文字</_realName>
+    </COHESION_FIXED>
+    <BASIC_ATTR_INC>
+      <_name org="基础属性加成">翻译文字</_name>
+      <_extName org="基础属性加成">翻译文字</_extName>
+      <_realName org="基础属性加成">翻译文字</_realName>
+    </BASIC_ATTR_INC>
+    <SKILL_DM_INC>
+      <_name org="技能伤害加成">翻译文字</_name>
+      <_extName org="技能伤害加成">翻译文字</_extName>
+      <_realName org="技能伤害加成">翻译文字</_realName>
+    </SKILL_DM_INC>
+    <DAMAGE_REDUCTION>
+      <_name org="伤害减免">翻译文字</_name>
+      <_extName org="伤害减免">翻译文字</_extName>
+      <_realName org="伤害减免">翻译文字</_realName>
+    </DAMAGE_REDUCTION>
+    <ACTION_SPEED>
+      <_name org="动作速度">翻译文字</_name>
+      <_extName org="动作速度">翻译文字</_extName>
+      <_realName org="动作速度">翻译文字</_realName>
+    </ACTION_SPEED>
+    <MAX_HP_PCT>
+      <_name org="生命">翻译文字</_name>
+      <_extName org="生命">翻译文字</_extName>
+      <_realName org="生命上限万分比">翻译文字</_realName>
+    </MAX_HP_PCT>
+    <MAX_ENERGY_PCT>
+      <_name org="怒气上限">翻译文字</_name>
+      <_extName org="怒气上限">翻译文字</_extName>
+      <_realName org="怒气上限万分比">翻译文字</_realName>
+    </MAX_ENERGY_PCT>
+    <HP_PCT>
+      <_name org="生命">翻译文字</_name>
+      <_extName org="生命">翻译文字</_extName>
+      <_realName org="生命百分比">翻译文字</_realName>
+    </HP_PCT>
+    <ENERGY_PCT>
+      <_name org="怒气">翻译文字</_name>
+      <_extName org="怒气">翻译文字</_extName>
+      <_realName org="怒气百分比">翻译文字</_realName>
+    </ENERGY_PCT>
+    <HP_RECOVERY_PCT>
+      <_name org="生命恢复">翻译文字</_name>
+      <_extName org="生命恢复">翻译文字</_extName>
+      <_realName org="生命恢复万分比">翻译文字</_realName>
+    </HP_RECOVERY_PCT>
+    <ATK_PCT>
+      <_name org="攻击">翻译文字</_name>
+      <_extName org="攻击">翻译文字</_extName>
+      <_realName org="攻击力万分比">翻译文字</_realName>
+    </ATK_PCT>
+    <DEF_PCT>
+      <_name org="防御">翻译文字</_name>
+      <_extName org="防御">翻译文字</_extName>
+      <_realName org="防御力万分比">翻译文字</_realName>
+    </DEF_PCT>
+    <HIT_RATING_PCT>
+      <_name org="命中">翻译文字</_name>
+      <_extName org="命中">翻译文字</_extName>
+      <_realName org="命中万分比">翻译文字</_realName>
+    </HIT_RATING_PCT>
+    <CRIT_RATING_PCT>
+      <_name org="暴击">翻译文字</_name>
+      <_extName org="暴击">翻译文字</_extName>
+      <_realName org="暴击万分比">翻译文字</_realName>
+    </CRIT_RATING_PCT>
+    <DODGE_RATING_PCT>
+      <_name org="闪避">翻译文字</_name>
+      <_extName org="闪避">翻译文字</_extName>
+      <_realName org="闪避万分比">翻译文字</_realName>
+    </DODGE_RATING_PCT>
+    <RESILIENCE_RATING_PCT>
+      <_name org="暴击抵抗">翻译文字</_name>
+      <_extName org="暴击抵抗">翻译文字</_extName>
+      <_realName org="抗爆等级万分比">翻译文字</_realName>
+    </RESILIENCE_RATING_PCT>
+    <SHORT_RA_ATK_ITR_PCT>
+      <_name org="近程攻击速度">翻译文字</_name>
+      <_extName org="近程攻击速度">翻译文字</_extName>
+      <_realName org="近程攻击速度万分比">翻译文字</_realName>
+    </SHORT_RA_ATK_ITR_PCT>
+    <LONG_RA_ATK_ITR_PCT>
+      <_name org="近程攻击速度">翻译文字</_name>
+      <_extName org="近程攻击速度">翻译文字</_extName>
+      <_realName org="近程攻击速度万分比">翻译文字</_realName>
+    </LONG_RA_ATK_ITR_PCT>
+    <BATTLE_POWER>
+      <_name org="战斗力">翻译文字</_name>
+      <_extName org="战斗力">翻译文字</_extName>
+      <_realName org="战斗力">翻译文字</_realName>
+    </BATTLE_POWER>
+    <EXPERIENCE>
+      <_name org="经验值">翻译文字</_name>
+      <_extName org="经验值">翻译文字</_extName>
+      <_realName org="经验值">翻译文字</_realName>
+    </EXPERIENCE>
+    <PHY_POWER>
+      <_name org="体力">翻译文字</_name>
+      <_extName org="体力">翻译文字</_extName>
+      <_realName org="体力">翻译文字</_realName>
+    </PHY_POWER>
+    <XIUWEI>
+      <_name org="修为">翻译文字</_name>
+      <_extName org="修为">翻译文字</_extName>
+      <_realName org="修为">翻译文字</_realName>
+    </XIUWEI>
+  </enumClass>
+  <enumClass name="com.kola.kmp.logic.other.KGameMissionStatusEnum">
+    <MISSION_STATUS_TRYFINISH>
+      <statusName org="（未完成）">翻译文字</statusName>
+    </MISSION_STATUS_TRYFINISH>
+    <MISSION_STATUS_TRYRECEIVE>
+      <statusName org="（可接受）">翻译文字</statusName>
+    </MISSION_STATUS_TRYRECEIVE>
+    <MISSION_STATUS_TRYSUBMIT>
+      <statusName org="（可交付）">翻译文字</statusName>
+    </MISSION_STATUS_TRYSUBMIT>
+  </enumClass>
+  <enumClass name="com.kola.kmp.logic.other.KGameMissionTemplateTypeEnum">
+    <MISSION_TYPE_MAIN_LINE>
+      <typeName org="【主】">翻译文字</typeName>
+      <extTypeName org="[05c7ff]【主】[-]">翻译文字</extTypeName>
+    </MISSION_TYPE_MAIN_LINE>
+    <MISSION_TYPE_BRANCH_LINE>
+      <typeName org="【支】">翻译文字</typeName>
+      <extTypeName org="[ce3fff]【支】[-]">翻译文字</extTypeName>
+    </MISSION_TYPE_BRANCH_LINE>
+    <MISSION_TYPE_DAILY>
+      <typeName org="【日常】">翻译文字</typeName>
+      <extTypeName org="[ff1f1f]【日常】[-]">翻译文字</extTypeName>
+    </MISSION_TYPE_DAILY>
+    <MISSION_TYPE_GANG>
+      <typeName org="【帮】">翻译文字</typeName>
+      <extTypeName org="[ff1f1f]【帮】[-]">翻译文字</extTypeName>
+    </MISSION_TYPE_GANG>
+    <MISSION_TYPE_ACTIVITY>
+      <typeName org="【活动】">翻译文字</typeName>
+      <extTypeName org="[ff1f1f]【活动】[-]">翻译文字</extTypeName>
+    </MISSION_TYPE_ACTIVITY>
+    <MISSION_TYPE_NEW_GUIDE>
+      <typeName org="【新手引导】">翻译文字</typeName>
+      <extTypeName org="[ff1f1f]【新手引导】[-]">翻译文字</extTypeName>
+    </MISSION_TYPE_NEW_GUIDE>
+  </enumClass>
+  <enumClass name="com.kola.kmp.logic.other.KItemQualityEnum">
+    <优秀的>
+      <name org="优秀的">翻译文字</name>
+      <descName org="[00ff00]优秀[-]">翻译文字</descName>
+    </优秀的>
+    <精良的>
+      <name org="精良的">翻译文字</name>
+      <descName org="[05c7ff]精良[-]">翻译文字</descName>
+    </精良的>
+    <史诗的>
+      <name org="史诗的">翻译文字</name>
+      <descName org="[ce3fff]史诗[-]">翻译文字</descName>
+    </史诗的>
+    <传说的>
+      <name org="传说的">翻译文字</name>
+      <descName org="[ff9218]传说[-]">翻译文字</descName>
+    </传说的>
+    <无敌的>
+      <name org="无敌的">翻译文字</name>
+      <descName org="[ff1f1f]无敌[-]">翻译文字</descName>
+    </无敌的>
+  </enumClass>
+  <enumClass name="com.kola.kmp.logic.other.KItemTypeEnum">
+    <装备>
+      <name org="装备">翻译文字</name>
+    </装备>
+    <消耗品>
+      <name org="消耗品">翻译文字</name>
+    </消耗品>
+    <改造材料>
+      <name org="改造材料">翻译文字</name>
+    </改造材料>
+    <固定宝箱>
+      <name org="固定宝箱">翻译文字</name>
+    </固定宝箱>
+    <宝石>
+      <name org="宝石">翻译文字</name>
+    </宝石>
+    <随机宝箱>
+      <name org="随机宝箱">翻译文字</name>
+    </随机宝箱>
+    <装备包>
+      <name org="装备包">翻译文字</name>
+    </装备包>
+  </enumClass>
+  <enumClass name="com.kola.kmp.logic.other.KJobTypeEnum">
+    <WARRIOR>
+      <_jobName org="突击战士">翻译文字</_jobName>
+      <_descr org="">翻译文字</_descr>
+    </WARRIOR>
+    <SHADOW>
+      <_jobName org="暗影特工">翻译文字</_jobName>
+      <_descr org="">翻译文字</_descr>
+    </SHADOW>
+    <GUNMAN>
+      <_jobName org="枪械师">翻译文字</_jobName>
+      <_descr org="">翻译文字</_descr>
+    </GUNMAN>
+  </enumClass>
+  <enumClass name="com.kola.kmp.logic.other.KPetAtkType">
+    <ATK_TYPE_SHORT>
+      <_name org="近战">翻译文字</_name>
+    </ATK_TYPE_SHORT>
+    <ATK_TYPE_LONG>
+      <_name org="远战">翻译文字</_name>
+    </ATK_TYPE_LONG>
+    <ATK_TYPE_DEF>
+      <_name org="防御">翻译文字</_name>
+    </ATK_TYPE_DEF>
+  </enumClass>
+  <enumClass name="com.kola.kmp.logic.other.KPetGetWay">
+    <WAY_COMMON_COPY>
+      <name org="普通副本">翻译文字</name>
+    </WAY_COMMON_COPY>
+    <WAY_ELITE_COPY>
+      <name org="精英副本">翻译文字</name>
+    </WAY_ELITE_COPY>
+    <WAY_PET_CHALLENGE_COPY>
+      <name org="随从试炼">翻译文字</name>
+    </WAY_PET_CHALLENGE_COPY>
+    <WAY_GANG_SHOP>
+      <name org="军团商店">翻译文字</name>
+    </WAY_GANG_SHOP>
+    <WAY_RANDOM_SHOP>
+      <name org="随机商店">翻译文字</name>
+    </WAY_RANDOM_SHOP>
+    <WAY_VITALITY>
+      <name org="活跃度">翻译文字</name>
+    </WAY_VITALITY>
+    <WAY_GARDERN>
+      <name org="保卫庄园">翻译文字</name>
+    </WAY_GARDERN>
+    <WAY_COMMON_WISH>
+      <name org="幸运转盘">翻译文字</name>
+    </WAY_COMMON_WISH>
+    <WAY_SENIOR_WISH>
+      <name org="幸运转盘">翻译文字</name>
+    </WAY_SENIOR_WISH>
+    <WAY_VIP>
+      <name org="VIP赠送">翻译文字</name>
+    </WAY_VIP>
+    <WAY_SENIOR_PET_CHALLENGE_COPY>
+      <name org="高级随从试炼">翻译文字</name>
+    </WAY_SENIOR_PET_CHALLENGE_COPY>
+  </enumClass>
+  <enumClass name="com.kola.kmp.logic.other.KPetQuality">
+    <GREEN>
+      <_name org="绿色">翻译文字</_name>
+      <_colorHex org="00ff00">翻译文字</_colorHex>
+    </GREEN>
+    <BLUE>
+      <_name org="蓝色">翻译文字</_name>
+      <_colorHex org="05c7ff">翻译文字</_colorHex>
+    </BLUE>
+    <PURPLE>
+      <_name org="紫色">翻译文字</_name>
+      <_colorHex org="ce3fff">翻译文字</_colorHex>
+    </PURPLE>
+    <ORANGE>
+      <_name org="橙色">翻译文字</_name>
+      <_colorHex org="ff9218">翻译文字</_colorHex>
+    </ORANGE>
+    <RED>
+      <_name org="红色">翻译文字</_name>
+      <_colorHex org="ff1f1f">翻译文字</_colorHex>
+    </RED>
+  </enumClass>
+  <enumClass name="com.kola.kmp.logic.other.KPetType">
+    <COMMON>
+      <_typeName org="普通">翻译文字</_typeName>
+    </COMMON>
+    <ELITIST>
+      <_typeName org="精英">翻译文字</_typeName>
+    </ELITIST>
+    <BOSS>
+      <_typeName org="BOSS">翻译文字</_typeName>
+    </BOSS>
+  </enumClass>
+  <enumClass name="com.kola.kmp.logic.other.KRankTypeEnum">
+    <竞技榜>
+      <name org="竞技榜">翻译文字</name>
+      <saveDirPath org="">翻译文字</saveDirPath>
+      <saveFileName org="">翻译文字</saveFileName>
+      <saveFileNameSuffix org="">翻译文字</saveFileNameSuffix>
+    </竞技榜>
+    <战力榜>
+      <name org="战力榜">翻译文字</name>
+      <saveDirPath org="./res/output/rank/">翻译文字</saveDirPath>
+      <saveFileName org="ares">翻译文字</saveFileName>
+      <saveFileNameSuffix org=".xml">翻译文字</saveFileNameSuffix>
+    </战力榜>
+    <等级榜>
+      <name org="等级榜">翻译文字</name>
+      <saveDirPath org="./res/output/rank/">翻译文字</saveDirPath>
+      <saveFileName org="level">翻译文字</saveFileName>
+      <saveFileNameSuffix org=".xml">翻译文字</saveFileNameSuffix>
+    </等级榜>
+    <随从榜>
+      <name org="随从榜">翻译文字</name>
+      <saveDirPath org="./res/output/rank/">翻译文字</saveDirPath>
+      <saveFileName org="pet">翻译文字</saveFileName>
+      <saveFileNameSuffix org=".xml">翻译文字</saveFileNameSuffix>
+    </随从榜>
+  </enumClass>
+  <enumClass name="com.kola.kmp.logic.other.KRelationShipTypeEnum">
+    <好友>
+      <name org="好友">翻译文字</name>
+    </好友>
+    <好友申请>
+      <name org="好友申请">翻译文字</name>
+    </好友申请>
+    <最近联系人>
+      <name org="最近联系人">翻译文字</name>
+    </最近联系人>
+    <黑名单>
+      <name org="黑名单">翻译文字</name>
+    </黑名单>
+    <附近的人>
+      <name org="附近的人">翻译文字</name>
+    </附近的人>
+  </enumClass>
+  <enumClass name="com.kola.kmp.logic.other.KVitalityTypeEnum">
+    <强化装备>
+      <name org="强化装备">翻译文字</name>
+    </强化装备>
+    <通关普通副本>
+      <name org="通关普通副本">翻译文字</name>
+    </通关普通副本>
+    <通关普通精英副本>
+      <name org="通关普通精英副本">翻译文字</name>
+    </通关普通精英副本>
+    <通关困难精英副本>
+      <name org="通关困难精英副本">翻译文字</name>
+    </通关困难精英副本>
+    <名人堂膜拜>
+      <name org="名人堂膜拜">翻译文字</name>
+    </名人堂膜拜>
+    <排行榜点赞>
+      <name org="排行榜点赞">翻译文字</name>
+    </排行榜点赞>
+    <竞技场切磋>
+      <name org="竞技场切磋">翻译文字</name>
+    </竞技场切磋>
+    <随从合成>
+      <name org="随从合成">翻译文字</name>
+    </随从合成>
+    <收获庄园植物>
+      <name org="收获庄园植物">翻译文字</name>
+    </收获庄园植物>
+    <清理庄园僵尸>
+      <name org="清理庄园僵尸">翻译文字</name>
+    </清理庄园僵尸>
+    <好友地下城>
+      <name org="好友地下城">翻译文字</name>
+    </好友地下城>
+    <运送物资>
+      <name org="运送物资">翻译文字</name>
+    </运送物资>
+    <抢夺他人物资>
+      <name org="抢夺他人物资">翻译文字</name>
+    </抢夺他人物资>
+    <参加丧尸攻城活动>
+      <name org="参加丧尸攻城活动">翻译文字</name>
+    </参加丧尸攻城活动>
+    <浇灌庄园植物>
+      <name org="浇灌庄园植物">翻译文字</name>
+    </浇灌庄园植物>
+    <随从营救>
+      <name org="随从营救">翻译文字</name>
+    </随从营救>
+    <随从试炼>
+      <name org="随从试炼">翻译文字</name>
+    </随从试炼>
+    <异能要塞>
+      <name org="异能要塞">翻译文字</name>
+    </异能要塞>
+    <挖矿>
+      <name org="挖矿">翻译文字</name>
+    </挖矿>
+    <天梯赛>
+      <name org="天梯赛">翻译文字</name>
+    </天梯赛>
+    <赚金币>
+      <name org="赚金币">翻译文字</name>
+    </赚金币>
+    <切磋>
+      <name org="切磋">翻译文字</name>
+    </切磋>
+    <机甲升级>
+      <name org="机甲升级">翻译文字</name>
+    </机甲升级>
+  </enumClass>
+  <enumClass name="com.kola.kmp.logic.rank.gang.KGangRankTypeEnum">
+    <全部军团>
+      <saveDirPath org="./res/output/gangRank/">翻译文字</saveDirPath>
+      <saveFileName org="allGang">翻译文字</saveFileName>
+      <saveFileNameSuffix org=".xml">翻译文字</saveFileNameSuffix>
+    </全部军团>
+    <军团战积分>
+      <saveDirPath org="./res/output/gangRank/">翻译文字</saveDirPath>
+      <saveFileName org="gangWar">翻译文字</saveFileName>
+      <saveFileNameSuffix org=".xml">翻译文字</saveFileNameSuffix>
+    </军团战积分>
+    <军团战报名>
+      <saveDirPath org="./res/output/gangRank/">翻译文字</saveDirPath>
+      <saveFileName org="gangWarSignUp">翻译文字</saveFileName>
+      <saveFileNameSuffix org=".xml">翻译文字</saveFileNameSuffix>
+    </军团战报名>
+    <军团战力>
+      <saveDirPath org="./res/output/gangRank/">翻译文字</saveDirPath>
+      <saveFileName org="gangPow">翻译文字</saveFileName>
+      <saveFileNameSuffix org=".xml">翻译文字</saveFileNameSuffix>
+    </军团战力>
+  </enumClass>
+  <enumClass name="com.kola.kmp.logic.rank.teampvp.KTeamPVPRankTypeEnum">
+    <青铜>
+      <name org="青铜">翻译文字</name>
+      <saveDirPath org="./res/output/tempPVPRank/">翻译文字</saveDirPath>
+      <saveFileName org="青铜">翻译文字</saveFileName>
+      <saveFileNameSuffix org=".xml">翻译文字</saveFileNameSuffix>
+    </青铜>
+    <白银>
+      <name org="白银">翻译文字</name>
+      <saveDirPath org="./res/output/tempPVPRank/">翻译文字</saveDirPath>
+      <saveFileName org="白银">翻译文字</saveFileName>
+      <saveFileNameSuffix org=".xml">翻译文字</saveFileNameSuffix>
+    </白银>
+    <黄金>
+      <name org="黄金">翻译文字</name>
+      <saveDirPath org="./res/output/tempPVPRank/">翻译文字</saveDirPath>
+      <saveFileName org="黄金">翻译文字</saveFileName>
+      <saveFileNameSuffix org=".xml">翻译文字</saveFileNameSuffix>
+    </黄金>
+    <白金>
+      <name org="白金">翻译文字</name>
+      <saveDirPath org="./res/output/tempPVPRank/">翻译文字</saveDirPath>
+      <saveFileName org="白金">翻译文字</saveFileName>
+      <saveFileNameSuffix org=".xml">翻译文字</saveFileNameSuffix>
+    </白金>
+    <钻石>
+      <name org="钻石">翻译文字</name>
+      <saveDirPath org="./res/output/tempPVPRank/">翻译文字</saveDirPath>
+      <saveFileName org="钻石">翻译文字</saveFileName>
+      <saveFileNameSuffix org=".xml">翻译文字</saveFileNameSuffix>
+    </钻石>
+    <最强王者>
+      <name org="最强王者">翻译文字</name>
+      <saveDirPath org="./res/output/tempPVPRank/">翻译文字</saveDirPath>
+      <saveFileName org="最强王者">翻译文字</saveFileName>
+      <saveFileNameSuffix org=".xml">翻译文字</saveFileNameSuffix>
+    </最强王者>
+  </enumClass>
+  <enumClass name="com.kola.kmp.logic.relationship.IntercourseCenter$MemStatusEnum">
+    <IN>
+      <name org="主场景中">翻译文字</name>
+    </IN>
+    <WAR>
+      <name org="PVP或PVE中">翻译文字</name>
+    </WAR>
+  </enumClass>
+  <enumClass name="com.kola.kmp.logic.reward.exciting.ExcitiongStatusEnum">
+    <NOT_FINISHED>
+      <name org="未达成">翻译文字</name>
+    </NOT_FINISHED>
+    <FINISHED>
+      <name org="可领取">翻译文字</name>
+    </FINISHED>
+    <COLLECTED>
+      <name org="已发奖">翻译文字</name>
+    </COLLECTED>
+    <AUTOSENT>
+      <name org="自动发奖">翻译文字</name>
+    </AUTOSENT>
+    <EMPTY>
+      <name org="发放完毕">翻译文字</name>
+    </EMPTY>
+  </enumClass>
+  <enumClass name="com.kola.kmp.logic.shop.random.KRandomShopTypeEnum">
+    <VIP商城>
+      <name org="VIP商城">翻译文字</name>
+    </VIP商城>
+    <钻石商城>
+      <name org="钻石商城">翻译文字</name>
+    </钻石商城>
+    <金币商城>
+      <name org="金币商城">翻译文字</name>
+    </金币商城>
+    <随从商城>
+      <name org="随从商城">翻译文字</name>
+    </随从商城>
+  </enumClass>
+  <enumClass name="com.kola.kmp.logic.shop.timehot.KHotShopTypeEnum">
+    <时装>
+      <name org="时装">翻译文字</name>
+    </时装>
+    <装备>
+      <name org="装备">翻译文字</name>
+    </装备>
+    <随从>
+      <name org="随从">翻译文字</name>
+    </随从>
+    <材料>
+      <name org="材料">翻译文字</name>
+    </材料>
+  </enumClass>
+  <enumClass name="com.kola.kmp.logic.util.text.HyperTextTypeEnum">
+    <b>
+      <startSign org="[b]">翻译文字</startSign>
+      <endSign org="[/b]">翻译文字</endSign>
+    </b>
+    <i>
+      <startSign org="[i]">翻译文字</startSign>
+      <endSign org="[/i]">翻译文字</endSign>
+    </i>
+    <u>
+      <startSign org="[u]">翻译文字</startSign>
+      <endSign org="[/u]">翻译文字</endSign>
+    </u>
+    <s>
+      <startSign org="[s]">翻译文字</startSign>
+      <endSign org="[/s]">翻译文字</endSign>
+    </s>
+    <sub>
+      <startSign org="[sub]">翻译文字</startSign>
+      <endSign org="[/sub]">翻译文字</endSign>
+    </sub>
+    <sup>
+      <startSign org="[sup]">翻译文字</startSign>
+      <endSign org="[/sup]">翻译文字</endSign>
+    </sup>
+    <emo>
+      <startSign org="[emo]">翻译文字</startSign>
+      <endSign org="[/emo]">翻译文字</endSign>
+    </emo>
+    <url>
+      <startSign org="[url=]">翻译文字</startSign>
+      <endSign org="[/url]">翻译文字</endSign>
+    </url>
+    <col>
+      <startSign org="[]">翻译文字</startSign>
+      <endSign org="[-]">翻译文字</endSign>
+    </col>
+  </enumClass>
+</root>
+

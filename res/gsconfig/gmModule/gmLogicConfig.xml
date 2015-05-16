@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<logicConfig>
+		<GMPlayerName>gm10086</GMPlayerName>
+		<!-- <GMAccountId>10010034</GMAccountId> -->
+
+		<Task>
+			<!-- 向GMS发送GS状态数据的周期（DHMS） -->
+			<GSStateTaskPeroid>10S</GSStateTaskPeroid>
+
+		</Task>
+	</logicConfig>
+	
+	
+</root>

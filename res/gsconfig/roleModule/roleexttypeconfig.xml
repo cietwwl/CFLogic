@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <!-- <extType type="1" clazzPath=""/> -->
+    <extType type="9999" creatorClassPath="com.kola.kmp.logic.role.KRoleExtCreatorDemoImpl"/>
+    <extType type="1" creatorClassPath="com.kola.kmp.logic.fashion.KFasionRoleExtCACreator"/>
+    <extType type="2" creatorClassPath="com.kola.kmp.logic.reward.KRewardRoleExtCACreator"/>
+    <extType type="3" creatorClassPath="com.kola.kmp.logic.rank.KRankRoleExtCACreator"/>
+    <extType type="4" creatorClassPath="com.kola.kmp.logic.vip.KVIPRoleExtCACreator"/>
+    <extType type="5" creatorClassPath="com.kola.kmp.logic.gang.KGangRoleExtCACreator"/>
+    <extType type="6" creatorClassPath="com.kola.kmp.logic.talent.KTalentDataCreator" />
+    <extType type="7" creatorClassPath="com.kola.kmp.logic.shop.KShopRoleExtCACreator" />
+    <extType type="8" creatorClassPath="com.kola.kmp.logic.gamble.KGambleRoleExtCACreator" />
+    <extType type="9" creatorClassPath="com.kola.kmp.logic.reward.garden.KGardenRoleExtCACreator" />
+    <extType type="10" creatorClassPath="com.kola.kmp.logic.activity.KActivityRoleExtCaCreator" />
+    <extType type="11" creatorClassPath="com.kola.kmp.logic.reward.exciting.KExcitingExtCACreator" />
+</root>

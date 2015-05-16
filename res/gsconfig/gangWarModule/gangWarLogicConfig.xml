@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<logicConfig>
+		<!-- 时间参数DHMS格式定义==英文冒号":"：表示分隔符；D：表示天；H：表示小时；M：表示分钟；S：表示秒 -->
+
+		<!-- ============关于军团战的时间设置（使用D:H:M:S格式）============ -->
+		<!-- 1D:1H:0M:0S 表示周一凌晨1点整-->
+		<!-- 2D:12H:0M:0S 表示周二中午12点整-->
+		<!-- mode=1表示按正式详细时间配置表，mode=2表示按测试配置表  -->
+		<warTime mode="1">
+			<mode2>
+				<signUpStartTime>0D:0H:0M</signUpStartTime><!-- 结束休战，开始报名 -->
+				<signUpEndTime>6D:17H:28M</signUpEndTime><!-- 结束报名，开始等待 -->
+				<Round1ReadyTime>6D:17H:30M</Round1ReadyTime><!-- 第一场准备时间 -->
+				<ReadyTime>1M</ReadyTime><!-- 准备时长 -->
+				<PKTime>8M</PKTime><!-- PK时长 -->
+				<RestTime>1M</RestTime><!-- 两场间隔时长 -->
+			</mode2>
+			
+			<mode1>
+				<!-- 活动报名时间为：周一0：00至周五00:00 -->
+				<军团战开始时间>周四、周日，21:00与21:30共4场&#x000A;其中周日，21:30决赛</军团战开始时间>
+				<军团战报名时间>周四 20:00 截止</军团战报名时间>
+				
+				<signUpStartTime>0D:0H:0M:0S</signUpStartTime><!-- 结束休战，开始报名 -->
+				<signUpEndTime>3D:20H:0M:0S</signUpEndTime><!-- 结束报名，开始等待 -->
+				<round id="1">
+					<!-- 第N场开始和结束时间 -->
+					<ReadyTime>3D:21H:0M:0S</ReadyTime><!-- 结束等待，开始准备 -->
+					<StartTime>3D:21H:5M:0S</StartTime><!-- 结束准备，开始对战 -->
+					<EndTime>3D:21H:25M:0S</EndTime><!-- 结束对战，开始准备 -->
+				</round>
+				<round id="2">
+					<ReadyTime>3D:21H:30M:0S</ReadyTime>
+					<StartTime>3D:21H:35M:0S</StartTime>
+					<EndTime>3D:21H:55M:0S</EndTime>
+				</round>
+				<round id="3">
+					<ReadyTime>6D:21H:0M:0S</ReadyTime>
+					<StartTime>6D:21H:5M:0S</StartTime>
+					<EndTime>6D:21H:25M:0S</EndTime>
+				</round>
+				<round id="4">
+					<ReadyTime>6D:21H:30M:0S</ReadyTime>
+					<StartTime>6D:21H:35M:0S</StartTime>
+					<EndTime>6D:21H:55M:0S</EndTime>
+				</round>
+			</mode1>				
+		</warTime>		
+		
+		
+		<军团战场景地图>22001</军团战场景地图>
+		<军团战PVP地图文件名>jjchangfuben</军团战PVP地图文件名><!-- juntuanzhan_01 -->
+		<军团战PVP地图背景音乐>3006</军团战PVP地图背景音乐>
+		<军团战PVE地图关卡ID>700001</军团战PVE地图关卡ID>
+		
+
+		<!-- 开场倒计时（支持D:H:M:S） -->
+		<StartRoundCountDown>30S</StartRoundCountDown>
+
+		<!-- 报名宣传播报周期（支持D:H:M:S） -->
+		<SignupBroadcastPeroid>20M</SignupBroadcastPeroid>
+		
+		<!-- 对战裁决扫描周期（支持D:H:M:S）1M -->
+		<WarScanStartDelay>2M</WarScanStartDelay>
+		<WarScanPeroid>5S</WarScanPeroid>
+		
+		<!-- 连杀达到此值被清0时世界广播 -->
+		<WinCountClearBroad>5</WinCountClearBroad>
+
+		<!-- BOSS选择：双方成员等级混合后取前10名求平均等级 -->
+		<BoosAvgRoleLvNum>3</BoosAvgRoleLvNum>
+
+		<!-- PVP后有30秒的保护时间，不可以和同一个人切磋 -->
+		<LastPVPCDTime>30S</LastPVPCDTime>
+		<!-- 死亡后有30秒的复活时间 -->
+		<DeadCDTime>30S</DeadCDTime>
+		<!-- 胜利后有10秒的免被P时间 -->
+		<PVPCDTime>10S</PVPCDTime>
+		
+		<!-- PVP\PVE限时：只要超时，就算角色输（支持D:H:M:S） -->
+		<PKMaxTime>2M</PKMaxTime>
+
+	</logicConfig>
+
+	<excelConfig>
+		<resWar>
+			<path>./res/gamedata/gangWarModule/gangWar.xls</path>
+			<HeaderIndex>5</HeaderIndex>
+		</resWar>
+	</excelConfig>
+</root>

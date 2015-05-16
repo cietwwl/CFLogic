@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <!-- listeners中的sequence表示通知的顺序，这里会填入类似1,2,3这样的格式，即每个listener的id，然后以","分隔，
+    	 如果没有填入的id，会默认放到填入的id后面通知，而且不保证顺序。
+    	 listener节点解析：
+    	 clazz属性表示listener的完整类路径，会采用反射实例化的形式来实例化，所以请务必保证有无参数构造函数。
+    	 而且需保证这个实例不会影响其他的实例的逻辑。
+    	 id节点表示这个listener的id，一般就是按照1,2,3,4的顺序来填就可以了
+    	 listenJoinedGameEvent节点，是否监听登陆事件，填入true/false，不填默认为false
+    	 listenLeavedGameEvent节点，是否监听登出事件，填入true/false，不填默认为false
+    	 listenCreatedEvent节点，是否监听创建角色事件，填入true/false，不填默认为false
+    	 listenDeletedEvent节点，是否监听删除角色事件，填入true/false，不填默认为false
+    	 listenLevelUpEvent节点，是否监听角色升级事件，填入true/false，不填默认为false
+    	  -->
+    <listeners sequence="16,14,3,4,12,13,20">
+        <!--  <listener clazz="">
+            <id></id>
+            <listenJoinedGameEvent></listenJoinedGameEvent>
+            <listenLeavedGameEvent></listenLeavedGameEvent>
+            <listenCreatedEvent></listenCreatedEvent>
+            <listenDeletedEvent></listenDeletedEvent>
+            <listenLevelUpEvent></listenLevelUpEvent>
+            <listenPutToCacheEvent></listenPutToCacheEvent>
+        </listener> -->
+        
+        <listener clazz="com.kola.kmp.logic.map.KMapRoleEventListener">
+            <id>1</id>
+            <listenJoinedGameEvent>true</listenJoinedGameEvent>
+            <listenLeavedGameEvent>true</listenLeavedGameEvent>
+            <listenCreatedEvent>true</listenCreatedEvent>
+            <listenDeletedEvent>false</listenDeletedEvent>
+            <listenLevelUpEvent>true</listenLevelUpEvent>
+        </listener>
+        
+        <listener clazz="com.kola.kmp.logic.currency.KCurrencyRoleEventListener">
+            <id>2</id>
+            <listenJoinedGameEvent>true</listenJoinedGameEvent>
+            <listenLeavedGameEvent>true</listenLeavedGameEvent>
+            <listenCreatedEvent>true</listenCreatedEvent>
+            <listenDeletedEvent>true</listenDeletedEvent>
+            <listenLevelUpEvent>true</listenLevelUpEvent>
+        </listener>
+        
+        <listener clazz="com.kola.kmp.logic.item.KItemRoleEventListener">
+            <id>3</id>
+            <listenJoinedGameEvent>true</listenJoinedGameEvent>
+            <listenLeavedGameEvent>true</listenLeavedGameEvent>
+            <listenCreatedEvent>true</listenCreatedEvent>
+            <listenDeletedEvent>true</listenDeletedEvent>
+            <listenLevelUpEvent>true</listenLevelUpEvent>
+        </listener>
+        
+        <listener clazz="com.kola.kmp.logic.mail.KMailRoleEventListener">
+            <id>4</id>
+            <listenJoinedGameEvent>true</listenJoinedGameEvent>
+            <listenLeavedGameEvent>true</listenLeavedGameEvent>
+            <listenCreatedEvent>true</listenCreatedEvent>
+            <listenDeletedEvent>true</listenDeletedEvent>
+            <listenLevelUpEvent>true</listenLevelUpEvent>
+        </listener>
+        
+        <listener clazz="com.kola.kmp.logic.rank.KRankRoleEventListener">
+            <id>5</id>
+            <listenJoinedGameEvent>true</listenJoinedGameEvent>
+            <listenLeavedGameEvent>true</listenLeavedGameEvent>
+            <listenCreatedEvent>true</listenCreatedEvent>
+            <listenDeletedEvent>true</listenDeletedEvent>
+            <listenLevelUpEvent>true</listenLevelUpEvent>
+        </listener>
+        
+        <listener clazz="com.kola.kmp.logic.skill.KSkillRoleEventListener">
+            <id>6</id>
+            <listenJoinedGameEvent>true</listenJoinedGameEvent>
+            <listenLeavedGameEvent>true</listenLeavedGameEvent>
+            <listenCreatedEvent>true</listenCreatedEvent>
+            <listenDeletedEvent>true</listenDeletedEvent>
+            <listenLevelUpEvent>true</listenLevelUpEvent>
+        </listener>
+        
+        <listener clazz="com.kola.kmp.logic.chat.KChatRoleEventListener">
+            <id>7</id>
+            <listenJoinedGameEvent>true</listenJoinedGameEvent>
+            <listenLeavedGameEvent>true</listenLeavedGameEvent>
+            <listenCreatedEvent>true</listenCreatedEvent>
+            <listenDeletedEvent>true</listenDeletedEvent>
+            <listenLevelUpEvent>true</listenLevelUpEvent>
+        </listener>
+        
+        <listener clazz="com.kola.kmp.logic.gm.KGMRoleEventListener">
+            <id>8</id>
+            <listenJoinedGameEvent>true</listenJoinedGameEvent>
+            <listenLeavedGameEvent>true</listenLeavedGameEvent>
+            <listenCreatedEvent>true</listenCreatedEvent>
+            <listenDeletedEvent>true</listenDeletedEvent>
+            <listenLevelUpEvent>true</listenLevelUpEvent>
+        </listener>
+        
+        <listener clazz="com.kola.kmp.logic.pet.KPetModuleRoleEventListenerImpl">
+            <id>9</id>
+            <listenJoinedGameEvent>true</listenJoinedGameEvent>
+            <listenLeavedGameEvent>true</listenLeavedGameEvent>
+            <listenCreatedEvent>true</listenCreatedEvent>
+            <listenDeletedEvent>false</listenDeletedEvent>
+            <listenLevelUpEvent>true</listenLevelUpEvent>
+        </listener>
+        
+        <listener clazz="com.kola.kmp.logic.relationship.KRelationShipEventListener">
+            <id>10</id>
+            <listenJoinedGameEvent>true</listenJoinedGameEvent>
+            <listenLeavedGameEvent>true</listenLeavedGameEvent>
+            <listenCreatedEvent>true</listenCreatedEvent>
+            <listenDeletedEvent>true</listenDeletedEvent>
+            <listenLevelUpEvent>true</listenLevelUpEvent>
+        </listener>
+        
+         <listener clazz="com.kola.kmp.logic.mission.KMissionRoleEventListener">
+            <id>11</id>
+            <listenJoinedGameEvent>true</listenJoinedGameEvent>
+            <listenLeavedGameEvent>true</listenLeavedGameEvent>
+            <listenCreatedEvent>false</listenCreatedEvent>
+            <listenDeletedEvent>false</listenDeletedEvent>
+            <listenLevelUpEvent>true</listenLevelUpEvent>
+        </listener>
+        
+        <listener clazz="com.kola.kmp.logic.fashion.KFashionRoleEventListener">
+            <id>12</id>
+            <listenJoinedGameEvent>true</listenJoinedGameEvent>
+            <listenLeavedGameEvent>true</listenLeavedGameEvent>
+            <listenCreatedEvent>true</listenCreatedEvent>
+            <listenDeletedEvent>true</listenDeletedEvent>
+            <listenLevelUpEvent>true</listenLevelUpEvent>
+        </listener>
+        
+        <listener clazz="com.kola.kmp.logic.combat.impl.KCombatRoleEventListener">
+            <id>13</id>
+            <listenJoinedGameEvent>true</listenJoinedGameEvent>
+            <listenLeavedGameEvent>true</listenLeavedGameEvent>
+            <listenCreatedEvent>false</listenCreatedEvent>
+            <listenDeletedEvent>false</listenDeletedEvent>
+            <listenLevelUpEvent>false</listenLevelUpEvent>
+        </listener>
+        
+        <listener clazz="com.kola.kmp.logic.mount.KMountEventListener">
+            <id>14</id>
+            <listenJoinedGameEvent>true</listenJoinedGameEvent>
+            <listenLeavedGameEvent>true</listenLeavedGameEvent>
+            <listenCreatedEvent>true</listenCreatedEvent>
+            <listenDeletedEvent>true</listenDeletedEvent>
+            <listenLevelUpEvent>true</listenLevelUpEvent>
+        </listener>
+        
+        <listener clazz="com.kola.kmp.logic.gang.KGangEventListener">
+            <id>15</id>
+            <listenJoinedGameEvent>true</listenJoinedGameEvent>
+            <listenLeavedGameEvent>true</listenLeavedGameEvent>
+            <listenCreatedEvent>true</listenCreatedEvent>
+            <listenDeletedEvent>true</listenDeletedEvent>
+            <listenLevelUpEvent>true</listenLevelUpEvent>
+        </listener>
+        
+        <listener clazz="com.kola.kmp.logic.vip.KVIPRoleEventListener">
+            <id>16</id>
+            <listenJoinedGameEvent>true</listenJoinedGameEvent>
+            <listenLeavedGameEvent>true</listenLeavedGameEvent>
+            <listenCreatedEvent>true</listenCreatedEvent>
+            <listenDeletedEvent>true</listenDeletedEvent>
+            <listenLevelUpEvent>true</listenLevelUpEvent>
+        </listener>
+
+        <listener clazz="com.kola.kmp.logic.competition.KCompetitionRoleEventListener">
+            <id>17</id>
+            <listenJoinedGameEvent>true</listenJoinedGameEvent>
+            <listenLeavedGameEvent>true</listenLeavedGameEvent>
+            <listenCreatedEvent>false</listenCreatedEvent>
+            <listenDeletedEvent>true</listenDeletedEvent>
+            <listenLevelUpEvent>true</listenLevelUpEvent>
+        </listener>
+
+		<listener clazz="com.kola.kmp.logic.shop.KShopRoleEventListener">
+            <id>18</id>
+            <listenJoinedGameEvent>true</listenJoinedGameEvent>
+            <listenLeavedGameEvent>true</listenLeavedGameEvent>
+            <listenCreatedEvent>true</listenCreatedEvent>
+            <listenDeletedEvent>true</listenDeletedEvent>
+            <listenLevelUpEvent>true</listenLevelUpEvent>
+        </listener>
+        
+		<listener clazz="com.kola.kmp.logic.talent.KTalentModuleRoleEventListener">
+            <id>19</id>
+            <listenJoinedGameEvent>true</listenJoinedGameEvent>
+            <listenLeavedGameEvent>false</listenLeavedGameEvent>
+            <listenCreatedEvent>true</listenCreatedEvent>
+            <listenDeletedEvent>false</listenDeletedEvent>
+            <listenLevelUpEvent>false</listenLevelUpEvent>
+        </listener>
+        
+        <listener clazz="com.kola.kmp.logic.reward.KRewardRoleEventListener">
+            <id>20</id>
+            <listenJoinedGameEvent>true</listenJoinedGameEvent>
+            <listenLeavedGameEvent>true</listenLeavedGameEvent>
+            <listenCreatedEvent>true</listenCreatedEvent>
+            <listenDeletedEvent>true</listenDeletedEvent>
+            <listenLevelUpEvent>true</listenLevelUpEvent>
+            <listenPutToCacheEvent>true</listenPutToCacheEvent>
+        </listener>
+        
+        <!-- <listener clazz="com.kola.kmp.logic.gang.reswar.KResWarRoleEventListener">
+            <id>21</id>
+            <listenJoinedGameEvent>true</listenJoinedGameEvent>
+            <listenLeavedGameEvent>true</listenLeavedGameEvent>
+            <listenCreatedEvent>true</listenCreatedEvent>
+            <listenDeletedEvent>true</listenDeletedEvent>
+            <listenLevelUpEvent>true</listenLevelUpEvent>
+        </listener> -->
+        
+        <listener clazz="com.kola.kmp.logic.gang.war.KGangWarRoleEventListener">
+            <id>22</id>
+            <listenJoinedGameEvent>true</listenJoinedGameEvent>
+            <listenLeavedGameEvent>true</listenLeavedGameEvent>
+            <listenCreatedEvent>true</listenCreatedEvent>
+            <listenDeletedEvent>true</listenDeletedEvent>
+            <listenLevelUpEvent>true</listenLevelUpEvent>
+        </listener>
+        
+        <listener clazz="com.kola.kmp.logic.activity.KActivityModuleRoleEventListener">
+            <id>23</id>
+            <listenJoinedGameEvent>true</listenJoinedGameEvent>
+            <listenLeavedGameEvent>true</listenLeavedGameEvent>
+            <listenCreatedEvent>false</listenCreatedEvent>
+            <listenDeletedEvent>false</listenDeletedEvent>
+            <listenLevelUpEvent>false</listenLevelUpEvent>
+            <listenPutToCacheEvent>true</listenPutToCacheEvent>
+        </listener>
+        
+        <listener clazz="com.kola.kmp.logic.role.KRoleBaseInfoCacheManager">
+            <id>24</id>
+            <listenJoinedGameEvent>false</listenJoinedGameEvent>
+            <listenLeavedGameEvent>false</listenLeavedGameEvent>
+            <listenCreatedEvent>true</listenCreatedEvent>
+            <listenDeletedEvent>true</listenDeletedEvent>
+            <listenLevelUpEvent>true</listenLevelUpEvent>
+        </listener>
+        
+        <listener clazz="com.kola.kmp.logic.actionrecord.KActionRecordRoleEventListenerImpl">
+            <id>25</id>
+            <listenJoinedGameEvent>true</listenJoinedGameEvent>
+            <listenLeavedGameEvent>false</listenLeavedGameEvent>
+            <listenCreatedEvent>false</listenCreatedEvent>
+            <listenDeletedEvent>false</listenDeletedEvent>
+            <listenLevelUpEvent>true</listenLevelUpEvent>
+        </listener>
+        
+        <listener clazz="com.kola.kmp.logic.KGlobalModuleRoleEventListener">
+            <id>26</id>
+            <listenJoinedGameEvent>true</listenJoinedGameEvent>
+            <listenLeavedGameEvent>false</listenLeavedGameEvent>
+            <listenCreatedEvent>false</listenCreatedEvent>
+            <listenDeletedEvent>false</listenDeletedEvent>
+            <listenLevelUpEvent>false</listenLevelUpEvent>
+            <listenPutToCacheEvent>true</listenPutToCacheEvent>
+        </listener>
+        
+    </listeners>
+</root>

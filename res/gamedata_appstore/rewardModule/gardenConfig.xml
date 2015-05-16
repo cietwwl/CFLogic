@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+
+				<KillZombieReward>
+					<!-- 帮其他玩家进行清理僵尸获得金币=500*玩家等级清理金币系数 -->
+					<!-- 自己庄园清理获得金别=1000*玩家等级清理金币系数 -->
+					<KillZombieMoneyReward MoneyType="2" Other="500" Self="1000">
+						<!-- 每天清理僵尸次数大于20次时，获得的金币奖励减少为1%。 -->
+						<KillZombieMaxTimePerDay>20</KillZombieMaxTimePerDay>
+						<KillZombieMaxTimeMoneyCountRate>0.01</KillZombieMaxTimeMoneyCountRate>
+					</KillZombieMoneyReward>
+
+					<!-- 清理丧尸 有1%的概率 获得道具ID为: 370001 （获得道具提示） -->
+					<KillZombieItemReward rate="1" itemCode="370001" itemCount="1">
+						<!-- 每天清理僵尸次数大于20次时，概率提升到2%。 -->
+						<KillZombieMaxTimePerDay>20</KillZombieMaxTimePerDay>
+						<OtherRate>2</OtherRate>
+					</KillZombieItemReward>
+
+				</KillZombieReward>
+
+				<Speed>
+					<!-- 每日浇灌次数上限 -->
+					<SpeedTimePerDay>20</SpeedTimePerDay>
+					<!-- 每次浇灌奖励体力 -->
+					<SpeedRewardPhyPower>1</SpeedRewardPhyPower>
+					<!-- 浇灌获得金币奖励 -->
+					<SpeedRewardMoney MoneyType="2" Base ="300"/>
+					<!-- 玩家为同一个玩家浇灌冷却时间为30分钟 -->
+					<SpeedForOtherCD>30M</SpeedForOtherCD>
+					<!-- 玩家为自己浇灌冷却时间为2小时 -->
+					<SpeedForMySelfCD>2H</SpeedForMySelfCD>
+				</Speed>
+</root>

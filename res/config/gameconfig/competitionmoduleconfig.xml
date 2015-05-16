@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <!-- 竞技场excel表头文件路径  -->
+	<configExcelFilePath>./res/gamedata/competition/competitionconfig.xls</configExcelFilePath>
+	<!-- 竞技场xml文件路径  -->
+	<logicConfigPath>./res/gsconfig/competition/competitionconfig.xml</logicConfigPath>
+	<!-- 队伍竞技配置文件路径 -->
+	<teamPVPConfigPath>./res/gsconfig/competition/teampvpconfig.xml</teamPVPConfigPath>
+</root>

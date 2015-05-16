@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <!-- 当接收到一个离开游戏事件时，并且不是因为账号离线，是否允许阻塞一定时间，主要是为了防止离线和上线间隔太近 -->
+    <enableWaitWhenReceiveLeaveGameEvent>true</enableWaitWhenReceiveLeaveGameEvent>
+    <!-- 当接收到一个离开游戏事件时，并且不是因为账号离线，等待的毫秒数 -->
+    <waitMillisWhenReceiveLeaveGameEvent>100</waitMillisWhenReceiveLeaveGameEvent>
+    <roleDataPath>./res/gamedata/roleModule/playerRoleData.xls</roleDataPath>
+    <eventListenerPath>./res/gsconfig/roleModule/roleeventlisteners.xml</eventListenerPath>
+    <commonConfigPath>./res/gsconfig/roleModule/roleModuleCommonConfig.xls</commonConfigPath>
+    <extCAConfigPath>./res/gsconfig/roleModule/roleexttypeconfig.xml</extCAConfigPath>
+    <roleAttrProviderPath>./res/gsconfig/roleModule/roleattributeprovider.xml</roleAttrProviderPath>
+    <tableConfig>
+        <table type="1" name="角色模板表" headerIndex="2" />
+        <table type="2" name="属性模板" headerIndex="2" />
+        <table type="3" name="经验配置表" headerIndex="2" />
+    	<table type="4" name="角色模块逻辑配置" headerIndex="2" />
+    	<table type="5" name="突击战士成长配置" headerIndex="3" />
+    	<table type="6" name="暗影特工成长配置" headerIndex="3" />
+    	<table type="7" name="枪械师成长配置" headerIndex="3" />
+    	<table type="8" name="战斗力参数表" headerIndex="2" />
+    	<table type="9" name="PVP血量加成" headerIndex="2" />
+    </tableConfig>
+    <randomNameConfig>
+        <usableNameFilePathMale>./res/randomName/usableMaleNames.txt</usableNameFilePathMale>
+        <usableNameFilePathFemale>./res/randomName/usableFemaleNames.txt</usableNameFilePathFemale>
+    	<allNameFilePathMale>./res/randomName/allMaleNames.txt</allNameFilePathMale>
+    	<allNameFilePathFemale>./res/randomName/allFemaleNames.txt</allNameFilePathFemale>
+    	<idFilePath>./res/randomName/currentId.properties</idFilePath>
+    </randomNameConfig>
+</root>

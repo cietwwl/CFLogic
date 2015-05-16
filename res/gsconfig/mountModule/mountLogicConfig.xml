@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chatmoduleconfig>
+
+	<logicConfig>
+		<!-- 金币培养属性次数加值 -->
+		<GoldTrainAttTimeAddTime>1</GoldTrainAttTimeAddTime>
+		
+		<!-- 钻石培养属性次数加值 -->
+		<DiamondTrainAttTimeAddTime>5</DiamondTrainAttTimeAddTime>
+	</logicConfig>
+
+	<excelConfig>
+		<mount>
+			<path>./res/gamedata/mountModule/mount.xls</path>
+			<HeaderIndex>5</HeaderIndex>
+		</mount>
+	</excelConfig>
+
+</chatmoduleconfig>

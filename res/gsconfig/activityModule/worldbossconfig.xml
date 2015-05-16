@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <tableConfigs>
+        <table type="1" name="活动场景数据" headerIndex="2" />
+        <table type="2" name="激励数据" headerIndex="2" />
+        <table type="3" name="激励固定加成数据" headerIndex="2" />
+        <table type="4" name="怪物生成规则数据表" headerIndex="2" />
+        <table type="5" name="击杀奖励" headerIndex="2" />
+        <table type="6" name="排名奖励" headerIndex="2" />
+        <table type="7" name="计算基数" headerIndex="2" />
+        <table type="8" name="初始等级" headerIndex="2" />
+        <table type="9" name="BOSS升级" headerIndex="2" />
+        <table type="10" name="BOSS能力和击杀奖励" headerIndex="2" />
+        <table type="11" name="活动配置" headerIndex="2" />
+    </tableConfigs>
+    <excelDataPath>./res/gamedata/activityModule/worldBoss.xls</excelDataPath>
+    <commonConfigPath>./res/gsconfig/activityModule/worldBossCommonConfig.xls</commonConfigPath>
+	<rankingSaveInfo>
+	    <saveDir>./res/output/worldboss</saveDir>
+	    <saveInfoFile>worldboss.meta</saveInfoFile>
+	    <fileNamePrefix>worldbossranking</fileNamePrefix>
+	    <bossLvSavePath>./res/output/worldboss/bosslv.xml</bossLvSavePath>
+	</rankingSaveInfo>
+</root>

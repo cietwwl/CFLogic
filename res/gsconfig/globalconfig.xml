@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    
+    <!-- 文字相关内容各语言版本不同 -->	
+	<ck-include>./res/gamedata/globalconfig.xml</ck-include>
+	
+	<excelConfig>
+		<colorExcel>
+			<path>./res/gsconfig/color.xls</path>
+			<HeaderIndex>5</HeaderIndex>
+		</colorExcel>
+		<broadcastExcel>
+			<path>./res/gsconfig/broatcast.xls</path>
+			<HeaderIndex>5</HeaderIndex>
+		</broadcastExcel>
+	</excelConfig>
+	
+	<gameGlobalConfig>
+	    <config name="_basicHitRating" dataType="int">9500</config><!-- 游戏世界基础命中等级 -->
+	</gameGlobalConfig>
+	
+</root>

@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 注意：要支持渠道下面分小渠道；要支持有SDK的渠道和没SDK的渠道。。。 -->
+
+<!-- 【子渠道ID规则】子渠道的ID = 父渠道ID*10000+N，（N取值区间0~9999） ，例如当乐子渠道就是10010000~10019999共支持10000个子渠道。[PS：父渠道ID一定是4位数内最小1000最大9999] -->
+
+<PromoChannels modifyCheckSeconds="30">
+
+	<!-- 我们的代币（元宝）价格，单位RMB分 -->
+	<YuanBaoPrice4RMBFen>10</YuanBaoPrice4RMBFen>
+
+	<!-- DEBUG模式，不检测签名 -->
+	<DebugPayNoSign>false</DebugPayNoSign>
+
+
+	<!-- 【货币及其单位mapping表】
+		常用货币的代码
+		人民币 China Yuan renmingbi (CNY)
+		港元 hong kong dollar (HKD)
+		台币 Taiwan dollar (TWD)
+		欧元 euro (EUR)
+		美元 US dollar (USD)
+		英镑 Great British Pound(GBP)
+		日元 Japanese Yen (JPY)
+	-->
+	<MoneyUnitMapping>
+		<Money dbType="1" name="人民币" code="CNY" unit="元" />
+		<Money dbType="2" name="港元" code="HKD" unit="港元" />
+		<Money dbType="3" name="台币" code="TWD" unit="臺幣" />
+		<Money dbType="4" name="美元" code="USD" unit="USD" />
+		<Money dbType="5" name="日元" code="JPY" unit="圆" />
+	</MoneyUnitMapping>
+	
+
+	<PromoChannel promoid="1000" description="kola self"
+		clazz="com.koala.promosupport.kola.KolaChannel">
+		
+	</PromoChannel>
+
+	<!-- =========================================================================== -->
+	<!-- canpay表示可以支付，安全保护防范某个支持通道出严重问题时可以关闭该渠道的支付，依赖canlogin，如果canlogin不为true那是不能pay的 -->
+	<PromoChannel promoid="1001" description="downjoy"
+		clazz="com.koala.promosupport.downjoy.DownjoyChannel" canlogin="true"
+		canpay="true" openpriceui="true">
+
+		<!-- 名词定义 -->
+		<CP>广州考拉信息技术有限公司</CP> <!--接入当乐开放平台的游戏/应用公司 -->
+		<APP>天形变</APP> <!-- 接入当乐开放平台的游戏/应用 -->
+		<MERCHANT_ID>287</MERCHANT_ID> <!-- 接入时由当乐分配的厂商ID。 -->
+		<APP_ID>460</APP_ID> <!--接入时由当乐分配的游戏/应用ID。 -->
+		<SERVER_SEQ_NUM>1</SERVER_SEQ_NUM> <!--接入时由当乐分配的服务器序列号，用以标识和使用不同的计费通知地址。 -->
+		<APP_KEY>x77geuJC</APP_KEY> <!-- 接入时由当乐分配的游戏/应用密钥。 -->
+		<PAYMENT_KEY>TxnyiVRxikMW</PAYMENT_KEY> <!-- 接入时由当乐分配的游戏/应用支付密钥，用以验证计费通知合法性或发送退款请求。 -->
+
+		<!-- 服务器跟对方服务器的登录验证 -->
+		<UserVerify url="http://connect.d.cn/open/member/info"
+			method="GET" clazz="com.koala.promosupport.downjoy.DownjoyUserVerify" />
+
+		<!-- 支付/充值回调的地址（！基本渠道都不需要从这里获取的，而是在渠道方后台配置！） -->
+		<PayCallbackUrl>http://pay.kl321.com/1001</PayCallbackUrl>
+		<!-- 支付/充值回调的方法 -->
+		<PayCallbackMethod>GET</PayCallbackMethod>
+
+		<!-- 支付/充值相关配置，包括客户端发给SDK服务器的参数，及SDK服务器通知我们方法（即下面参数callbackmethod） -->
+		<!--
+			<PayCallbackParams2Client>
+			    <param key="ext" value=""/>
+			    <param key="price" value="0"/>
+			    <param key="product" value="元宝"/>
+				<param key="openpriceui" value="true"/>
+			</PayCallbackParams2Client>
+		-->
+	</PromoChannel>
+
+	<!-- =========================================================================== -->
+	<!-- canpay表示可以支付，安全保护防范某个支持通道出严重问题时可以关闭该渠道的支付，依赖canlogin，如果canlogin不为true那是不能pay的 -->
+	<PromoChannel promoid="1002" description="uc"
+		clazz="com.koala.promosupport.uc.UCChannel" canlogin="true" canpay="true" openpriceui="true">
+		<CPID>25540</CPID>
+		<GameID>505489</GameID>
+		<ServerID>1923</ServerID>
+		<ChannelID>2</ChannelID>
+		<ApiKey>509a963f23f66af85f2382b9278383d3</ApiKey>
+		<UserVerify url="http://sdk.g.uc.cn/ss" method="POST"
+			clazz="com.koala.promosupport.uc.UCUserVerify" />
+
+		<Test>
+			<CPID>1</CPID>
+			<GameID>458</GameID>
+			<ServerID>1439</ServerID>
+			<ChannelID>2</ChannelID>
+			<ApiKey>54520eb3c61318c120052da361684207</ApiKey>
+			<UserVerify url="http://sdk.test4.g.uc.cn/ss" method="POST"
+				clazz="com.koala.promosupport.uc.UCUserVerify" />
+		</Test>
+
+		<service_sidinfo>ucid.user.sidInfo</service_sidinfo>
+		<service_bind>ucid.bind.create</service_bind>
+
+		<!-- 支付/充值回调的地址（！基本渠道都不需要从这里获取的，而是在渠道方后台配置！） -->
+		<PayCallbackUrl>http://pay.kl321.com/1002</PayCallbackUrl>
+		<!-- 支付/充值回调的方法 -->
+		<PayCallbackMethod>POST</PayCallbackMethod>
+
+		<!-- 响应码说明（state.code）： -->
+		<StateCode>
+			<Code val="1">成功</Code>
+			<Code val="10">请求参数错误</Code>
+			<Code val="11">用户未登录</Code>
+		</StateCode>
+	</PromoChannel>
+
+	<!-- =========================================================================== -->
+	<!-- canpay表示可以支付，安全保护防范某个支持通道出严重问题时可以关闭该渠道的支付，依赖canlogin，如果canlogin不为true那是不能pay的 -->
+	<PromoChannel promoid="1003" description="91"
+		clazz="com.koala.promosupport.ng91.NG91Channel" canlogin="true"
+		canpay="true" openpriceui="true">
+		<AppId>105918</AppId>
+		<AppKey>ed5bd20b18be748a59cf6d1357ef080345cb12aa164d2052</AppKey>
+
+		<UserVerify url="http://service.sj.91.com/usercenter/ap.aspx"
+			method="POST" clazz="com.koala.promosupport.ng91.NG91UserVerify" />
+
+		<!-- 支付/充值回调的地址（！基本渠道都不需要从这里获取的，而是在渠道方后台配置！） -->
+		<PayCallbackUrl>http://pay.kl321.com/1003</PayCallbackUrl>
+		<!-- 支付/充值回调的方法 -->
+		<PayCallbackMethod>GET</PayCallbackMethod>
+	</PromoChannel>
+
+	<!-- =========================================================================== -->
+	<!-- canpay表示可以支付，安全保护防范某个支持通道出严重问题时可以关闭该渠道的支付，依赖canlogin，如果canlogin不为true那是不能pay的 -->
+	<PromoChannel promoid="1004" description="360"
+		clazz="com.koala.promosupport.qh360.QH360Channel" canlogin="true"
+		canpay="true" openpriceui="true">
+		<AppId>200575661</AppId>
+		<AppKey>81a21836788e8bab57deb2043a3e6bc5</AppKey>
+		<AppSecret>0c5b5d1007d8e4e38ffd7407ccb03e11</AppSecret>
+		<AppName>天形变</AppName>
+
+		<UserVerify urlGetAccessToken="https://openapi.360.cn/oauth2/access_token"
+			urlGetUserInfo="https://openapi.360.cn/user/me.json" method="GET"
+			clazz="com.koala.promosupport.qh360.QH360GetAccessTokenThenUserInfo" />
+
+		<!-- 支付/充值回调的地址（！基本渠道都不需要从这里获取的，而是在渠道方后台配置！） -->
+		<PayCallbackUrl>http://pay.kl321.com/1004</PayCallbackUrl>
+		<!-- 支付/充值回调的方法 -->
+		<PayCallbackMethod>GET</PayCallbackMethod>
+	</PromoChannel>
+
+
+	<!-- =========================================================================== -->
+	<!-- canpay表示可以支付，安全保护防范某个支持通道出严重问题时可以关闭该渠道的支付，依赖canlogin，如果canlogin不为true那是不能pay的 -->
+	<PromoChannel promoid="1005" description="Xiaomi"
+		clazz="com.koala.promosupport.mi.MiChannel" canlogin="true" canpay="true" openpriceui="true">
+
+		<AppId>16147</AppId>
+		<AppKey>d2ac5ed6-9111-8521-de09-51d6284018b7</AppKey>
+
+		<UserVerify
+			url="http://mis.migc.xiaomi.com/api/biz/service/verifySession.do"
+			method="GET" clazz="com.koala.promosupport.mi.MiUserVerify" />
+
+		<!-- 支付/充值回调的地址（！基本渠道都不需要从这里获取的，而是在渠道方后台配置！） -->
+		<PayCallbackUrl>http://pay.kl321.com/1005</PayCallbackUrl>
+		<PayCallbackMethod>GET</PayCallbackMethod>
+	</PromoChannel>
+
+
+	<!-- =========================================================================== -->
+	<!-- canpay表示可以支付，安全保护防范某个支持通道出严重问题时可以关闭该渠道的支付，依赖canlogin，如果canlogin不为true那是不能pay的 -->
+	<PromoChannel promoid="1006" description="Lenovo"
+		clazz="com.koala.promosupport.lenovo.LenovoChannel" canlogin="true"
+		canpay="true" openpriceui="true">
+
+		<Realm>txb.kl321.com</Realm>
+		<AppId>20009900000001200099</AppId>
+		<PayKey>NURDRTI0NDFDMUFCQzk5MDAxMzMwOUE2QUNGMDZEMzlGREJCNEUwQ09UY3lOekV5T0Rnd01UVXhNak13T0RZMk1Tc3hNalk1TnpZeE5qSXhOVGMyTXpnNU5qRXlOek0yTVRBMk5qVTJNRFV3TnpNMU9EazFOVGs9
+		</PayKey>
+		<AppKey>PPYHJFLYZZT6</AppKey>
+		<!-- lpsust：LPS user account ticket，用来标志用户身份的一个ticket,这个值请传入5.5接口获取到的ST（Token）
+			realm：服务安全域标识，值为调用5.5接口时传入的对应的realm参数。 -->
+		<UserVerify
+			url="http://passport.lenovo.com/interserver/authen/1.2/getaccountid"
+			method="GET" clazz="com.koala.promosupport.lenovo.LenovoUserVerify" />
+
+		<!-- 支付/充值回调的地址（！基本渠道都不需要从这里获取的，而是在渠道方后台配置！） -->
+		<PayCallbackUrl>http://pay.kl321.com/1006</PayCallbackUrl>
+		<PayCallbackMethod>GET</PayCallbackMethod>
+	</PromoChannel>
+
+
+	<!-- =========================================================================== -->
+	<!-- canpay表示可以支付，安全保护防范某个支持通道出严重问题时可以关闭该渠道的支付，依赖canlogin，如果canlogin不为true那是不能pay的 -->
+	<PromoChannel promoid="1007" description="DuoKoo"
+		clazz="com.koala.promosupport.duokoo.DkChannel" canlogin="true"
+		canpay="true" openpriceui="true">
+
+		<AppId>1283</AppId>
+		<AppKey>353f66fe944c2b0591d3c18c25fec7d5</AppKey>
+		<AppSecret>7adc2724b870a49ec946f9a4558c9e10</AppSecret>
+
+		<UserVerify url="http://sdk.m.duoku.com/openapi/sdk/checksession"
+			method="GET" clazz="com.koala.promosupport.duokoo.DkUserVerify" />
+
+		<!-- 支付/充值回调的地址（！基本渠道都不需要从这里获取的，而是在渠道方后台配置！） -->
+		<PayCallbackUrl>http://pay.kl321.com/1007</PayCallbackUrl>
+		<PayCallbackMethod>GET</PayCallbackMethod>
+	</PromoChannel>
+
+
+	<!-- =========================================================================== -->
+	<!-- canpay表示可以支付，安全保护防范某个支持通道出严重问题时可以关闭该渠道的支付，依赖canlogin，如果canlogin不为true那是不能pay的 -->
+	<PromoChannel promoid="1008" description="Sky"
+		clazz="com.koala.promosupport.sky.SkyChannel" canlogin="true" canpay="true" openpriceui="true">
+
+		<!-- 商户号 -->
+		<MerchantId>13102</MerchantId>
+		<AppId>7000884</AppId>
+		<AppName>天形变</AppName>
+		<AppKey>jmyolioyk$@#97l9</AppKey>
+		<!--
+			system=300020 Android支付请求（冒泡堂）;
+			system=300021 冒泡堂;
+			system=300022 逗斗;
+			system=300023 开放平台;
+			system=300024 支付接入;
+			system=300025 公司自研 -->
+		<SystemId>300020</SystemId>
+		<!-- 0=注册 1=道具 2=积分 3=充值，50=网游小额支付 -->
+		<PayType>3</PayType>
+		<PayMethod>3rd</PayMethod>
+		<!--冒泡市场 1_zhiyifu_
+			冒泡助手 2_zhiyifu_
+			冒泡浏览器 3_zhiyifu_
+			冒泡盒子 5_zhiyifu_
+			冒泡客 7_
+			冒泡游戏中心 9_zhiyifu_
+			厂商预装 12_ -->
+		<ChannelId>1_zhiyifu_</ChannelId>
+
+		<!-- SDK没提供登录验证的功能，所以url和method都不会用到 -->
+		<UserVerify url="" method="GET"
+			clazz="com.koala.promosupport.sky.SkyUserVerify" />
+
+		<!-- 支付/充值回调的地址（！基本渠道都不需要从这里获取的，而是在渠道方后台配置！） -->
+		<PayCallbackUrl>http://pay.kl321.com/1008</PayCallbackUrl>
+		<PayCallbackMethod>GET_STRING</PayCallbackMethod>
+	</PromoChannel>
+
+	<!-- =========================================================================== -->
+	<!-- canpay表示可以支付，安全保护防范某个支持通道出严重问题时可以关闭该渠道的支付，依赖canlogin，如果canlogin不为true那是不能pay的 -->
+	<PromoChannel promoid="1009" description="YayaWan"
+		clazz="com.koala.promosupport.yayawan.YayaChannel" canlogin="true"
+		canpay="true" openpriceui="true">
+
+		<yayaywan_game_id>3469129058</yayaywan_game_id>
+		<yayawan_game_key>63d4cae708009e6f79a34c4dc8a0776d</yayawan_game_key>
+		<yayawan_game_secret>503825f178b1b0ae16c7a69b6328cd2f
+		</yayawan_game_secret>
+		<yayawan_payment_key>b1bf94e322509fa894d0b78b695b4dad
+		</yayawan_payment_key>
+		<source_id>txbcs</source_id>
+
+		<UserVerify url="http://passport.yayawan.com/oauth/userinfo"
+			method="POST" clazz="com.koala.promosupport.yayawan.YayaUserVerify" />
+
+		<!-- 支付/充值回调的地址（！基本渠道都不需要从这里获取的，而是在渠道方后台配置！） -->
+		<PayCallbackUrl>http://pay.kl321.com/1009</PayCallbackUrl>
+		<PayCallbackMethod>POST</PayCallbackMethod>
+	</PromoChannel>
+
+
+	<!-- 以下为2013.11新增渠道，渠道号从1200开始，代表第二批接入渠道 -->
+
+
+	<!-- =========================================================================== -->
+	<!-- canpay表示可以支付，安全保护防范某个支持通道出严重问题时可以关闭该渠道的支付，依赖canlogin，如果canlogin不为true那是不能pay的 -->
+	<PromoChannel promoid="1200" description="zhidiantong"
+		clazz="com.koala.promosupport.zhidiantong.BXChannel" canlogin="true"
+		canpay="true" >
+
+		<cp_id>10016</cp_id>
+		<cp_key>kaola1105</cp_key>
+		<game_id>119</game_id>
+		<server_id>23</server_id>
+		<channel_id>175</channel_id>
+
+		<UserVerify url="http://service.fanjie.com/service?service=user.validate"
+			method="GET" clazz="com.koala.promosupport.zhidiantong.BXUserVerify" />
+
+		<!-- 支付/充值回调的地址（！基本渠道都不需要从这里获取的，而是在渠道方后台配置！） -->
+		<PayCallbackUrl>http://pay.kl321.com/1200</PayCallbackUrl>
+		<PayCallbackMethod>GET_POST</PayCallbackMethod>
+		<!-- 支付/充值发给客户端的参数KV，包括客户端发给SDK服务器的参数（有些value是变量故意留""的） -->
+		<PayCallbackParams2Client>
+			<param key="openpriceui" value="true" />
+			<param key="orderId" value="" />
+			<param key="ext" value="" />
+			<param key="notifyUrl" value="http://117.121.51.82:29999/1200" />
+		</PayCallbackParams2Client>
+	</PromoChannel>
+
+
+	<!-- =========================================================================== -->
+	<!-- canpay表示可以支付，安全保护防范某个支持通道出严重问题时可以关闭该渠道的支付，依赖canlogin，如果canlogin不为true那是不能pay的 -->
+	<PromoChannel promoid="1201" description="baoruan"
+		clazz="com.koala.promosupport.baoruan.BaoruanChannel" canlogin="true"
+		canpay="true" openpriceui="true">
+
+		<appid>176528395463506163</appid>
+		<uniquekey>dfc174e4ddf99552508f465e1bb83289</uniquekey>
+		<cid>920</cid>
+		<key>ecbbee9f70a0c0f9d4ac3c426879f595</key>
+
+		<UserVerify url="https://user.baoruan.com/api/user/getuserinfo"
+			method="POST" clazz="com.koala.promosupport.baoruan.BaoruanUserVerify" />
+
+		<!-- 支付/充值回调的地址（！基本渠道都不需要从这里获取的，而是在渠道方后台配置！） -->
+		<PayCallbackUrl>http://pay.kl321.com/1201</PayCallbackUrl>
+		<PayCallbackMethod>GET_POST</PayCallbackMethod>
+		<!-- 支付/充值发给客户端的参数KV，包括客户端发给SDK服务器的参数（有些value是变量故意留""的） -->
+		<PayCallbackParams2Client>
+			<param key="openpriceui" value="true" />
+			<param key="orderId" value="" />
+			<param key="notifyUrl" value="http://117.121.51.82:29999/1201?ext=" />
+		</PayCallbackParams2Client>
+	</PromoChannel>
+
+
+	<!-- =========================================================================== -->
+	<!-- canpay表示可以支付，安全保护防范某个支持通道出严重问题时可以关闭该渠道的支付，依赖canlogin，如果canlogin不为true那是不能pay的 -->
+	<PromoChannel promoid="1202" description="shoumeng"
+		clazz="com.koala.promosupport.shoumeng.ShoumengChannel" canlogin="true"
+		canpay="true" openpriceui="true">
+
+		<UMENG_APPKEY>5270aab356240b9052074fff</UMENG_APPKEY>
+		<UMENG_CHANNEL>common</UMENG_CHANNEL>
+		<SHOUMENG_GAME_ID>20</SHOUMENG_GAME_ID>
+		<LoginKey>SM7398UDKIELFDFDSKFJKJ34DFEFDFSM</LoginKey>
+		<PayKey>SM98KIUCJKFDJKEKN2398JICKJKREDSM</PayKey>
+
+		<UserVerify url="http://www.19meng.com/api/v1/verify_session_id"
+			method="POST" clazz="com.koala.promosupport.shoumeng.ShoumengUserVerify" />
+
+		<!-- 支付/充值回调的地址（！基本渠道都不需要从这里获取的，而是在渠道方后台配置！） -->
+		<PayCallbackUrl>http://pay.kl321.com/1202</PayCallbackUrl>
+		<PayCallbackMethod>GET_POST</PayCallbackMethod>
+		<!-- 支付/充值发给客户端的参数KV，包括客户端发给SDK服务器的参数（有些value是变量故意留""的） -->
+		<PayCallbackParams2Client>
+			<param key="openpriceui" value="true" />
+			<param key="orderId" value="" />
+			<!-- <param key="ext" value="" /> 手盟没这个设置，只能用上面的orderId当ext-->
+			<param key="ratio" value="10"/>
+			<param key="coinName" value="元宝" />
+			<param key="serverId" value="1"/>
+		</PayCallbackParams2Client>
+	</PromoChannel>
+
+
+	<!-- =========================================================================== -->
+	<!-- canpay表示可以支付，安全保护防范某个支持通道出严重问题时可以关闭该渠道的支付，依赖canlogin，如果canlogin不为true那是不能pay的 -->
+	<PromoChannel promoid="1203" description="5gwan"
+		clazz="com.koala.promosupport._5gwan._5GwanChannel" canlogin="true"
+		canpay="true" openpriceui="true">
+
+		<app_id>A163</app_id>
+		<app_key>8773bdb0e97af704abb9c5b1fb2d765f</app_key>
+
+		<UserVerify url="http://app.5gwan.com:9000/user/info.php"
+			method="GET" clazz="com.koala.promosupport._5gwan._5GwanUserVerify" />
+
+		<!-- 支付/充值回调的地址（！基本渠道都不需要从这里获取的，而是在渠道方后台配置！） -->
+		<PayCallbackUrl>http://pay.kl321.com/1203</PayCallbackUrl>
+		<PayCallbackMethod>GET_POST</PayCallbackMethod>
+		<!-- 支付/充值发给客户端的参数KV，包括客户端发给SDK服务器的参数（有些value是变量故意留""的） -->
+		<PayCallbackParams2Client>
+			<param key="openpriceui" value="true" />
+			<param key="orderId" value="" />
+			<param key="ext" value="" />
+		</PayCallbackParams2Client>
+	</PromoChannel>
+
+
+
+	<!-- =========================================================================== -->
+	<!-- canpay表示可以支付，安全保护防范某个支持通道出严重问题时可以关闭该渠道的支付，依赖canlogin，如果canlogin不为true那是不能pay的 -->
+	<PromoChannel promoid="1204" description="zhishanghudong"
+		clazz="com.koala.promosupport.zhishanghudong.AGameChannel" canlogin="true"
+		canpay="true" openpriceui="true">
+
+		<cpid>100079</cpid>
+		<gameid>100129</gameid>
+		<gamekey>9df4g243fd890kd4</gamekey>
+		<gamename>tianxinbian</gamename>
+ 
+ <!-- 测试参数 
+ 		<cpid>100079</cpid>
+		<gameid>100122</gameid>
+		<gamekey>12fhd5748sasuh47</gamekey>
+		<gamename>天形变</gamename>
+ -->
+ 
+		<UserVerify url="http://119.147.224.162:8081/loginvalid.php"
+			method="GET" clazz="com.koala.promosupport.zhishanghudong.AGameUserVerify" />
+
+		<!-- 支付/充值回调的地址（！基本渠道都不需要从这里获取的，而是在渠道方后台配置！） -->
+		<PayCallbackUrl>http://pay.kl321.com/1204</PayCallbackUrl>
+		<PayCallbackMethod>GET_POST</PayCallbackMethod>
+		<!-- 支付/充值发给客户端的参数KV，包括客户端发给SDK服务器的参数（有些value是变量故意留""的） -->
+		<PayCallbackParams2Client>
+			<param key="openpriceui" value="true" />
+			<param key="orderId" value="" />
+			<param key="ext" value="" />
+			<param key="productName" value="元宝" />
+			<param key="notifyUrl" value="http://117.121.51.82:29999/1204" />
+		</PayCallbackParams2Client>
+	</PromoChannel>
+
+
+
+
+	<!-- =========================================================================== -->
+	<!-- canpay表示可以支付，安全保护防范某个支持通道出严重问题时可以关闭该渠道的支付，依赖canlogin，如果canlogin不为true那是不能pay的 -->
+	<PromoChannel promoid="1205" description="cooguo"
+		clazz="com.koala.promosupport.cooguo.CooguoChannel" canlogin="true"
+		canpay="true" openpriceui="true">
+
+		<appkey>ca376575cd9c6a9359cb262192ab1312</appkey>
+		<gameid>11896</gameid>
+		<channelid>3</channelid>
+
+		<UserVerify url="http://" method="GET"
+			clazz="com.koala.promosupport.cooguo.CooguoUserVerify" />
+
+		<!-- 支付/充值回调的地址（！基本渠道都不需要从这里获取的，而是在渠道方后台配置！） -->
+		<PayCallbackUrl>http://pay.kl321.com/1205</PayCallbackUrl>
+		<PayCallbackMethod>GET_POST</PayCallbackMethod>
+		<!-- 支付/充值发给客户端的参数KV，包括客户端发给SDK服务器的参数（有些value是变量故意留""的） -->
+		<PayCallbackParams2Client>
+			<param key="openpriceui" value="true" />
+			<param key="orderId" value="" />
+			<param key="ext" value="" />
+			<param key="notifyUrl" value="http://117.121.51.82:29999/1205" />
+		</PayCallbackParams2Client>
+	</PromoChannel>
+
+
+	<!-- =========================================================================== -->
+	<!-- canpay表示可以支付，安全保护防范某个支持通道出严重问题时可以关闭该渠道的支付，依赖canlogin，如果canlogin不为true那是不能pay的 -->
+	<PromoChannel promoid="1208" description="souhu"
+		clazz="com.koala.promosupport.souhu.SouhuChannel" canlogin="true"
+		canpay="true" openpriceui="true">
+
+		<appId>acf391bf89d00e312260f5db9f20e07b</appId>
+		<appKey>4bacfeb86de10944e4885cda2b38ce5e</appKey>
+		<appSecret>0a7e3bdcf0f9fa3d035f006c22cf388a</appSecret>
+
+		<UserVerify
+			url="http://api.mit.app.sohu.com/infocenter/interfaceAction.do?method=validateSession"
+			method="POST" clazz="com.koala.promosupport.souhu.SouhuUserVerify" />
+
+		<!-- 支付/充值回调的地址（！基本渠道都不需要从这里获取的，而是在渠道方后台配置！） -->
+		<PayCallbackUrl>http://pay.kl321.com/1208</PayCallbackUrl>
+		<PayCallbackMethod>GET_POST</PayCallbackMethod>
+		<!-- 支付/充值发给客户端的参数KV，包括客户端发给SDK服务器的参数（有些value是变量故意留""的） -->
+		<PayCallbackParams2Client>
+			<param key="openpriceui" value="true" />
+			<param key="orderId" value="" />
+			<param key="ext" value="" />
+			<param key="productName" value="元宝" />
+			<param key="appSecret" value="0a7e3bdcf0f9fa3d035f006c22cf388a"/>
+		</PayCallbackParams2Client>
+	</PromoChannel>
+
+
+	<!-- =========================================================================== -->
+	<!-- canpay表示可以支付，安全保护防范某个支持通道出严重问题时可以关闭该渠道的支付，依赖canlogin，如果canlogin不为true那是不能pay的 -->
+	<PromoChannel promoid="1209" description="changwan"
+		clazz="com.koala.promosupport.changwan.ChangwanChannel" canlogin="true"
+		canpay="true" openpriceui="true">
+
+		<AppID>10051</AppID>
+		<PacketID>10047</PacketID>
+		<AppKey>AWF1vQXjgJGR7wEb</AppKey>
+		<SignKey>8IP0DOzNYCaofsLn</SignKey>
+
+		<UserVerify url="http://" method="POST"
+			clazz="com.koala.promosupport.changwan.ChangwanUserVerify" />
+
+		<!-- 支付/充值回调的地址（！基本渠道都不需要从这里获取的，而是在渠道方后台配置！） -->
+		<PayCallbackUrl>http://pay.kl321.com/1209</PayCallbackUrl>
+		<PayCallbackMethod>GET</PayCallbackMethod>
+		<!-- 支付/充值发给客户端的参数KV，包括客户端发给SDK服务器的参数（有些value是变量故意留""的） -->
+		<PayCallbackParams2Client>
+			<param key="openpriceui" value="true" />
+			<param key="orderId" value="" />
+			<param key="ext" value="" />
+		</PayCallbackParams2Client>
+	</PromoChannel>
+	
+	
+		<!-- =========================================================================== -->
+	<!-- canpay表示可以支付，安全保护防范某个支持通道出严重问题时可以关闭该渠道的支付，依赖canlogin，如果canlogin不为true那是不能pay的 -->
+	<PromoChannel promoid="1210" description="muzhiwan"
+		clazz="com.koala.promosupport.muzhiwan.MuzhiwanChannel" canlogin="true"
+		canpay="true" openpriceui="true">
+
+		<appkey>529d3f437aafd</appkey>
+		<signkey>529d3f6cda7ac</signkey>
+
+		<UserVerify url="http://sdk.muzhiwan.com/oauth2/getuser.php" method="GET"
+			clazz="com.koala.promosupport.muzhiwan.MuzhiwanUserVerify" />
+
+		<!-- 支付/充值回调的地址（！基本渠道都不需要从这里获取的，而是在渠道方后台配置！） -->
+		<PayCallbackUrl>http://pay.kl321.com/1210</PayCallbackUrl>
+		<PayCallbackMethod>GET</PayCallbackMethod>
+		<!-- 支付/充值发给客户端的参数KV，包括客户端发给SDK服务器的参数（有些value是变量故意留""的） -->
+		<PayCallbackParams2Client>
+			<param key="openpriceui" value="true" />
+			<param key="orderId" value="" />
+			<param key="ext" value="" />
+		</PayCallbackParams2Client>
+	</PromoChannel>
+
+
+	<!-- =========================================================================== -->
+	<!-- canpay表示可以支付，安全保护防范某个支持通道出严重问题时可以关闭该渠道的支付，依赖canlogin，如果canlogin不为true那是不能pay的 -->
+	<PromoChannel promoid="1300" description="kunlun"
+		clazz="com.koala.promosupport.kunlun.KunlunChannel" canlogin="true"
+		canpay="true" openpriceui="true">
+
+		<!--
+		Free4you接入SDK参数，参数如下：（PS：客户端用到的，服务器其实没必要记录）
+		hk:
+		4a6641a2-e07a-4efa-bae2-933bca251751
+		tw:
+		619beefd-d750-4474-9130-e16f3aa603dd
+		other:
+		9d7dead5-50d3-4c0e-a756-2728a032c9fb
+		-->
+		<key>619beefd-d750-4474-9130-e16f3aa603dd</key>
+		<!-- 充值KEY，签名验证时用到 -->
+		<PayKey>18801d1fac4df8f518904dbd2952077f</PayKey>
+		
+		<!--支付货币代号（比如：CNY 中国 HKD 香港 TWD 台湾 http://en.wikipedia.org/wiki/ISO_4217 可以查询）-->
+		<PayCurrencyCode>TWD</PayCurrencyCode>
+		
+		<!-- 商品名称（对于充值我们的商品就是元宝），要注意根据地区变，例如港台要写元寶 -->
+		<CoinName>元寶</CoinName>
+		<!-- 10台币=1kcoin=0.33usd=14元宝 -->
+		<CoinPrice>0.7142857</CoinPrice>
+		
+		<!--
+		中国大陆地区发行_中文简体：http://sdk.api.kunlun.com/verifyklsso.php?klsso=
+		台湾地区发行_繁体中文：http://login.kimi.com.tw/verifyklsso.php?klsso=
+		日本地区发行_日语：http://login.koramgame.co.jp/verifyklsso.php?klsso= 
+		韩国地区发行_韩语：http://login.kr.koramgame.com/verifyklsso.php?klsso=
+		 -->
+		<UserVerify url="http://login.kimi.com.tw/verifyklsso.php?klsso=" method="GET"
+			clazz="com.koala.promosupport.kunlun.KunlunUserVerify" />
+
+		<!-- 支付/充值回调的地址（！基本渠道都不需要从这里获取的，而是在渠道方后台配置！） -->
+		<PayCallbackUrl>http://pay.kl321.com/1300</PayCallbackUrl>
+		<PayCallbackMethod>GET</PayCallbackMethod>
+		<!-- 支付/充值发给客户端的参数KV，包括客户端发给SDK服务器的参数（有些value是变量故意留""的） -->
+		<PayCallbackParams2Client>
+			<param key="openpriceui" value="false" />
+			<param key="orderId" value="" />
+			<param key="ext" value="" />
+			<param key="productId" value="1" />
+			<param key="productName" value="元寶" />
+			<param key="productDesc" value="遊戲內貨幣" />
+		</PayCallbackParams2Client>
+	</PromoChannel>
+
+</PromoChannels>

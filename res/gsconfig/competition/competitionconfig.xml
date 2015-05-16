@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<config name="_joinedCompetitionLv" dataType="int">10</config>
+	<config name="_competitionBattlePath" dataType="String">jjchangfuben</config><!-- 竞技场战场资源文件名 -->
+	<config name="_maxChallengeTimePerDay" dataType="int">5</config> <!-- 每天能够挑战的次数  -->
+	<config name="_addChallengeTimeMoney" dataType="int">20</config> <!-- 添加一次挑战次数的价钱-->
+	<config name="_competitionAudioResId" dataType="int">1701000</config><!-- 竞技场战场背景音乐资源ID -->
+	<config name="_competitionSettleWeekday" dataType="int">0</config><!-- 竞技场每周奖励结算事件日子（每周的周几，0表示周日） -->
+	<config name="_competitionSettleTimeStr" dataType="String">22:00</config><!-- 竞技场今日奖励结算事件的时刻（当天时刻，00:00表示0点） -->
+</root>

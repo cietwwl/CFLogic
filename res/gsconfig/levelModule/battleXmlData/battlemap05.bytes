@@ -1,0 +1,2480 @@
+<gameObjects>
+  <gameObject asset="map/map04/res/map04p_22" name="map04p_22" type="0" id="0" instanceId="71048" wave="0" tag="" parent="71616">
+    <transform>
+      <position x="5.854444" y="1.915136" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="leftlegdown" type="0" id="0" instanceId="71054" wave="0" tag="" parent="72804">
+    <transform>
+      <position x="15.91929" y="1.685238" z="0" />
+      <rotation x="0" y="0" z="40.02077" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="waist" type="0" id="0" instanceId="71060" wave="0" tag="" parent="74088">
+    <transform>
+      <position x="15.54957" y="2.21691" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_25" type="0" id="0" instanceId="71066" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="6.827688" y="2.882439" z="0" />
+      <rotation x="0" y="0" z="90.00001" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="lefthand" type="0" id="0" instanceId="71072" wave="0" tag="" parent="72522">
+    <transform>
+      <position x="26.23" y="2.664976" z="0" />
+      <rotation x="0" y="0" z="9.424313" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_15" name="map04p_15" type="0" id="0" instanceId="71078" wave="0" tag="" parent="71932">
+    <transform>
+      <position x="8.912753" y="2.775099" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_10" name="map04p_10" type="0" id="0" instanceId="71086" wave="0" tag="" parent="71932">
+    <transform>
+      <position x="16.40644" y="4.018381" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="leftfoot" type="0" id="0" instanceId="71092" wave="0" tag="" parent="71744">
+    <transform>
+      <position x="32.9954" y="1.891376" z="0" />
+      <rotation x="0" y="0" z="359.4456" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_15" name="map04p_15" type="0" id="0" instanceId="71104" wave="0" tag="" parent="71932">
+    <transform>
+      <position x="31.5455" y="2.784311" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_22" name="map04p_22" type="0" id="0" instanceId="71110" wave="0" tag="" parent="71616">
+    <transform>
+      <position x="46.3021" y="1.888508" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="rightlegdown" type="0" id="0" instanceId="71116" wave="0" tag="" parent="73188">
+    <transform>
+      <position x="24.74263" y="2.4821" z="0" />
+      <rotation x="0" y="0" z="9.632325" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="leftarmup" type="0" id="0" instanceId="71134" wave="0" tag="" parent="71260">
+    <transform>
+      <position x="8.304847" y="4.264252" z="0" />
+      <rotation x="0" y="0" z="7.008191" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_5" name="map04p_5" type="0" id="0" instanceId="71140" wave="0" tag="" parent="71932">
+    <transform>
+      <position x="21.9739" y="5.819406" z="0" />
+      <rotation x="0" y="0" z="90.00001" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/b31" name="map04p_4" type="0" id="0" instanceId="71146" wave="0" tag="" parent="72552">
+    <transform>
+      <position x="14.74365" y="4.537766" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="rightarmdown" type="0" id="0" instanceId="71158" wave="0" tag="" parent="74040">
+    <transform>
+      <position x="24.79767" y="2.968328" z="0" />
+      <rotation x="0" y="0" z="359.4836" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_25" type="0" id="0" instanceId="71164" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="24.49656" y="2.501087" z="0" />
+      <rotation x="0" y="0" z="90.00001" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="rightfoot" type="0" id="0" instanceId="71170" wave="0" tag="" parent="71116">
+    <transform>
+      <position x="24.89842" y="2.245223" z="0" />
+      <rotation x="0" y="0" z="359.0764" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/b3" name="map04p_0" type="0" id="0" instanceId="71176" wave="0" tag="" parent="72552">
+    <transform>
+      <position x="39.3539" y="6.196698" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="righthand" type="0" id="0" instanceId="71184" wave="0" tag="" parent="74284">
+    <transform>
+      <position x="7.125535" y="2.973646" z="0" />
+      <rotation x="0" y="0" z="340.0133" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="rightarmup" type="0" id="0" instanceId="71190" wave="0" tag="" parent="74138">
+    <transform>
+      <position x="14.90555" y="2.865368" z="0" />
+      <rotation x="0" y="0" z="17.85092" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_25" type="0" id="0" instanceId="71196" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="24.36604" y="2.835239" z="0" />
+      <rotation x="0" y="0" z="90.00001" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="attackcollider" type="0" id="0" instanceId="71202" wave="0" tag="" parent="73484">
+    <transform>
+      <position x="18.78967" y="2.254636" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1.012789" y="1.012789" z="1.012789" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="mouth" type="0" id="0" instanceId="71210" wave="0" tag="" parent="73788">
+    <transform>
+      <position x="24.88634" y="4.172775" z="0" />
+      <rotation x="0" y="0" z="353.9573" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_15" name="map04p_15" type="0" id="0" instanceId="71222" wave="0" tag="" parent="71932">
+    <transform>
+      <position x="17.27694" y="2.711286" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_18" type="0" id="0" instanceId="71240" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="6.485607" y="2.935712" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/b31" name="map04p_4" type="0" id="0" instanceId="71252" wave="0" tag="" parent="72552">
+    <transform>
+      <position x="33.15388" y="4.524877" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="chest" type="0" id="0" instanceId="71260" wave="0" tag="" parent="72762">
+    <transform>
+      <position x="7.771202" y="3.805601" z="0" />
+      <rotation x="0" y="0" z="5.604236" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="waist" type="0" id="0" instanceId="71268" wave="0" tag="" parent="71442">
+    <transform>
+      <position x="25.40939" y="2.914749" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_15" name="map04p_15" type="0" id="0" instanceId="71280" wave="0" tag="" parent="71932">
+    <transform>
+      <position x="11.40533" y="6.752115" z="0" />
+      <rotation x="0" y="0" z="180" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_18" type="0" id="0" instanceId="71286" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="25.45598" y="2.477386" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="name" type="0" id="0" instanceId="71294" wave="0" tag="" parent="73470">
+    <transform>
+      <position x="7.795013" y="5.120239" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="attackcollider" type="0" id="0" instanceId="71320" wave="0" tag="" parent="72126">
+    <transform>
+      <position x="11.69683" y="3.163356" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1.012789" y="1.012789" z="1.012789" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="leftarmdown" type="0" id="0" instanceId="71326" wave="0" tag="" parent="73272">
+    <transform>
+      <position x="12.59393" y="3.188345" z="0" />
+      <rotation x="0" y="0" z="359.4651" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/b31" name="map04p_4" type="0" id="0" instanceId="71338" wave="0" tag="" parent="72552">
+    <transform>
+      <position x="18.91854" y="4.53278" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="chest" type="0" id="0" instanceId="71344" wave="0" tag="" parent="72672">
+    <transform>
+      <position x="25.26981" y="3.389433" z="0" />
+      <rotation x="0" y="0" z="5.604236" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_18" type="0" id="0" instanceId="71370" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="47.60551" y="3.193707" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="leftarmup" type="0" id="0" instanceId="71376" wave="0" tag="" parent="74138">
+    <transform>
+      <position x="15.94363" y="3.150245" z="0" />
+      <rotation x="0" y="0" z="7.008191" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_10" name="map04p_10" type="0" id="0" instanceId="71388" wave="0" tag="" parent="71932">
+    <transform>
+      <position x="31.31104" y="4.013546" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="fire" type="0" id="0" instanceId="71394" wave="0" tag="" parent="71442">
+    <transform>
+      <position x="23.29403" y="3.07385" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_26" name="map04p_26" type="0" id="0" instanceId="71398" wave="0" tag="" parent="71932">
+    <transform>
+      <position x="41.84124" y="5.21277" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/b31" name="map04p_4" type="0" id="0" instanceId="71404" wave="0" tag="" parent="72552">
+    <transform>
+      <position x="43.59425" y="4.513339" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_5" name="map04p_5" type="0" id="0" instanceId="71410" wave="0" tag="" parent="71932">
+    <transform>
+      <position x="12.19272" y="8.56525" z="0" />
+      <rotation x="0" y="0" z="90.00001" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="leftarmdown" type="0" id="0" instanceId="71416" wave="0" tag="" parent="72252">
+    <transform>
+      <position x="19.68678" y="2.279624" z="0" />
+      <rotation x="0" y="0" z="359.4651" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="attackcollider" type="0" id="0" instanceId="71424" wave="0" tag="" parent="73470">
+    <transform>
+      <position x="7.791108" y="3.681481" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1.012789" y="1.012789" z="1.012789" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/b3" name="map04p_0" type="0" id="0" instanceId="71436" wave="0" tag="" parent="72552">
+    <transform>
+      <position x="26.28982" y="6.213381" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="Monster_65" type="2" id="100007" instanceId="71442" wave="0" tag="">
+    <transform>
+      <position x="25.29679" y="2.064954" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/b31" name="map04p_4" type="0" id="0" instanceId="71450" wave="0" tag="" parent="72552">
+    <transform>
+      <position x="21.00966" y="4.525522" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_25" type="0" id="0" instanceId="71456" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="39.07648" y="2.580744" z="0" />
+      <rotation x="0" y="0" z="90.00001" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_25" type="0" id="0" instanceId="71462" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="42.60694" y="2.606382" z="0" />
+      <rotation x="0" y="0" z="90.00001" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="leftweapon" type="0" id="0" instanceId="71470" wave="0" tag="" parent="72276">
+    <transform>
+      <position x="16.24693" y="1.67982" z="0" />
+      <rotation x="0" y="0" z="61.31981" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="rightlegdown" type="0" id="0" instanceId="71488" wave="0" tag="" parent="73110">
+    <transform>
+      <position x="14.8828" y="1.784261" z="0" />
+      <rotation x="0" y="0" z="9.632325" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_6" name="map04p_6" type="0" id="0" instanceId="71502" wave="0" tag="" parent="71616">
+    <transform>
+      <position x="39.55943" y="2.980635" z="0" />
+      <rotation x="0" y="0" z="270.2394" />
+      <scale x="0.65" y="0.6499999" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="waist" type="0" id="0" instanceId="71508" wave="0" tag="" parent="73484">
+    <transform>
+      <position x="18.90935" y="1.904072" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="rightarmup" type="0" id="0" instanceId="71514" wave="0" tag="" parent="71714">
+    <transform>
+      <position x="11.17248" y="3.46125" z="0" />
+      <rotation x="0" y="0" z="17.85092" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/b31" name="map04p_4" type="0" id="0" instanceId="71522" wave="0" tag="" parent="72552">
+    <transform>
+      <position x="35.24499" y="4.517619" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="attackcollider" type="0" id="0" instanceId="71528" wave="0" tag="" parent="71442">
+    <transform>
+      <position x="25.28972" y="3.265314" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1.012789" y="1.012789" z="1.012789" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/e007/e007m" name="Monster_80" type="2" id="100001" instanceId="71540" wave="0" tag="">
+    <transform>
+      <position x="35.72067" y="1.074081" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_9" name="map04p_9" type="0" id="0" instanceId="71562" wave="0" tag="" parent="71616">
+    <transform>
+      <position x="7.560583" y="3.368239" z="0" />
+      <rotation x="0" y="0" z="279.7205" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="fire" type="0" id="0" instanceId="71568" wave="0" tag="" parent="72126">
+    <transform>
+      <position x="9.701141" y="2.971893" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/b3" name="map04p_1" type="0" id="0" instanceId="71572" wave="0" tag="" parent="72552">
+    <transform>
+      <position x="50.31348" y="6.220074" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="lefthand" type="0" id="0" instanceId="71598" wave="0" tag="" parent="71416">
+    <transform>
+      <position x="19.72996" y="1.654298" z="0" />
+      <rotation x="0" y="0" z="9.424313" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/b3" name="map04p_1" type="0" id="0" instanceId="71604" wave="0" tag="" parent="72552">
+    <transform>
+      <position x="48.05476" y="6.21088" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="" name="d1" type="0" id="0" instanceId="71616" wave="0" tag="" parent="72454">
+    <transform>
+      <position x="16.83031" y="3.760481" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_10" name="map04p_10" type="0" id="0" instanceId="71620" wave="0" tag="" parent="71932">
+    <transform>
+      <position x="46.24366" y="4.073574" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_18" type="0" id="0" instanceId="71626" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="39.08739" y="2.564015" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="leftlegup" type="0" id="0" instanceId="71632" wave="0" tag="" parent="72912">
+    <transform>
+      <position x="32.55278" y="2.542543" z="0" />
+      <rotation x="0" y="0" z="354.4032" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/b3" name="map04p_1" type="0" id="0" instanceId="71638" wave="0" tag="" parent="72552">
+    <transform>
+      <position x="15.32371" y="6.201095" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_25" type="0" id="0" instanceId="71646" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="46.85329" y="2.598376" z="0" />
+      <rotation x="0" y="0" z="90.00001" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="rightweapon" type="0" id="0" instanceId="71652" wave="0" tag="" parent="72408">
+    <transform>
+      <position x="24.46196" y="2.44868" z="0" />
+      <rotation x="0" y="0" z="356.8857" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="rightweapon" type="0" id="0" instanceId="71658" wave="0" tag="" parent="73026">
+    <transform>
+      <position x="14.60214" y="1.750841" z="0" />
+      <rotation x="0" y="0" z="356.8857" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="lefthand" type="0" id="0" instanceId="71664" wave="0" tag="" parent="72900">
+    <transform>
+      <position x="29.8962" y="1.515574" z="0" />
+      <rotation x="0" y="0" z="9.424313" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="rightfoot" type="0" id="0" instanceId="71670" wave="0" tag="" parent="71720">
+    <transform>
+      <position x="7.399805" y="2.66139" z="0" />
+      <rotation x="0" y="0" z="359.0764" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_25" type="0" id="0" instanceId="71682" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="37.08548" y="2.908176" z="0" />
+      <rotation x="0" y="0" z="90.00001" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="leftlegdown" type="0" id="0" instanceId="71700" wave="0" tag="" parent="72694">
+    <transform>
+      <position x="29.44532" y="1.233675" z="0" />
+      <rotation x="0" y="0" z="40.02077" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="chest" type="0" id="0" instanceId="71714" wave="0" tag="" parent="74126">
+    <transform>
+      <position x="11.67692" y="3.287476" z="0" />
+      <rotation x="0" y="0" z="5.604236" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="rightlegdown" type="0" id="0" instanceId="71720" wave="0" tag="" parent="71810">
+    <transform>
+      <position x="7.244013" y="2.898268" z="0" />
+      <rotation x="0" y="0" z="9.632325" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/b31" name="map04p_4" type="0" id="0" instanceId="71738" wave="0" tag="" parent="72552">
+    <transform>
+      <position x="23.10318" y="4.530199" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="leftlegdown" type="0" id="0" instanceId="71744" wave="0" tag="" parent="71632">
+    <transform>
+      <position x="32.73497" y="2.065995" z="0" />
+      <rotation x="0" y="0" z="40.02077" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_25" type="0" id="0" instanceId="71756" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="23.33804" y="2.064729" z="0" />
+      <rotation x="0" y="0" z="90.00001" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/b3" name="map04p_1" type="0" id="0" instanceId="71774" wave="0" tag="" parent="72552">
+    <transform>
+      <position x="37.25687" y="6.204617" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_25" type="0" id="0" instanceId="71786" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="28.02701" y="2.526725" z="0" />
+      <rotation x="0" y="0" z="90.00001" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_25" type="0" id="0" instanceId="71792" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="-6.723792" y="1.797337" z="0" />
+      <rotation x="0" y="0" z="90.00001" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/b31" name="map04p_4" type="0" id="0" instanceId="71804" wave="0" tag="" parent="72552">
+    <transform>
+      <position x="31.44557" y="4.521327" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="rightlegup" type="0" id="0" instanceId="71810" wave="0" tag="" parent="74328">
+    <transform>
+      <position x="7.51254" y="3.216458" z="0" />
+      <rotation x="0" y="0" z="340.8232" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="rightlegdown" type="0" id="0" instanceId="71816" wave="0" tag="" parent="73122">
+    <transform>
+      <position x="28.40883" y="1.332698" z="0" />
+      <rotation x="0" y="0" z="9.632325" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="leftlegup" type="0" id="0" instanceId="71822" wave="0" tag="" parent="71268">
+    <transform>
+      <position x="25.59693" y="2.859626" z="0" />
+      <rotation x="0" y="0" z="354.4032" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="head" type="0" id="0" instanceId="71828" wave="0" tag="" parent="72792">
+    <transform>
+      <position x="11.50294" y="3.956889" z="0" />
+      <rotation x="0" y="0" z="353.9573" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_18" type="0" id="0" instanceId="71840" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="17.55005" y="2.768378" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_10" name="map04p_10" type="0" id="0" instanceId="71846" wave="0" tag="" parent="71932">
+    <transform>
+      <position x="41.27905" y="4.048185" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="name" type="0" id="0" instanceId="71852" wave="0" tag="" parent="72126">
+    <transform>
+      <position x="11.70073" y="4.602115" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="rightarmup" type="0" id="0" instanceId="71858" wave="0" tag="" parent="71260">
+    <transform>
+      <position x="7.266762" y="3.979375" z="0" />
+      <rotation x="0" y="0" z="17.85092" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="fire" type="0" id="0" instanceId="71864" wave="0" tag="" parent="73470">
+    <transform>
+      <position x="5.795422" y="3.490017" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/b3" name="map04p_0" type="0" id="0" instanceId="71868" wave="0" tag="" parent="72552">
+    <transform>
+      <position x="13.17798" y="6.185027" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/b3" name="map04p_1" type="0" id="0" instanceId="71910" wave="0" tag="" parent="72552">
+    <transform>
+      <position x="30.71323" y="6.214842" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/e007/e007m" name="Monster_143" type="2" id="100001" instanceId="71924" wave="0" tag="">
+    <transform>
+      <position x="4.507957" y="1.678698" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="" name="b2" type="0" id="0" instanceId="71932" wave="0" tag="" parent="72454">
+    <transform>
+      <position x="16.83031" y="3.760481" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="mouth" type="0" id="0" instanceId="71936" wave="0" tag="" parent="71828">
+    <transform>
+      <position x="11.29344" y="4.070818" z="0" />
+      <rotation x="0" y="0" z="353.9573" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_13" name="map04p_13" type="0" id="0" instanceId="71942" wave="0" tag="" parent="71616">
+    <transform>
+      <position x="38.55135" y="1.103853" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/b31" name="map04p_4" type="0" id="0" instanceId="71948" wave="0" tag="" parent="72552">
+    <transform>
+      <position x="25.1749" y="4.523893" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/Main Camera" name="Main Camera" type="0" id="0" instanceId="71954" wave="0" tag="">
+    <transform>
+      <position x="9.231562" y="3.836974" z="-10" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="" name="f1" type="0" id="0" instanceId="71968" wave="0" tag="" parent="72454">
+    <transform>
+      <position x="16.83031" y="3.760481" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="rightarmdown" type="0" id="0" instanceId="71972" wave="0" tag="" parent="73296">
+    <transform>
+      <position x="18.29762" y="1.95765" z="0" />
+      <rotation x="0" y="0" z="359.4836" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="rightweapon" type="0" id="0" instanceId="71978" wave="0" tag="" parent="71184">
+    <transform>
+      <position x="6.963351" y="2.864848" z="0" />
+      <rotation x="0" y="0" z="356.8857" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="mouth" type="0" id="0" instanceId="71998" wave="0" tag="" parent="72822">
+    <transform>
+      <position x="28.55254" y="3.023373" z="0" />
+      <rotation x="0" y="0" z="353.9573" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_6" name="map04p_6" type="0" id="0" instanceId="72004" wave="0" tag="" parent="71616">
+    <transform>
+      <position x="25.93256" y="3.122486" z="0" />
+      <rotation x="0" y="0" z="262.7794" />
+      <scale x="0.65" y="0.65" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="waist" type="0" id="0" instanceId="72010" wave="0" tag="" parent="72126">
+    <transform>
+      <position x="11.8165" y="2.812792" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="rightweapon" type="0" id="0" instanceId="72024" wave="0" tag="" parent="74244">
+    <transform>
+      <position x="10.86907" y="2.346723" z="0" />
+      <rotation x="0" y="0" z="356.8857" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="mouth" type="0" id="0" instanceId="72030" wave="0" tag="" parent="72780">
+    <transform>
+      <position x="18.38629" y="3.162097" z="0" />
+      <rotation x="0" y="0" z="353.9573" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="leftlegup" type="0" id="0" instanceId="72036" wave="0" tag="" parent="74328">
+    <transform>
+      <position x="8.098314" y="3.275794" z="0" />
+      <rotation x="0" y="0" z="354.4032" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_10" name="map04p_10" type="0" id="0" instanceId="72048" wave="0" tag="" parent="71932">
+    <transform>
+      <position x="6.483475" y="4.03933" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="leftweapon" type="0" id="0" instanceId="72062" wave="0" tag="" parent="72350">
+    <transform>
+      <position x="33.0626" y="2.060577" z="0" />
+      <rotation x="0" y="0" z="61.31981" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_9" name="map04p_9" type="0" id="0" instanceId="72074" wave="0" tag="" parent="71616">
+    <transform>
+      <position x="22.43076" y="3.442383" z="0" />
+      <rotation x="0" y="0" z="281.775" />
+      <scale x="1" y="-1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_21" name="map04p_21" type="0" id="0" instanceId="72080" wave="0" tag="" parent="71968">
+    <transform>
+      <position x="23.16111" y="0.1253474" z="0" />
+      <rotation x="0" y="0" z="174.1268" />
+      <scale x="0.7022873" y="0.7022873" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="rightfoot" type="0" id="0" instanceId="72086" wave="0" tag="" parent="73336">
+    <transform>
+      <position x="18.39837" y="1.234545" z="0" />
+      <rotation x="0" y="0" z="359.0764" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_22" name="map04p_22" type="0" id="0" instanceId="72094" wave="0" tag="" parent="71616">
+    <transform>
+      <position x="33.89686" y="1.7465" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="-0.9464506" y="0.9464506" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="rightweapon" type="0" id="0" instanceId="72112" wave="0" tag="" parent="73932">
+    <transform>
+      <position x="28.12816" y="1.299278" z="0" />
+      <rotation x="0" y="0" z="356.8857" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_5" name="map04p_5" type="0" id="0" instanceId="72118" wave="0" tag="" parent="71932">
+    <transform>
+      <position x="42.56905" y="5.987772" z="0" />
+      <rotation x="0" y="0" z="90.00001" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="Monster_173" type="2" id="100003" instanceId="72126" wave="0" tag="">
+    <transform>
+      <position x="11.7039" y="1.962996" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="neck" type="0" id="0" instanceId="72152" wave="0" tag="" parent="72202">
+    <transform>
+      <position x="28.8915" y="2.630952" z="0" />
+      <rotation x="0" y="0" z="3.890559" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_10" name="map04p_10" type="0" id="0" instanceId="72164" wave="0" tag="" parent="71932">
+    <transform>
+      <position x="6.118247" y="4.72177" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="-1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_6" name="map04p_6" type="0" id="0" instanceId="72170" wave="0" tag="" parent="71616">
+    <transform>
+      <position x="31.09231" y="3.057614" z="0" />
+      <rotation x="0" y="0" z="264.2182" />
+      <scale x="0.65" y="0.65" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_18" type="0" id="0" instanceId="72190" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="46.468" y="2.406358" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="chest" type="0" id="0" instanceId="72202" wave="0" tag="" parent="74214">
+    <transform>
+      <position x="28.93601" y="2.24003" z="0" />
+      <rotation x="0" y="0" z="5.604236" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="waist" type="0" id="0" instanceId="72214" wave="0" tag="" parent="74146">
+    <transform>
+      <position x="29.07559" y="1.765347" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_10" name="map04p_10" type="0" id="0" instanceId="72232" wave="0" tag="" parent="71932">
+    <transform>
+      <position x="20.3548" y="-1.006451" z="-90" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_18" type="0" id="0" instanceId="72238" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="19.18998" y="2.565798" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_25" type="0" id="0" instanceId="72246" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="28.85297" y="2.451741" z="0" />
+      <rotation x="0" y="0" z="90.00001" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="leftarmup" type="0" id="0" instanceId="72252" wave="0" tag="" parent="74004">
+    <transform>
+      <position x="19.30341" y="2.837407" z="0" />
+      <rotation x="0" y="0" z="7.008191" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_18" type="0" id="0" instanceId="72258" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="-9.962373" y="2.838959" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="lefthand" type="0" id="0" instanceId="72276" wave="0" tag="" parent="73056">
+    <transform>
+      <position x="16.37018" y="1.967136" z="0" />
+      <rotation x="0" y="0" z="9.424313" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_18" type="0" id="0" instanceId="72306" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="33.76991" y="2.645454" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="leftlegdown" type="0" id="0" instanceId="72332" wave="0" tag="" parent="74256">
+    <transform>
+      <position x="19.27907" y="1.3724" z="0" />
+      <rotation x="0" y="0" z="40.02077" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="rightfoot" type="0" id="0" instanceId="72338" wave="0" tag="" parent="73672">
+    <transform>
+      <position x="31.85427" y="1.928141" z="0" />
+      <rotation x="0" y="0" z="359.0764" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="lefthand" type="0" id="0" instanceId="72350" wave="0" tag="" parent="72396">
+    <transform>
+      <position x="33.18586" y="2.347894" z="0" />
+      <rotation x="0" y="0" z="9.424313" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/b3" name="map04p_0" type="0" id="0" instanceId="72356" wave="0" tag="" parent="72552">
+    <transform>
+      <position x="19.72449" y="6.187634" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="head" type="0" id="0" instanceId="72362" wave="0" tag="" parent="73680">
+    <transform>
+      <position x="7.597216" y="4.475014" z="0" />
+      <rotation x="0" y="0" z="353.9573" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_18" type="0" id="0" instanceId="72376" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="19.46717" y="2.938337" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_13" name="map04p_13" type="0" id="0" instanceId="72382" wave="0" tag="" parent="71616">
+    <transform>
+      <position x="23.5263" y="2.076238" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="leftarmdown" type="0" id="0" instanceId="72396" wave="0" tag="" parent="73324">
+    <transform>
+      <position x="33.14268" y="2.97322" z="0" />
+      <rotation x="0" y="0" z="359.4651" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="righthand" type="0" id="0" instanceId="72402" wave="0" tag="" parent="71972">
+    <transform>
+      <position x="18.1241" y="1.546801" z="0" />
+      <rotation x="0" y="0" z="340.0133" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="righthand" type="0" id="0" instanceId="72408" wave="0" tag="" parent="71158">
+    <transform>
+      <position x="24.62415" y="2.557479" z="0" />
+      <rotation x="0" y="0" z="340.0133" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/b3" name="map04p_1" type="0" id="0" instanceId="72414" wave="0" tag="" parent="72552">
+    <transform>
+      <position x="28.4522" y="6.21338" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_18" type="0" id="0" instanceId="72434" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="3.411636" y="2.394177" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="head" type="0" id="0" instanceId="72440" wave="0" tag="" parent="74046">
+    <transform>
+      <position x="32.05168" y="3.741764" z="0" />
+      <rotation x="0" y="0" z="353.9573" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="" name="map04" type="0" id="0" instanceId="72454" wave="0" tag="">
+    <transform>
+      <position x="0" y="0" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="bodycollider" type="0" id="0" instanceId="72466" wave="0" tag="" parent="71442">
+    <transform>
+      <position x="25.43575" y="3.246564" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="0.759392" y="1.369729" z="0.995923" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="fire" type="0" id="0" instanceId="72486" wave="0" tag="" parent="74146">
+    <transform>
+      <position x="26.96024" y="1.924447" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/b31" name="map04p_4" type="0" id="0" instanceId="72490" wave="0" tag="" parent="72552">
+    <transform>
+      <position x="16.83252" y="4.532765" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_18" type="0" id="0" instanceId="72496" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="18.03146" y="2.129439" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_25" type="0" id="0" instanceId="72502" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="19.81111" y="2.397515" z="0" />
+      <rotation x="0" y="0" z="90.00001" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="leftarmdown" type="0" id="0" instanceId="72522" wave="0" tag="" parent="73750">
+    <transform>
+      <position x="26.18683" y="3.290302" z="0" />
+      <rotation x="0" y="0" z="359.4651" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_25" type="0" id="0" instanceId="72528" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="-1.125341" y="2.799887" z="0" />
+      <rotation x="0" y="0" z="90.00001" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="leftfoot" type="0" id="0" instanceId="72546" wave="0" tag="" parent="73506">
+    <transform>
+      <position x="8.54093" y="2.624626" z="0" />
+      <rotation x="0" y="0" z="359.4456" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/b3" name="b3" type="0" id="0" instanceId="72552" wave="0" tag="" parent="72454">
+    <transform>
+      <position x="16.83031" y="3.760481" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="name" type="0" id="0" instanceId="72556" wave="0" tag="" parent="71442">
+    <transform>
+      <position x="25.29362" y="4.704072" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_21" name="map04p_21" type="0" id="0" instanceId="72566" wave="0" tag="" parent="71968">
+    <transform>
+      <position x="39.95088" y="0.1386662" z="0" />
+      <rotation x="0" y="0" z="180" />
+      <scale x="0.7087105" y="0.7087099" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="name" type="0" id="0" instanceId="72578" wave="0" tag="" parent="73484">
+    <transform>
+      <position x="18.79358" y="3.693394" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/b31" name="map04p_4" type="0" id="0" instanceId="72582" wave="0" tag="" parent="72552">
+    <transform>
+      <position x="31.06785" y="4.524861" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_21" name="map04p_21" type="0" id="0" instanceId="72588" wave="0" tag="" parent="71968">
+    <transform>
+      <position x="7.949764" y="0.2971311" z="0" />
+      <rotation x="0" y="0" z="180" />
+      <scale x="0.6769608" y="0.6769593" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_18" type="0" id="0" instanceId="72594" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="49.51509" y="3.154641" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_10" name="map04p_10" type="0" id="0" instanceId="72600" wave="0" tag="" parent="71932">
+    <transform>
+      <position x="14.15662" y="4.708941" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/b3" name="map04p_1" type="0" id="0" instanceId="72612" wave="0" tag="" parent="72552">
+    <transform>
+      <position x="21.88682" y="6.218075" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_18" type="0" id="0" instanceId="72618" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="27.04397" y="2.716592" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="rightarmdown" type="0" id="0" instanceId="72624" wave="0" tag="" parent="71190">
+    <transform>
+      <position x="14.93784" y="2.270488" z="0" />
+      <rotation x="0" y="0" z="359.4836" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="chest" type="0" id="0" instanceId="72642" wave="0" tag="" parent="74220">
+    <transform>
+      <position x="32.22567" y="3.072351" z="0" />
+      <rotation x="0" y="0" z="5.604236" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_18" type="0" id="0" instanceId="72648" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="8.395196" y="2.896646" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_25" type="0" id="0" instanceId="72666" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="10.29661" y="3.031136" z="0" />
+      <rotation x="0" y="0" z="90.00001" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="body" type="0" id="0" instanceId="72672" wave="0" tag="" parent="71268">
+    <transform>
+      <position x="25.41552" y="2.914749" z="0" />
+      <rotation x="0" y="0" z="7.834119" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="leftlegup" type="0" id="0" instanceId="72694" wave="0" tag="" parent="72214">
+    <transform>
+      <position x="29.26313" y="1.710223" z="0" />
+      <rotation x="0" y="0" z="354.4032" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_14" name="map04p_14" type="0" id="0" instanceId="72700" wave="0" tag="" parent="71932">
+    <transform>
+      <position x="13.42865" y="3.46365" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="bodycollider" type="0" id="0" instanceId="72712" wave="0" tag="" parent="73462">
+    <transform>
+      <position x="32.39161" y="2.929482" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="0.759392" y="1.369729" z="0.995923" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="mouth" type="0" id="0" instanceId="72718" wave="0" tag="" parent="72440">
+    <transform>
+      <position x="31.84219" y="3.855693" z="0" />
+      <rotation x="0" y="0" z="353.9573" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_18" type="0" id="0" instanceId="72724" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="41.51141" y="2.745268" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_25" type="0" id="0" instanceId="72730" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="11.79219" y="2.871002" z="0" />
+      <rotation x="0" y="0" z="90.00001" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/b3" name="map04p_1" type="0" id="0" instanceId="72742" wave="0" tag="" parent="72552">
+    <transform>
+      <position x="34.99067" y="6.211492" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/e007/e007m" name="Monster_272" type="2" id="100002" instanceId="72748" wave="0" tag="">
+    <transform>
+      <position x="21.40802" y="2.452027" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="mouth" type="0" id="0" instanceId="72756" wave="0" tag="" parent="73762">
+    <transform>
+      <position x="15.02651" y="3.474936" z="0" />
+      <rotation x="0" y="0" z="353.9573" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="body" type="0" id="0" instanceId="72762" wave="0" tag="" parent="74328">
+    <transform>
+      <position x="7.916907" y="3.330917" z="0" />
+      <rotation x="0" y="0" z="7.834119" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="rightlegup" type="0" id="0" instanceId="72774" wave="0" tag="" parent="72912">
+    <transform>
+      <position x="31.967" y="2.483208" z="0" />
+      <rotation x="0" y="0" z="340.8232" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="head" type="0" id="0" instanceId="72780" wave="0" tag="" parent="73000">
+    <transform>
+      <position x="18.59578" y="3.048169" z="0" />
+      <rotation x="0" y="0" z="353.9573" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="body" type="0" id="0" instanceId="72786" wave="0" tag="" parent="71060">
+    <transform>
+      <position x="15.5557" y="2.21691" z="0" />
+      <rotation x="0" y="0" z="7.834119" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="neck" type="0" id="0" instanceId="72792" wave="0" tag="" parent="71714">
+    <transform>
+      <position x="11.63241" y="3.678397" z="0" />
+      <rotation x="0" y="0" z="3.890559" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="bodycollider" type="0" id="0" instanceId="72798" wave="0" tag="" parent="72126">
+    <transform>
+      <position x="11.84286" y="3.144607" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="0.759392" y="1.369729" z="0.995923" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="leftlegup" type="0" id="0" instanceId="72804" wave="0" tag="" parent="71060">
+    <transform>
+      <position x="15.7371" y="2.161786" z="0" />
+      <rotation x="0" y="0" z="354.4032" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/b3" name="map04p_0" type="0" id="0" instanceId="72816" wave="0" tag="" parent="72552">
+    <transform>
+      <position x="45.89243" y="6.199306" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="head" type="0" id="0" instanceId="72822" wave="0" tag="" parent="72152">
+    <transform>
+      <position x="28.76203" y="2.909444" z="0" />
+      <rotation x="0" y="0" z="353.9573" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_25" type="0" id="0" instanceId="72834" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="34.86201" y="2.446885" z="0" />
+      <rotation x="0" y="0" z="90.00001" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_18" type="0" id="0" instanceId="72840" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="-12.03037" y="1.862047" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="neck" type="0" id="0" instanceId="72846" wave="0" tag="" parent="74138">
+    <transform>
+      <position x="15.36547" y="3.082515" z="0" />
+      <rotation x="0" y="0" z="3.890559" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/b31" name="map04p_4" type="0" id="0" instanceId="72858" wave="0" tag="" parent="72552">
+    <transform>
+      <position x="39.41711" y="4.520581" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="rightarmup" type="0" id="0" instanceId="72864" wave="0" tag="" parent="72202">
+    <transform>
+      <position x="28.43158" y="2.413805" z="0" />
+      <rotation x="0" y="0" z="17.85092" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="rightarmup" type="0" id="0" instanceId="72870" wave="0" tag="" parent="72642">
+    <transform>
+      <position x="31.72123" y="3.246125" z="0" />
+      <rotation x="0" y="0" z="17.85092" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_18" type="0" id="0" instanceId="72876" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="13.81251" y="2.667311" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_19" name="map04p_19" type="0" id="0" instanceId="72886" wave="0" tag="" parent="71968">
+    <transform>
+      <position x="2.997894" y="-0.07523823" z="0" />
+      <rotation x="0" y="0" z="85.92435" />
+      <scale x="0.8049569" y="0.8049568" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_25" type="0" id="0" instanceId="72892" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="-4.655794" y="2.774249" z="0" />
+      <rotation x="0" y="0" z="90.00001" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="leftarmdown" type="0" id="0" instanceId="72900" wave="0" tag="" parent="73456">
+    <transform>
+      <position x="29.85303" y="2.140899" z="0" />
+      <rotation x="0" y="0" z="359.4651" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/b3" name="map04p_1" type="0" id="0" instanceId="72906" wave="0" tag="" parent="72552">
+    <transform>
+      <position x="24.14554" y="6.224473" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="waist" type="0" id="0" instanceId="72912" wave="0" tag="" parent="73462">
+    <transform>
+      <position x="32.36525" y="2.597667" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/b31" name="map04p_4" type="0" id="0" instanceId="72924" wave="0" tag="" parent="72552">
+    <transform>
+      <position x="41.50313" y="4.520597" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_22" name="map04p_22" type="0" id="0" instanceId="72936" wave="0" tag="" parent="71616">
+    <transform>
+      <position x="19.34436" y="1.900138" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/e007/e007m" name="Monster_305" type="2" id="100001" instanceId="72954" wave="0" tag="">
+    <transform>
+      <position x="44.93568" y="1.787501" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_19" name="map04p_19" type="0" id="0" instanceId="72982" wave="0" tag="" parent="71968">
+    <transform>
+      <position x="30.50938" y="0.01900887" z="0" />
+      <rotation x="0" y="0" z="96.31787" />
+      <scale x="0.7079964" y="0.7079953" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="righthand" type="0" id="0" instanceId="72988" wave="0" tag="" parent="73104">
+    <transform>
+      <position x="31.58" y="2.240396" z="0" />
+      <rotation x="0" y="0" z="340.0133" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/b31" name="map04p_4" type="0" id="0" instanceId="72994" wave="0" tag="" parent="72552">
+    <transform>
+      <position x="45.68777" y="4.518015" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="neck" type="0" id="0" instanceId="73000" wave="0" tag="" parent="74004">
+    <transform>
+      <position x="18.72525" y="2.769677" z="0" />
+      <rotation x="0" y="0" z="3.890559" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_5" name="map04p_5" type="0" id="0" instanceId="73006" wave="0" tag="" parent="71932">
+    <transform>
+      <position x="30.46325" y="8.785802" z="0" />
+      <rotation x="0" y="0" z="90.00001" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_10" name="map04p_10" type="0" id="0" instanceId="73012" wave="0" tag="" parent="71932">
+    <transform>
+      <position x="3.752132" y="6.14862" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_13" name="map04p_13" type="0" id="0" instanceId="73020" wave="0" tag="" parent="71616">
+    <transform>
+      <position x="5.339407" y="1.70971" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="righthand" type="0" id="0" instanceId="73026" wave="0" tag="" parent="72624">
+    <transform>
+      <position x="14.76432" y="1.859639" z="0" />
+      <rotation x="0" y="0" z="340.0133" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="rightweapon" type="0" id="0" instanceId="73032" wave="0" tag="" parent="72402">
+    <transform>
+      <position x="17.96192" y="1.438003" z="0" />
+      <rotation x="0" y="0" z="356.8857" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="leftfoot" type="0" id="0" instanceId="73038" wave="0" tag="" parent="73736">
+    <transform>
+      <position x="12.44665" y="2.106501" z="0" />
+      <rotation x="0" y="0" z="359.4456" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_18" type="0" id="0" instanceId="73044" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="-8.052784" y="2.799893" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="leftarmdown" type="0" id="0" instanceId="73056" wave="0" tag="" parent="71376">
+    <transform>
+      <position x="16.327" y="2.592462" z="0" />
+      <rotation x="0" y="0" z="359.4651" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_10" name="map04p_10" type="0" id="0" instanceId="73062" wave="0" tag="" parent="71932">
+    <transform>
+      <position x="35.39141" y="4.757122" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="" name="960_0" type="0" id="0" instanceId="73076" wave="0" tag="">
+    <transform>
+      <position x="0" y="0" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="leftweapon" type="0" id="0" instanceId="73084" wave="0" tag="" parent="71598">
+    <transform>
+      <position x="19.6067" y="1.366982" z="0" />
+      <rotation x="0" y="0" z="61.31981" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/e007/e007m" name="Monster_327" type="2" id="100003" instanceId="73096" wave="0" tag="">
+    <transform>
+      <position x="22.04932" y="1.056262" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="rightarmdown" type="0" id="0" instanceId="73104" wave="0" tag="" parent="72870">
+    <transform>
+      <position x="31.75352" y="2.651246" z="0" />
+      <rotation x="0" y="0" z="359.4836" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="rightlegup" type="0" id="0" instanceId="73110" wave="0" tag="" parent="71060">
+    <transform>
+      <position x="15.15133" y="2.102451" z="0" />
+      <rotation x="0" y="0" z="340.8232" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/b31" name="map04p_4" type="0" id="0" instanceId="73116" wave="0" tag="" parent="72552">
+    <transform>
+      <position x="6.380029" y="4.53476" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="rightlegup" type="0" id="0" instanceId="73122" wave="0" tag="" parent="72214">
+    <transform>
+      <position x="28.67735" y="1.650888" z="0" />
+      <rotation x="0" y="0" z="340.8232" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_5" name="map04p_5" type="0" id="0" instanceId="73128" wave="0" tag="" parent="71932">
+    <transform>
+      <position x="3.075878" y="5.822155" z="0" />
+      <rotation x="0" y="0" z="90.00637" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/b3" name="map04p_1" type="0" id="0" instanceId="73134" wave="0" tag="" parent="72552">
+    <transform>
+      <position x="41.50022" y="6.212766" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/b3" name="map04p_1" type="0" id="0" instanceId="73146" wave="0" tag="" parent="72552">
+    <transform>
+      <position x="43.76125" y="6.21423" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_18" type="0" id="0" instanceId="73158" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="19.94105" y="2.090373" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_10" name="map04p_10" type="0" id="0" instanceId="73164" wave="0" tag="" parent="71932">
+    <transform>
+      <position x="23.52768" y="4.797259" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_10" name="map04p_10" type="0" id="0" instanceId="73170" wave="0" tag="" parent="71932">
+    <transform>
+      <position x="21.39257" y="4.021322" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/b31" name="map04p_4" type="0" id="0" instanceId="73178" wave="0" tag="" parent="72552">
+    <transform>
+      <position x="0.1093616" y="4.537326" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="fire" type="0" id="0" instanceId="73184" wave="0" tag="" parent="73484">
+    <transform>
+      <position x="16.79399" y="2.063172" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="rightlegup" type="0" id="0" instanceId="73188" wave="0" tag="" parent="71268">
+    <transform>
+      <position x="25.01115" y="2.800291" z="0" />
+      <rotation x="0" y="0" z="340.8232" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="" name="b1" type="0" id="0" instanceId="73200" wave="0" tag="" parent="72454">
+    <transform>
+      <position x="0" y="0" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_19" name="map04p_19" type="0" id="0" instanceId="73204" wave="0" tag="" parent="71968">
+    <transform>
+      <position x="11.05766" y="-0.4624557" z="0" />
+      <rotation x="0" y="0" z="105.0105" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/e007/e007m" name="Monster_347" type="2" id="100001" instanceId="73216" wave="0" tag="">
+    <transform>
+      <position x="42.81524" y="0.9551772" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_18" type="0" id="0" instanceId="73230" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="23.54639" y="2.516452" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_18" type="0" id="0" instanceId="73236" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="21.37676" y="2.89927" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="leftarmup" type="0" id="0" instanceId="73272" wave="0" tag="" parent="71714">
+    <transform>
+      <position x="12.21057" y="3.746127" z="0" />
+      <rotation x="0" y="0" z="7.008191" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="lefthand" type="0" id="0" instanceId="73278" wave="0" tag="" parent="71326">
+    <transform>
+      <position x="12.63711" y="2.563019" z="0" />
+      <rotation x="0" y="0" z="9.424313" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_25" type="0" id="0" instanceId="73284" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="48.58418" y="2.832468" z="0" />
+      <rotation x="0" y="0" z="90.00001" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_10" name="map04p_10" type="0" id="0" instanceId="73290" wave="0" tag="" parent="71932">
+    <transform>
+      <position x="26.37959" y="4.013549" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="rightarmup" type="0" id="0" instanceId="73296" wave="0" tag="" parent="74004">
+    <transform>
+      <position x="18.26533" y="2.55253" z="0" />
+      <rotation x="0" y="0" z="17.85092" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/e007/e007m" name="Monster_361" type="2" id="100001" instanceId="73302" wave="0" tag="">
+    <transform>
+      <position x="39.36704" y="1.173167" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="leftlegup" type="0" id="0" instanceId="73310" wave="0" tag="" parent="72010">
+    <transform>
+      <position x="12.00403" y="2.757668" z="0" />
+      <rotation x="0" y="0" z="354.4032" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/b31" name="map04p_4" type="0" id="0" instanceId="73316" wave="0" tag="" parent="72552">
+    <transform>
+      <position x="27.26093" y="4.523908" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="leftarmup" type="0" id="0" instanceId="73324" wave="0" tag="" parent="72642">
+    <transform>
+      <position x="32.75931" y="3.531002" z="0" />
+      <rotation x="0" y="0" z="7.008191" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_25" type="0" id="0" instanceId="73330" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="28.3042" y="2.899264" z="0" />
+      <rotation x="0" y="0" z="90.00001" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="rightlegdown" type="0" id="0" instanceId="73336" wave="0" tag="" parent="74238">
+    <transform>
+      <position x="18.24258" y="1.471423" z="0" />
+      <rotation x="0" y="0" z="9.632325" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="attackcollider" type="0" id="0" instanceId="73342" wave="0" tag="" parent="74088">
+    <transform>
+      <position x="15.4299" y="2.567474" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1.012789" y="1.012789" z="1.012789" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="attackcollider" type="0" id="0" instanceId="73348" wave="0" tag="" parent="73462">
+    <transform>
+      <position x="32.24557" y="2.948231" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1.012789" y="1.012789" z="1.012789" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="fire" type="0" id="0" instanceId="73354" wave="0" tag="" parent="73462">
+    <transform>
+      <position x="30.24989" y="2.756768" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/b3" name="map04p_0" type="0" id="0" instanceId="73376" wave="0" tag="" parent="72552">
+    <transform>
+      <position x="32.82088" y="6.19992" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="leftlegdown" type="0" id="0" instanceId="73382" wave="0" tag="" parent="71822">
+    <transform>
+      <position x="25.77912" y="2.383077" z="0" />
+      <rotation x="0" y="0" z="40.02077" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="body" type="0" id="0" instanceId="73388" wave="0" tag="" parent="71508">
+    <transform>
+      <position x="18.91547" y="1.904072" z="0" />
+      <rotation x="0" y="0" z="7.834119" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_25" type="0" id="0" instanceId="73412" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="53.39544" y="2.406353" z="0" />
+      <rotation x="0" y="0" z="90.00001" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_25" type="0" id="0" instanceId="73418" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="52.91208" y="3.128997" z="0" />
+      <rotation x="0" y="0" z="90.00001" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_15" name="map04p_15" type="0" id="0" instanceId="73424" wave="0" tag="" parent="71932">
+    <transform>
+      <position x="38.4401" y="2.72943" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_18" type="0" id="0" instanceId="73450" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="21.09957" y="2.526731" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="leftarmup" type="0" id="0" instanceId="73456" wave="0" tag="" parent="72202">
+    <transform>
+      <position x="29.46966" y="2.698682" z="0" />
+      <rotation x="0" y="0" z="7.008191" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="Monster_387" type="2" id="100009" instanceId="73462" wave="0" tag="">
+    <transform>
+      <position x="32.25265" y="1.747871" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="Monster_388" type="2" id="100005" instanceId="73470" wave="0" tag="">
+    <transform>
+      <position x="7.798182" y="2.481121" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="Monster_389" type="2" id="100006" instanceId="73484" wave="0" tag="">
+    <transform>
+      <position x="18.79675" y="1.054276" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="leftlegdown" type="0" id="0" instanceId="73506" wave="0" tag="" parent="72036">
+    <transform>
+      <position x="8.280503" y="2.799245" z="0" />
+      <rotation x="0" y="0" z="40.02077" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/e007/e007m" name="Monster_393" type="2" id="100001" instanceId="73512" wave="0" tag="">
+    <transform>
+      <position x="47.29393" y="1.331704" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="bodycollider" type="0" id="0" instanceId="73520" wave="0" tag="" parent="73484">
+    <transform>
+      <position x="18.93571" y="2.235886" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="0.759392" y="1.369729" z="0.995923" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_14" name="map04p_14" type="0" id="0" instanceId="73526" wave="0" tag="" parent="71932">
+    <transform>
+      <position x="22.99003" y="3.461735" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="fire" type="0" id="0" instanceId="73532" wave="0" tag="" parent="74088">
+    <transform>
+      <position x="13.43421" y="2.37601" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_15" name="map04p_15" type="0" id="0" instanceId="73542" wave="0" tag="" parent="71932">
+    <transform>
+      <position x="3.074783" y="2.625375" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_10" name="map04p_10" type="0" id="0" instanceId="73548" wave="0" tag="" parent="71932">
+    <transform>
+      <position x="11.43779" y="4.001868" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_19" name="map04p_19" type="0" id="0" instanceId="73556" wave="0" tag="" parent="71968">
+    <transform>
+      <position x="45.28173" y="0.1241567" z="0" />
+      <rotation x="0" y="0" z="93.80778" />
+      <scale x="0.6744353" y="0.6744353" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_18" type="0" id="0" instanceId="73562" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="1.428807" y="2.762563" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="leftweapon" type="0" id="0" instanceId="73574" wave="0" tag="" parent="71664">
+    <transform>
+      <position x="29.77295" y="1.228257" z="0" />
+      <rotation x="0" y="0" z="61.31981" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_10" name="map04p_10" type="0" id="0" instanceId="73580" wave="0" tag="" parent="71932">
+    <transform>
+      <position x="36.28405" y="4.013549" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/b31" name="map04p_4" type="0" id="0" instanceId="73586" wave="0" tag="" parent="72552">
+    <transform>
+      <position x="2.195389" y="4.537341" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="rightlegdown" type="0" id="0" instanceId="73604" wave="0" tag="" parent="74322">
+    <transform>
+      <position x="11.14973" y="2.380143" z="0" />
+      <rotation x="0" y="0" z="9.632325" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/b31" name="map04p_4" type="0" id="0" instanceId="73622" wave="0" tag="" parent="72552">
+    <transform>
+      <position x="10.55901" y="4.540348" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="rightweapon" type="0" id="0" instanceId="73628" wave="0" tag="" parent="72988">
+    <transform>
+      <position x="31.41782" y="2.131598" z="0" />
+      <rotation x="0" y="0" z="356.8857" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_5" name="map04p_5" type="0" id="0" instanceId="73636" wave="0" tag="" parent="71932">
+    <transform>
+      <position x="30.43203" y="5.038785" z="0" />
+      <rotation x="0" y="0" z="90.00001" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/b31" name="map04p_4" type="0" id="0" instanceId="73642" wave="0" tag="" parent="72552">
+    <transform>
+      <position x="29.35204" y="4.51665" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_25" type="0" id="0" instanceId="73648" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="26.86849" y="2.090367" z="0" />
+      <rotation x="0" y="0" z="90.00001" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_26" name="map04p_26" type="0" id="0" instanceId="73654" wave="0" tag="" parent="71932">
+    <transform>
+      <position x="20.9578" y="6.463401" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/BornPoint" name="BornPoint_417" type="3" id="2" instanceId="73660" wave="0" tag="">
+    <transform>
+      <position x="19.03145" y="2.074793" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="rightlegdown" type="0" id="0" instanceId="73672" wave="0" tag="" parent="72774">
+    <transform>
+      <position x="31.69848" y="2.165018" z="0" />
+      <rotation x="0" y="0" z="9.632325" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="neck" type="0" id="0" instanceId="73680" wave="0" tag="" parent="71260">
+    <transform>
+      <position x="7.726686" y="4.196522" z="0" />
+      <rotation x="0" y="0" z="3.890559" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="leftfoot" type="0" id="0" instanceId="73692" wave="0" tag="" parent="71054">
+    <transform>
+      <position x="16.17972" y="1.510619" z="0" />
+      <rotation x="0" y="0" z="359.4456" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="lefthand" type="0" id="0" instanceId="73704" wave="0" tag="" parent="73938">
+    <transform>
+      <position x="8.73139" y="3.081144" z="0" />
+      <rotation x="0" y="0" z="9.424313" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_18" type="0" id="0" instanceId="73716" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="44.55841" y="2.445425" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_9" name="map04p_9" type="0" id="0" instanceId="73730" wave="0" tag="" parent="71616">
+    <transform>
+      <position x="35.81441" y="3.328552" z="0" />
+      <rotation x="0" y="0" z="278.956" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="leftlegdown" type="0" id="0" instanceId="73736" wave="0" tag="" parent="73310">
+    <transform>
+      <position x="12.18622" y="2.28112" z="0" />
+      <rotation x="0" y="0" z="40.02077" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/e007/e007m" name="Monster_429" type="2" id="100001" instanceId="73742" wave="0" tag="">
+    <transform>
+      <position x="41.34877" y="1.926221" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="leftarmup" type="0" id="0" instanceId="73750" wave="0" tag="" parent="71344">
+    <transform>
+      <position x="25.80346" y="3.848084" z="0" />
+      <rotation x="0" y="0" z="7.008191" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="head" type="0" id="0" instanceId="73762" wave="0" tag="" parent="72846">
+    <transform>
+      <position x="15.236" y="3.361007" z="0" />
+      <rotation x="0" y="0" z="353.9573" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_26" name="map04p_26" type="0" id="0" instanceId="73782" wave="0" tag="" parent="71932">
+    <transform>
+      <position x="32.75436" y="5.18296" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="head" type="0" id="0" instanceId="73788" wave="0" tag="" parent="74180">
+    <transform>
+      <position x="25.09583" y="4.058846" z="0" />
+      <rotation x="0" y="0" z="353.9573" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_25" type="0" id="0" instanceId="73800" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="-3.193339" y="1.822975" z="0" />
+      <rotation x="0" y="0" z="90.00001" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="bodycollider" type="0" id="0" instanceId="73820" wave="0" tag="" parent="74088">
+    <transform>
+      <position x="15.57593" y="2.548724" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="0.759392" y="1.369729" z="0.995923" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_10" name="map04p_10" type="0" id="0" instanceId="73832" wave="0" tag="" parent="71932">
+    <transform>
+      <position x="28.50989" y="4.77104" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/e007/e007m" name="Default_444" type="0" id="100001" instanceId="73838" wave="0" tag="">
+    <transform>
+      <position x="36.92952" y="2.144211" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="mouth" type="0" id="0" instanceId="73846" wave="0" tag="" parent="72362">
+    <transform>
+      <position x="7.387723" y="4.588943" z="0" />
+      <rotation x="0" y="0" z="353.9573" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/BornPoint" name="BornPoint_446" type="3" id="1" instanceId="73852" wave="0" tag="">
+    <transform>
+      <position x="7.035422" y="1.81073" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_14" name="map04p_14" type="0" id="0" instanceId="73876" wave="0" tag="" parent="71932">
+    <transform>
+      <position x="3.858879" y="3.470941" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="name" type="0" id="0" instanceId="73882" wave="0" tag="" parent="74146">
+    <transform>
+      <position x="28.95983" y="3.554669" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/b3" name="map04p_1" type="0" id="0" instanceId="73892" wave="0" tag="" parent="72552">
+    <transform>
+      <position x="17.58786" y="6.202559" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_25" type="0" id="0" instanceId="73898" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="24.77375" y="2.873626" z="0" />
+      <rotation x="0" y="0" z="90.00001" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_14" name="map04p_14" type="0" id="0" instanceId="73904" wave="0" tag="" parent="71932">
+    <transform>
+      <position x="32.55004" y="3.460033" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_25" type="0" id="0" instanceId="73910" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="56.44254" y="3.154635" z="0" />
+      <rotation x="0" y="0" z="90.00001" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_26" name="map04p_26" type="0" id="0" instanceId="73924" wave="0" tag="" parent="71932">
+    <transform>
+      <position x="1.514003" y="4.083227" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="righthand" type="0" id="0" instanceId="73932" wave="0" tag="" parent="73950">
+    <transform>
+      <position x="28.29035" y="1.408076" z="0" />
+      <rotation x="0" y="0" z="340.0133" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="leftarmdown" type="0" id="0" instanceId="73938" wave="0" tag="" parent="71134">
+    <transform>
+      <position x="8.688214" y="3.70647" z="0" />
+      <rotation x="0" y="0" z="359.4651" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="leftweapon" type="0" id="0" instanceId="73944" wave="0" tag="" parent="73278">
+    <transform>
+      <position x="12.51386" y="2.275702" z="0" />
+      <rotation x="0" y="0" z="61.31981" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="rightarmdown" type="0" id="0" instanceId="73950" wave="0" tag="" parent="72864">
+    <transform>
+      <position x="28.46387" y="1.818925" z="0" />
+      <rotation x="0" y="0" z="359.4836" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_6" name="map04p_6" type="0" id="0" instanceId="73956" wave="0" tag="" parent="71616">
+    <transform>
+      <position x="11.93486" y="3.154858" z="0" />
+      <rotation x="0" y="0" z="274.6369" />
+      <scale x="0.6" y="0.6" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_18" type="0" id="0" instanceId="73986" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="30.15804" y="2.908182" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="rightfoot" type="0" id="0" instanceId="73998" wave="0" tag="" parent="73604">
+    <transform>
+      <position x="11.30552" y="2.143266" z="0" />
+      <rotation x="0" y="0" z="359.0764" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="chest" type="0" id="0" instanceId="74004" wave="0" tag="" parent="73388">
+    <transform>
+      <position x="18.76977" y="2.378755" z="0" />
+      <rotation x="0" y="0" z="5.604236" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="leftweapon" type="0" id="0" instanceId="74022" wave="0" tag="" parent="73704">
+    <transform>
+      <position x="8.608137" y="2.793827" z="0" />
+      <rotation x="0" y="0" z="61.31981" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="leftfoot" type="0" id="0" instanceId="74028" wave="0" tag="" parent="71700">
+    <transform>
+      <position x="29.70574" y="1.059056" z="0" />
+      <rotation x="0" y="0" z="359.4456" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="attackcollider" type="0" id="0" instanceId="74034" wave="0" tag="" parent="74146">
+    <transform>
+      <position x="28.95592" y="2.115911" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1.012789" y="1.012789" z="1.012789" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="rightarmup" type="0" id="0" instanceId="74040" wave="0" tag="" parent="71344">
+    <transform>
+      <position x="24.76538" y="3.563207" z="0" />
+      <rotation x="0" y="0" z="17.85092" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="neck" type="0" id="0" instanceId="74046" wave="0" tag="" parent="72642">
+    <transform>
+      <position x="32.18115" y="3.463272" z="0" />
+      <rotation x="0" y="0" z="3.890559" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_25" type="0" id="0" instanceId="74064" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="32.38342" y="2.47738" z="0" />
+      <rotation x="0" y="0" z="90.00001" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_18" type="0" id="0" instanceId="74070" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="35.6795" y="2.606388" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_5" name="map04p_5" type="0" id="0" instanceId="74082" wave="0" tag="" parent="71932">
+    <transform>
+      <position x="12.18017" y="4.827166" z="0" />
+      <rotation x="0" y="0" z="90.00001" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="Monster_485" type="2" id="100004" instanceId="74088" wave="0" tag="">
+    <transform>
+      <position x="15.43697" y="1.367114" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/b31" name="map04p_4" type="0" id="0" instanceId="74096" wave="0" tag="" parent="72552">
+    <transform>
+      <position x="37.33852" y="4.522295" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="name" type="0" id="0" instanceId="74110" wave="0" tag="" parent="74088">
+    <transform>
+      <position x="15.4338" y="4.006232" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="bodycollider" type="0" id="0" instanceId="74114" wave="0" tag="" parent="74146">
+    <transform>
+      <position x="29.10196" y="2.097161" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="0.759392" y="1.369729" z="0.995923" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_25" type="0" id="0" instanceId="74120" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="15.32264" y="2.89664" z="0" />
+      <rotation x="0" y="0" z="90.00001" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="body" type="0" id="0" instanceId="74126" wave="0" tag="" parent="72010">
+    <transform>
+      <position x="11.82263" y="2.812792" z="0" />
+      <rotation x="0" y="0" z="7.834119" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="leftweapon" type="0" id="0" instanceId="74132" wave="0" tag="" parent="71072">
+    <transform>
+      <position x="26.10675" y="2.377659" z="0" />
+      <rotation x="0" y="0" z="61.31981" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="chest" type="0" id="0" instanceId="74138" wave="0" tag="" parent="72786">
+    <transform>
+      <position x="15.40999" y="2.691593" z="0" />
+      <rotation x="0" y="0" z="5.604236" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="Monster_494" type="2" id="100008" instanceId="74146" wave="0" tag="">
+    <transform>
+      <position x="28.963" y="0.9155511" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="leftfoot" type="0" id="0" instanceId="74160" wave="0" tag="" parent="72332">
+    <transform>
+      <position x="19.5395" y="1.197781" z="0" />
+      <rotation x="0" y="0" z="359.4456" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_18" type="0" id="0" instanceId="74168" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="-10.12078" y="1.822981" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="neck" type="0" id="0" instanceId="74180" wave="0" tag="" parent="71344">
+    <transform>
+      <position x="25.2253" y="3.780354" z="0" />
+      <rotation x="0" y="0" z="3.890559" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/b31" name="map04p_4" type="0" id="0" instanceId="74188" wave="0" tag="" parent="72552">
+    <transform>
+      <position x="12.65013" y="4.53309" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/b31" name="map04p_4" type="0" id="0" instanceId="74194" wave="0" tag="" parent="72552">
+    <transform>
+      <position x="8.472987" y="4.540332" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="body" type="0" id="0" instanceId="74214" wave="0" tag="" parent="72214">
+    <transform>
+      <position x="29.08172" y="1.765347" z="0" />
+      <rotation x="0" y="0" z="7.834119" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="body" type="0" id="0" instanceId="74220" wave="0" tag="" parent="72912">
+    <transform>
+      <position x="32.37137" y="2.597667" z="0" />
+      <rotation x="0" y="0" z="7.834119" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="rightlegup" type="0" id="0" instanceId="74238" wave="0" tag="" parent="71508">
+    <transform>
+      <position x="18.5111" y="1.789613" z="0" />
+      <rotation x="0" y="0" z="340.8232" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="righthand" type="0" id="0" instanceId="74244" wave="0" tag="" parent="74268">
+    <transform>
+      <position x="11.03126" y="2.455522" z="0" />
+      <rotation x="0" y="0" z="340.0133" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="leftlegup" type="0" id="0" instanceId="74256" wave="0" tag="" parent="71508">
+    <transform>
+      <position x="19.09688" y="1.848948" z="0" />
+      <rotation x="0" y="0" z="354.4032" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="leftfoot" type="0" id="0" instanceId="74262" wave="0" tag="" parent="73382">
+    <transform>
+      <position x="26.03954" y="2.208458" z="0" />
+      <rotation x="0" y="0" z="359.4456" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="rightarmdown" type="0" id="0" instanceId="74268" wave="0" tag="" parent="71514">
+    <transform>
+      <position x="11.20478" y="2.866371" z="0" />
+      <rotation x="0" y="0" z="359.4836" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="name" type="0" id="0" instanceId="74274" wave="0" tag="" parent="73462">
+    <transform>
+      <position x="32.24948" y="4.38699" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/b31" name="map04p_4" type="0" id="0" instanceId="74278" wave="0" tag="" parent="72552">
+    <transform>
+      <position x="4.286503" y="4.530083" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="rightarmdown" type="0" id="0" instanceId="74284" wave="0" tag="" parent="71858">
+    <transform>
+      <position x="7.299056" y="3.384495" z="0" />
+      <rotation x="0" y="0" z="359.4836" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_22" name="map04p_22" type="0" id="0" instanceId="74290" wave="0" tag="" parent="71616">
+    <transform>
+      <position x="32.83435" y="1.897572" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_14" name="map04p_14" type="0" id="0" instanceId="74302" wave="0" tag="" parent="71932">
+    <transform>
+      <position x="42.10541" y="3.470328" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="bodycollider" type="0" id="0" instanceId="74308" wave="0" tag="" parent="73470">
+    <transform>
+      <position x="7.937143" y="3.662731" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="0.759392" y="1.369729" z="0.995923" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="rightlegup" type="0" id="0" instanceId="74322" wave="0" tag="" parent="72010">
+    <transform>
+      <position x="11.41826" y="2.698334" z="0" />
+      <rotation x="0" y="0" z="340.8232" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="waist" type="0" id="0" instanceId="74328" wave="0" tag="" parent="73470">
+    <transform>
+      <position x="7.91078" y="3.330917" z="0" />
+      <rotation x="0" y="0" z="0" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/v" name="map04p_25" type="0" id="0" instanceId="74336" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="49.86499" y="2.380714" z="0" />
+      <rotation x="0" y="0" z="90.00001" />
+      <scale x="-1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="rightfoot" type="0" id="0" instanceId="74348" wave="0" tag="" parent="71488">
+    <transform>
+      <position x="15.03859" y="1.547383" z="0" />
+      <rotation x="0" y="0" z="359.0764" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/map04/res/map04p_18" name="map04p_18" type="0" id="0" instanceId="74354" wave="0" tag="" parent="73200">
+    <transform>
+      <position x="4.419583" y="2.752128" z="0" />
+      <rotation x="0" y="0" z="270" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/b001/b001m" name="rightfoot" type="0" id="0" instanceId="74362" wave="0" tag="" parent="71816">
+    <transform>
+      <position x="28.56462" y="1.09582" z="0" />
+      <rotation x="0" y="0" z="359.0764" />
+      <scale x="1" y="1" z="1" />
+    </transform>
+  </gameObject>
+</gameObjects>

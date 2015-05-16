@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- -->
+<root>
+	<includeModules initSequence="65536,1,6,2,3,13,22,8"><!-- 加载顺序，写在这里，将会按照顺序加载，如果没有写在这里，将会放到队列的后面进行加载 -->
+		<module clazz="com.kola.kgame.cache.role.RoleModuleImpl" msgLowerId="1000" msgUpperId="1999">
+			<moduleName>角色模块</moduleName>
+			<moduleId>1</moduleId>
+			<isPlayerSessionListener>true</isPlayerSessionListener>
+			<configPath>./res/config/gameconfig/rolemoduleconfig.xml</configPath>
+		</module>
+		
+		<module clazz="com.kola.kgame.cache.item.impl.KItemModule" msgLowerId="2000" msgUpperId="2999">
+			<moduleName>道具模块</moduleName>
+			<moduleId>2</moduleId>
+			<isPlayerSessionListener>false</isPlayerSessionListener>
+			<configPath>./res/config/gameconfig/itemmoduleconfig.xml</configPath>
+		</module>
+		
+		<module clazz="com.kola.kgame.cache.currency.impl.KCurrencyModule" msgLowerId="3000" msgUpperId="3999">
+			<moduleName>货币模块</moduleName>
+			<moduleId>3</moduleId>
+			<isPlayerSessionListener>false</isPlayerSessionListener>
+			<configPath>./res/config/gameconfig/currencymoduleconfig.xml</configPath>
+		</module>
+		
+		<module clazz="com.kola.kgame.cache.mail.impl.KMailModule" msgLowerId="4000" msgUpperId="4999">
+			<moduleName>邮件模块</moduleName>
+			<moduleId>4</moduleId>
+			<isPlayerSessionListener>false</isPlayerSessionListener>
+			<configPath>./res/config/gameconfig/mailmoduleconfig.xml</configPath>
+		</module>
+		
+		<module clazz="com.kola.kgame.cache.mount.impl.KMountModule" msgLowerId="5000" msgUpperId="5999">
+			<moduleName>坐骑模块</moduleName>
+			<moduleId>5</moduleId>
+			<isPlayerSessionListener>false</isPlayerSessionListener>
+			<configPath>./res/config/gameconfig/mountmoduleconfig.xml</configPath>
+		</module>
+		
+		<module clazz="com.kola.kmp.logic.npc.KNPCModule" msgLowerId="6000" msgUpperId="6999">
+			<moduleName>NPC模块</moduleName>
+			<moduleId>6</moduleId>
+			<isPlayerSessionListener>false</isPlayerSessionListener>
+			<configPath>./res/config/gameconfig/npcmoduleconfig.xml</configPath>
+		</module>		
+		
+		<module clazz="com.kola.kgame.cache.skill.impl.KSkillModule" msgLowerId="7000" msgUpperId="7999">
+			<moduleName>技能模块</moduleName>
+			<moduleId>7</moduleId>
+			<isPlayerSessionListener>false</isPlayerSessionListener>
+			<configPath>./res/config/gameconfig/skillmoduleconfig.xml</configPath>
+		</module>
+
+		<module clazz="com.kola.kmp.logic.reward.KRewardModule" msgLowerId="8000" msgUpperId="8999">
+			<moduleName>奖励模块</moduleName>
+			<moduleId>8</moduleId>
+			<isPlayerSessionListener>false</isPlayerSessionListener>
+			<configPath>./res/config/gameconfig/rewardmoduleconfig.xml</configPath>
+		</module>
+		
+		<module clazz="com.kola.kmp.logic.chat.KChatModule" msgLowerId="9000" msgUpperId="9999">
+			<moduleName>聊天模块</moduleName>
+			<moduleId>9</moduleId>
+			<isPlayerSessionListener>false</isPlayerSessionListener>
+			<configPath>./res/config/gameconfig/chatmoduleconfig.xml</configPath>
+		</module>
+		
+		<module clazz="com.kola.kmp.logic.fashion.KFashionModule" msgLowerId="10000" msgUpperId="10999">
+			<moduleName>时装模块</moduleName>
+			<moduleId>10</moduleId>
+			<isPlayerSessionListener>false</isPlayerSessionListener>
+			<configPath>./res/config/gameconfig/fashionmoduleconfig.xml</configPath>
+		</module>
+		
+		<module clazz="com.kola.kgame.cache.relationship.impl.KRelationShipModule" msgLowerId="11000" msgUpperId="11999">
+			<moduleName>关系模块</moduleName>
+			<moduleId>11</moduleId>
+			<isPlayerSessionListener>false</isPlayerSessionListener>
+			<configPath>./res/config/gameconfig/relationshipmoduleconfig.xml</configPath>
+		</module>		
+		
+		<module clazz="com.kola.kmp.logic.rank.KRankModule" msgLowerId="12000" msgUpperId="12999">
+			<moduleName>排行榜模块</moduleName>
+			<moduleId>12</moduleId>
+			<isPlayerSessionListener>false</isPlayerSessionListener>
+			<configPath>./res/config/gameconfig/rankmoduleconfig.xml</configPath>
+		</module>
+		
+		<module clazz="com.kola.kmp.logic.shop.KShopModule" msgLowerId="13000" msgUpperId="13999">
+			<moduleName>商店模块</moduleName>
+			<moduleId>13</moduleId>
+			<isPlayerSessionListener>false</isPlayerSessionListener>
+			<configPath>./res/config/gameconfig/shopmoduleconfig.xml</configPath>
+		</module>
+		
+		<module clazz="com.kola.kgame.cache.gang.impl.KGangModule" msgLowerId="14000" msgUpperId="14999">
+			<moduleName>军团模块</moduleName>
+			<moduleId>14</moduleId>
+			<isPlayerSessionListener>false</isPlayerSessionListener>
+			<configPath>./res/config/gameconfig/gangmoduleconfig.xml</configPath>
+		</module>
+		
+		<module clazz="com.kola.kgame.cache.level.impl.KGameLevelModule" msgLowerId="16000" msgUpperId="16999">
+			<moduleName>关卡模块</moduleName>
+			<moduleId>16</moduleId>
+			<isPlayerSessionListener>false</isPlayerSessionListener>
+			<configPath>./res/config/gameconfig/gamelevelmoduleconfig.xml</configPath>
+		</module>
+		
+		<module clazz="com.kola.kgame.cache.mission.impl.KMissionModule" msgLowerId="15000" msgUpperId="15999">
+			<moduleName>任务模块</moduleName>
+			<moduleId>15</moduleId>
+			<isPlayerSessionListener>false</isPlayerSessionListener>
+			<configPath>./res/config/gameconfig/missionmoduleconfig.xml</configPath>
+		</module>		
+
+		<module clazz="com.kola.kmp.logic.map.KMapModule" msgLowerId="17000" msgUpperId="17999">
+			<moduleName>地图模块</moduleName>
+			<moduleId>17</moduleId>
+			<isPlayerSessionListener>false</isPlayerSessionListener>
+			<configPath>./res/config/gameconfig/mapmoduleconfig.xml</configPath>
+		</module>
+		
+		<module clazz="com.kola.kgame.cache.pet.PetModuleImpl" msgLowerId="18000" msgUpperId="18999">
+			<moduleName>宠物模块</moduleName>
+			<moduleId>18</moduleId>
+			<isPlayerSessionListener>false</isPlayerSessionListener>
+			<configPath>./res/config/gameconfig/petmoduleconfig.xml</configPath>
+		</module>
+		
+		<module clazz="com.kola.kgame.cache.flowdata.impl.KFlowDataModule" msgLowerId="19000" msgUpperId="19999">
+			<moduleName>流水模块</moduleName>
+			<moduleId>19</moduleId>
+			<isPlayerSessionListener>false</isPlayerSessionListener>
+			<configPath>./res/config/gameconfig/flowdatamoduleconfig.xml</configPath>
+		</module>
+		
+		<module clazz="com.kola.kmp.logic.KGlobalModule" msgLowerId="-1" msgUpperId="-1">
+			<moduleName>公共模块</moduleName>
+			<moduleId>65536</moduleId>
+			<isPlayerSessionListener>false</isPlayerSessionListener>
+			<configPath>./res/config/gameconfig/logicglobalmoduleconfig.xml</configPath>
+		</module>
+		
+		<module clazz="com.kola.kmp.logic.util.dirtyword.KDirtyWordModule" msgLowerId="20000" msgUpperId="20999">
+			<moduleName>脏词模块</moduleName>
+			<moduleId>20</moduleId>
+			<isPlayerSessionListener>false</isPlayerSessionListener>
+			<configPath>./res/config/gameconfig/dirtywordmoduleconfig.xml</configPath>
+		</module>
+		
+		<module clazz="com.kola.kmp.logic.gm.KGMModule" msgLowerId="21000" msgUpperId="21999">
+			<moduleName>GM模块</moduleName>
+			<moduleId>21</moduleId>
+			<isPlayerSessionListener>true</isPlayerSessionListener>
+			<configPath>./res/config/gameconfig/gmmoduleconfig.xml</configPath>
+		</module>
+		
+		<module clazz="com.kola.kmp.logic.vip.KVIPModule" msgLowerId="22000" msgUpperId="22999">
+			<moduleName>VIP模块</moduleName>
+			<moduleId>22</moduleId>
+			<isPlayerSessionListener>false</isPlayerSessionListener>
+			<configPath>./res/config/gameconfig/vipmoduleconfig.xml</configPath>
+		</module>
+		
+		<module clazz="com.kola.kmp.logic.competition.KCompetitionModule" msgLowerId="23000" msgUpperId="23999">
+			<moduleName>竞技场模块</moduleName>
+			<moduleId>23</moduleId>
+			<isPlayerSessionListener>false</isPlayerSessionListener>
+			<configPath>./res/config/gameconfig/competitionmoduleconfig.xml</configPath>
+		</module>
+		
+		<module clazz="com.kola.kmp.logic.talent.KTalentModule" msgLowerId="24000" msgUpperId="24999" >
+		    <moduleName>天赋模块</moduleName>
+			<moduleId>24</moduleId>
+			<isPlayerSessionListener>false</isPlayerSessionListener>
+			<configPath>./res/config/gameconfig/talentmoduleconfig.xml</configPath>
+		</module>
+		
+		<module clazz="com.kola.kmp.logic.gamble.KGambleModule" msgLowerId="25000" msgUpperId="25999" >
+		    <moduleName>博彩模块</moduleName>
+			<moduleId>25</moduleId>
+			<isPlayerSessionListener>false</isPlayerSessionListener>
+			<configPath>./res/config/gameconfig/gamblemoduleconfig.xml</configPath>
+		</module>
+		
+		<!-- module clazz="com.kola.kmp.logic.gang.reswar.KResWarModule" msgLowerId="26000" msgUpperId="26999" >
+		    <moduleName>军团资源争夺模块</moduleName>
+			<moduleId>26</moduleId>
+			<isPlayerSessionListener>false</isPlayerSessionListener>
+			<configPath>./res/config/gameconfig/gangreswarmoduleconfig.xml</configPath>
+		</module> -->
+		
+		<module clazz="com.kola.kmp.logic.activity.KActivityModule" msgLowerId="27000" msgUpperId="27999" >
+		    <moduleName>活动模块</moduleName>
+			<moduleId>27</moduleId>
+			<isPlayerSessionListener>false</isPlayerSessionListener>
+			<configPath>./res/config/gameconfig/activitymoduleconfig.xml</configPath>
+		</module>
+		
+		<!-- --> <module clazz="com.kola.kmp.logic.gang.war.KGangWarModule" msgLowerId="28000" msgUpperId="28999" >
+		    <moduleName>军团战模块</moduleName>
+			<moduleId>28</moduleId>
+			<isPlayerSessionListener>false</isPlayerSessionListener>
+			<configPath>./res/config/gameconfig/gangwarmoduleconfig.xml</configPath>
+		</module>
+		
+	</includeModules>
+</root>

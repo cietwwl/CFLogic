@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>  
+	<!-- 许愿系统xml文件路径  -->
+	<wishConfigPath>./res/gsconfig/gamble/wishconfig.xml</wishConfigPath>
+	<!-- 许愿系统xml文件路径  -->
+	<wish2ConfigPath>./res/gsconfig/gamble/wish2config.xml</wish2ConfigPath>
+	
+	<!-- 全民竞猜系统xml文件路径 -->
+	<peopleGuessConfigPath>./res/gsconfig/gamble/peopleGuessConfig.xml</peopleGuessConfigPath>
+</root>

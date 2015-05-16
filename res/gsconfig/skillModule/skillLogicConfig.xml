@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<logicConfig>
+		<!-- 角色能带进战斗的技能数量 -->
+		<MaxSkillForWar>5</MaxSkillForWar>
+	</logicConfig>
+	
+	<excelConfig>
+		<skillTemplate>
+			<path>./res/gamedata/skillModule/skillTemplate.xls</path>
+			<HeaderIndex>5</HeaderIndex>
+		</skillTemplate>
+		<minionTemplate>
+			<path>./res/gamedata/skillModule/minionTemplate.xls</path>
+			<HeaderIndex>5</HeaderIndex>
+		</minionTemplate>
+	</excelConfig>
+</root>

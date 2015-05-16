@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <!-- 剧本excel表头文件路径 -->
+	<levelDataExcelFilePath>./res/gamedata/levelModule/levelConfig.xls</levelDataExcelFilePath>
+	<!-- 战斗场景地图xml资源文件路径 -->
+    <XML_DATA_PATH>./res/gsconfig/mapModule/mapXmlData/</XML_DATA_PATH>
+    
+    !-- 战斗通知监听器路径 -->
+	<fightEventListener>
+	<listener id="1"
+			classPath="com.kola.kmp.logic.mission.KMissionFightEventListenerImpl" />
+	    <!-- 
+		<listener id="1"
+			classPath="com.koala.kgamelogic.fight.KFightEventListenerImpl" />
+		
+		<listener id="3"
+			classPath="com.koala.kgamelogic.map.KMapFightEventListenerImpl" />
+		 -->	
+		 <listener id="2" classPath="com.kola.kmp.logic.combat.impl.KFightEventListenerImpl"/>
+	</fightEventListener>
+	
+	<lotteryExcelFilePath>./res/gamedata/levelModule/lotteryConfig.xls
+	</lotteryExcelFilePath>
+	
+	<copyActivity time="(11:00-13:00),(20:00-22:00)" multiple="2" isOpen="true"/>
+	
+	<!-- 精英副本每日免费次数 -->
+	<eliteCopyFreeCount>3</eliteCopyFreeCount>
+</root>

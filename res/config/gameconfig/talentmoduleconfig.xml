@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <tableConfig>
+        <table type="1" name="天赋树属性" headerIndex="2" />
+        <table type="2" name="天赋树数值" headerIndex="2" />
+        <table type="3" name="天赋点属性" headerIndex="2" />
+        <table type="4" name="天赋点数值" headerIndex="2" />
+    </tableConfig>
+    <talentDataPath>./res/gamedata/talent/talentData.xls</talentDataPath>
+</root>

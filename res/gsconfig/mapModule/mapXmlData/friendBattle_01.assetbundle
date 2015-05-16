@@ -1,0 +1,568 @@
+<gameObjects layers="54,145,177,65">
+  <gameObject asset="map/scene09/res/map09_6d1" name="map09_6d1" type="2" id="0" instanceId="1" parent="157">
+    <transform>
+      <position x="43.86355" y="3.65784" />
+      <scale x="0.759583" y="0.759585" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_53b1" name="map09_53b1" type="2" id="0" instanceId="5" parent="145">
+    <transform>
+      <position x="14.69176" y="2.473179" />
+      <rotation z="90.00001" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_44b2" name="map09_44b2" type="2" id="0" instanceId="10" parent="177">
+    <transform>
+      <position x="34.2705" y="4.707114" />
+      <scale x="1.347503" y="1.347503" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_30b1" name="map09_30b1" type="2" id="0" instanceId="12" parent="145">
+    <transform>
+      <position x="11.98479" y="4.27497" />
+      <scale x="0.837131" y="0.837131" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_6d1" name="map09_6d1" type="2" id="0" instanceId="13" parent="157">
+    <transform>
+      <position x="38.1077" y="3.745799" />
+      <scale x="0.8179013" y="0.8179034" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_53b2" name="map09_53b2" type="2" id="0" instanceId="14" parent="177">
+    <transform>
+      <position x="12.9769" y="4.323923" z="0.006347656" />
+      <rotation y="180" z="90.00001" />
+      <scale x="0.5630988" y="0.5630987" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_30d1" name="map09_30d1" type="2" id="0" instanceId="15" parent="157">
+    <transform>
+      <position x="1.921612" y="3.500876" />
+      <scale x="0.8371308" y="0.8371311" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_44f1" name="map09_44f1" type="2" id="0" instanceId="16" parent="54">
+    <transform>
+      <position x="29.23968" y="0.1916294" />
+      <rotation z="0.4525234" />
+      <scale x="1.00921" y="1.009209" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/bornpoint" name="BornPoint_17" type="16" id="0" instanceId="17" delay="0">
+    <transform>
+      <position x="13.26331" y="2.934809" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_44d1" name="map09_44d1" type="2" id="0" instanceId="18" parent="157">
+    <transform>
+      <position x="8.662632" y="3.971048" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_44d1" name="map09_44d1" type="2" id="0" instanceId="19" parent="157">
+    <transform>
+      <position x="13.61786" y="3.503958" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/54d1" name="54d1" type="2" id="0" instanceId="23" parent="157">
+    <transform>
+      <position x="15.64874" y="3.866043" z="-0.025146" />
+      <scale x="0.5" y="0.5" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_30b1" name="map09_30b1" type="2" id="0" instanceId="24" parent="145">
+    <transform>
+      <position x="3.128891" y="4.004561" />
+      <scale x="0.837131" y="0.837131" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_15d1" name="map09_15d1" type="2" id="0" instanceId="26" parent="157">
+    <transform>
+      <position x="12.11825" y="-0.1495905" />
+      <scale x="1.322924" y="1.322926" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_44f1" name="map09_44f1" type="2" id="0" instanceId="27" parent="54">
+    <transform>
+      <position x="10.27321" y="0.121562" />
+      <rotation z="350.3685" />
+      <scale x="1.241066" y="1.241066" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/54b2" name="54b2" type="2" id="0" instanceId="29" parent="177">
+    <transform>
+      <position x="12.39449" y="4.999476" z="-0.025146" />
+      <scale x="0.4" y="0.4" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/54b2" name="54b2" type="2" id="0" instanceId="30" parent="177">
+    <transform>
+      <position x="6.108042" y="5.947267" z="-0.025146" />
+      <scale x="0.7" y="0.7" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_44d1" name="map09_44d1" type="2" id="0" instanceId="34" parent="157">
+    <transform>
+      <position x="11.30304" y="3.420275" />
+      <rotation z="13.46234" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_30d1" name="map09_30d1" type="2" id="0" instanceId="35" parent="157">
+    <transform>
+      <position x="-4.053623" y="3.516276" />
+      <scale x="0.8371308" y="0.8371311" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_44f1" name="map09_44f1" type="2" id="0" instanceId="36" parent="54">
+    <transform>
+      <position x="46.58374" y="0.4093862" />
+      <rotation z="354.1729" />
+      <scale x="1.479802" y="1.479801" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_44b2" name="map09_44b2" type="2" id="0" instanceId="38" parent="177">
+    <transform>
+      <position x="25.26993" y="4.787119" />
+      <scale x="1.347503" y="1.347503" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_44b2" name="map09_44b2" type="2" id="0" instanceId="40" parent="177">
+    <transform>
+      <position x="19.35939" y="4.286185" />
+      <rotation z="341.8777" />
+      <scale x="0.7867808" y="0.7867816" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_53b2" name="map09_53b2" type="2" id="0" instanceId="41" parent="177">
+    <transform>
+      <position x="15.19291" y="4.255175" z="0.006348" />
+      <rotation z="90.00001" />
+      <scale x="0.339018" y="0.339018" z="1.000024" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_53b2" name="map09_53b2" type="2" id="0" instanceId="42" parent="177">
+    <transform>
+      <position x="14.69176" y="2.473179" />
+      <rotation z="90.00001" />
+      <scale x="0.7" y="0.7" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_30b1" name="map09_30b1" type="2" id="0" instanceId="43" parent="145">
+    <transform>
+      <position x="6.531536" y="4.117231" />
+      <scale x="0.837131" y="0.837131" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_44d1" name="map09_44d1" type="2" id="0" instanceId="44" parent="157">
+    <transform>
+      <position x="17.15151" y="3.422717" />
+      <rotation z="350.6248" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_30b172" name="map09_30b172" type="2" id="0" instanceId="52" parent="145">
+    <transform>
+      <position x="27.64632" y="4.171257" />
+      <scale x="0.785439" y="0.785439" />
+    </transform>
+  </gameObject>
+  <gameObject name="f1" type="2" id="0" instanceId="54">
+    <transform>
+      <position x="26.77615" y="4.544473" z="-0.006347656" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/54b1" name="54b1" type="2" id="0" instanceId="55" parent="145">
+    <transform>
+      <position x="27.09369" y="4.662914" z="-0.025146" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/54b1" name="54b1" type="2" id="0" instanceId="59" parent="145">
+    <transform>
+      <position x="7.529411" y="4.662914" z="-0.02514648" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_30b17" name="map09_30b17" type="2" id="0" instanceId="62" parent="145">
+    <transform>
+      <position x="21.35098" y="4.471972" />
+      <scale x="0.941629" y="0.941629" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_6d1" name="map09_6d1" type="2" id="0" instanceId="64" parent="157">
+    <transform>
+      <position x="30.84214" y="3.720689" />
+      <scale x="0.759583" y="0.759585" />
+    </transform>
+  </gameObject>
+  <gameObject name="b3" type="2" id="0" instanceId="65">
+    <transform>
+      <position x="26.77615" y="4.544473" z="-0.006347656" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene00/friendBattle_01.unity" name="Map" type="2" id="0" instanceId="70">
+    <transform>
+      <position x="7.855613" y="1.734861" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/50b3" name="50b3" type="2" id="0" instanceId="71" parent="65">
+    <transform>
+      <position x="37.69324" y="6.694231" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_44d1" name="map09_44d1" type="2" id="0" instanceId="72" parent="157">
+    <transform>
+      <position x="32.97169" y="3.727345" />
+      <rotation z="350.6248" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/bornpoint" name="BornPoint_79" type="16" id="0" instanceId="79" delay="0">
+    <transform>
+      <position x="7.707954" y="2.683414" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/organ/o032/o032m" name="Monster_80" type="8" id="800004" instanceId="80" delay="0" wave="1" group="1" appear="2" wakeUp="2" alwaysVisible="True">
+    <transform>
+      <position x="18.36741" y="2.621744" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_53b2" name="map09_53b2" type="2" id="0" instanceId="81" parent="177">
+    <transform>
+      <position x="8.914318" y="4.284711" z="0.006348" />
+      <rotation y="180" z="90.00001" />
+      <scale x="0.3390175" y="0.3390182" z="1.000024" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/54d1" name="54d1" type="2" id="0" instanceId="88" parent="157">
+    <transform>
+      <position x="30.87034" y="3.808663" z="-0.025146" />
+      <scale x="0.5" y="0.5" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/54d1" name="54d1" type="2" id="0" instanceId="90" parent="157">
+    <transform>
+      <position x="8.034431" y="3.866043" z="-0.025146" />
+      <scale x="0.5" y="0.5" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/5d1" name="5d1" type="2" id="0" instanceId="94" parent="157">
+    <transform>
+      <position x="48.62002" y="2.257932" z="-0.008545" />
+      <rotation y="180" />
+      <scale x="0.8" y="0.8" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_44f1" name="map09_44f1" type="2" id="0" instanceId="95" parent="54">
+    <transform>
+      <position x="33.81091" y="0.3283758" />
+      <rotation z="0.4525234" />
+      <scale x="1.479802" y="1.479801" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_44d1" name="map09_44d1" type="2" id="0" instanceId="96" parent="157">
+    <transform>
+      <position x="20.71065" y="3.29421" />
+      <rotation z="13.46234" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/54d1" name="54d1" type="2" id="0" instanceId="98" parent="157">
+    <transform>
+      <position x="23.25318" y="3.830329" z="-0.025146" />
+      <scale x="0.5" y="0.5" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_22d1" name="map09_22d1" type="2" id="0" instanceId="99" parent="157">
+    <transform>
+      <position x="19.80486" y="2.297751" z="-9.918585E-08" />
+      <rotation x="-5.008956E-06" y="180" z="180" />
+      <scale x="56.95936" y="5.707693" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_44f1" name="map09_44f1" type="2" id="0" instanceId="101" parent="54">
+    <transform>
+      <position x="37.18639" y="-0.2657104" />
+      <rotation z="0.4525234" />
+      <scale x="1.479802" y="1.479801" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_15d1" name="map09_15d1" type="2" id="0" instanceId="107" parent="157">
+    <transform>
+      <position x="26.48277" y="-0.1557703" z="-1.907349E-06" />
+      <rotation y="180" />
+      <scale x="1.322924" y="1.322926" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_6d1" name="map09_6d1" type="2" id="0" instanceId="108" parent="157">
+    <transform>
+      <position x="-3.186665" y="3.788493" />
+      <scale x="0.759583" y="0.759585" />
+    </transform>
+  </gameObject>
+  <gameObject asset="effect/other/ef048/ef048m_1" name="Default_109" type="2" id="3" instanceId="109" delay="0">
+    <transform>
+      <position x="36.29585" y="3.647241" z="1.108779" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/19b1" name="19b1" type="2" id="0" instanceId="111" parent="145">
+    <transform>
+      <position x="19.80918" y="8.282726" z="-0.02514648" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_8d1" name="map09_8d1" type="2" id="0" instanceId="112" parent="157">
+    <transform>
+      <position x="3.120335" y="4.578799" />
+      <scale x="1.595883" y="1.744869" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_30b1" name="map09_30b1" type="2" id="0" instanceId="114" parent="145">
+    <transform>
+      <position x="16.3564" y="4.207367" />
+      <scale x="0.837131" y="0.837131" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/bornpoint" name="BornPoint_116" type="16" id="0" instanceId="116" delay="0">
+    <transform>
+      <position x="31.05407" y="2.900615" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_44d1" name="map09_44d1" type="2" id="0" instanceId="117" parent="157">
+    <transform>
+      <position x="7.403515" y="4.011666" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_44b2" name="map09_44b2" type="2" id="0" instanceId="118" parent="177">
+    <transform>
+      <position x="3.729965" y="4.966846" />
+      <scale x="1.158712" y="1.158712" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_44f1" name="map09_44f1" type="2" id="0" instanceId="120" parent="54">
+    <transform>
+      <position x="5.814541" y="0.4659867" />
+      <scale x="1.46034" y="1.460339" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_30b1" name="map09_30b1" type="2" id="0" instanceId="121" parent="145">
+    <transform>
+      <position x="9.686306" y="3.756685" />
+      <scale x="0.837131" y="0.837131" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/50b3" name="50b3" type="2" id="0" instanceId="123" parent="65">
+    <transform>
+      <position x="23.73264" y="6.694231" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/5d1" name="5d1" type="2" id="0" instanceId="124" parent="157">
+    <transform>
+      <position x="20.32629" y="4.286746" z="-0.008544922" />
+      <scale x="0.8" y="0.8" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_44b2" name="map09_44b2" type="2" id="0" instanceId="125" parent="177">
+    <transform>
+      <position x="8.875793" y="4.91128" />
+      <scale x="1.191688" y="1.191689" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_44f1" name="map09_44f1" type="2" id="0" instanceId="127" parent="54">
+    <transform>
+      <position x="20.75473" y="0.2622681" />
+      <rotation z="354.3872" />
+      <scale x="1.574306" y="1.574305" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_44d1" name="map09_44d1" type="2" id="0" instanceId="130" parent="157">
+    <transform>
+      <position x="28.50386" y="3.74765" />
+      <rotation z="350.6248" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_44f1" name="map09_44f1" type="2" id="0" instanceId="131" parent="54">
+    <transform>
+      <position x="25.48616" y="0.4076605" />
+      <rotation z="0.4525556" />
+      <scale x="1.00921" y="1.009209" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_44b2" name="map09_44b2" type="2" id="0" instanceId="132" parent="177">
+    <transform>
+      <position x="16.84916" y="4.351167" />
+      <rotation z="356.6729" />
+      <scale x="1.191688" y="1.191689" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_30b172" name="map09_30b172" type="2" id="0" instanceId="136" parent="145">
+    <transform>
+      <position x="13.90377" y="4.049634" />
+      <scale x="0.7854385" y="0.7854385" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_55" name="map09_55" type="2" id="0" instanceId="141" parent="145">
+    <transform>
+      <position x="16.94087" y="4.064795" />
+      <scale x="11.34889" y="6.114022" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/5d1" name="5d1" type="2" id="0" instanceId="142" parent="157">
+    <transform>
+      <position x="-10.33735" y="2.268594" z="-0.008545" />
+      <scale x="0.8" y="0.8" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/54b2" name="54b2" type="2" id="0" instanceId="143" parent="177">
+    <transform>
+      <position x="18.98725" y="5.498397" z="-0.025146" />
+      <scale x="0.7" y="0.7" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_44f1" name="map09_44f1" type="2" id="0" instanceId="144" parent="54">
+    <transform>
+      <position x="40.93993" y="0.3823833" />
+      <rotation z="0.4525234" />
+      <scale x="1.479802" y="1.479801" />
+    </transform>
+  </gameObject>
+  <gameObject name="b1" type="2" id="0" instanceId="145">
+    <transform>
+      <position x="26.77615" y="4.544473" z="-0.006347656" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_44f1" name="map09_44f1" type="2" id="0" instanceId="146" parent="54">
+    <transform>
+      <position x="14.2468" y="0.154253" />
+      <rotation z="6.847719" />
+      <scale x="1.574306" y="1.574305" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_44f1" name="map09_44f1" type="2" id="0" instanceId="148" parent="54">
+    <transform>
+      <position x="17.3902" y="0.3973927" />
+      <rotation z="354.3873" />
+      <scale x="0.8799597" y="0.879959" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_53b1" name="map09_53b1" type="2" id="0" instanceId="151" parent="145">
+    <transform>
+      <position x="18.27194" y="2.613256" />
+      <rotation y="180" z="90.00001" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_44f1" name="map09_44f1" type="2" id="0" instanceId="153" parent="54">
+    <transform>
+      <position x="21.9599" y="0.5041013" />
+      <rotation z="7.086252" />
+      <scale x="0.8799601" y="0.879959" />
+    </transform>
+  </gameObject>
+  <gameObject name="d1" type="2" id="0" instanceId="157">
+    <transform>
+      <position x="26.77615" y="4.544473" z="-0.006347656" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_30b17" name="map09_30b17" type="2" id="0" instanceId="158" parent="145">
+    <transform>
+      <position x="12.46557" y="4.209747" />
+      <scale x="0.9416292" y="0.9416294" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_30b1" name="map09_30b1" type="2" id="0" instanceId="160" parent="145">
+    <transform>
+      <position x="27.80372" y="3.914424" />
+      <scale x="0.837131" y="0.837131" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_30b1" name="map09_30b1" type="2" id="0" instanceId="161" parent="145">
+    <transform>
+      <position x="30.28248" y="3.801754" />
+      <scale x="0.837131" y="0.837131" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_44d1" name="map09_44d1" type="2" id="0" instanceId="164" parent="157">
+    <transform>
+      <position x="24.1985" y="3.788269" />
+      <rotation z="13.46234" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_53b2" name="map09_53b2" type="2" id="0" instanceId="165" parent="177">
+    <transform>
+      <position x="11.03067" y="4.715634" z="0.006347656" />
+      <rotation z="90.00001" />
+      <scale x="0.5630988" y="0.5630987" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_44f1" name="map09_44f1" type="2" id="0" instanceId="166" parent="54">
+    <transform>
+      <position x="2.108265" y="0.4044161" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_8d1" name="map09_8d1" type="2" id="0" instanceId="171" parent="157">
+    <transform>
+      <position x="35.30592" y="4.457302" />
+      <rotation y="180" />
+      <scale x="1.595883" y="1.744869" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/0d1" name="0d1" type="2" id="0" instanceId="172" parent="157">
+    <transform>
+      <position x="9.563503" y="1.578322" z="-0.008544922" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_44d1" name="map09_44d1" type="2" id="0" instanceId="173" parent="157">
+    <transform>
+      <position x="18.12632" y="3.341483" />
+      <rotation z="13.46236" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_30b1" name="map09_30b1" type="2" id="0" instanceId="175" parent="145">
+    <transform>
+      <position x="22.82369" y="3.914424" />
+      <scale x="0.837131" y="0.837131" />
+    </transform>
+  </gameObject>
+  <gameObject name="b2" type="2" id="0" instanceId="177">
+    <transform>
+      <position x="26.77615" y="4.544473" z="-0.006347656" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_44f1" name="map09_44f1" type="2" id="0" instanceId="180" parent="54">
+    <transform>
+      <position x="11.42406" y="0.3935375" />
+      <rotation z="7.086271" />
+      <scale x="0.8166872" y="0.8166864" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/bornpoint" name="BornPoint_182" type="16" id="0" instanceId="182" delay="0">
+    <transform>
+      <position x="23.40446" y="3.029967" />
+    </transform>
+  </gameObject>
+  <gameObject asset="effect/other/ef048/ef048m_1" name="Default_183" type="2" id="3" instanceId="183" delay="0">
+    <transform>
+      <position x="2.39643" y="3.495562" z="1.108779" />
+      <rotation y="180" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_30b172" name="map09_30b172" type="2" id="0" instanceId="184" parent="145">
+    <transform>
+      <position x="23.76052" y="4.228401" />
+      <scale x="0.785439" y="0.785439" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_30b1" name="map09_30b1" type="2" id="0" instanceId="186" parent="145">
+    <transform>
+      <position x="18.42954" y="3.89189" />
+      <scale x="0.837131" y="0.837131" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_19f1" name="map09_19f1" type="2" id="0" instanceId="187" parent="54">
+    <transform>
+      <position x="32.19442" y="1.284504" z="2.416782E-07" />
+      <rotation x="-5.008956E-06" y="180" z="-5.008956E-06" />
+      <scale x="111.9143" y="3.997702" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene09/res/map09_30b17" name="map09_30b17" type="2" id="0" instanceId="193" parent="145">
+    <transform>
+      <position x="6.679123" y="4.418965" />
+      <scale x="0.941629" y="0.941629" />
+    </transform>
+  </gameObject>
+</gameObjects>

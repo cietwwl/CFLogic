@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<logicConfig>
+		<sonModule>
+			<activateCode>
+				<!-- 梦想HTTP接口 -->
+				<Dream>
+					<DreamHTTPAddress>http://data.xxwan.com/gift</DreamHTTPAddress>
+					<DreamKey>0d6f9fc43f4952879357dc06a3f1c5d5</DreamKey>
+				</Dream>
+				
+				<!-- YY HTTP接口 -->
+				<YY>
+					<YYHTTPAddress>http://task.g.yy.com/task/daily/complete.do</YYHTTPAddress>
+					<YYPassport>xxwancftg</YYPassport>
+					<YYTid>2331</YYTid>
+					<YYKey>7j9$2im9dq</YYKey>
+				</YY>
+				
+			</activateCode>
+			<garden>
+				<!-- 脚印日志的最大数量 -->
+				<FeetLogMaxCount>10</FeetLogMaxCount>
+				<!-- 僵尸刷新任务周期（DHMS） -->
+				<ZombieRefreshPeriod>2H</ZombieRefreshPeriod>
+
+
+				<!-- 文字相关内容各语言版本不同 -->	
+				<ck-include>./res/gamedata/rewardModule/gardenConfig.xml</ck-include>
+			</garden>
+			<dayluck>
+				<!-- 大奖日志的最大数量 -->
+				<BidRewardLogMaxCount>10</BidRewardLogMaxCount>
+			</dayluck>
+			<vitality>
+
+			</vitality>
+			<login>
+				<!-- 奖励最多显示多少天 -->
+				<MaxRewardShowSize>7</MaxRewardShowSize>
+			</login>
+			<redress>
+				<v1>
+					<!-- 补偿的角色创建时间截止日期 -->
+					<RoleCreateEndTime>2014-11-20 09:00</RoleCreateEndTime>
+					
+					<!-- 是否重置为未首充：1表示重置，2表示不重置 -->
+					<isResetFirstCharge>1</isResetFirstCharge>
+				</v1>
+				<v2>
+					<!-- 补偿的角色创建时间截止日期 1971-01-01 00:00   2015-02-04 09:00-->
+					<RoleCreateEndTime>2015-02-04 09:00</RoleCreateEndTime>
+				</v2>
+			</redress>
+		</sonModule>
+	</logicConfig>
+
+	<excelConfig>
+		<dialyMail>
+			<path>./res/gamedata/rewardModule/dialyMail.xls</path>
+			<HeaderIndex>5</HeaderIndex>
+		</dialyMail>
+		<reward>
+			<path>./res/gamedata/rewardModule/reward.xls</path>
+			<HeaderIndex>5</HeaderIndex>
+		</reward>
+		<excitingReward>
+			<path>./res/gamedata/rewardModule/excitingReward{}.xls</path>
+			<HeaderIndex>5</HeaderIndex>
+		</excitingReward>
+		<fengceReward>
+			<path>./res/gamedata/rewardModule/fengceReward.xls</path>
+			<HeaderIndex>5</HeaderIndex>
+		</fengceReward>
+		<activateCode>
+			<path>./res/gamedata/rewardModule/activateCode.xls</path>
+			<HeaderIndex>5</HeaderIndex>
+		</activateCode>
+		<redressV1>
+			<path>./res/gamedata/rewardModule/redressV1.xls</path>
+			<HeaderIndex>5</HeaderIndex>
+		</redressV1>
+		<redressV2>
+			<path>./res/gamedata/rewardModule/redressV2.xls</path>
+			<HeaderIndex>5</HeaderIndex>
+		</redressV2>
+		<phyPowerReward>
+			<path>./res/gamedata/rewardModule/reward.xls</path>
+			<HeaderIndex>5</HeaderIndex>
+		</phyPowerReward>
+		<kajiReward>
+			<path>./res/gamedata/rewardModule/kajiReward.xls</path>
+			<HeaderIndex>5</HeaderIndex>
+		</kajiReward>
+	</excelConfig>
+</root>

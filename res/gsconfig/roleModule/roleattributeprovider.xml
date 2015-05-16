@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <provider clazz="com.kola.kmp.logic.fashion.KFashionAttributeProvider" />
+    <provider clazz="com.kola.kmp.logic.item.KItemAttributeProvider" />
+    <provider clazz="com.kola.kmp.logic.mount.KMountAttributeProvider" />
+    <!-- provider clazz="com.kola.kmp.logic.skill.KSkillAttributeProvider" /> -->
+    <provider clazz="com.kola.kmp.logic.talent.KTalentAttributeProvider" />
+    <provider clazz="com.kola.kmp.logic.pet.KPetModuleAttributeProvider" />
+    <provider clazz="com.kola.kmp.logic.gang.KGangAttributeProvider" />
+    <provider clazz="com.kola.kmp.logic.competition.teampvp.KTeamPVPAttributeProvider" />
+ </root>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chatmoduleconfig>
+
+	<logicConfig>
+		<!-- 文字相关内容各语言版本不同 -->	
+		<ck-include>./res/gamedata/currencyModule/currencyLogicConfig.xml</ck-include>
+	</logicConfig>
+	
+	<excelConfig>
+		<chargeInfos>
+			<path>./res/gamedata/currencyModule/chargeInfos.xls</path>
+			<HeaderIndex>5</HeaderIndex>
+		</chargeInfos>
+		<diamondToGold>
+			<path>./res/gamedata/currencyModule/diamondToGold.xls</path>
+			<HeaderIndex>5</HeaderIndex>
+		</diamondToGold>
+	</excelConfig>
+
+</chatmoduleconfig>

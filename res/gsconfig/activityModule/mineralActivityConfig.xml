@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <!-- 物资运输excel表头文件路径 -->
+	<excelConfig>
+		<mine>
+			<path>./res/gamedata/activityModule/mineralConfig.xls</path>
+			<HeaderIndex>5</HeaderIndex>
+		</mine>
+	</excelConfig>
+	
+	<logicConfig>
+	
+		<挖矿场景地图>23001</挖矿场景地图>
+		<挖矿PVP地图文件名>jjchangfuben</挖矿PVP地图文件名><!-- juntuanzhan_01 -->
+		<挖矿PVP地图背景音乐>1701000</挖矿PVP地图背景音乐>
+		<驱赶名单最大数量>20</驱赶名单最大数量>
+		
+		<产出周期>1M</产出周期><!-- DHMS -->
+		
+		<铁镐ItemCode>330007</铁镐ItemCode>
+	
+	</logicConfig>
+	
+</root>

@@ -1,0 +1,328 @@
+<gameObjects layers="582,256,396,558">
+  <gameObject asset="Animation/Enemy/e031/e031m" name="Monster_1" type="8" id="100359" instanceId="1" parent="239" delay="0" wave="1" group="1" appear="2" wakeUp="2" alwaysVisible="True">
+    <transform>
+      <position x="6.038485" y="1.974263" />
+      <scale x="1.1" y="1.1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/e031/e031m" name="Monster_31" type="8" id="100359" instanceId="31" parent="239" delay="0" wave="1" group="1" appear="2" wakeUp="2" alwaysVisible="True">
+    <transform>
+      <position x="6.895229" y="0.6407084" />
+      <scale x="1.1" y="1.1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/e042/e042m" name="Monster_74" type="8" id="100361" instanceId="74" parent="169" delay="0" wave="2" group="1" appear="2" wakeUp="2" alwaysVisible="True">
+    <transform>
+      <position x="25.61367" y="2.241844" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/e044/e044m" name="Monster_76" type="8" id="100360" instanceId="76" parent="169" delay="0" wave="2" group="1" appear="2" wakeUp="2" alwaysVisible="True">
+    <transform>
+      <position x="21.29519" y="2.268337" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/e042/e042m" name="Monster_79" type="8" id="100361" instanceId="79" parent="239" delay="0" wave="1" group="1" appear="2" wakeUp="2" alwaysVisible="True">
+    <transform>
+      <position x="12.69376" y="1.040607" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene08/res/map08_38f1" name="map08_38f1" type="2" id="0" instanceId="95" parent="582">
+    <transform>
+      <position x="65.19443" y="0.3553512" />
+      <rotation x="-5.008956E-06" y="180" z="180.4034" />
+      <scale x="1.755296" y="1.755292" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/e044/e044m" name="Monster_101" type="8" id="100360" instanceId="101" parent="325" delay="0" wave="3" group="1" appear="2" wakeUp="2" alwaysVisible="True">
+    <transform>
+      <position x="38.78247" y="2.099905" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene08/res/32b1" name="32b1" type="2" id="0" instanceId="108" parent="256">
+    <transform>
+      <position x="27.23742" y="4.811252" z="1.192093E-07" />
+      <rotation x="-5.008956E-06" y="180" z="180" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene08/res/0b1" name="0b1" type="2" id="0" instanceId="113" parent="256">
+    <transform>
+      <position x="20.58931" y="6.504614" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/e044/e044m" name="Monster_120" type="8" id="100360" instanceId="120" parent="325" delay="0" wave="3" group="1" appear="2" wakeUp="2" alwaysVisible="True">
+    <transform>
+      <position x="38.22564" y="1.076043" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/e031/e031m" name="Monster_138" type="8" id="100359" instanceId="138" parent="325" delay="0" wave="3" group="1" appear="2" wakeUp="2" alwaysVisible="True">
+    <transform>
+      <position x="32.62782" y="2.230702" />
+      <scale x="1.1" y="1.1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene08/res/map08_38f1" name="map08_38f1" type="2" id="0" instanceId="150" parent="582">
+    <transform>
+      <position x="18.67536" y="0.3553569" />
+      <rotation x="-5.008956E-06" y="180" z="180.4034" />
+      <scale x="1.755296" y="1.755292" />
+    </transform>
+  </gameObject>
+  <gameObject name="moster2" type="2" id="0" instanceId="169">
+    <transform>
+      <position x="9.404739" y="2.139607" />
+    </transform>
+  </gameObject>
+  <gameObject name="d1" type="2" id="0" instanceId="175">
+    <transform>
+      <position x="23.29137" y="4.50477" z="0.3979492" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/e044/e044m" name="Monster_184" type="8" id="100360" instanceId="184" parent="169" delay="0" wave="2" group="1" appear="2" wakeUp="2" alwaysVisible="True">
+    <transform>
+      <position x="20.36791" y="0.8376775" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene08/res/map08_38f1" name="map08_38f1" type="2" id="0" instanceId="205" parent="582">
+    <transform>
+      <position x="34.29291" y="0.5619807" />
+      <rotation x="-5.008956E-06" y="180" z="180.4034" />
+      <scale x="1.65817" y="1.658165" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/e031/e031m" name="Monster_219" type="8" id="100359" instanceId="219" parent="239" delay="0" wave="1" group="1" appear="2" wakeUp="2" alwaysVisible="True">
+    <transform>
+      <position x="8.339308" y="1.951488" />
+      <scale x="1.1" y="1.1" />
+    </transform>
+  </gameObject>
+  <gameObject name="moster1" type="2" id="0" instanceId="239">
+    <transform>
+      <position x="7.483531" y="3.63289" z="-0.004638672" />
+    </transform>
+  </gameObject>
+  <gameObject name="b1" type="2" id="0" instanceId="256">
+    <transform>
+      <position x="23.29137" y="4.50477" z="0.3979492" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene08/res/8b3" name="8b3" type="2" id="0" instanceId="259" parent="558">
+    <transform>
+      <position x="17.02752" y="8.611046" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene08/res/map08_38f1" name="map08_38f1" type="2" id="0" instanceId="305" parent="582">
+    <transform>
+      <position x="48.8947" y="0.488647" />
+      <rotation x="-5.008956E-06" y="180" z="180.4034" />
+      <scale x="1.755296" y="1.755292" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene08/res/map08_38f1" name="map08_38f1" type="2" id="0" instanceId="307" parent="582">
+    <transform>
+      <position x="24.77537" y="0.5006609" />
+      <rotation x="-5.008956E-06" y="180" z="180.4034" />
+      <scale x="1.498866" y="1.498862" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/e042/e042m" name="Monster_309" type="8" id="100361" instanceId="309" parent="169" delay="0" wave="2" group="1" appear="2" wakeUp="2" alwaysVisible="True">
+    <transform>
+      <position x="26.54095" y="0.8376775" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene08/res/43d1" name="43d1" type="2" id="0" instanceId="310" parent="175">
+    <transform>
+      <position x="30.00288" y="2.484068" z="-0.009033114" />
+      <rotation x="-5.008956E-06" y="5.008956E-06" z="180" />
+      <scale x="0.7" y="0.7" />
+    </transform>
+  </gameObject>
+  <gameObject name="moster3" type="2" id="0" instanceId="325">
+    <transform>
+      <position x="8.735518" y="4.549905" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/e044/e044m" name="Monster_329" type="8" id="100360" instanceId="329" parent="169" delay="0" wave="2" group="1" appear="2" wakeUp="2" alwaysVisible="True">
+    <transform>
+      <position x="22.35494" y="1.208589" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/e031/e031m" name="Monster_333" type="8" id="100359" instanceId="333" parent="325" delay="0" wave="3" group="1" appear="2" wakeUp="2" alwaysVisible="True">
+    <transform>
+      <position x="32.72912" y="1.219744" />
+      <scale x="1.1" y="1.1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/e042/e042m" name="Monster_346" type="8" id="100361" instanceId="346" parent="239" delay="0" wave="1" group="1" appear="2" wakeUp="2" alwaysVisible="True">
+    <transform>
+      <position x="10.58318" y="0.7740078" />
+    </transform>
+  </gameObject>
+  <gameObject name="BornPoint_355" type="16" id="0" instanceId="355" delay="0">
+    <transform>
+      <position x="2.5" y="1.486508" z="-0.03173828" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/e044/e044m" name="Monster_386" type="8" id="100360" instanceId="386" parent="325" delay="0" wave="3" group="1" appear="2" wakeUp="2" alwaysVisible="True">
+    <transform>
+      <position x="36.60901" y="1.794542" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/e036/e036m" name="Monster_388" type="8" id="100362" instanceId="388" parent="325" delay="0" wave="3" group="1" appear="2" wakeUp="2" alwaysVisible="True">
+    <transform>
+      <position x="40.29893" y="0.3236737" />
+      <scale x="0.85" y="0.85" />
+    </transform>
+  </gameObject>
+  <gameObject name="b2" type="2" id="0" instanceId="396">
+    <transform>
+      <position x="23.29137" y="4.50477" z="0.3979492" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/e044/e044m" name="Monster_427" type="8" id="100360" instanceId="427" parent="169" delay="0" wave="2" group="1" appear="2" wakeUp="2" alwaysVisible="True">
+    <transform>
+      <position x="18.93725" y="1.950413" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene08/res/map08_38f1" name="map08_38f1" type="2" id="0" instanceId="428" parent="582">
+    <transform>
+      <position x="12.50784" y="0.4982638" />
+      <rotation x="-5.008956E-06" y="180" z="180.4034" />
+      <scale x="1.326139" y="1.326135" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene08/res/map08_38f1" name="map08_38f1" type="2" id="0" instanceId="431" parent="582">
+    <transform>
+      <position x="44.07712" y="0.5648162" />
+      <rotation x="-5.008956E-06" y="180" z="180.4034" />
+      <scale x="1.755296" y="1.755292" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene08/res/36D1" name="36D1" type="2" id="0" instanceId="435" parent="175">
+    <transform>
+      <position x="23.34634" y="3.324278" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/e036/e036m" name="Monster_436" type="8" id="100362" instanceId="436" parent="325" delay="0" wave="3" group="1" appear="2" wakeUp="2" alwaysVisible="True">
+    <transform>
+      <position x="30.60933" y="0.8840365" />
+      <scale x="0.85" y="0.85" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene08/res/map08_38f1" name="map08_38f1" type="2" id="0" instanceId="437" parent="582">
+    <transform>
+      <position x="2.108892" y="0.4610717" />
+      <rotation x="-5.008956E-06" y="180" z="180.4034" />
+      <scale x="1.44732" y="1.447317" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/e042/e042m" name="Monster_450" type="8" id="100361" instanceId="450" parent="239" delay="0" wave="1" group="1" appear="2" wakeUp="2" alwaysVisible="True">
+    <transform>
+      <position x="11.9384" y="2.19587" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/organ/o002/o002m" name="SectionPoint_451" type="1024" id="0" instanceId="451" parent="325" delay="0">
+    <transform>
+      <position x="42.66439" y="2.742965" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene08/res/map08_38f1" name="map08_38f1" type="2" id="0" instanceId="462" parent="582">
+    <transform>
+      <position x="15.5525" y="0.3172731" />
+      <rotation x="-5.008956E-06" y="180" z="180.4034" />
+      <scale x="1.755296" y="1.755292" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/e042/e042m" name="Monster_471" type="8" id="100361" instanceId="471" parent="169" delay="0" wave="2" group="1" appear="2" wakeUp="2" alwaysVisible="True">
+    <transform>
+      <position x="23.73261" y="0.8376775" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/e036/e036m" name="Monster_491" type="8" id="100362" instanceId="491" parent="325" delay="0" wave="3" group="1" appear="2" wakeUp="2" alwaysVisible="True">
+    <transform>
+      <position x="41.18617" y="1.864671" />
+      <scale x="0.85" y="0.85" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene08/res/43d1" name="43d1" type="2" id="0" instanceId="492" parent="175">
+    <transform>
+      <position x="29.28539" y="0.6630816" z="-0.009033173" />
+      <scale x="0.7" y="0.7" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene08/res/map08_38f1" name="map08_38f1" type="2" id="0" instanceId="505" parent="582">
+    <transform>
+      <position x="59.90084" y="0.1458917" />
+      <rotation x="-5.008956E-06" y="180" z="180.4034" />
+      <scale x="1.755296" y="1.755292" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene08/res/map08_38f1" name="map08_38f1" type="2" id="0" instanceId="518" parent="582">
+    <transform>
+      <position x="38.44074" y="0.2791903" />
+      <rotation x="-5.008956E-06" y="180" z="180.4034" />
+      <scale x="1.755296" y="1.755292" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene08/res/map08_38f1" name="map08_38f1" type="2" id="0" instanceId="550" parent="582">
+    <transform>
+      <position x="55.25466" y="0.6028943" />
+      <rotation x="-5.008956E-06" y="180" z="180.4034" />
+      <scale x="1.755296" y="1.755292" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/organ/o002/o002m" name="SectionPoint_551" type="1024" id="0" instanceId="551" parent="169" delay="0">
+    <transform>
+      <position x="28.34562" y="2.88362" />
+    </transform>
+  </gameObject>
+  <gameObject name="b3" type="2" id="0" instanceId="558">
+    <transform>
+      <position x="23.29137" y="4.50477" z="0.3979492" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene08/res/11b223" name="11b223" type="2" id="0" instanceId="561" parent="396">
+    <transform>
+      <position x="3.546364" y="7.730175" />
+      <scale x="1.1" y="1.1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/Enemy/e031/e031m" name="Monster_572" type="8" id="100359" instanceId="572" parent="325" delay="0" wave="3" group="1" appear="2" wakeUp="2" alwaysVisible="True">
+    <transform>
+      <position x="34.05834" y="1.525106" />
+      <scale x="1.1" y="1.1" />
+    </transform>
+  </gameObject>
+  <gameObject asset="Animation/organ/o002/o002m" name="SectionPoint_578" type="1024" id="0" instanceId="578" parent="239" delay="0">
+    <transform>
+      <position x="14.05503" y="2.996144" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene08/res/map08_38f1" name="map08_38f1" type="2" id="0" instanceId="580" parent="582">
+    <transform>
+      <position x="28.57712" y="0.01260519" />
+      <rotation x="-5.008956E-06" y="180" z="180.4034" />
+      <scale x="1.755296" y="1.755292" />
+    </transform>
+  </gameObject>
+  <gameObject name="f1" type="2" id="0" instanceId="582">
+    <transform>
+      <position x="23.29137" y="4.030851" z="0.3979492" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene08/res/map08_38f1" name="map08_38f1" type="2" id="0" instanceId="583" parent="582">
+    <transform>
+      <position x="5.936388" y="0.1268563" />
+      <rotation x="-5.008956E-06" y="180" z="180.4034" />
+      <scale x="1.755296" y="1.755292" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene08/res/36b2" name="36b2" type="2" id="0" instanceId="600" parent="396">
+    <transform>
+      <position x="23.71324" y="4.763271" z="5.960464E-08" />
+      <rotation x="-5.008956E-06" y="180" z="180" />
+    </transform>
+  </gameObject>
+  <gameObject asset="map/scene08/ptfuben_08_09.unity" name="Map" type="2" id="0" instanceId="612">
+    <transform />
+  </gameObject>
+</gameObjects>

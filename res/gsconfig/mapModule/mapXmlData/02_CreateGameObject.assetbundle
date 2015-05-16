@@ -1,0 +1,15 @@
+<gameObjects>
+  <gameObject name="GameObject" type="2" id="0" instanceId="1">
+    <transform>
+      <position x="3.256054" y="-0.2572463" z="-3.075982" />
+    </transform>
+  </gameObject>
+  <gameObject name="Camera" type="2" id="0" instanceId="2" parent="3">
+    <transform />
+  </gameObject>
+  <gameObject name="UI Root" type="2" id="0" instanceId="3">
+    <transform>
+      <scale x="0.004166667" y="0.004166667" z="0.004166667" />
+    </transform>
+  </gameObject>
+</gameObjects>

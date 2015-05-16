@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <extension classPath="com.kola.kmp.logic.relationship.KRelationShipModuleExtension" >
+        <configPath>./res/gsconfig/relationShipModule/relationShipLogicConfig.xml</configPath>
+    </extension>
+</root>

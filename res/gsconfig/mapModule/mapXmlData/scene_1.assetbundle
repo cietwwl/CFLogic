@@ -1,0 +1,5 @@
+<gameObjects layers="">
+  <gameObject asset="Scene/scene_1.unity" name="Map" type="2" id="0" instanceId="1">
+    <transform />
+  </gameObject>
+</gameObjects>

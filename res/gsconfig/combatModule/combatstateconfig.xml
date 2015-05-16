@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <stateParser type="1" clazz="com.kola.kmp.logic.combat.state.KDecreaseAttrStateParser" />
+    <stateParser type="2" clazz="com.kola.kmp.logic.combat.state.KIncreaseAttrStateParser" />
+	<stateParser type="3" clazz="com.kola.kmp.logic.combat.state.KFreezeStateParser" />
+	<stateParser type="4" clazz="com.kola.kmp.logic.combat.state.KFaintStateParser" />
+	<stateParser type="5" clazz="com.kola.kmp.logic.combat.state.KImmunityControlStateParser" />
+	<stateParser type="6" clazz="com.kola.kmp.logic.combat.state.KDecreaseFixedAttrCycStateParser" />
+	<stateParser type="7" clazz="com.kola.kmp.logic.combat.state.KDecreasePctAttrCycStateParser" />
+	<stateParser type="8" clazz="com.kola.kmp.logic.combat.state.KAddSpecialEffectStateParser" />
+	<stateParser type="9" clazz="com.kola.kmp.logic.combat.state.KAddSpecialEffectStateParser" />
+	<stateParser type="10" clazz="com.kola.kmp.logic.combat.state.KAddAbsorbHpEffectStateParser" />
+	<stateParser type="11" clazz="com.kola.kmp.logic.combat.state.KInvincibleStateParser" />
+</root>

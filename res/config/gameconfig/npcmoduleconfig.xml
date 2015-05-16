@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <extension classPath="com.kola.kmp.logic.npc.KNPCModuleExtension" >
+        <configPath>./res/gsconfig/npcModule/npcLogicConfig.xml</configPath>
+    </extension>
+</root>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <extension classPath="com.kola.kmp.logic.mount.KMountModuleExtension" >
+        <configPath>./res/gsconfig/mountModule/mountLogicConfig.xml</configPath>
+    </extension>
+</root>

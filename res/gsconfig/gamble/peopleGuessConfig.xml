@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<startTime>12:45;17:50;20:20</startTime>
+	<cfgPath>./res/gamedata/gamble/peopleGuess.xls</cfgPath> <!-- 马匹配置文件的路径 -->
+	<activityCfg>
+		<raceTrackArea x="432" y="100" w="6900" h="350"/> <!-- 扩大100倍 -->
+	    <pre_live_race_time_seconds>15</pre_live_race_time_seconds>
+	    <settle_price_time_seconds>10</settle_price_time_seconds>
+	    <race_horse_size>5</race_horse_size>
+	    <race_map_id>24001</race_map_id>
+	    <winner_fastest_race_time_seconds>30</winner_fastest_race_time_seconds>
+	    <loser_slowest_race_time_seconds>20</loser_slowest_race_time_seconds>
+		<yabaoIgot>
+	       <igot>10</igot>
+	       <igot>50</igot>
+	       <igot>100</igot>
+	       <igot>500</igot>
+	    </yabaoIgot>
+	</activityCfg>
+	<!-- <racePerion>8:50;23:59</racePerion>
+	<delayTime>300</delayTime> -->
+	<isOpen>true</isOpen>
+</root>
